@@ -1,0 +1,146 @@
+course_code,skill_name,map_weight
+IT1030,Boolean Algebra & Logic,0.2
+IT1030,Number Systems & Computer Arithmetic,0.2
+IT1030,Calculus & Differentiation,0.2
+IT1030,Integration & Applications,0.2
+IT1030,Graph Theory & Matrices,0.2
+IT1020,Data Representation & Computer Architecture,0.2
+IT1020,Combinational & Sequential Logic Circuits,0.2
+IT1020,Operating Systems Basics,0.2
+IT1020,Networking Fundamentals & ISO/OSI Layers,0.2
+IT1020,IP Addressing & Network Design,0.2
+IT1010,Procedural Programming Concepts,0.2
+IT1010,Control Structures & Loops,0.2
+IT1010,Functions & Recursion,0.2
+IT1010,Pointers & Memory Management,0.2
+IT1010,"Arrays, Structures & File Handling",0.2
+IT1100,Internet & Web Protocols,0.2
+IT1100,Social Media & Digital Content,0.2
+IT1100,e-Commerce & Web Security,0.2
+IT1100,HTML/CSS & UI Design,0.2
+IT1100,JavaScript/PHP Web Development,0.2
+IT1090,Information Systems Analysis,0.2
+IT1090,Strategic IS & Decision Support,0.2
+IT1090,Data Modeling & ER Diagrams,0.2
+IT1090,Schema Refinement & Normalization,0.2
+IT1090,SQL Database Management (DDL/DML),0.2
+IT1080,Academic Writing & Grammar,0.2
+IT1080,Reading Comprehension,0.2
+IT1080,Academic Listening & Note-taking,0.2
+IT1080,Speaking & Presentations,0.2
+IT1080,"Paraphrasing, Summarizing & Referencing",0.2
+IT1050,Object-Oriented Programming Fundamentals,0.2
+IT1050,"Classes, Objects & Properties",0.2
+IT1050,Inheritance & Polymorphism,0.2
+IT1050,"Encapsulation, Abstraction & Interfaces",0.2
+IT1050,C++ Programming Implementation,0.2
+IT1090,Information Systems Analysis,0.2
+IT1090,Strategic IS & Decision Support,0.2
+IT1090,Data Modeling & ER Diagrams,0.2
+IT1090,Schema Refinement & Normalization,0.2
+IT1090,SQL Database Management (DDL/DML),0.2
+IT1060,Software Engineering Fundamentals,0.2
+IT1060,Software Life Cycle Modeling,0.2
+IT1060,Requirements Engineering & UML,0.2
+IT1060,Software Design & Testing,0.2
+IT1060,Agile Development & SCRUM,0.2
+IT2060,OS Concepts & Architecture,0.2
+IT2060,Process & Thread Management,0.2
+IT2060,Memory & Virtual Memory Management,0.2
+IT2060,File System & I/O Management,0.2
+IT2060,System Security & Administration Scripting,0.2
+IT2050,Network Device Configuration (Routers/Switches),0.2
+IT2050,IP Addressing & Subnetting,0.2
+IT2050,Routing & TCP/UDP Protocols,0.2
+IT2050,Network Security & ACLs,0.2
+IT2050,"VLAN, Spanning Tree & Trunking",0.2
+IT2040,Database Design & Conceptual Modeling,0.2
+IT2040,Logical Database Design & Schema Refinement,0.2
+IT2040,SQL Querying & Database Programming,0.2
+IT2040,Database Connectivity (ODBC/JDBC),0.2
+IT2040,Database Security & Performance Optimization,0.2
+IT2030,Java Programming Fundamentals,0.2
+IT2030,Object-Oriented Concepts & Recap,0.2
+IT2030,Exception Handling & Debugging,0.2
+IT2030,"Collections, Generics & Threads",0.2
+IT2030,Design Patterns & Web-based Project,0.2
+IT2020,Functional & Object-Oriented Analysis & Design,0.2
+IT2020,UML Modeling & Behavioral Modeling,0.2
+IT2020,"Design Patterns (Creational, Structural, Behavioral)",0.2
+IT2020,Software Testing & Unit Testing,0.2
+IT2020,"Supportive Software Processes (Configuration, Version, Release Management)",0.2
+IT2110,Descriptive & Inferential Statistics,0.2
+IT2110,Sampling & Probability Theory,0.2
+IT2110,Probability Distributions & Random Variables,0.2
+IT2110,Hypothesis Testing & Chi-Squared Tests,0.2
+IT2110,Regression & Time Series Analysis,0.2
+IT2100,Soft Skills & Professionalism,0.2
+IT2100,Industry Expectations & Workplace Adaptation,0.2
+IT2100,Job Role Awareness,0.2
+IT2100,Industrial Tools & Technologies,0.2
+IT2100,Ethics & Professional Conduct,0.2
+IT2090,Personal Development & Work Ethics,0.2
+IT2090,Teamwork & Collaboration,0.2
+IT2090,Diversity & Inclusion Awareness,0.2
+IT2090,Legal & Professional Responsibilities,0.2
+IT2090,Intellectual Property & Entrepreneurship,0.2
+IT2080,Project Planning & Requirement Gathering,0.2
+IT2080,Agile Software Development & Scrum Practices,0.2
+IT2080,Team Organization & Collaboration,0.2
+IT2080,Software Testing & User Acceptance,0.2
+IT2080,Documentation & Presentation Skills,0.2
+IT2070,"Stack, Queue & Linked List Implementation",0.2
+IT2070,Tree & Graph Data Structures,0.2
+IT2070,Algorithm Analysis & Asymptotic Notations,0.2
+IT2070,Searching & Sorting Algorithms,0.2
+IT2070,Algorithm Design Techniques,0.2
+IT2010,Mobile App Development Fundamentals,0.2
+IT2010,Android OS & Application Components,0.2
+IT2010,UI/UX Design & Mobile Interface Concepts,0.2
+IT2010,Data Handling & Media Integration,0.2
+IT2010,Application Testing & Security,0.2
+IT3050,Soft Skills & Professionalism,0.2
+IT3050,Industry Expectations & Workplace Adaptation,0.2
+IT3050,Job Role Awareness,0.2
+IT3050,Industrial Tools & Technologies,0.2
+IT3050,Ethics & Professional Conduct,0.2
+IT3030,Web-based Application Development using Java,0.2
+IT3030,"Java Frameworks (JAX-WS, Servlets, JSP)",0.2
+IT3030,RESTful Web Services,0.2
+IT3030,Client-side Development with JavaScript Frameworks,0.2
+IT3030,AngularJS & TypeScript MVC Development,0.2
+IT3071,Neural Networks & Perceptrons,0.2
+IT3071,Convolutional Neural Networks,0.2
+IT3071,"Deep Sequence Models (RNN, LSTM)",0.2
+IT3071,Reinforcement Learning & Q-Learning,0.2
+IT3071,"Optimization Methods (Linear, Stochastic, Genetic)",0.2
+IT3031,Object-Relational Database Design,0.2
+IT3031,XML & Semi-Structured Data,0.2
+IT3031,Indexing & Query Optimization,0.2
+IT3031,Transactions & Concurrency Control,0.2
+IT3031,Crash Recovery Algorithms,0.2
+IT3021,Data Warehousing Architecture,0.2
+IT3021,Dimensional Data Modelling,0.2
+IT3021,ETL/ELT Processes,0.2
+IT3021,OLAP Cube Design,0.2
+IT3021,BI Solution Implementation,0.2
+IT3011,Probability Distributions,0.2
+IT3011,Hypothesis Testing,0.2
+IT3011,Multiple Linear Regression,0.2
+IT3011,Time Series Analysis,0.2
+IT3011,Bayesian Analysis,0.2
+IT3041,Boolean Retrieval & Inverted Indexes,0.2
+IT3041,"Scoring, Term Weighting & Vector Space Model",0.2
+IT3041,Relevance Feedback & Query Expansion,0.2
+IT3041,Text Classification & Naïve Bayes,0.2
+IT3041,Web Analytics & SEO/SEM,0.2
+IT4041,Security Threats Analysis,0.2
+IT4041,Vulnerability Assessment,0.2
+IT4041,Intrusion Detection & Prevention,0.2
+IT4041,Risk Management & Mitigation,0.2
+IT4041,Security Monitoring & Reporting,0.2
+IT4011,DBMS Architecture Analysis,0.2
+IT4011,Database Server Configuration,0.2
+IT4011,Multilevel Access Control Design,0.2
+IT4011,Cloud Database Setup,0.2
+IT4011,Enterprise Storage Solutions,0.2
