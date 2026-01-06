@@ -14,8 +14,11 @@ const API_BASE = 'http://localhost:8000';
  * Parent skills aggregate multiple child skills
  */
 export function ExplainParentSkillPage() {
-  const { studentId, parentSkill } = useParams();
+  const { studentId, parentSkill, skillName } = useParams();
   const navigate = useNavigate();
+  
+  // Support both route patterns: /skills/:skillName/explain and /explain/parent/:parentSkill
+  const actualParentSkill = parentSkill || skillName;
   
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -25,34 +28,28 @@ export function ExplainParentSkillPage() {
 
   useEffect(() => {
     fetchData();
-  }, [studentId, parentSkill]);
+  }, [studentId, actualParentSkill]);
 
   const fetchData = async () => {
     try {
       setLoading(true);
       setError(null);
 
-      // Fetch parent skill info and evidence
-      const [skillRes, evidenceRes] = await Promise.all([
-        fetch(`${API_BASE}/students/${studentId}/skills/parent`),
-        fetch(`${API_BASE}/students/${studentId}/skills/parent/${encodeURIComponent(parentSkill)}/evidence`)
-      ]);
+      // Fetch parent skill explanation (includes summary and evidence)
+      const response = await fetch(`${API_BASE}/students/${studentId}/explain/parent-skill/${encodeURIComponent(actualParentSkill)}`);
 
-      if (!skillRes.ok || !evidenceRes.ok) {
-        throw new Error('Failed to fetch data');
+      if (!response.ok) {
+        throw new Error('Failed to fetch parent skill explanation');
       }
 
-      const skills = await skillRes.json();
-      const evidenceData = await evidenceRes.json();
+      const data = await response.json();
 
-      // Find the specific parent skill
-      const skill = skills.find(s => s.parent_skill === parentSkill);
-      if (!skill) {
+      if (!data.parent_summary) {
         throw new Error('Parent skill not found');
       }
 
-      setSkillData(skill);
-      setEvidence(evidenceData);
+      setSkillData(data.parent_summary);
+      setEvidence(data.evidence || []);
     } catch (err) {
       setError(err.message);
     } finally {
@@ -115,7 +112,7 @@ export function ExplainParentSkillPage() {
             <Award className="w-10 h-10 text-purple-600" />
             <div>
               <h1 className="text-3xl font-bold text-slate-900">How your score is calculated</h1>
-              <p className="text-lg text-slate-600 mt-1">{parentSkill}</p>
+              <p className="text-lg text-slate-600 mt-1">{actualParentSkill}</p>
             </div>
           </div>
         </div>

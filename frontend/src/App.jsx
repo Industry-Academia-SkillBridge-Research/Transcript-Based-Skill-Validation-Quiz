@@ -32,7 +32,9 @@ function App() {
             <Route path="/students/:studentId/upload" element={<UploadPage />} />
             <Route path="/students/:studentId/transcript" element={<TranscriptPage />} />
             <Route path="/students/:studentId/skills" element={<SkillsPage />} />
-            <Route path="/students/:studentId/skills/:skillName/explain" element={<SkillExplainPage />} />
+            {/* Using new explanation page for parent skills */}
+            <Route path="/students/:studentId/skills/:skillName/explain" element={<ExplainParentSkillPage />} />
+            {/* Alternative routes for direct access */}
             <Route path="/students/:studentId/explain/child/:skillName" element={<ExplainChildSkillPage />} />
             <Route path="/students/:studentId/explain/parent/:parentSkill" element={<ExplainParentSkillPage />} />
             <Route path="/students/:studentId/quiz" element={<QuizPage />} />

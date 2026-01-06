@@ -31,27 +31,21 @@ export function ExplainChildSkillPage() {
       setLoading(true);
       setError(null);
 
-      // Fetch skill info and evidence
-      const [skillRes, evidenceRes] = await Promise.all([
-        fetch(`${API_BASE}/students/${studentId}/skills/claimed`),
-        fetch(`${API_BASE}/students/${studentId}/skills/claimed/${encodeURIComponent(skillName)}/evidence`)
-      ]);
+      // Fetch skill explanation (includes summary and evidence)
+      const response = await fetch(`${API_BASE}/students/${studentId}/explain/skill/${encodeURIComponent(skillName)}`);
 
-      if (!skillRes.ok || !evidenceRes.ok) {
-        throw new Error('Failed to fetch data');
+      if (!response.ok) {
+        throw new Error('Failed to fetch skill explanation');
       }
 
-      const skills = await skillRes.json();
-      const evidenceData = await evidenceRes.json();
+      const data = await response.json();
 
-      // Find the specific skill
-      const skill = skills.find(s => s.skill_name === skillName);
-      if (!skill) {
+      if (!data.skill_summary) {
         throw new Error('Skill not found');
       }
 
-      setSkillData(skill);
-      setEvidence(evidenceData);
+      setSkillData(data.skill_summary);
+      setEvidence(data.evidence || []);
     } catch (err) {
       setError(err.message);
     } finally {
@@ -83,10 +77,12 @@ export function ExplainChildSkillPage() {
 
   if (!skillData) return null;
 
-  // Calculate totals
+  // Calculate totals - backend doesn't return evidence_weight, so calculate from displayed score
   const totalContribution = evidence.reduce((sum, e) => sum + (e.contribution || 0), 0);
-  const totalWeight = evidence.reduce((sum, e) => sum + (e.evidence_weight || 0), 0);
-  const calculatedScore = totalWeight > 0 ? (totalContribution / totalWeight) * 100 : 0;
+  // Derive totalWeight from the score formula: score = (contribution / weight) * 100
+  // So: weight = (contribution / score) * 100
+  const totalWeight = skillData.claimed_score > 0 ? (totalContribution / skillData.claimed_score) * 100 : totalContribution;
+  const calculatedScore = skillData.claimed_score; // Use the score from backend
 
   return (
     <div className="min-h-screen bg-slate-50 p-6">
@@ -180,7 +176,6 @@ export function ExplainChildSkillPage() {
                       <th className="text-right py-3 px-3 font-semibold text-slate-700">Credits</th>
                       <th className="text-right py-3 px-3 font-semibold text-slate-700">Recency</th>
                       <th className="text-right py-3 px-3 font-semibold text-slate-700">Relevance</th>
-                      <th className="text-right py-3 px-3 font-semibold text-slate-700">Weight</th>
                       <th className="text-right py-3 px-3 font-semibold text-slate-700">Contribution</th>
                     </tr>
                   </thead>
@@ -194,13 +189,10 @@ export function ExplainChildSkillPage() {
                           </span>
                         </td>
                         <td className="py-3 px-3 text-right text-slate-700">{row.credits}</td>
-                        <td className="py-3 px-3 text-right text-slate-700">{row.recency.toFixed(2)}</td>
-                        <td className="py-3 px-3 text-right text-slate-700">{row.map_weight.toFixed(2)}</td>
-                        <td className="py-3 px-3 text-right font-medium text-purple-600">
-                          {row.evidence_weight.toFixed(2)}
-                        </td>
+                        <td className="py-3 px-3 text-right text-slate-700">{row.recency?.toFixed(2) || 'N/A'}</td>
+                        <td className="py-3 px-3 text-right text-slate-700">{row.map_weight?.toFixed(2) || 'N/A'}</td>
                         <td className="py-3 px-3 text-right font-bold text-blue-600">
-                          {row.contribution.toFixed(2)}
+                          {row.contribution?.toFixed(2) || 'N/A'}
                         </td>
                       </tr>
                     ))}
@@ -208,9 +200,6 @@ export function ExplainChildSkillPage() {
                   <tfoot className="bg-slate-100 border-t-2 border-slate-300">
                     <tr>
                       <td colSpan="5" className="py-3 px-3 text-right font-bold text-slate-800">TOTALS:</td>
-                      <td className="py-3 px-3 text-right font-bold text-purple-700 text-base">
-                        {totalWeight.toFixed(2)}
-                      </td>
                       <td className="py-3 px-3 text-right font-bold text-blue-700 text-base">
                         {totalContribution.toFixed(2)}
                       </td>
@@ -223,9 +212,9 @@ export function ExplainChildSkillPage() {
             )}
 
             <div className="mt-4 text-xs text-slate-600 space-y-1">
-              <p><strong>Recency:</strong> 1.00 = most recent, lower values = older courses</p>
+              <p><strong>Recency:</strong> 1.00 = most recent courses, lower values = older courses</p>
               <p><strong>Relevance:</strong> How strongly this course teaches this skill (0.0 - 1.0)</p>
-              <p><strong>Weight:</strong> Overall importance = Credits × Recency × Relevance</p>
+              <p><strong>Contribution:</strong> How much this course adds to your overall score</p>
             </div>
           </CardContent>
         </Card>
@@ -237,31 +226,17 @@ export function ExplainChildSkillPage() {
           </CardHeader>
           <CardContent className="p-6">
             <div className="space-y-4">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
-                  <div className="text-sm text-blue-700">Total Contribution</div>
-                  <div className="text-3xl font-bold text-blue-900">{totalContribution.toFixed(2)}</div>
-                </div>
-                <div className="bg-purple-50 p-4 rounded-lg border border-purple-200">
-                  <div className="text-sm text-purple-700">Total Weight</div>
-                  <div className="text-3xl font-bold text-purple-900">{totalWeight.toFixed(2)}</div>
-                </div>
+              <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                <div className="text-sm text-blue-700">Total Contribution</div>
+                <div className="text-3xl font-bold text-blue-900">{totalContribution.toFixed(2)}</div>
+                <div className="text-xs text-blue-600 mt-1">Sum of all course contributions</div>
               </div>
 
               <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-5 rounded-xl">
-                <div className="text-sm opacity-90 mb-2">Formula:</div>
-                <div className="font-mono text-base mb-3">
-                  Score = (Total Contribution ÷ Total Weight) × 100
-                </div>
-                <div className="font-mono text-base mb-3">
-                  Score = ({totalContribution.toFixed(2)} ÷ {totalWeight.toFixed(2)}) × 100
-                </div>
-                <div className="font-mono text-base mb-3">
-                  Score = {(totalContribution / totalWeight).toFixed(4)} × 100
-                </div>
-                <div className="pt-3 border-t border-white/30">
-                  <div className="text-sm opacity-90">Your Final Score:</div>
-                  <div className="text-4xl font-bold">{calculatedScore.toFixed(1)}%</div>
+                <div className="text-sm opacity-90 mb-2">Your Score:</div>
+                <div className="text-4xl font-bold mb-3">{calculatedScore.toFixed(1)}%</div>
+                <div className="text-xs opacity-80">
+                  Calculated from {evidence.length} course{evidence.length !== 1 ? 's' : ''} with weighted contributions
                 </div>
               </div>
             </div>
