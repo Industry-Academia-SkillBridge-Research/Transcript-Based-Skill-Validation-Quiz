@@ -1,0 +1,163 @@
+role_key,feature,mean_abs_shap
+ai_ml_engineer,Academic Communication Skills,0.0
+ai_ml_engineer,Advanced Database Design & Management,0.0
+ai_ml_engineer,Computer Systems & Networking,0.0
+ai_ml_engineer,Data Engineering & BI Analytics,0.49420968241257
+ai_ml_engineer,Database Administration & Storage,0.0
+ai_ml_engineer,Database Design & Administration,0.173484565137268
+ai_ml_engineer,Employability & Workplace Readiness,0.0
+ai_ml_engineer,Full-Stack Web Application Development,0.25921392527644627
+ai_ml_engineer,IT Project Management & Execution,0.0
+ai_ml_engineer,Information Retrieval & Web Analytics,0.0
+ai_ml_engineer,Information Security Analytics,0.0
+ai_ml_engineer,Information Systems & Database Design,0.0
+ai_ml_engineer,Java & Object-Oriented Application Development,0.0
+ai_ml_engineer,Machine Learning & Optimization,0.6045247050146378
+ai_ml_engineer,Mathematics & Logical Thinking,0.0
+ai_ml_engineer,Mobile Application Design & Development,0.0
+ai_ml_engineer,Networking & Protocol Management,0.34960722796808913
+ai_ml_engineer,Object-Oriented Design & Programming,0.11704866754748534
+ai_ml_engineer,Operating Systems & System Administration,0.6250583067127996
+ai_ml_engineer,Problem Solving & Algorithm Development,0.0
+ai_ml_engineer,Professionalism & Workplace Readiness,0.018182581592628734
+ai_ml_engineer,Programming Fundamentals & C Language,0.8434909198726106
+ai_ml_engineer,Software Development & Engineering Practices,0.023146023696907013
+ai_ml_engineer,Software Development Processes,0.11912864754108411
+ai_ml_engineer,Statistical Analysis & Data Interpretation,0.0
+ai_ml_engineer,Statistical Modeling & Data Analysis,0.0
+ai_ml_engineer,Web Development & Internet Technologies,0.37882887214196115
+data_analyst,Academic Communication Skills,0.0
+data_analyst,Advanced Database Design & Management,0.0
+data_analyst,Computer Systems & Networking,0.0
+data_analyst,Data Engineering & BI Analytics,0.9125068524123064
+data_analyst,Database Administration & Storage,0.0
+data_analyst,Database Design & Administration,0.9443231447256761
+data_analyst,Employability & Workplace Readiness,0.0
+data_analyst,Full-Stack Web Application Development,0.3910003569839037
+data_analyst,IT Project Management & Execution,0.0
+data_analyst,Information Retrieval & Web Analytics,0.0
+data_analyst,Information Security Analytics,0.0
+data_analyst,Information Systems & Database Design,0.0
+data_analyst,Java & Object-Oriented Application Development,0.0
+data_analyst,Machine Learning & Optimization,0.2500943484920115
+data_analyst,Mathematics & Logical Thinking,0.0
+data_analyst,Mobile Application Design & Development,0.0
+data_analyst,Networking & Protocol Management,0.47782148243711264
+data_analyst,Object-Oriented Design & Programming,1.0199888229007852
+data_analyst,Operating Systems & System Administration,1.2504432268103698
+data_analyst,Problem Solving & Algorithm Development,0.0
+data_analyst,Professionalism & Workplace Readiness,0.00010591010366113333
+data_analyst,Programming Fundamentals & C Language,0.006488264396104175
+data_analyst,Software Development & Engineering Practices,0.9207760289617201
+data_analyst,Software Development Processes,0.3565794257272101
+data_analyst,Statistical Analysis & Data Interpretation,0.0
+data_analyst,Statistical Modeling & Data Analysis,0.0
+data_analyst,Web Development & Internet Technologies,0.13593877299656035
+data_engineer,Academic Communication Skills,0.0
+data_engineer,Advanced Database Design & Management,0.0
+data_engineer,Computer Systems & Networking,0.0
+data_engineer,Data Engineering & BI Analytics,0.673274100103968
+data_engineer,Database Administration & Storage,0.0
+data_engineer,Database Design & Administration,0.606690431311309
+data_engineer,Employability & Workplace Readiness,0.0
+data_engineer,Full-Stack Web Application Development,0.37198834239338086
+data_engineer,IT Project Management & Execution,0.0
+data_engineer,Information Retrieval & Web Analytics,0.0
+data_engineer,Information Security Analytics,0.0
+data_engineer,Information Systems & Database Design,0.0
+data_engineer,Java & Object-Oriented Application Development,0.0
+data_engineer,Machine Learning & Optimization,0.295733987331486
+data_engineer,Mathematics & Logical Thinking,0.0
+data_engineer,Mobile Application Design & Development,0.0
+data_engineer,Networking & Protocol Management,0.0801265957705827
+data_engineer,Object-Oriented Design & Programming,0.18758104842312298
+data_engineer,Operating Systems & System Administration,0.022692925704470186
+data_engineer,Problem Solving & Algorithm Development,0.0
+data_engineer,Professionalism & Workplace Readiness,0.0028911164578889798
+data_engineer,Programming Fundamentals & C Language,0.26903706443091724
+data_engineer,Software Development & Engineering Practices,0.09929592376843117
+data_engineer,Software Development Processes,0.0562836205037897
+data_engineer,Statistical Analysis & Data Interpretation,0.0
+data_engineer,Statistical Modeling & Data Analysis,0.0
+data_engineer,Web Development & Internet Technologies,0.18041017021764047
+devops_engineer,Academic Communication Skills,0.0
+devops_engineer,Advanced Database Design & Management,0.0
+devops_engineer,Computer Systems & Networking,0.0
+devops_engineer,Data Engineering & BI Analytics,0.8062620509303599
+devops_engineer,Database Administration & Storage,0.0
+devops_engineer,Database Design & Administration,0.9379264689842464
+devops_engineer,Employability & Workplace Readiness,0.0
+devops_engineer,Full-Stack Web Application Development,0.04460537925254762
+devops_engineer,IT Project Management & Execution,0.0
+devops_engineer,Information Retrieval & Web Analytics,0.0
+devops_engineer,Information Security Analytics,0.0
+devops_engineer,Information Systems & Database Design,0.0
+devops_engineer,Java & Object-Oriented Application Development,0.0
+devops_engineer,Machine Learning & Optimization,0.5487661472380944
+devops_engineer,Mathematics & Logical Thinking,0.0
+devops_engineer,Mobile Application Design & Development,0.0
+devops_engineer,Networking & Protocol Management,0.9231329367026744
+devops_engineer,Object-Oriented Design & Programming,0.18215129424985818
+devops_engineer,Operating Systems & System Administration,0.36204748131189135
+devops_engineer,Problem Solving & Algorithm Development,0.0
+devops_engineer,Professionalism & Workplace Readiness,0.025163043194504253
+devops_engineer,Programming Fundamentals & C Language,0.3165729141856167
+devops_engineer,Software Development & Engineering Practices,0.12208879374801838
+devops_engineer,Software Development Processes,0.6596738393440558
+devops_engineer,Statistical Analysis & Data Interpretation,0.0
+devops_engineer,Statistical Modeling & Data Analysis,0.0
+devops_engineer,Web Development & Internet Technologies,0.5626148454134539
+software_engineer,Academic Communication Skills,0.0
+software_engineer,Advanced Database Design & Management,0.0
+software_engineer,Computer Systems & Networking,0.0
+software_engineer,Data Engineering & BI Analytics,0.008292999200006907
+software_engineer,Database Administration & Storage,0.0
+software_engineer,Database Design & Administration,0.25822929953191776
+software_engineer,Employability & Workplace Readiness,0.0
+software_engineer,Full-Stack Web Application Development,0.2244987652717309
+software_engineer,IT Project Management & Execution,0.0
+software_engineer,Information Retrieval & Web Analytics,0.0
+software_engineer,Information Security Analytics,0.0
+software_engineer,Information Systems & Database Design,0.0
+software_engineer,Java & Object-Oriented Application Development,0.0
+software_engineer,Machine Learning & Optimization,0.41584175777776317
+software_engineer,Mathematics & Logical Thinking,0.0
+software_engineer,Mobile Application Design & Development,0.0
+software_engineer,Networking & Protocol Management,0.28732756503648854
+software_engineer,Object-Oriented Design & Programming,0.3901025766734533
+software_engineer,Operating Systems & System Administration,0.1200144929441154
+software_engineer,Problem Solving & Algorithm Development,0.0
+software_engineer,Professionalism & Workplace Readiness,0.005622873947309079
+software_engineer,Programming Fundamentals & C Language,0.19648887637376777
+software_engineer,Software Development & Engineering Practices,0.06879028585460016
+software_engineer,Software Development Processes,0.16976327717005
+software_engineer,Statistical Analysis & Data Interpretation,0.0
+software_engineer,Statistical Modeling & Data Analysis,0.0
+software_engineer,Web Development & Internet Technologies,0.48543753513237603
+web_developer,Academic Communication Skills,0.0
+web_developer,Advanced Database Design & Management,0.0
+web_developer,Computer Systems & Networking,0.0
+web_developer,Data Engineering & BI Analytics,0.29360221837335293
+web_developer,Database Administration & Storage,0.0
+web_developer,Database Design & Administration,0.6978318414473892
+web_developer,Employability & Workplace Readiness,0.0
+web_developer,Full-Stack Web Application Development,0.23467062957655915
+web_developer,IT Project Management & Execution,0.0
+web_developer,Information Retrieval & Web Analytics,0.0
+web_developer,Information Security Analytics,0.0
+web_developer,Information Systems & Database Design,0.0
+web_developer,Java & Object-Oriented Application Development,0.0
+web_developer,Machine Learning & Optimization,0.18574513582227817
+web_developer,Mathematics & Logical Thinking,0.0
+web_developer,Mobile Application Design & Development,0.0
+web_developer,Networking & Protocol Management,1.0021196514995567
+web_developer,Object-Oriented Design & Programming,0.3772025711018371
+web_developer,Operating Systems & System Administration,0.16601587154603312
+web_developer,Problem Solving & Algorithm Development,0.0
+web_developer,Professionalism & Workplace Readiness,0.0016394389069837193
+web_developer,Programming Fundamentals & C Language,1.239100286511483
+web_developer,Software Development & Engineering Practices,0.6074550018937629
+web_developer,Software Development Processes,0.4100126637496015
+web_developer,Statistical Analysis & Data Interpretation,0.0
+web_developer,Statistical Modeling & Data Analysis,0.0
+web_developer,Web Development & Internet Technologies,0.7723551256372388

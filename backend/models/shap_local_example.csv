@@ -1,0 +1,13 @@
+feature,feature_value,shap_value,abs_shap,sample_role
+Full-Stack Web Application Development,1,0.11928920710879203,0.11928920710879203,ai_ml_engineer
+Web Development & Internet Technologies,1,0.09685945659758483,0.09685945659758483,ai_ml_engineer
+Software Development & Engineering Practices,1,0.05769676282640799,0.05769676282640799,ai_ml_engineer
+Programming Fundamentals & C Language,1,0.0496838011536539,0.0496838011536539,ai_ml_engineer
+Operating Systems & System Administration,1,0.042839741369254974,0.042839741369254974,ai_ml_engineer
+Professionalism & Workplace Readiness,1,0.03946285521551587,0.03946285521551587,ai_ml_engineer
+Networking & Protocol Management,1,0.03460658339782851,0.03460658339782851,ai_ml_engineer
+Database Design & Administration,1,0.0343499970077601,0.0343499970077601,ai_ml_engineer
+Problem Solving & Algorithm Development,1,0.015357434460903825,0.015357434460903825,ai_ml_engineer
+Employability & Workplace Readiness,1,0.015277272459925316,0.015277272459925316,ai_ml_engineer
+Machine Learning & Optimization,0,-0.020447954137356315,0.020447954137356315,ai_ml_engineer
+Software Development Processes,1,-0.015562583851713987,0.015562583851713987,ai_ml_engineer

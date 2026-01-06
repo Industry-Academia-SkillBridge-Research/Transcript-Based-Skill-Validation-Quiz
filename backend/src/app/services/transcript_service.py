@@ -31,6 +31,68 @@ OUTPUT_DIR = BACKEND_DIR / "output"
 OUTPUT_DIR.mkdir(exist_ok=True)
 
 
+def parse_student_info(text: str) -> Dict:
+    """
+    Parse student information from transcript header.
+    
+    Args:
+        text: Extracted text from transcript
+        
+    Returns:
+        Dictionary with student information
+    """
+    student_info = {
+        "name": None,
+        "program": None,
+        "intake": None,
+        "specialization": None
+    }
+    
+    # Split into lines
+    lines = text.split('\n')
+    
+    for i, line in enumerate(lines):
+        line = line.strip()
+        
+        # Look for NAME OF CANDIDATE
+        if 'NAME OF CANDIDATE' in line.upper():
+            # Name might be on the same line or next line
+            if len(line.split()) > 3:  # Name on same line
+                student_info["name"] = ' '.join(line.split()[3:])
+            elif i + 1 < len(lines):  # Name on next line
+                student_info["name"] = lines[i + 1].strip()
+        
+        # Look for PROGRAMME
+        if 'PROGRAMME' in line.upper() and 'NAME' not in line.upper():
+            # Program might be on the same line or next line
+            if len(line.split()) > 1:  # Program on same line
+                student_info["program"] = ' '.join(line.split()[1:])
+            elif i + 1 < len(lines):  # Program on next line
+                student_info["program"] = lines[i + 1].strip()
+        
+        # Look for FIELD OF SPECIALIZATION
+        if 'FIELD OF SPECIALIZATION' in line.upper():
+            # Specialization might be on the same line or next line
+            if len(line.split()) > 3:  # Specialization on same line
+                student_info["specialization"] = ' '.join(line.split()[3:])
+            elif i + 1 < len(lines):  # Specialization on next line
+                student_info["specialization"] = lines[i + 1].strip()
+        
+        # Look for MONTH & YEAR OF ADMISSION or REGISTRATION DATE
+        if ('MONTH' in line.upper() and 'YEAR' in line.upper() and 'ADMISSION' in line.upper()) or \
+           ('REGISTRATION' in line.upper() and 'DATE' not in line.upper() and 'NO' not in line.upper()):
+            # Intake might be on the same line or next line
+            # Look for month/year pattern
+            if i + 1 < len(lines):
+                next_line = lines[i + 1].strip()
+                # Check if next line has a date pattern (e.g., "October, 2020")
+                if re.search(r'[A-Za-z]+,?\s*\d{4}', next_line):
+                    student_info["intake"] = next_line
+    
+    logger.info(f"Parsed student info: {student_info}")
+    return student_info
+
+
 def extract_text_from_pdf(file_path: Path) -> str:
     """
     Extract text from PDF using PyMuPDF.
@@ -414,8 +476,25 @@ def process_transcript_upload(
     # Extract courses from PDF
     parsed_courses = []
     text = ""
+    student_info = {}
     
     if file_path.suffix.lower() == ".pdf":
+        # Extract text first for student info parsing
+        text = extract_text_from_pdf(file_path)
+        
+        # Parse student information from header
+        student_info = parse_student_info(text)
+        
+        # Update student record with parsed info
+        if student_info.get("name"):
+            student.name = student_info["name"]
+        if student_info.get("program"):
+            student.program = student_info["program"]
+        if student_info.get("intake"):
+            student.intake = student_info["intake"]
+        if student_info.get("specialization"):
+            student.specialization = student_info["specialization"]
+        
         # STEP 1: Try table extraction first
         logger.info("Attempting table extraction...")
         parsed_courses, table_warnings = extract_courses_from_tables(file_path)
@@ -424,13 +503,11 @@ def process_transcript_upload(
         if parsed_courses:
             logger.info(f"Table extraction successful: {len(parsed_courses)} courses found")
             # Save debug info even for table extraction
-            text = f"Table extraction successful. Found {len(parsed_courses)} courses."
             save_debug_text(text, student_id)
             debug_preview = f"Courses extracted from tables: {len(parsed_courses)}"
         else:
             # STEP 2: Fallback to plain text extraction
-            logger.info("Table extraction yielded no results, trying plain text extraction...")
-            text = extract_text_from_pdf(file_path)
+            logger.info("Table extraction yielded no results, using previously extracted text...")
             
             # Log text length
             logger.info(f"Extracted text length (direct): {len(text)} characters")
@@ -438,11 +515,20 @@ def process_transcript_upload(
             # STEP 3: Fallback to OCR if insufficient text
             if len(text.strip()) < 50:
                 warnings.append("Direct text extraction yielded minimal content, attempting OCR")
-                warnings.append("No text extracted, OCR may be required")
                 ocr_text = extract_text_with_ocr(file_path)
                 if ocr_text:
                     text = ocr_text
                     logger.info(f"Extracted text length (OCR): {len(text)} characters")
+                    # Re-parse student info from OCR text
+                    student_info = parse_student_info(text)
+                    if student_info.get("name"):
+                        student.name = student_info["name"]
+                    if student_info.get("program"):
+                        student.program = student_info["program"]
+                    if student_info.get("intake"):
+                        student.intake = student_info["intake"]
+                    if student_info.get("specialization"):
+                        student.specialization = student_info["specialization"]
                 else:
                     warnings.append("OCR extraction also failed or unavailable")
             
@@ -484,6 +570,14 @@ def process_transcript_upload(
             "warnings": warnings,
             "debug_preview": debug_preview
         }
+    
+    # Delete existing courses for this student to avoid duplicates
+    deleted_count = db.query(CourseTaken).filter(
+        CourseTaken.student_id == student_id
+    ).delete()
+    
+    if deleted_count > 0:
+        logger.info(f"Deleted {deleted_count} existing courses for student {student_id}")
     
     # Insert courses into database
     inserted_count = 0

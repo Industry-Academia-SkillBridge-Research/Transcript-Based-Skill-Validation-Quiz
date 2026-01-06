@@ -9,3 +9,4 @@ class Student(Base):
     name = Column(String, nullable=True)
     program = Column(String, nullable=True)
     intake = Column(String, nullable=True)
+    specialization = Column(String, nullable=True)
