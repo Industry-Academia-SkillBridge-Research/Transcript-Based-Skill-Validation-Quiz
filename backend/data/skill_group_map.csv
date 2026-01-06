@@ -1,0 +1,136 @@
+child_skill,parent_skill
+Boolean Algebra & Logic,Mathematics & Logical Thinking
+Number Systems & Computer Arithmetic,Mathematics & Logical Thinking
+Calculus & Differentiation,Mathematics & Logical Thinking
+Integration & Applications,Mathematics & Logical Thinking
+Graph Theory & Matrices,Mathematics & Logical Thinking
+Data Representation & Computer Architecture,Computer Systems & Networking
+Combinational & Sequential Logic Circuits,Computer Systems & Networking
+Operating Systems Basics,Computer Systems & Networking
+Networking Fundamentals & ISO/OSI Layers,Computer Systems & Networking
+IP Addressing & Network Design,Computer Systems & Networking
+Procedural Programming Concepts,Programming Fundamentals & C Language
+Control Structures & Loops,Programming Fundamentals & C Language
+Functions & Recursion,Programming Fundamentals & C Language
+Pointers & Memory Management,Programming Fundamentals & C Language
+"Arrays, Structures & File Handling",Programming Fundamentals & C Language
+Internet & Web Protocols,Web Development & Internet Technologies
+Social Media & Digital Content,Web Development & Internet Technologies
+e-Commerce & Web Security,Web Development & Internet Technologies
+HTML/CSS & UI Design,Web Development & Internet Technologies
+JavaScript/PHP Web Development,Web Development & Internet Technologies
+Information Systems Analysis,Information Systems & Database Design
+Strategic IS & Decision Support,Information Systems & Database Design
+Data Modeling & ER Diagrams,Information Systems & Database Design
+Schema Refinement & Normalization,Information Systems & Database Design
+SQL Database Management (DDL/DML),Information Systems & Database Design
+Academic Writing & Grammar,Academic Communication Skills
+Reading Comprehension,Academic Communication Skills
+Academic Listening & Note-taking,Academic Communication Skills
+Speaking & Presentations,Academic Communication Skills
+"Paraphrasing, Summarizing & Referencing",Academic Communication Skills
+Object-Oriented Programming Fundamentals,Object-Oriented Design & Programming
+"Classes, Objects & Properties",Object-Oriented Design & Programming
+Inheritance & Polymorphism,Object-Oriented Design & Programming
+"Encapsulation, Abstraction & Interfaces",Object-Oriented Design & Programming
+C++ Programming Implementation,Object-Oriented Design & Programming
+Software Engineering Fundamentals,Software Development Processes
+Software Life Cycle Modeling,Software Development Processes
+Requirements Engineering & UML,Software Development Processes
+Software Design & Testing,Software Development Processes
+Agile Development & SCRUM,Software Development Processes
+OS Concepts & Architecture,Operating Systems & System Administration
+Process & Thread Management,Operating Systems & System Administration
+Memory & Virtual Memory Management,Operating Systems & System Administration
+File System & I/O Management,Operating Systems & System Administration
+System Security & Administration Scripting,Operating Systems & System Administration
+Network Device Configuration (Routers/Switches),Networking & Protocol Management
+IP Addressing & Subnetting,Networking & Protocol Management
+Routing & TCP/UDP Protocols,Networking & Protocol Management
+Network Security & ACLs,Networking & Protocol Management
+"VLAN, Spanning Tree & Trunking",Networking & Protocol Management
+Database Design & Conceptual Modeling,Database Design & Administration
+Logical Database Design & Schema Refinement,Database Design & Administration
+SQL Querying & Database Programming,Database Design & Administration
+Database Connectivity (ODBC/JDBC),Database Design & Administration
+Database Security & Performance Optimization,Database Design & Administration
+Java Programming Fundamentals,Java & Object-Oriented Application Development
+Object-Oriented Concepts & Recap,Java & Object-Oriented Application Development
+Exception Handling & Debugging,Java & Object-Oriented Application Development
+"Collections, Generics & Threads",Java & Object-Oriented Application Development
+Design Patterns & Web-based Project,Java & Object-Oriented Application Development
+Functional & Object-Oriented Analysis & Design,Software Development & Engineering Practices
+UML Modeling & Behavioral Modeling,Software Development & Engineering Practices
+"Design Patterns (Creational, Structural, Behavioral)",Software Development & Engineering Practices
+Software Testing & Unit Testing,Software Development & Engineering Practices
+"Supportive Software Processes (Configuration, Version, Release Management)",Software Development & Engineering Practices
+Descriptive & Inferential Statistics,Statistical Analysis & Data Interpretation
+Sampling & Probability Theory,Statistical Analysis & Data Interpretation
+Probability Distributions & Random Variables,Statistical Analysis & Data Interpretation
+Hypothesis Testing & Chi-Squared Tests,Statistical Analysis & Data Interpretation
+Regression & Time Series Analysis,Statistical Analysis & Data Interpretation
+Soft Skills & Professionalism,Employability & Workplace Readiness
+Industry Expectations & Workplace Adaptation,Employability & Workplace Readiness
+Job Role Awareness,Employability & Workplace Readiness
+Industrial Tools & Technologies,Employability & Workplace Readiness
+Ethics & Professional Conduct,Employability & Workplace Readiness
+Personal Development & Work Ethics,Professionalism & Workplace Readiness
+Teamwork & Collaboration,Professionalism & Workplace Readiness
+Diversity & Inclusion Awareness,Professionalism & Workplace Readiness
+Legal & Professional Responsibilities,Professionalism & Workplace Readiness
+Intellectual Property & Entrepreneurship,Professionalism & Workplace Readiness
+Project Planning & Requirement Gathering,IT Project Management & Execution
+Agile Software Development & Scrum Practices,IT Project Management & Execution
+Team Organization & Collaboration,IT Project Management & Execution
+Software Testing & User Acceptance,IT Project Management & Execution
+Documentation & Presentation Skills,IT Project Management & Execution
+"Stack, Queue & Linked List Implementation",Problem Solving & Algorithm Development
+Tree & Graph Data Structures,Problem Solving & Algorithm Development
+Algorithm Analysis & Asymptotic Notations,Problem Solving & Algorithm Development
+Searching & Sorting Algorithms,Problem Solving & Algorithm Development
+Algorithm Design Techniques,Problem Solving & Algorithm Development
+Mobile App Development Fundamentals,Mobile Application Design & Development
+Android OS & Application Components,Mobile Application Design & Development
+UI/UX Design & Mobile Interface Concepts,Mobile Application Design & Development
+Data Handling & Media Integration,Mobile Application Design & Development
+Application Testing & Security,Mobile Application Design & Development
+Web-based Application Development using Java,Full-Stack Web Application Development
+"Java Frameworks (JAX-WS, Servlets, JSP)",Full-Stack Web Application Development
+RESTful Web Services,Full-Stack Web Application Development
+Client-side Development with JavaScript Frameworks,Full-Stack Web Application Development
+AngularJS & TypeScript MVC Development,Full-Stack Web Application Development
+Neural Networks & Perceptrons,Machine Learning & Optimization
+Convolutional Neural Networks,Machine Learning & Optimization
+"Deep Sequence Models (RNN, LSTM)",Machine Learning & Optimization
+Reinforcement Learning & Q-Learning,Machine Learning & Optimization
+"Optimization Methods (Linear, Stochastic, Genetic)",Machine Learning & Optimization
+Object-Relational Database Design,Advanced Database Design & Management
+XML & Semi-Structured Data,Advanced Database Design & Management
+Indexing & Query Optimization,Advanced Database Design & Management
+Transactions & Concurrency Control,Advanced Database Design & Management
+Crash Recovery Algorithms,Advanced Database Design & Management
+Data Warehousing Architecture,Data Engineering & BI Analytics
+Dimensional Data Modelling,Data Engineering & BI Analytics
+ETL/ELT Processes,Data Engineering & BI Analytics
+OLAP Cube Design,Data Engineering & BI Analytics
+BI Solution Implementation,Data Engineering & BI Analytics
+Probability Distributions,Statistical Modeling & Data Analysis
+Hypothesis Testing,Statistical Modeling & Data Analysis
+Multiple Linear Regression,Statistical Modeling & Data Analysis
+Time Series Analysis,Statistical Modeling & Data Analysis
+Bayesian Analysis,Statistical Modeling & Data Analysis
+Boolean Retrieval & Inverted Indexes,Information Retrieval & Web Analytics
+"Scoring, Term Weighting & Vector Space Model",Information Retrieval & Web Analytics
+Relevance Feedback & Query Expansion,Information Retrieval & Web Analytics
+Text Classification & Naïve Bayes,Information Retrieval & Web Analytics
+Web Analytics & SEO/SEM,Information Retrieval & Web Analytics
+Security Threats Analysis,Information Security Analytics
+Vulnerability Assessment,Information Security Analytics
+Intrusion Detection & Prevention,Information Security Analytics
+Risk Management & Mitigation,Information Security Analytics
+Security Monitoring & Reporting,Information Security Analytics
+DBMS Architecture Analysis,Database Administration & Storage
+Database Server Configuration,Database Administration & Storage
+Multilevel Access Control Design,Database Administration & Storage
+Cloud Database Setup,Database Administration & Storage
+Enterprise Storage Solutions,Database Administration & Storage
