@@ -50,6 +50,26 @@ export const getClaimedSkills = async (studentId) => {
   return response.data;
 };
 
+export const getChildSkills = async (studentId) => {
+  const response = await api.get(`/students/${studentId}/skills/claimed`);
+  return response.data;
+};
+
+export const getParentSkills = async (studentId) => {
+  const response = await api.get(`/students/${studentId}/skills/parent`);
+  return response.data;
+};
+
+export const getChildSkillEvidence = async (studentId, skillName) => {
+  const response = await api.get(`/students/${studentId}/skills/claimed/${encodeURIComponent(skillName)}/evidence`);
+  return response.data;
+};
+
+export const getParentSkillEvidence = async (studentId, parentSkill) => {
+  const response = await api.get(`/students/${studentId}/skills/parent/${encodeURIComponent(parentSkill)}/evidence`);
+  return response.data;
+};
+
 // XAI endpoints
 export const getSkillsSummary = async (studentId) => {
   const response = await api.get(`/students/${studentId}/xai/skills/summary`);

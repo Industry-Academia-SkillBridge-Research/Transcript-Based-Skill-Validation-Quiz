@@ -6,6 +6,8 @@ from fastapi import APIRouter, Depends, UploadFile, File, Form, HTTPException
 from sqlalchemy.orm import Session
 from app.db import get_db
 from app.services.transcript_service import process_transcript_upload
+from app.services.skill_scoring import compute_claimed_skills
+from app.services.parent_skill_scoring import compute_parent_claimed_skills
 from app.models.student import Student
 from app.models.course import CourseTaken
 import logging
@@ -30,7 +32,7 @@ async def upload_transcript(
         db: Database session
         
     Returns:
-        Dictionary with parsed courses and warnings
+        Dictionary with parsed courses, warnings, and skill computation summary
     """
     try:
         logger.info(f"Processing transcript upload for student: {student_id}")
@@ -47,6 +49,28 @@ async def upload_transcript(
         
         # Process transcript
         result = process_transcript_upload(db, file, student_id)
+        
+        # Auto-compute skills if courses were successfully parsed
+        if result.get("parsed_courses") and len(result["parsed_courses"]) > 0:
+            logger.info(f"Auto-computing skills for student: {student_id}")
+            
+            try:
+                # Compute child skills
+                child_result = compute_claimed_skills(student_id, db)
+                logger.info(f"Computed {child_result['skills_computed']} child skills")
+                
+                # Compute parent skills
+                parent_result = compute_parent_claimed_skills(student_id, db)
+                logger.info(f"Computed {parent_result['parent_skills_computed']} parent skills")
+                
+                # Add skill computation info to result
+                result["skills_auto_computed"] = {
+                    "child_skills": child_result["skills_computed"],
+                    "parent_skills": parent_result["parent_skills_computed"]
+                }
+            except Exception as e:
+                logger.error(f"Skill computation failed: {e}", exc_info=True)
+                result["warnings"].append(f"Skill computation failed: {str(e)}")
         
         return result
     

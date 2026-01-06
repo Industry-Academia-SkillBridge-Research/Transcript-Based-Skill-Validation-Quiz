@@ -1,201 +1,91 @@
-job_skill_norm,count,parent_skill
-python,122,
-sql,70,
-aws,54,
-ci/cd,51,
-docker,42,
-kubernetes,37,
-azure,37,
-java,37,
-javascript,32,
-git,31,
-etl,30,
-power bi,28,
-react,27,
-terraform,26,
-machine learning,24,
-pytorch,22,
-typescript,22,
-databricks,21,
-data modeling,21,
-go,21,
-bash,21,
-gcp,21,
-jenkins,20,
-tensorflow,19,
-linux,19,
-kafka,17,
-iac,16,
-airflow,15,
-github,15,
-r,15,
-tableau,15,
-prometheus,15,
-nosql,14,
-containerization,14,
-gitlab,14,
-node.js,13,
-grafana,13,
-hadoop,13,
-reporting,13,
-github actions,12,
-pyspark,12,
-spark,12,
-ansible,12,
-postgresql,11,
-google cloud platform,11,
-rag,11,
-mlops,11,
-scala,11,
-data visualization,11,
-numpy,10,
-devops,10,
-excel,10,
-snowflake,10,
-statistics,10,
-s3,10,
-azure data factory,10,
-pandas,9,
-rest api,9,
-c++,9,
-c#,9,
-datadog,9,
-sql server,9,
-redshift,9,
-powershell,9,
-redis,8,
-llm,8,
-deep learning,8,
-microservices,8,
-dbt,8,
-elt,8,
-lambda,8,
-css,8,
-infrastructure as code,8,
-fastapi,7,
-langchain,7,
-next.js,7,
-scikit-learn,7,
-nlp,7,
-apis,7,
-react native,7,
-azure devops,7,
-analytics,7,
-mongodb,7,
-angular,7,
-data warehousing,7,
-gitlab ci,7,
-networking,7,
-iam,7,
-data pipeline,7,
-data integration,7,
-data quality,7,
-business intelligence,7,
-matplotlib,6,
-jira,6,
-continuous integration,6,
-version control,6,
-html,6,
-data analysis,6,
-reinforcement learning,5,
-data pipelines,5,
-computer vision,5,
-seaborn,5,
-generative ai,5,
-bigquery,5,
-mysql,5,
-graphql,5,
-azure synapse,5,
-google cloud,5,
-cloudformation,5,
-restful apis,5,
-html5,5,
-unit testing,5,
-big data,5,
-flink,5,
-microsoft azure,5,
-flask,4,
-mlflow,4,
-django,4,
-serverless,4,
-transformers,4,
-vector databases,4,
-rds,4,
-argocd,4,
-gitops,4,
-elk stack,4,
-data lake,4,
-spring boot,4,
-css3,4,
-php,4,
-redux,4,
-dynamodb,4,
-c,4,
-data governance,4,
-metrics,4,
-monitoring,4,
-distributed systems,4,
-kubeflow,3,
-feature engineering,3,
-neural networks,3,
-keras,3,
-hugging face,3,
-statistical modeling,3,
-langgraph,3,
-prompt engineering,3,
-amazon web services,3,
-ec2,3,
-ecs,3,
-helm,3,
-loki,3,
-ci/cd pipelines,3,
-looker,3,
-ssis,3,
-hive,3,
-hbase,3,
-microsoft fabric,3,
-agile,3,
-apache spark,3,
-spark sql,3,
-sre,3,
-container orchestration,3,
-cloud run,3,
-cloudwatch,3,
-websocket,3,
-selenium,3,
-ios,3,
-android,3,
-design patterns,3,
-golang,3,
-azure storage,3,
-scripting,3,
-swift,3,
-openai,2,
-prefect,2,
-model serving,2,
-large language models,2,
-natural language processing,2,
-transformer,2,
-data processing,2,
-onnx,2,
-cloud deployment,2,
-llms,2,
-embeddings,2,
-tensorrt,2,
-plotly,2,
-thanos,2,
-google data studio,2,
-hdfs,2,
-data factory,2,
-delta lake,2,
-confluence,2,
-servicenow,2,
-qa,2,
-cloud storage,2,
-load balancing,2,
-salesforce,2,
-bitbucket,2,
-circleci,2,
-encryption,2,
-soc 2,2,
-cassandra,2,
+job_skill_normalized,parent_skill
+python,Programming Fundamentals & C Language
+sql,Database Design & Administration
+aws,Software Development Processes
+ci/cd,Software Development Processes
+docker,Software Development Processes
+kubernetes,Software Development Processes
+azure,Software Development Processes
+java,Java & Object-Oriented Application Development
+javascript,Full-Stack Web Application Development
+git,Software Development Processes
+etl,Data Engineering & BI Analytics
+power bi,Data Engineering & BI Analytics
+react,Full-Stack Web Application Development
+terraform,Software Development Processes
+machine learning,Machine Learning & Optimization
+pytorch,Machine Learning & Optimization
+typescript,Full-Stack Web Application Development
+data modeling,Information Systems & Database Design
+go,Software Development & Engineering Practices
+bash,Operating Systems & System Administration
+gcp,Software Development Processes
+databricks,Data Engineering & BI Analytics
+jenkins,Software Development Processes
+tensorflow,Machine Learning & Optimization
+linux,Operating Systems & System Administration
+kafka,Data Engineering & BI Analytics
+iac,Software Development Processes
+airflow,Data Engineering & BI Analytics
+github,Software Development Processes
+r,Statistical Modeling & Data Analysis
+tableau,Data Engineering & BI Analytics
+prometheus,Software Development Processes
+nosql,Database Design & Administration
+containerization,Software Development Processes
+gitlab,Software Development Processes
+node.js,Full-Stack Web Application Development
+grafana,Software Development Processes
+hadoop,Data Engineering & BI Analytics
+reporting,Data Engineering & BI Analytics
+github actions,Software Development Processes
+pyspark,Data Engineering & BI Analytics
+spark,Data Engineering & BI Analytics
+ansible,Software Development Processes
+postgresql,Database Design & Administration
+google cloud platform,Software Development Processes
+rag,Information Retrieval & Web Analytics
+mlops,Machine Learning & Optimization
+scala,Software Development & Engineering Practices
+data visualization,Data Engineering & BI Analytics
+numpy,Statistical Modeling & Data Analysis
+devops,Software Development Processes
+excel,Data Engineering & BI Analytics
+snowflake,Data Engineering & BI Analytics
+statistics,Statistical Analysis & Data Interpretation
+s3,Software Development Processes
+azure data factory,Data Engineering & BI Analytics
+pandas,Statistical Modeling & Data Analysis
+rest api,Software Development & Engineering Practices
+c++,Object-Oriented Design & Programming
+c#,Object-Oriented Design & Programming
+datadog,Software Development Processes
+sql server,Database Design & Administration
+redshift,Data Engineering & BI Analytics
+powershell,Operating Systems & System Administration
+redis,Database Design & Administration
+llm,Machine Learning & Optimization
+deep learning,Machine Learning & Optimization
+microservices,Software Development & Engineering Practices
+dbt,Data Engineering & BI Analytics
+elt,Data Engineering & BI Analytics
+lambda,Software Development Processes
+css,Full-Stack Web Application Development
+infrastructure as code,Software Development Processes
+fastapi,Software Development & Engineering Practices
+langchain,Information Retrieval & Web Analytics
+next.js,Full-Stack Web Application Development
+scikit-learn,Machine Learning & Optimization
+nlp,Machine Learning & Optimization
+apis,Software Development & Engineering Practices
+react native,Mobile Application Design & Development
+azure devops,Software Development Processes
+analytics,Statistical Analysis & Data Interpretation
+mongodb,Database Design & Administration
+angular,Full-Stack Web Application Development
+data warehousing,Data Engineering & BI Analytics
+gitlab ci,Software Development Processes
+networking,Networking & Protocol Management
+iam,Information Security Analytics
+data pipeline,Data Engineering & BI Analytics
+data integration,Data Engineering & BI Analytics

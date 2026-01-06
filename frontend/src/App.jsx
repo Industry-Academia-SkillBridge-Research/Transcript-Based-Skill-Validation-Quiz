@@ -3,6 +3,8 @@ import UploadPage from './pages/UploadPage';
 import TranscriptPage from './pages/TranscriptPage';
 import SkillsPage from './pages/SkillsPage';
 import { SkillExplainPage } from './pages/SkillExplainPage';
+import { ExplainChildSkillPage } from './pages/ExplainChildSkillPage';
+import { ExplainParentSkillPage } from './pages/ExplainParentSkillPage';
 import QuizPage from './pages/QuizPage';
 import ResultsPage from './pages/ResultsPage';
 
@@ -30,7 +32,11 @@ function App() {
             <Route path="/students/:studentId/upload" element={<UploadPage />} />
             <Route path="/students/:studentId/transcript" element={<TranscriptPage />} />
             <Route path="/students/:studentId/skills" element={<SkillsPage />} />
-            <Route path="/students/:studentId/skills/:skillName/explain" element={<SkillExplainPage />} />
+            {/* Using new explanation page for parent skills */}
+            <Route path="/students/:studentId/skills/:skillName/explain" element={<ExplainParentSkillPage />} />
+            {/* Alternative routes for direct access */}
+            <Route path="/students/:studentId/explain/child/:skillName" element={<ExplainChildSkillPage />} />
+            <Route path="/students/:studentId/explain/parent/:parentSkill" element={<ExplainParentSkillPage />} />
             <Route path="/students/:studentId/quiz" element={<QuizPage />} />
             <Route path="/students/:studentId/results/:attemptId" element={<ResultsPage />} />
           </Routes>
