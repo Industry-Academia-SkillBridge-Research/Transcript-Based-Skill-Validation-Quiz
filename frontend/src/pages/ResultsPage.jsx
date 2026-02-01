@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
-import { Award, TrendingUp, Lock, ChevronDown, ChevronUp, Info } from "lucide-react";
+import { Award, TrendingUp, ChevronDown, ChevronUp, Info } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/Table";
@@ -228,24 +228,6 @@ export default function ResultsPage() {
         </CardContent>
       </Card>
 
-      <Card className="border-muted">
-        <CardHeader>
-          <CardTitle className="flex items-center gap-2 text-muted-foreground">
-            <Lock className="h-5 w-5" />
-            Role Recommendations
-          </CardTitle>
-          <CardDescription>
-            Feature coming soon
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <Button disabled variant="secondary" className="w-full" size="lg">
-            <Lock className="mr-2 h-4 w-4" />
-            Recommend Roles (Coming Soon)
-          </Button>
-        </CardContent>
-      </Card>
-
       <div className="flex justify-between">
         <Button
           variant="outline"
@@ -253,11 +235,19 @@ export default function ResultsPage() {
         >
           Take Another Quiz
         </Button>
-        <Button
-          onClick={() => navigate(`/students/${studentId}/transcript`)}
-        >
-          Back to Dashboard
-        </Button>
+        <div className="flex gap-3">
+          <Button
+            variant="outline"
+            onClick={() => navigate(`/students/${studentId}/portfolio`)}
+          >
+            View Portfolio
+          </Button>
+          <Button
+            onClick={() => navigate(`/students/${studentId}/transcript`)}
+          >
+            Back to Dashboard
+          </Button>
+        </div>
       </div>
     </div>
   );

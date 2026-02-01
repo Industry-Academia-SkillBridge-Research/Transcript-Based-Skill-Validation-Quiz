@@ -13,6 +13,7 @@ from sqlalchemy import func
 from sqlalchemy.exc import IntegrityError
 
 from ..models.question_bank import QuestionBank
+from ..services.question_persistence import export_questions_to_json
 from ..models.skill_group_map import SkillGroupMap
 from .ollama_client import generate_mcq
 
@@ -123,6 +124,14 @@ def generate_bank_for_skills(
                     db.rollback()
         
         stats["per_skill"][skill_name] = skill_stats
+    
+    # Auto-backup all questions to JSON after generation
+    try:
+        logger.info("Auto-backing up questions to JSON...")
+        backup_result = export_questions_to_json(db)
+        logger.info(f"Backup complete: {backup_result['total_exported']} questions saved to JSON")
+    except Exception as e:
+        logger.warning(f"Failed to auto-backup questions to JSON: {str(e)}")
     
     return stats
 

@@ -7,6 +7,7 @@ from .question_bank import QuestionBank
 from .quiz_answer import QuizAnswer
 from .skill_profile_verified_parent import SkillProfileVerifiedParent
 from .skill_profile_final_parent import SkillProfileFinalParent
+from .student_skill_portfolio import StudentSkillPortfolio
 
 __all__ = [
     "Student",
@@ -25,4 +26,5 @@ __all__ = [
     "QuizAnswer",
     "SkillProfileVerifiedParent",
     "SkillProfileFinalParent",
+    "StudentSkillPortfolio",
 ]

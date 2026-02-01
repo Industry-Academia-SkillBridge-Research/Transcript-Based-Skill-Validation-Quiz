@@ -1,0 +1,38 @@
+{
+  "skill_name": "Object-Oriented Design & Programming",
+  "questions": [
+    {
+      "skill_name": "Object-Oriented Design & Programming",
+      "difficulty": "easy",
+      "question_text": "What is the primary purpose of encapsulation in object-oriented programming?",
+      "options_json": "{\"A\": \"To reduce code duplication\", \"B\": \"To hide internal implementation details from external interfaces\", \"C\": \"To improve performance by reducing memory usage\", \"D\": \"To simplify debugging\"}",
+      "correct_option": "B",
+      "explanation": "Encapsulation is used to hide the internal implementation details of an object from its external interfaces, promoting data hiding and abstraction."
+    },
+    {
+      "skill_name": "Object-Oriented Design & Programming",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of encapsulation in object-oriented programming?",
+      "options_json": "{\"A\": \"To improve code readability by hiding implementation details.\", \"B\": \"To increase modularity and reusability of code.\", \"C\": \"To reduce coupling between classes and objects.\", \"D\": \"None of the above.\"}",
+      "correct_option": "C",
+      "explanation": "Encapsulation reduces coupling by hiding internal implementation details, making it easier to modify or replace individual components without affecting other parts of the system."
+    },
+    {
+      "skill_name": "Object-Oriented Design & Programming",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of an abstract class in C++?",
+      "options_json": "{\"A\": \"To provide a common interface for related classes\", \"B\": \"To declare a class that cannot be instantiated directly\", \"C\": \"To define a class with both data and methods\", \"D\": \"To inherit properties from a base class\"}",
+      "correct_option": "B",
+      "explanation": "An abstract class in C++ is declared as 'abstract' using the 'abstract' keyword, which prevents it from being instantiated directly. This allows for inheritance of its properties and methods by other classes."
+    },
+    {
+      "skill_name": "Object-Oriented Design & Programming",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of using abstract classes in C++?",
+      "options_json": "{\"A\": \"To provide a common interface for related classes\", \"B\": \"To enable runtime polymorphism through function overriding\", \"C\": \"To encapsulate data and behavior, promoting code reuse\", \"D\": \"To implement the Singleton design pattern\"}",
+      "correct_option": "A",
+      "explanation": "Abstract classes in C++ provide a common interface for related classes, allowing for polymorphism and facilitating code reuse through inheritance."
+    }
+  ],
+  "total_questions": 4
+}
