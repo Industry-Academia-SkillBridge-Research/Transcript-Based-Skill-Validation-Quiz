@@ -1,0 +1,94 @@
+{
+  "skill_name": "Programming Fundamentals & C Language",
+  "questions": [
+    {
+      "skill_name": "Programming Fundamentals & C Language",
+      "difficulty": "easy",
+      "question_text": "What does the following code snippet do? int x = 5; *ptr = x;",
+      "options_json": "{\"A\": \"It assigns the value of x to the memory location pointed by ptr.\", \"B\": \"It increments the value stored in the memory location pointed by ptr by x.\", \"C\": \"It decrements the value stored in the memory location pointed by ptr by x.\", \"D\": \"It allocates new memory for x and assigns it to ptr.\"}",
+      "correct_option": "A",
+      "explanation": "This code snippet uses pointer dereferencing to assign the value of x to the memory location pointed by ptr. This is a fundamental concept in C programming, where pointers are used to indirectly access and modify memory locations."
+    },
+    {
+      "skill_name": "Programming Fundamentals & C Language",
+      "difficulty": "easy",
+      "question_text": "What does the pointer operator '*' do in a C program?",
+      "options_json": "{\"A\": \"It increments the value of a variable.\", \"B\": \"It decrements the value of a variable.\", \"C\": \"It returns the memory address stored in a pointer.\", \"D\": \"It dereferences the memory address stored in a pointer.\"}",
+      "correct_option": "D",
+      "explanation": "The '*' operator is used to dereference the memory address stored in a pointer, returning the value stored at that location. This is essential for accessing and manipulating data in C programs."
+    },
+    {
+      "skill_name": "Programming Fundamentals & C Language",
+      "difficulty": "medium",
+      "question_text": "What happens when a pointer is assigned the address of another variable in C?",
+      "options_json": "{\"A\": \"The original variable's value is changed.\", \"B\": \"The new variable now points to the same memory location as the original variable.\", \"C\": \"The pointer becomes invalid and cannot be used.\", \"D\": \"The program crashes immediately.\"}",
+      "correct_option": "B",
+      "explanation": "When a pointer is assigned the address of another variable, both variables now point to the same memory location. This allows for shared access to the data stored in that location."
+    },
+    {
+      "skill_name": "Programming Fundamentals & C Language",
+      "difficulty": "medium",
+      "question_text": "What will be printed when the following code is executed?\nint x = 10;\nwhile (x > 0) {\n    printf(\"%d\", x);\n    --x;\n}\nprintf(\"\n\");",
+      "options_json": "{\"A\": \"1010101\\n\", \"B\": \"0123456\\n\", \"C\": \"1234567\\n\", \"D\": \"9876543\\n\"}",
+      "correct_option": "A",
+      "explanation": "The while loop will decrement the value of x and print it until x becomes zero. The correct output is a string consisting of decreasing numbers from 10 to 1."
+    },
+    {
+      "skill_name": "Programming Fundamentals & C Language",
+      "difficulty": "hard",
+      "question_text": "What happens when a pointer is assigned the address of another variable in C?",
+      "options_json": "{\"A\": \"The original variable's value is changed.\", \"B\": \"A copy of the original variable's value is made.\", \"C\": \"The pointer becomes invalid and points to garbage memory.\", \"D\": \"The pointer now points to a new location in memory.\"}",
+      "correct_option": "D",
+      "explanation": "When a pointer is assigned the address of another variable, it simply gets updated with the new memory address. It does not change the value of the original variable or make a copy of its value."
+    },
+    {
+      "skill_name": "Programming Fundamentals & C Language",
+      "difficulty": "hard",
+      "question_text": "What will be the output of the following C code snippet?\n\nint main() {\n    int arr[5] = {1, 2, 3, 4, 5};\n    printf(\"%d %d\", arr[0], *(arr + 1));\n    return 0;\n}",
+      "options_json": "{\"A\": \"1 2\", \"B\": \"2 1\", \"C\": \"Segmentation fault\", \"D\": \"Array out of bounds error\"}",
+      "correct_option": "A",
+      "explanation": "The code snippet uses both array indexing and pointer arithmetic to access the first two elements of the array. The correct output is '1 2'."
+    },
+    {
+      "skill_name": "Programming Fundamentals & C Language",
+      "difficulty": "easy",
+      "question_text": "What does the following code snippet do? int x = 5; int *ptr = &x;",
+      "options_json": "{\"A\": \"Assigns the value of x to ptr\", \"B\": \"Assigns the address of x to ptr\", \"C\": \"Assigns the value of ptr to x\", \"D\": \"Declares a function pointer\"}",
+      "correct_option": "B",
+      "explanation": "The code assigns the memory address of x to the pointer ptr. This is an example of pointer assignment in C."
+    },
+    {
+      "skill_name": "Programming Fundamentals & C Language",
+      "difficulty": "medium",
+      "question_text": "What does the following C function do? int* swap(int* a, int* b) { int temp = *a; *a = *b; *b = temp; return a; }",
+      "options_json": "{\"A\": \"It swaps the values of two integers and returns the first integer.\", \"B\": \"It swaps the values of two integers and returns the second integer.\", \"C\": \"It swaps the values of two integers but does not return anything.\", \"D\": \"It takes three arguments, an array and two indices.\"}",
+      "correct_option": "A",
+      "explanation": "This function correctly swaps the values of two integers using a temporary variable. It then returns the first integer, which is the swapped value."
+    },
+    {
+      "skill_name": "Programming Fundamentals & C Language",
+      "difficulty": "medium",
+      "question_text": "What will be the output of the following C code snippet?",
+      "options_json": "{\"A\": \"Hello, World!\", \"B\": \"Error: Memory not allocated.\", \"C\": \"Segmentation Fault.\", \"D\": \"Program will run indefinitely.\"}",
+      "correct_option": "A",
+      "explanation": "The code snippet is a simple C program that prints 'Hello, World!' to the console. The correct option A is the output of this program when executed."
+    },
+    {
+      "skill_name": "Programming Fundamentals & C Language",
+      "difficulty": "hard",
+      "question_text": "What happens when you pass a pointer to a local variable as an argument to a function in C?",
+      "options_json": "{\"A\": \"The pointer becomes invalid and points to garbage memory.\", \"B\": \"The function can modify the original value of the variable, but only until it returns.\", \"C\": \"The function creates a copy of the local variable and assigns the address of the copy to the pointer.\", \"D\": \"The function cannot access the original variable because it has gone out of scope.\"}",
+      "correct_option": "A",
+      "explanation": "When you pass a pointer to a local variable as an argument, the local variable is destroyed when the function returns. The pointer then points to garbage memory, leading to undefined behavior."
+    },
+    {
+      "skill_name": "Programming Fundamentals & C Language",
+      "difficulty": "hard",
+      "question_text": "What happens when a pointer is assigned to another pointer in C?",
+      "options_json": "{\"A\": \"The memory location of the first pointer is copied into the second pointer.\", \"B\": \"Both pointers now point to the same memory location.\", \"C\": \"The value at the memory location pointed by the first pointer is copied into the second pointer.\", \"D\": \"None of the above.\"}",
+      "correct_option": "B",
+      "explanation": "When a pointer is assigned to another pointer, both pointers now point to the same memory location. This is because assignment in C only copies the value of the pointer, not the data it points to."
+    }
+  ],
+  "total_questions": 11
+}

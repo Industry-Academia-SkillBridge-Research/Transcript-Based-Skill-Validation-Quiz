@@ -6,6 +6,7 @@ Handles quiz answer validation, scoring, and skill profile updates.
 
 import logging
 from typing import List, Dict
+from datetime import datetime
 from sqlalchemy.orm import Session
 from sqlalchemy.exc import IntegrityError
 from collections import defaultdict
@@ -15,6 +16,7 @@ from ..models.quiz_answer import QuizAnswer
 from ..models.skill_profile_verified_parent import SkillProfileVerifiedParent
 from ..models.skill_profile_final_parent import SkillProfileFinalParent
 from ..models.skill import SkillProfileParentClaimed
+from ..models.student_skill_portfolio import StudentSkillPortfolio
 
 logger = logging.getLogger(__name__)
 
@@ -221,6 +223,39 @@ def score_quiz_attempt(
             "parent_skill": skill_name,
             "verified_level": verified_level
         })
+        
+        # Upsert into StudentSkillPortfolio
+        portfolio_entry = db.query(StudentSkillPortfolio).filter(
+            StudentSkillPortfolio.student_id == student_id,
+            StudentSkillPortfolio.skill_name == skill_name
+        ).first()
+        
+        if portfolio_entry:
+            # Update existing entry
+            portfolio_entry.claimed_score = claimed_score
+            portfolio_entry.verified_score = verified_score
+            portfolio_entry.quiz_weight = w_quiz
+            portfolio_entry.claimed_weight = w_claimed
+            portfolio_entry.final_score = final_score
+            portfolio_entry.final_level = final_level
+            portfolio_entry.correct_count = correct_qs
+            portfolio_entry.total_questions = total_qs
+            portfolio_entry.updated_at = datetime.utcnow()
+        else:
+            # Create new entry
+            portfolio_entry = StudentSkillPortfolio(
+                student_id=student_id,
+                skill_name=skill_name,
+                claimed_score=claimed_score,
+                verified_score=verified_score,
+                quiz_weight=w_quiz,
+                claimed_weight=w_claimed,
+                final_score=final_score,
+                final_level=final_level,
+                correct_count=correct_qs,
+                total_questions=total_qs
+            )
+            db.add(portfolio_entry)
     
     # Commit all changes
     db.commit()

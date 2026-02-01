@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { CheckCircle2, ArrowRight } from "lucide-react";
+import { CheckCircle2, ArrowRight, Briefcase } from "lucide-react";
 import { getClaimedSkills, planQuiz } from "@/api/api";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
@@ -162,7 +162,16 @@ export default function SkillsPage() {
         </CardContent>
       </Card>
 
-      <div className="flex justify-end pt-2">
+      <div className="flex justify-end pt-2 gap-3">
+        <Button
+          variant="outline"
+          onClick={() => navigate(`/students/${studentId}/jobs`)}
+          className="gap-2"
+          size="lg"
+        >
+          <Briefcase className="h-5 w-5" />
+          View Job Matches
+        </Button>
         {submitting ? (
           <div className="flex items-center gap-2 text-muted-foreground">
             <Spinner className="h-5 w-5" />

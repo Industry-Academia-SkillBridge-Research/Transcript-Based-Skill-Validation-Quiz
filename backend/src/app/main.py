@@ -10,7 +10,10 @@ from .routes import (
     quiz_router,
     admin_question_bank_router,
     admin_question_persistence_router,
-    xai_router
+    xai_router,
+    jobs_router,
+    job_router,
+    profile_router
 )
 
 app = FastAPI(title="Transcript Skill Validation API")
@@ -35,6 +38,9 @@ app.include_router(quiz_router)
 app.include_router(admin_question_bank_router)
 app.include_router(admin_question_persistence_router)
 app.include_router(xai_router)
+app.include_router(jobs_router)
+app.include_router(job_router)
+app.include_router(profile_router)
 
 @app.get("/health")
 def health():

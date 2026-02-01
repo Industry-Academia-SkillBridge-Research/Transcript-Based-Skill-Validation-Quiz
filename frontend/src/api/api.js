@@ -103,4 +103,48 @@ export const submitQuiz = async (studentId, attemptId, answers) => {
   return response.data;
 };
 
+// Job Recommendation endpoints
+export const getJobRecommendations = async (studentId, params = {}) => {
+  const response = await api.get(`/students/${studentId}/jobs/recommend`, {
+    params: {
+      top_k: params.topK || 10,
+      threshold: params.threshold || 70,
+      role_key: params.roleKey || undefined
+    }
+  });
+  return response.data;
+};
+
+export const getJobDetails = async (jobId) => {
+  const response = await api.get(`/jobs/${jobId}`);
+  return response.data;
+};
+
+// Portfolio endpoints
+export const getStudentPortfolio = async (studentId) => {
+  const response = await api.get(`/students/${studentId}/profile/portfolio`);
+  return response.data;
+};
+
+export const getStudentProfile = async (studentId) => {
+  const response = await api.get(`/students/${studentId}/profile`);
+  return response.data;
+};
+
+export const updateStudentProfile = async (studentId, profileData) => {
+  const response = await api.put(`/students/${studentId}/profile`, profileData);
+  return response.data;
+};
+
+export const uploadProfilePhoto = async (studentId, file) => {
+  const formData = new FormData();
+  formData.append('file', file);
+  const response = await api.post(`/students/${studentId}/profile/photo`, formData, {
+    headers: {
+      'Content-Type': 'multipart/form-data',
+    },
+  });
+  return response.data;
+};
+
 export default api;
