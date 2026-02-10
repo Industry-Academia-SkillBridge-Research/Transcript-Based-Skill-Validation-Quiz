@@ -1,0 +1,54 @@
+{
+  "skill_name": "JavaScript",
+  "questions": [
+    {
+      "skill_name": "JavaScript",
+      "difficulty": "easy",
+      "question_text": "What does the JavaScript function `parseInt()` do?",
+      "options_json": "{\"A\": \"It converts a string to an integer.\", \"B\": \"It converts a number to a string.\", \"C\": \"It rounds a number to the nearest whole number.\", \"D\": \"It generates a random number between 0 and 1.\"}",
+      "correct_option": "A",
+      "explanation": "The `parseInt()` function takes a string as an argument and returns its integer value. For example, `parseInt('123')` would return the number 123."
+    },
+    {
+      "skill_name": "JavaScript",
+      "difficulty": "easy",
+      "question_text": "What does the 'let' keyword do in JavaScript?",
+      "options_json": "{\"A\": \"Declares a global variable\", \"B\": \"Declares a local variable that can be reassigned\", \"C\": \"Declares a constant variable\", \"D\": \"Is used for function declaration\"}",
+      "correct_option": "B",
+      "explanation": "The 'let' keyword is used to declare a block-scoped local variable. It allows the variable to be reassigned, unlike 'const'."
+    },
+    {
+      "skill_name": "JavaScript",
+      "difficulty": "medium",
+      "question_text": "What does the 'let' keyword do in JavaScript?",
+      "options_json": "{\"A\": \"Declares a global variable\", \"B\": \"Declares a local variable with block scope\", \"C\": \"Declares a function\", \"D\": \"Declares an object\"}",
+      "correct_option": "B",
+      "explanation": "The 'let' keyword is used to declare a local variable with block scope, meaning it can only be accessed within the current block of code. This helps prevent variable hoisting and makes the code more predictable."
+    },
+    {
+      "skill_name": "JavaScript",
+      "difficulty": "medium",
+      "question_text": "What does the 'this' keyword refer to in a JavaScript function?",
+      "options_json": "{\"A\": \"The global object (window or global)\", \"B\": \"The current function's context\", \"C\": \"The parent element of the function's caller\", \"D\": \"The browser's console\"}",
+      "correct_option": "B",
+      "explanation": "In JavaScript, 'this' refers to the current function's context. This means it points to the object that called the function."
+    },
+    {
+      "skill_name": "JavaScript",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the 'this' keyword in JavaScript?",
+      "options_json": "{\"A\": \"To refer to a global variable\", \"B\": \"To refer to a function's local variables\", \"C\": \"To refer to an object's properties and methods\", \"D\": \"To create a new scope for variables\"}",
+      "correct_option": "C",
+      "explanation": "The 'this' keyword in JavaScript is used to refer to the current object being executed, allowing access to its properties and methods. This is particularly useful when working with objects and their methods."
+    },
+    {
+      "skill_name": "JavaScript",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the 'let' keyword in JavaScript?",
+      "options_json": "{\"A\": \"To declare a global variable\", \"B\": \"To declare a block-scoped local variable\", \"C\": \"To declare a function parameter\", \"D\": \"To declare an object property\"}",
+      "correct_option": "B",
+      "explanation": "The 'let' keyword is used to declare a block-scoped local variable, which means its scope is limited to the current block of code. This helps prevent variable hoisting and makes the code more predictable."
+    }
+  ],
+  "total_questions": 6
+}

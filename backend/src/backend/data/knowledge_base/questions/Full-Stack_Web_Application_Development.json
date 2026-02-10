@@ -1,0 +1,126 @@
+{
+  "skill_name": "Full-Stack Web Application Development",
+  "questions": [
+    {
+      "skill_name": "Full-Stack Web Application Development",
+      "difficulty": "easy",
+      "question_text": "What is the primary purpose of using JAX-WS in a Java-based web application?",
+      "options_json": "{\"A\": \"To handle database connections\", \"B\": \"To create RESTful web services\", \"C\": \"To manage user authentication and authorization\", \"D\": \"To optimize server performance\"}",
+      "correct_option": "B",
+      "explanation": "JAX-WS is used to create RESTful web services, allowing for the creation of stateless APIs that can be consumed by clients. This enables developers to build scalable and maintainable web applications."
+    },
+    {
+      "skill_name": "Full-Stack Web Application Development",
+      "difficulty": "easy",
+      "question_text": "What Java framework is used for building RESTful web services?",
+      "options_json": "{\"A\": \"JAX-RS\", \"B\": \"JAX-WS\", \"C\": \"Spring MVC\", \"D\": \"Play Framework\"}",
+      "correct_option": "A",
+      "explanation": "JAX-RS is a Java API for RESTful Web Services, used to build RESTful web services. It provides annotations and APIs to simplify the development of RESTful web services."
+    },
+    {
+      "skill_name": "Full-Stack Web Application Development",
+      "difficulty": "easy",
+      "question_text": "What Java framework is used for creating RESTful web services?",
+      "options_json": "{\"A\": \"JAX-RS\", \"B\": \"Spring MVC\", \"C\": \"Struts\", \"D\": \"Vaadin\"}",
+      "correct_option": "A",
+      "explanation": "JAX-RS is a Java API for RESTful Web Services, which allows developers to create RESTful web services. It provides annotations and APIs for creating resources, methods, and other components of a RESTful service."
+    },
+    {
+      "skill_name": "Full-Stack Web Application Development",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of using JAX-WS in a Java-based web application?",
+      "options_json": "{\"A\": \"To handle database connections\", \"B\": \"To create RESTful web services\", \"C\": \"To manage session data\", \"D\": \"To perform file uploads\"}",
+      "correct_option": "B",
+      "explanation": "JAX-WS is used to create RESTful web services, allowing for the creation of web APIs that can be consumed by clients. This enables developers to build scalable and maintainable web applications."
+    },
+    {
+      "skill_name": "Full-Stack Web Application Development",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of using JAX-WS in a Java web application?",
+      "options_json": "{\"A\": \"To handle RESTful web services\", \"B\": \"To create SOAP-based web services\", \"C\": \"To implement server-side logic with Servlets and JSP\", \"D\": \"To develop client-side applications with JavaScript\"}",
+      "correct_option": "B",
+      "explanation": "JAX-WS is primarily used for creating SOAP-based web services in Java, allowing for interoperability between different systems. This is particularly useful when working with legacy systems or those that require a specific protocol."
+    },
+    {
+      "skill_name": "Full-Stack Web Application Development",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of using a Java Framework like JAX-WS in building RESTful web services?",
+      "options_json": "{\"A\": \"To simplify client-side development with JavaScript frameworks\", \"B\": \"To enable the creation of stateless, scalable web services\", \"C\": \"To provide a way to connect to databases using SQL queries\", \"D\": \"To handle user authentication and authorization\"}",
+      "correct_option": "B",
+      "explanation": "JAX-WS enables the creation of stateless, scalable web services by providing a standard interface for building RESTful APIs. This allows developers to create web services that can be easily consumed by clients without worrying about the underlying infrastructure."
+    },
+    {
+      "skill_name": "Full-Stack Web Application Development",
+      "difficulty": "hard",
+      "question_text": "When using JAX-WS in a Java web application, which annotation is used to specify the endpoint URL for a web service?",
+      "options_json": "{\"A\": \"@WebService\", \"B\": \"@WebEndpoint\", \"C\": \"@Path\", \"D\": \"@WebServiceClient\"}",
+      "correct_option": "C",
+      "explanation": "The @Path annotation is used to specify the endpoint URL for a web service in JAX-WS. This allows clients to access the web service at the specified URL."
+    },
+    {
+      "skill_name": "Full-Stack Web Application Development",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of using JAX-WS in a Java-based web application?",
+      "options_json": "{\"A\": \"To create RESTful web services\", \"B\": \"To handle HTTP requests and responses\", \"C\": \"To implement business logic for the application\", \"D\": \"To provide a framework for building web applications\"}",
+      "correct_option": "A",
+      "explanation": "JAX-WS is primarily used to create RESTful web services, which enable communication between clients and servers using standardized APIs. This allows developers to build scalable and maintainable web applications."
+    },
+    {
+      "skill_name": "Full-Stack Web Application Development",
+      "difficulty": "hard",
+      "question_text": "When using AngularJS with TypeScript, which of the following is a correct way to inject a service into an MVC controller?",
+      "options_json": "{\"A\": \"Using the @Inject decorator in the controller's constructor\", \"B\": \"Using the $inject property on the controller function\", \"C\": \"Using the Angular.module('myApp').controller() method with dependencies\", \"D\": \"Using the TypeScript 'class' keyword to define the controller\"}",
+      "correct_option": "A",
+      "explanation": "The @Inject decorator is used in AngularJS to inject services into controllers. This allows for dependency injection and makes the code more maintainable."
+    },
+    {
+      "skill_name": "Full-Stack Web Application Development",
+      "difficulty": "hard",
+      "question_text": "Which Java framework is used for building RESTful web services?",
+      "options_json": "{\"A\": \"JAX-RS\", \"B\": \"Spring MVC\", \"C\": \"JSP\", \"D\": \"Servlets\"}",
+      "correct_option": "A",
+      "explanation": "JAX-RS is a Java API for RESTful Web Services, used to build RESTful web services. It provides annotations and APIs for building RESTful web services."
+    },
+    {
+      "skill_name": "Full-Stack Web Application Development",
+      "difficulty": "hard",
+      "question_text": "When using JAX-WS in a Java web application, which annotation is used to map a Java method to a specific SOAP operation?",
+      "options_json": "{\"A\": \"@WebService\", \"B\": \"@WebMethod\", \"C\": \"@SOAPBinding(style=RPC)\", \"D\": \"@Operation(name=\\\"myOperation\\\")\"}",
+      "correct_option": "D",
+      "explanation": "The @Operation annotation is used to map a Java method to a specific SOAP operation. This allows the web service to be exposed with a specific name for each operation."
+    },
+    {
+      "skill_name": "Full-Stack Web Application Development",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of using JAX-WS in a Java web application?",
+      "options_json": "{\"A\": \"To handle database connections\", \"B\": \"To create RESTful web services\", \"C\": \"To manage session data\", \"D\": \"To perform authentication and authorization\"}",
+      "correct_option": "B",
+      "explanation": "JAX-WS is used to create RESTful web services, which allow for the exchange of data between systems over HTTP. This enables developers to build scalable and maintainable web applications."
+    },
+    {
+      "skill_name": "Full-Stack Web Application Development",
+      "difficulty": "hard",
+      "question_text": "When using JAX-WS in a Java-based web application, which annotation is used to map the SOAP endpoint URL?",
+      "options_json": "{\"A\": \"@WebService\", \"B\": \"@WebMethod\", \"C\": \"@SOAPBinding(style=RPC)\", \"D\": \"@Endpoint\"}",
+      "correct_option": "A",
+      "explanation": "The @WebService annotation is used to map the SOAP endpoint URL in JAX-WS. This annotation is applied at the class level and specifies the name of the web service."
+    },
+    {
+      "skill_name": "Full-Stack Web Application Development",
+      "difficulty": "hard",
+      "question_text": "Which Java framework is used for building RESTful web services using JAX-WS?",
+      "options_json": "{\"A\": \"Spring Boot\", \"B\": \"JAX-RS (Jersey)\", \"C\": \"Apache CXF\", \"D\": \"Java Servlets\"}",
+      "correct_option": "B",
+      "explanation": "JAX-RS (Jersey) is a Java API for RESTful Web Services that uses JAX-WS annotations to build RESTful web services. It provides a simple and easy-to-use API for building RESTful APIs."
+    },
+    {
+      "skill_name": "Full-Stack Web Application Development",
+      "difficulty": "hard",
+      "question_text": "In a RESTful web service using JAX-WS, which annotation is used to specify the HTTP method for a web service operation?",
+      "options_json": "{\"A\": \"@WebMethod(exclude=true)\", \"B\": \"@WebMethod(operationName=\\\"myOperation\\\")\", \"C\": \"@WebMethod(action=\\\"myAction\\\")\", \"D\": \"@WebMethod(method=RequestMethod.GET)\"}",
+      "correct_option": "D",
+      "explanation": "The @WebMethod annotation is used to specify the HTTP method for a web service operation. In this case, the correct option is D, which specifies that the operation should be accessed using the GET method."
+    }
+  ],
+  "total_questions": 15
+}

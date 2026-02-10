@@ -1,0 +1,46 @@
+{
+  "skill_name": "TensorFlow",
+  "questions": [
+    {
+      "skill_name": "TensorFlow",
+      "difficulty": "easy",
+      "question_text": "What does TensorFlow's Keras API provide?",
+      "options_json": "{\"A\": \"A simple way to build neural networks from scratch\", \"B\": \"A high-level interface for building and training deep learning models\", \"C\": \"A tool for data preprocessing and visualization\", \"D\": \"A library for natural language processing\"}",
+      "correct_option": "B",
+      "explanation": "TensorFlow's Keras API provides a high-level interface for building and training deep learning models, making it easier to implement common deep learning architectures."
+    },
+    {
+      "skill_name": "TensorFlow",
+      "difficulty": "medium",
+      "question_text": "What is the primary function of a TensorFlow Session?",
+      "options_json": "{\"A\": \"To create and manage TensorFlow models\", \"B\": \"To execute and run TensorFlow computations\", \"C\": \"To optimize and train TensorFlow models\", \"D\": \"To visualize and debug TensorFlow graphs\"}",
+      "correct_option": "B",
+      "explanation": "A TensorFlow Session is responsible for executing and running TensorFlow computations, making it a crucial component in the workflow of building and deploying AI/ML models."
+    },
+    {
+      "skill_name": "TensorFlow",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of using TensorFlow's GradientTape in a model?",
+      "options_json": "{\"A\": \"To compute gradients for backpropagation\", \"B\": \"To track intermediate values during training\", \"C\": \"To implement regularization techniques\", \"D\": \"To optimize hyperparameters\"}",
+      "correct_option": "A",
+      "explanation": "GradientTape is used to automatically compute gradients of the loss with respect to model parameters, which is essential for backpropagation in neural networks."
+    },
+    {
+      "skill_name": "TensorFlow",
+      "difficulty": "hard",
+      "question_text": "What is the primary difference between a TensorFlow Graph and a TensorFlow Session?",
+      "options_json": "{\"A\": \"A Graph represents the computation, while a Session runs the computation.\", \"B\": \"A Graph represents the data, while a Session represents the computation.\", \"C\": \"A Graph represents the model architecture, while a Session represents the training process.\", \"D\": \"A Graph and a Session are interchangeable terms in TensorFlow.\"}",
+      "correct_option": "A",
+      "explanation": "In TensorFlow, a Graph represents the computation to be performed, including the operations and their dependencies. A Session is responsible for running the computation defined by the Graph."
+    },
+    {
+      "skill_name": "TensorFlow",
+      "difficulty": "hard",
+      "question_text": "What is the primary difference between a TensorFlow Variable and a TensorFlow Placeholder?",
+      "options_json": "{\"A\": \"Variables are initialized with a value, while Placeholders are not.\", \"B\": \"Placeholders are used for training, while Variables are used for inference.\", \"C\": \"Variables are updated during training, while Placeholders are not.\", \"D\": \"Variables are used to store model weights, while Placeholders are used to input data.\"}",
+      "correct_option": "A",
+      "explanation": "TensorFlow Variables are initialized with a value and can be updated during training. In contrast, TensorFlow Placeholders do not have an initial value and are typically used for inputting data into the model."
+    }
+  ],
+  "total_questions": 5
+}

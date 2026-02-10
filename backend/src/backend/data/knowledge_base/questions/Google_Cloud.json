@@ -1,0 +1,46 @@
+{
+  "skill_name": "Google Cloud",
+  "questions": [
+    {
+      "skill_name": "Google Cloud",
+      "difficulty": "easy",
+      "question_text": "What is Google Cloud Storage?",
+      "options_json": "{\"A\": \"A cloud-based database service\", \"B\": \"A fully managed object storage service for storing and serving files\", \"C\": \"A cloud-based machine learning model training platform\", \"D\": \"A cloud-based data warehousing solution\"}",
+      "correct_option": "B",
+      "explanation": "Google Cloud Storage is a fully managed object storage service that allows you to store and serve files. It provides a highly available, durable, and scalable way to store your data in the cloud."
+    },
+    {
+      "skill_name": "Google Cloud",
+      "difficulty": "easy",
+      "question_text": "What is the primary function of a Load Balancer in Google Cloud?",
+      "options_json": "{\"A\": \"To distribute traffic across multiple instances for high availability\", \"B\": \"To cache frequently accessed data to reduce latency\", \"C\": \"To provide secure connections between users and applications\", \"D\": \"To monitor system performance and alert administrators\"}",
+      "correct_option": "A",
+      "explanation": "Load Balancers in Google Cloud distribute traffic across multiple instances for high availability, ensuring that no single instance becomes a bottleneck. This helps to improve application reliability and responsiveness."
+    },
+    {
+      "skill_name": "Google Cloud",
+      "difficulty": "medium",
+      "question_text": "What is the primary function of a Load Balancer in Google Cloud?",
+      "options_json": "{\"A\": \"To distribute traffic across multiple instances for high availability\", \"B\": \"To cache frequently accessed data to reduce latency\", \"C\": \"To provide secure access to resources through VPN connections\", \"D\": \"To monitor and analyze application performance\"}",
+      "correct_option": "A",
+      "explanation": "A Load Balancer in Google Cloud distributes incoming traffic across multiple instances, ensuring high availability and scalability. This helps prevent a single point of failure and improves the overall user experience."
+    },
+    {
+      "skill_name": "Google Cloud",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of a Service Control Plane (SCP) in Google Cloud?",
+      "options_json": "{\"A\": \"To manage network policies for a VPC\", \"B\": \"To provide load balancing and traffic management\", \"C\": \"To handle authentication, authorization, and identity management\", \"D\": \"To monitor and analyze application performance\"}",
+      "correct_option": "C",
+      "explanation": "A Service Control Plane (SCP) is responsible for handling authentication, authorization, and identity management in Google Cloud. This includes managing user identities, permissions, and access controls."
+    },
+    {
+      "skill_name": "Google Cloud",
+      "difficulty": "hard",
+      "question_text": "What is the primary function of a Load Balancer in Google Cloud?",
+      "options_json": "{\"A\": \"To distribute incoming traffic across multiple instances for high availability and scalability.\", \"B\": \"To cache frequently accessed data to improve application performance.\", \"C\": \"To monitor and troubleshoot network issues in real-time.\", \"D\": \"To encrypt sensitive data at rest and in transit.\"}",
+      "correct_option": "A",
+      "explanation": "A Load Balancer distributes incoming traffic across multiple instances, improving high availability and scalability. This is essential for applications with high traffic or those that require redundancy."
+    }
+  ],
+  "total_questions": 5
+}

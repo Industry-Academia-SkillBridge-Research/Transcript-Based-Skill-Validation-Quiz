@@ -1,0 +1,62 @@
+{
+  "skill_name": "SQL",
+  "questions": [
+    {
+      "skill_name": "SQL",
+      "difficulty": "easy",
+      "question_text": "What does the SQL keyword 'ASC' do in a SELECT statement?",
+      "options_json": "{\"A\": \"Sorts data in descending order\", \"B\": \"Sorts data in ascending order\", \"C\": \"Groups similar values together\", \"D\": \"Removes duplicate rows\"}",
+      "correct_option": "B",
+      "explanation": "The 'ASC' keyword sorts the result set in ascending order. This means that the smallest value will come first."
+    },
+    {
+      "skill_name": "SQL",
+      "difficulty": "medium",
+      "question_text": "What does the SQL command 'EXPLAIN' do?",
+      "options_json": "{\"A\": \"It retrieves data from a database table.\", \"B\": \"It displays the execution plan of a query.\", \"C\": \"It modifies the schema of a database table.\", \"D\": \"It deletes data from a database table.\"}",
+      "correct_option": "B",
+      "explanation": "The 'EXPLAIN' command is used to analyze and display the execution plan of a SQL query, which shows how the database will execute the query. This can help optimize query performance by identifying potential bottlenecks."
+    },
+    {
+      "skill_name": "SQL",
+      "difficulty": "medium",
+      "question_text": "What does the SQL command 'CREATE TABLE' do?",
+      "options_json": "{\"A\": \"Creates a new row in an existing table\", \"B\": \"Creates a new column in an existing table\", \"C\": \"Creates a new table with specified columns and data types\", \"D\": \"Deletes an entire database\"}",
+      "correct_option": "C",
+      "explanation": "The 'CREATE TABLE' command is used to create a new table with specified columns, data types, and other properties. This allows you to define the structure of your database."
+    },
+    {
+      "skill_name": "SQL",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the EXPLAIN statement in SQL?",
+      "options_json": "{\"A\": \"To optimize database queries\", \"B\": \"To debug SQL code\", \"C\": \"To view the execution plan of a query\", \"D\": \"None of the above\"}",
+      "correct_option": "C",
+      "explanation": "The EXPLAIN statement is used to analyze and optimize database queries by displaying the execution plan, which shows how the database will execute the query. This helps identify performance bottlenecks and improve query efficiency."
+    },
+    {
+      "skill_name": "SQL",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the `EXPLAIN` statement in SQL?",
+      "options_json": "{\"A\": \"To optimize query performance by identifying bottlenecks\", \"B\": \"To debug queries and identify syntax errors\", \"C\": \"To create a new index on a table\", \"D\": \"To drop a view\"}",
+      "correct_option": "A",
+      "explanation": "The `EXPLAIN` statement is used to analyze the execution plan of a query, helping developers optimize performance by identifying bottlenecks. This allows for adjustments to be made to improve query efficiency."
+    },
+    {
+      "skill_name": "SQL",
+      "difficulty": "medium",
+      "question_text": "What does the SQL keyword 'UNION' do?",
+      "options_json": "{\"A\": \"Combines two or more SELECT statements into one result set.\", \"B\": \"Joins two or more tables based on a related column.\", \"C\": \"Deletes duplicate rows from a table.\", \"D\": \"Creates an index on a table.\"}",
+      "correct_option": "A",
+      "explanation": "The UNION keyword is used to combine the result-set of two or more SELECT statements. It removes duplicate rows from the combined result set."
+    },
+    {
+      "skill_name": "SQL",
+      "difficulty": "hard",
+      "question_text": "Which SQL clause is used to combine rows from two or more tables, based on a related column between them?",
+      "options_json": "{\"A\": \"JOIN\", \"B\": \"UNION\", \"C\": \"SUBQUERY\", \"D\": \"EXISTS\"}",
+      "correct_option": "A",
+      "explanation": "The JOIN clause is used to combine rows from two or more tables, based on a related column between them. This allows you to retrieve data from multiple tables in a single query."
+    }
+  ],
+  "total_questions": 7
+}

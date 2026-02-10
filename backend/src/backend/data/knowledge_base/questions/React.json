@@ -1,0 +1,54 @@
+{
+  "skill_name": "React",
+  "questions": [
+    {
+      "skill_name": "React",
+      "difficulty": "easy",
+      "question_text": "What does the 'key' prop in React do?",
+      "options_json": "{\"A\": \"It helps with state management\", \"B\": \"It identifies which elements to update when the data changes\", \"C\": \"It's used for styling\", \"D\": \"It's a required prop for all components\"}",
+      "correct_option": "B",
+      "explanation": "The 'key' prop helps React keep track of which elements have changed, so it can efficiently update the DOM. This is especially important when working with large lists or tables."
+    },
+    {
+      "skill_name": "React",
+      "difficulty": "easy",
+      "question_text": "What is the purpose of the useState hook in React?",
+      "options_json": "{\"A\": \"To update the state of a component\", \"B\": \"To render a component conditionally\", \"C\": \"To handle events in a component\", \"D\": \"To manage the lifecycle of a component\"}",
+      "correct_option": "A",
+      "explanation": "The useState hook is used to update the state of a React component. It allows you to store and retrieve data that can change over time."
+    },
+    {
+      "skill_name": "React",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the 'useEffect' hook in React?",
+      "options_json": "{\"A\": \"It's used for side effects, such as API calls or DOM mutations.\", \"B\": \"It's used for rendering components conditionally.\", \"C\": \"It's used for handling user input and form data.\", \"D\": \"It's used for routing between pages.\"}",
+      "correct_option": "A",
+      "explanation": "The 'useEffect' hook is used to handle side effects in functional components, such as making API calls or updating the DOM. This allows you to separate concerns and make your code more modular."
+    },
+    {
+      "skill_name": "React",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the 'key' prop in React?",
+      "options_json": "{\"A\": \"To identify a component uniquely within its parent's state\", \"B\": \"To specify the component's layout and styling\", \"C\": \"To pass data from a parent to a child component\", \"D\": \"To enable server-side rendering\"}",
+      "correct_option": "A",
+      "explanation": "The 'key' prop is used by React to keep track of components in the DOM, which is essential for efficient updates and re-renders. It helps React identify which components have changed, been added, or removed."
+    },
+    {
+      "skill_name": "React",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the useReducer hook in React?",
+      "options_json": "{\"A\": \"To manage state changes in a functional component\", \"B\": \"To handle side effects such as API calls or timer events\", \"C\": \"To update the DOM directly without using JSX\", \"D\": \"To create a new instance of a class component\"}",
+      "correct_option": "A",
+      "explanation": "The useReducer hook is used to manage state changes in functional components by providing a more predictable and scalable way to handle complex state logic. It allows you to split the state management into smaller, reusable pieces."
+    },
+    {
+      "skill_name": "React",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the 'useCallback' hook in React?",
+      "options_json": "{\"A\": \"To memoize a function so it's not recreated on every render\", \"B\": \"To create a new component instance on every render\", \"C\": \"To optimize performance by preventing unnecessary re-renders\", \"D\": \"To handle side effects in functional components\"}",
+      "correct_option": "A",
+      "explanation": "The 'useCallback' hook is used to memoize a function so it's not recreated on every render, which can improve performance by preventing unnecessary re-renders."
+    }
+  ],
+  "total_questions": 6
+}

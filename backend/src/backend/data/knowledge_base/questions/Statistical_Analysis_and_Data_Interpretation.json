@@ -1,0 +1,86 @@
+{
+  "skill_name": "Statistical Analysis & Data Interpretation",
+  "questions": [
+    {
+      "skill_name": "Statistical Analysis & Data Interpretation",
+      "difficulty": "easy",
+      "question_text": "What is the main purpose of a chi-squared test?",
+      "options_json": "{\"A\": \"To determine if two populations have different means\", \"B\": \"To determine if observed data follows a specific distribution\", \"C\": \"To compare proportions between groups\", \"D\": \"To identify outliers in a dataset\"}",
+      "correct_option": "B",
+      "explanation": "A chi-squared test is used to determine if the observed frequencies in one or more categories differ significantly from expected frequencies, indicating whether the data follows a specific distribution."
+    },
+    {
+      "skill_name": "Statistical Analysis & Data Interpretation",
+      "difficulty": "easy",
+      "question_text": "A random sample of 100 students from a university has an average height of 175 cm with a standard deviation of 5 cm. What is the most likely range of heights for 95% of the students in this population?",
+      "options_json": "{\"A\": \"170-180 cm\", \"B\": \"165-185 cm\", \"C\": \"160-190 cm\", \"D\": \"155-195 cm\"}",
+      "correct_option": "B",
+      "explanation": "This question relates to the Empirical Rule, which states that about 95% of the data falls within two standard deviations of the mean. Therefore, the most likely range of heights for 95% of the students is between 170 cm and 180 cm."
+    },
+    {
+      "skill_name": "Statistical Analysis & Data Interpretation",
+      "difficulty": "easy",
+      "question_text": "A random sample of 100 students from a university has an average height of 170 cm. If we assume that the population standard deviation is 5 cm, what is the probability that a randomly selected student from this university will have a height greater than 175 cm?",
+      "options_json": "{\"A\": \"0.1\", \"B\": \"0.2\", \"C\": \"0.3\", \"D\": \"0.4\"}",
+      "correct_option": "A",
+      "explanation": "Using the z-score formula, we can calculate the probability of a student having a height greater than 175 cm. The correct answer is A, as it represents the calculated probability."
+    },
+    {
+      "skill_name": "Statistical Analysis & Data Interpretation",
+      "difficulty": "easy",
+      "question_text": "A random sample of 100 students from a university has an average height of 175 cm. If we assume that the population mean is 170 cm, what type of error would we be making if our sample mean was 180 cm?",
+      "options_json": "{\"A\": \"Type I Error\", \"B\": \"Type II Error\", \"C\": \"Sampling Error\", \"D\": \"Measurement Error\"}",
+      "correct_option": "C",
+      "explanation": "We would be making a sampling error because our sample mean is different from the assumed population mean. This type of error occurs when there is a difference between the sample statistic and the population parameter."
+    },
+    {
+      "skill_name": "Statistical Analysis & Data Interpretation",
+      "difficulty": "easy",
+      "question_text": "What is the purpose of a random sample in statistical analysis?",
+      "options_json": "{\"A\": \"To represent the entire population with absolute certainty\", \"B\": \"To reduce the cost and time required for data collection\", \"C\": \"To increase the precision of estimates by reducing sampling error\", \"D\": \"None of the above\"}",
+      "correct_option": "B",
+      "explanation": "A random sample is used to represent a larger population, but it does not have to be representative with absolute certainty. By selecting a random sample, researchers can reduce the cost and time required for data collection."
+    },
+    {
+      "skill_name": "Statistical Analysis & Data Interpretation",
+      "difficulty": "easy",
+      "question_text": "A random sample of exam scores has a mean of 80 and a standard deviation of 10. What is the probability that a randomly selected student scored above 85?",
+      "options_json": "{\"A\": \"0.5\", \"B\": \"0.16\", \"C\": \"0.84\", \"D\": \"0.68\"}",
+      "correct_option": "C",
+      "explanation": "This question requires the use of a z-score to determine the probability of a student scoring above 85. The correct answer is based on the standard normal distribution and the given mean and standard deviation."
+    },
+    {
+      "skill_name": "Statistical Analysis & Data Interpretation",
+      "difficulty": "easy",
+      "question_text": "What is the primary purpose of a chi-squared test?",
+      "options_json": "{\"A\": \"To determine if there is a significant difference between two population means.\", \"B\": \"To determine if observed data significantly deviates from expected distribution.\", \"C\": \"To calculate the probability of an event occurring in a sample.\", \"D\": \"To estimate the population mean.\"}",
+      "correct_option": "B",
+      "explanation": "A chi-squared test is used to determine if there is a significant difference between observed data and expected distribution. It's commonly used for goodness-of-fit tests and contingency tables."
+    },
+    {
+      "skill_name": "Statistical Analysis & Data Interpretation",
+      "difficulty": "easy",
+      "question_text": "A random sample of exam scores has a mean of 80 and a standard deviation of 10. Which of the following is a characteristic of this distribution?",
+      "options_json": "{\"A\": \"Symmetric\", \"B\": \"Skewed to the right\", \"C\": \"Has a large variance\", \"D\": \"Is normally distributed\"}",
+      "correct_option": "B",
+      "explanation": "The distribution is skewed to the right because the mean (80) is greater than the median, which would be the middle value if the scores were arranged in order. This indicates that there are more extreme values on the higher end of the distribution."
+    },
+    {
+      "skill_name": "Statistical Analysis & Data Interpretation",
+      "difficulty": "easy",
+      "question_text": "A random sample of 100 students from a large university has an average height of 175 cm. Assuming a population standard deviation of 5 cm, what is the probability that the sample mean height will be greater than 177 cm?",
+      "options_json": "{\"A\": \"0.05\", \"B\": \"0.10\", \"C\": \"0.15\", \"D\": \"0.20\"}",
+      "correct_option": "A",
+      "explanation": "Using the z-score formula, we can calculate the probability that the sample mean height will be greater than 177 cm. The correct answer is A, as it represents the probability of obtaining a sample mean greater than 2 standard deviations above the population mean."
+    },
+    {
+      "skill_name": "Statistical Analysis & Data Interpretation",
+      "difficulty": "easy",
+      "question_text": "A random sample of exam scores has a mean of 80 and a standard deviation of 10. If we select one student at random, what is the probability that their score will be above 85?",
+      "options_json": "{\"A\": \"0.25\", \"B\": \"0.50\", \"C\": \"0.75\", \"D\": \"1.00\"}",
+      "correct_option": "C",
+      "explanation": "This question requires the use of a z-score to determine the probability that a randomly selected student's score will be above 85. The correct answer is based on the assumption that the exam scores follow a normal distribution."
+    }
+  ],
+  "total_questions": 10
+}

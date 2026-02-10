@@ -1,0 +1,54 @@
+{
+  "skill_name": "Natural Language Processing",
+  "questions": [
+    {
+      "skill_name": "Natural Language Processing",
+      "difficulty": "easy",
+      "question_text": "What is the primary goal of named entity recognition (NER) in NLP?",
+      "options_json": "{\"A\": \"Part-of-speech tagging\", \"B\": \"Named entity recognition\", \"C\": \"Dependency parsing\", \"D\": \"Semantic role labeling\"}",
+      "correct_option": "B",
+      "explanation": "Named entity recognition (NER) is a subtask of NLP that aims to identify and categorize named entities in unstructured text, such as people, places, and organizations. This helps in extracting relevant information from text data."
+    },
+    {
+      "skill_name": "Natural Language Processing",
+      "difficulty": "easy",
+      "question_text": "What is the primary goal of named entity recognition in NLP?",
+      "options_json": "{\"A\": \"Part-of-speech tagging\", \"B\": \"Named Entity Recognition (NER)\", \"C\": \"Sentiment analysis\", \"D\": \"Dependency parsing\"}",
+      "correct_option": "B",
+      "explanation": "Named entity recognition is a subtask of NLP that aims to identify and categorize named entities in unstructured text, such as people, places, and organizations. This helps in extracting relevant information from text data."
+    },
+    {
+      "skill_name": "Natural Language Processing",
+      "difficulty": "medium",
+      "question_text": "What is the primary goal of named entity recognition in NLP?",
+      "options_json": "{\"A\": \"Part-of-speech tagging\", \"B\": \"Named entity recognition\", \"C\": \"Dependency parsing\", \"D\": \"Sentiment analysis\"}",
+      "correct_option": "B",
+      "explanation": "Named entity recognition is a subtask of NLP that aims to identify and categorize named entities in unstructured text, such as people, places, and organizations. This task is crucial for many downstream applications, including information extraction and question answering."
+    },
+    {
+      "skill_name": "Natural Language Processing",
+      "difficulty": "medium",
+      "question_text": "What is the primary goal of Named Entity Recognition (NER) in NLP?",
+      "options_json": "{\"A\": \"Part-of-speech tagging and dependency parsing\", \"B\": \"Identifying and categorizing named entities such as people, places, and organizations\", \"C\": \"Sentiment analysis and topic modeling\", \"D\": \"Machine translation and language generation\"}",
+      "correct_option": "B",
+      "explanation": "Named Entity Recognition (NER) is a crucial task in NLP that involves identifying and categorizing named entities such as people, places, and organizations. This helps in understanding the context and meaning of unstructured text data."
+    },
+    {
+      "skill_name": "Natural Language Processing",
+      "difficulty": "hard",
+      "question_text": "A neural network designed for NLP tasks typically consists of multiple layers, including an embedding layer, a transformer encoder, and a decoder. However, what is the primary function of the attention mechanism in this architecture?",
+      "options_json": "{\"A\": \"To reduce the dimensionality of the input data\", \"B\": \"To weigh the importance of different input features when generating output\", \"C\": \"To introduce randomness into the model's weights during training\", \"D\": \"To handle out-of-vocabulary words\"}",
+      "correct_option": "B",
+      "explanation": "The attention mechanism in a transformer encoder weighs the importance of different input features when generating output, allowing the model to focus on relevant information. This is particularly useful for tasks like machine translation and text summarization."
+    },
+    {
+      "skill_name": "Natural Language Processing",
+      "difficulty": "hard",
+      "question_text": "What is the primary goal of named entity recognition (NER) in NLP?",
+      "options_json": "{\"A\": \"Part-of-speech tagging\", \"B\": \"Dependency parsing\", \"C\": \"Identifying and categorizing specific entities in unstructured text\", \"D\": \"Sentiment analysis\"}",
+      "correct_option": "C",
+      "explanation": "Named entity recognition (NER) is a subtask of NLP that involves identifying and categorizing specific entities in unstructured text, such as names, locations, and organizations. This helps to improve the accuracy of downstream tasks like information extraction and question answering."
+    }
+  ],
+  "total_questions": 6
+}

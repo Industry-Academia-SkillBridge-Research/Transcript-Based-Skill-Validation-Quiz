@@ -88,7 +88,191 @@
       "options_json": "{\"A\": \"The memory location of the first pointer is copied into the second pointer.\", \"B\": \"Both pointers now point to the same memory location.\", \"C\": \"The value at the memory location pointed by the first pointer is copied into the second pointer.\", \"D\": \"None of the above.\"}",
       "correct_option": "B",
       "explanation": "When a pointer is assigned to another pointer, both pointers now point to the same memory location. This is because assignment in C only copies the value of the pointer, not the data it points to."
+    },
+    {
+      "skill_name": "Programming Fundamentals & C Language",
+      "difficulty": "easy",
+      "question_text": "What does the pointer arithmetic operator '->' do in a struct?",
+      "options_json": "{\"A\": \"It increments the address stored in the pointer by 1 byte.\", \"B\": \"It decrements the address stored in the pointer by 1 byte.\", \"C\": \"It accesses the member of a struct using the pointer to the struct.\", \"D\": \"It frees the memory allocated for the struct.\"}",
+      "correct_option": "C",
+      "explanation": "The '->' operator is used to access members of a struct using a pointer to the struct. It is equivalent to using the dot notation (.) with a dereferenced pointer (*)."
+    },
+    {
+      "skill_name": "Programming Fundamentals & C Language",
+      "difficulty": "easy",
+      "question_text": "What does a pointer in C do?",
+      "options_json": "{\"A\": \"It stores a value of type int.\", \"B\": \"It stores the memory address of a variable.\", \"C\": \"It performs arithmetic operations on variables.\", \"D\": \"It is used for function calls.\"}",
+      "correct_option": "B",
+      "explanation": "A pointer in C stores the memory address of a variable, allowing you to access and modify its value. This concept is crucial in understanding how data is stored and manipulated in memory."
+    },
+    {
+      "skill_name": "Programming Fundamentals & C Language",
+      "difficulty": "easy",
+      "question_text": "What does the following C code snippet do? int x = 5; int *ptr = &x; printf(\"%d\", *ptr);",
+      "options_json": "{\"A\": \"Prints the memory address of variable x.\", \"B\": \"Prints the value stored in variable x, which is 5.\", \"C\": \"Assigns the value 5 to pointer ptr.\", \"D\": \"Declares a function to calculate the sum of two numbers.\"}",
+      "correct_option": "B",
+      "explanation": "The code uses a pointer to access the value stored in variable x, which is then printed using printf. This demonstrates understanding of pointers and memory management in C."
+    },
+    {
+      "skill_name": "Programming Fundamentals & C Language",
+      "difficulty": "easy",
+      "question_text": "What does the asterisk (*) operator do in C when used with a pointer?",
+      "options_json": "{\"A\": \"It increments the value of the variable pointed to by the pointer.\", \"B\": \"It decrements the value of the variable pointed to by the pointer.\", \"C\": \"It dereferences the pointer, allowing access to the variable it points to.\", \"D\": \"It allocates memory for a new array.\"}",
+      "correct_option": "C",
+      "explanation": "The asterisk operator is used to dereference a pointer, allowing you to access the variable it points to. This is necessary when working with pointers in C."
+    },
+    {
+      "skill_name": "Programming Fundamentals & C Language",
+      "difficulty": "easy",
+      "question_text": "What does the following code snippet do? int x = 5; int *ptr = &x; printf(\"%d\", *ptr);",
+      "options_json": "{\"A\": \"Prints the memory address of variable x.\", \"B\": \"Prints the value stored in variable x.\", \"C\": \"Declares a pointer to an integer and assigns it the value of x.\", \"D\": \"Assigns the memory address of x to a pointer.\"}",
+      "correct_option": "B",
+      "explanation": "The code snippet declares a pointer to an integer, assigns it the memory address of variable x, and then prints the value stored at that memory location using the dereference operator (*)."
+    },
+    {
+      "skill_name": "Programming Fundamentals & C Language",
+      "difficulty": "easy",
+      "question_text": "What does the pointer variable 'p' point to in the following code: int x = 10; int* p = &x;",
+      "options_json": "{\"A\": \"The value of x, which is 10\", \"B\": \"The memory address where x is stored\", \"C\": \"The integer literal 10\", \"D\": \"The variable x itself\"}",
+      "correct_option": "B",
+      "explanation": "In C, the '&' operator returns the memory address of a variable. Therefore, 'p' points to the memory address where 'x' is stored."
+    },
+    {
+      "skill_name": "Programming Fundamentals & C Language",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of a pointer in C?",
+      "options_json": "{\"A\": \"To store a value of type int\", \"B\": \"To store the memory address of another variable\", \"C\": \"To perform arithmetic operations on variables\", \"D\": \"To declare a function\"}",
+      "correct_option": "B",
+      "explanation": "A pointer is used to store the memory address of another variable, allowing for indirect access and manipulation of data."
+    },
+    {
+      "skill_name": "Programming Fundamentals & C Language",
+      "difficulty": "medium",
+      "question_text": "What will be printed when you run the following code: int x = 10; int* ptr = &x; printf(\"%d\", *ptr);",
+      "options_json": "{\"A\": \"The value of x is printed.\", \"B\": \"The memory address of x is printed.\", \"C\": \"The value stored at the memory address pointed by ptr is printed.\", \"D\": \"An error message is printed.\"}",
+      "correct_option": "C",
+      "explanation": "This code uses a pointer to print the value stored at its memory address, which is the value of x. This demonstrates understanding of pointers and their usage in C programming."
+    },
+    {
+      "skill_name": "Programming Fundamentals & C Language",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the `return` statement in a function?",
+      "options_json": "{\"A\": \"To exit the loop prematurely\", \"B\": \"To pass control to another function\", \"C\": \"To return a value to the calling function\", \"D\": \"To allocate memory for a variable\"}",
+      "correct_option": "C",
+      "explanation": "The `return` statement is used to exit a function and pass back any calculated or processed data to the calling function. This allows the result of the function to be used in the program."
+    },
+    {
+      "skill_name": "Programming Fundamentals & C Language",
+      "difficulty": "medium",
+      "question_text": "What will be the output of the following code snippet?\nint main() {\n    int arr[5] = {1, 2, 3, 4, 5};\n    printf(\"%d %d\", arr[0], arr[-1]);\n    return 0;\n}",
+      "options_json": "{\"A\": \"Segmentation fault\", \"B\": \"Out of bounds error\", \"C\": \"-1 1\", \"D\": \"Compilation error\"}",
+      "correct_option": "C",
+      "explanation": "The code snippet uses arr[-1] to access the last element of the array, which is a valid operation in C. The output will be -1 followed by the value of the first element (1)."
+    },
+    {
+      "skill_name": "Programming Fundamentals & C Language",
+      "difficulty": "medium",
+      "question_text": "What happens when you pass a pointer to a function in C?",
+      "options_json": "{\"A\": \"The function modifies the original value pointed by the pointer.\", \"B\": \"The function creates a copy of the original value and returns it.\", \"C\": \"The function only reads the value pointed by the pointer without modifying it.\", \"D\": \"The function does nothing with the pointer.\"}",
+      "correct_option": "A",
+      "explanation": "When you pass a pointer to a function in C, the function can modify the original value pointed by the pointer. This is because pointers are passed by reference, allowing modifications to be made directly to the original variable."
+    },
+    {
+      "skill_name": "Programming Fundamentals & C Language",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of a pointer in C programming?",
+      "options_json": "{\"A\": \"To store a value, similar to a variable.\", \"B\": \"To point to a memory location where data can be stored or retrieved.\", \"C\": \"To perform arithmetic operations on integers.\", \"D\": \"To control the flow of a program using conditional statements.\"}",
+      "correct_option": "B",
+      "explanation": "A pointer is used in C programming to store the memory address of a variable, allowing for indirect access and manipulation of data. This enables more efficient use of memory and flexibility in programming."
+    },
+    {
+      "skill_name": "Programming Fundamentals & C Language",
+      "difficulty": "medium",
+      "question_text": "What will be printed when you run this code: int x = 10; if (x > 5) printf(\"Greater than 5\"); else printf(\"Less than or equal to 5\");",
+      "options_json": "{\"A\": \"Greater than 5\", \"B\": \"Less than or equal to 5\", \"C\": \"Both Greater than 5 and Less than or equal to 5\", \"D\": \"Nothing will be printed\"}",
+      "correct_option": "B",
+      "explanation": "The condition in the if statement is false, so the else block will execute, printing 'Less than or equal to 5'. The code does not use recursion or pointers."
+    },
+    {
+      "skill_name": "Programming Fundamentals & C Language",
+      "difficulty": "medium",
+      "question_text": "What will be the output of the following code snippet?\nint x = 5;\nif (x > 10) {\n    printf(\"Greater than 10\");\n} else {\n    printf(\"Less than or equal to 10\");\n}",
+      "options_json": "{\"A\": \"Greater than 10\", \"B\": \"Less than or equal to 10\", \"C\": \"Compilation error\", \"D\": \"Runtime error\"}",
+      "correct_option": "B",
+      "explanation": "The condition in the if statement is not met, so the code inside the else block will be executed."
+    },
+    {
+      "skill_name": "Programming Fundamentals & C Language",
+      "difficulty": "hard",
+      "question_text": "What happens when a pointer is assigned the value of another pointer in C?",
+      "options_json": "{\"A\": \"The memory location pointed by the first pointer is copied to the second pointer.\", \"B\": \"The two pointers now point to the same memory location.\", \"C\": \"The first pointer's memory location is overwritten with the value of the second pointer.\", \"D\": \"The program will crash due to invalid memory access.\"}",
+      "correct_option": "B",
+      "explanation": "When a pointer is assigned the value of another pointer, both pointers now point to the same memory location. This allows for indirect modification of the original variable through either pointer."
+    },
+    {
+      "skill_name": "Programming Fundamentals & C Language",
+      "difficulty": "hard",
+      "question_text": "What happens when a pointer is assigned the address of another pointer in C?",
+      "options_json": "{\"A\": \"The first pointer now points to the same memory location as the second pointer.\", \"B\": \"The first pointer becomes a copy of the second pointer, but they still point to different locations.\", \"C\": \"The assignment operation does not change the value of either pointer.\", \"D\": \"The program will crash due to invalid pointer arithmetic.\"}",
+      "correct_option": "A",
+      "explanation": "When a pointer is assigned the address of another pointer, it becomes an alias for that memory location. This means both pointers now point to the same memory location, allowing changes through one pointer to be reflected in the other."
+    },
+    {
+      "skill_name": "Programming Fundamentals & C Language",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of a pointer in C programming?",
+      "options_json": "{\"A\": \"To store and manipulate integer values\", \"B\": \"To represent memory addresses and allow indirect access to variables\", \"C\": \"To implement recursion for complex functions\", \"D\": \"To handle errors and exceptions\"}",
+      "correct_option": "B",
+      "explanation": "Pointers in C are used to store the memory address of a variable, allowing for indirect access and manipulation. This is essential for dynamic memory allocation and array operations."
+    },
+    {
+      "skill_name": "Programming Fundamentals & C Language",
+      "difficulty": "hard",
+      "question_text": "What will be the output of the following code snippet?\nint main() {\n    int arr[5] = {1, 2, 3, 4, 5};\n    printf(\"%d %d\", arr[0], *(arr + 1));\n    return 0;\n}",
+      "options_json": "{\"A\": \"1 2\", \"B\": \"1 3\", \"C\": \"2 3\", \"D\": \"Segmentation Fault\"}",
+      "correct_option": "A",
+      "explanation": "The code snippet uses pointer arithmetic to print the first two elements of the array. The expression *(arr + 1) is equivalent to arr[1]."
+    },
+    {
+      "skill_name": "Programming Fundamentals & C Language",
+      "difficulty": "hard",
+      "question_text": "What will be printed when you run the following code: `int x = 5; int* p = &x; printf(\"%d\", *p);`?",
+      "options_json": "{\"A\": \"The address of variable x in memory\", \"B\": \"The value stored at the address pointed to by p\", \"C\": \"An error message because p is a pointer and not an integer\", \"D\": \"The value of x, which is 5\"}",
+      "correct_option": "B",
+      "explanation": "This code prints the value stored at the memory location pointed to by p. The address of variable x in memory is printed when you use the '&' operator, but that's not what this code does."
+    },
+    {
+      "skill_name": "Programming Fundamentals & C Language",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of using a pointer in C?",
+      "options_json": "{\"A\": \"To store a value that can be changed later\", \"B\": \"To pass variables by reference to functions\", \"C\": \"To dynamically allocate memory for data structures\", \"D\": \"To improve code readability\"}",
+      "correct_option": "C",
+      "explanation": "Pointers in C are used to dynamically allocate memory for data structures, allowing for flexible and efficient use of system resources. This is essential for programming fundamentals, as it enables developers to create complex data structures and algorithms."
+    },
+    {
+      "skill_name": "Programming Fundamentals & C Language",
+      "difficulty": "hard",
+      "question_text": "What happens when you assign a pointer to another pointer in C?",
+      "options_json": "{\"A\": \"The original value is lost.\", \"B\": \"The new pointer points to the same memory location as the original pointer.\", \"C\": \"The new pointer becomes an alias for the original pointer, but with its own address.\", \"D\": \"The assignment does not change the original pointer's value.\"}",
+      "correct_option": "C",
+      "explanation": "When you assign a pointer to another pointer in C, the new pointer becomes an alias for the original pointer, but it has its own address. This means that both pointers point to the same memory location, but they are not the same variable."
+    },
+    {
+      "skill_name": "Programming Fundamentals & C Language",
+      "difficulty": "hard",
+      "question_text": "What happens when a pointer is assigned the address of a local variable in a function?",
+      "options_json": "{\"A\": \"The pointer becomes a copy of the local variable.\", \"B\": \"The pointer now points to a memory location that is valid until the function returns.\", \"C\": \"The pointer becomes invalid as soon as the function returns.\", \"D\": \"The pointer now points to the same memory location as the global variable with the same name.\"}",
+      "correct_option": "C",
+      "explanation": "When a pointer is assigned the address of a local variable, it becomes invalid as soon as the function returns. This is because the memory allocated for the local variable is deallocated when the function ends."
+    },
+    {
+      "skill_name": "Programming Fundamentals & C Language",
+      "difficulty": "hard",
+      "question_text": "What happens when a pointer is assigned the address of a local variable in a function, and then the function returns?",
+      "options_json": "{\"A\": \"The pointer becomes invalid and points to garbage memory.\", \"B\": \"The pointer retains its value but loses access to the original variable.\", \"C\": \"The pointer remains valid and still points to the original local variable.\", \"D\": \"The function's stack is deallocated, causing a segmentation fault.\"}",
+      "correct_option": "A",
+      "explanation": "When a function returns, its local variables are deallocated from memory. Assigning a pointer to a local variable in a function and then returning causes the pointer to become invalid as it no longer points to valid memory space."
     }
   ],
-  "total_questions": 11
+  "total_questions": 34
 }

@@ -1,0 +1,54 @@
+{
+  "skill_name": "REST API",
+  "questions": [
+    {
+      "skill_name": "REST API",
+      "difficulty": "easy",
+      "question_text": "What does REST stand for in the context of web development?",
+      "options_json": "{\"A\": \"Representational State Transfer\", \"B\": \"Resource Sharing Technology\", \"C\": \"Request Execution System\", \"D\": \"Remote Server Terminal\"}",
+      "correct_option": "A",
+      "explanation": "REST is an architectural style for designing networked applications. It emphasizes simplicity and modularity, making it easier to build scalable systems."
+    },
+    {
+      "skill_name": "REST API",
+      "difficulty": "easy",
+      "question_text": "What does REST stand for in RESTful API?",
+      "options_json": "{\"A\": \"Representational State of Transfer\", \"B\": \"Resourceful State of Technology\", \"C\": \"Remote Service of Transactions\", \"D\": \"Reliable Service of Transfer\"}",
+      "correct_option": "A",
+      "explanation": "REST stands for Representational State of Transfer, which refers to the idea that resources are represented in a state that can be transferred over a network. This is a core principle of RESTful APIs."
+    },
+    {
+      "skill_name": "REST API",
+      "difficulty": "medium",
+      "question_text": "What is the primary function of a RESTful API's 'GET' method?",
+      "options_json": "{\"A\": \"To create new resources on the server\", \"B\": \"To read existing resources from the server\", \"C\": \"To update or delete existing resources on the server\", \"D\": \"To handle user authentication and authorization\"}",
+      "correct_option": "B",
+      "explanation": "The 'GET' method is used to retrieve data from a resource, without modifying it. This is in line with the RESTful API principle of separating concerns between client and server."
+    },
+    {
+      "skill_name": "REST API",
+      "difficulty": "medium",
+      "question_text": "What is the primary benefit of using a RESTful API over a SOAP-based web service?",
+      "options_json": "{\"A\": \"Improved security through encryption\", \"B\": \"Simplified state management and caching\", \"C\": \"Reduced overhead due to fewer HTTP requests\", \"D\": \"Enhanced scalability with load balancing\"}",
+      "correct_option": "C",
+      "explanation": "RESTful APIs typically use a stateless, cacheable design, which reduces the number of HTTP requests required for each interaction. This leads to improved performance and reduced overhead compared to SOAP-based web services."
+    },
+    {
+      "skill_name": "REST API",
+      "difficulty": "hard",
+      "question_text": "What is the primary difference between a POST and PUT request in RESTful APIs?",
+      "options_json": "{\"A\": \"POST is used for creating new resources, while PUT is used for updating existing ones.\", \"B\": \"PUT is idempotent, meaning that making the same request multiple times has the same effect as making it once.\", \"C\": \"POST requests are typically used for bulk operations, while PUT requests are used for single resource updates.\", \"D\": \"PUT requests always overwrite existing resources, while POST requests create new ones.\"}",
+      "correct_option": "A",
+      "explanation": "The primary difference between a POST and PUT request is that POST is used for creating new resources, while PUT is used for updating existing ones. This distinction is crucial in designing RESTful APIs to ensure data consistency and integrity."
+    },
+    {
+      "skill_name": "REST API",
+      "difficulty": "hard",
+      "question_text": "What is the primary difference between HTTP GET and POST methods in a RESTful API?",
+      "options_json": "{\"A\": \"GET retrieves data, while POST creates new resources.\", \"B\": \"GET sends data to the server, while POST receives data from the server.\", \"C\": \"GET is used for authentication, while POST is used for authorization.\", \"D\": \"GET is idempotent, while POST is not.\"}",
+      "correct_option": "A",
+      "explanation": "The primary difference between HTTP GET and POST methods in a RESTful API is that GET retrieves data from the server, while POST creates new resources. This distinction is crucial for understanding how to design efficient and scalable APIs."
+    }
+  ],
+  "total_questions": 6
+}

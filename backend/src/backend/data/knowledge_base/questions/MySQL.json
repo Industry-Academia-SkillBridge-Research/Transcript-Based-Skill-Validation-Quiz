@@ -1,0 +1,46 @@
+{
+  "skill_name": "MySQL",
+  "questions": [
+    {
+      "skill_name": "MySQL",
+      "difficulty": "easy",
+      "question_text": "What does the PRIMARY KEY constraint do in MySQL?",
+      "options_json": "{\"A\": \"Enforces uniqueness of a column or set of columns.\", \"B\": \"Enforces data integrity by preventing NULL values.\", \"C\": \"Creates an index on the specified column(s).\", \"D\": \"Restricts access to a database table.\"}",
+      "correct_option": "A",
+      "explanation": "The PRIMARY KEY constraint ensures that each value in the specified column or set of columns is unique, preventing duplicate entries. This helps maintain data consistency and integrity within the database."
+    },
+    {
+      "skill_name": "MySQL",
+      "difficulty": "easy",
+      "question_text": "What does the PRIMARY KEY constraint do in a MySQL table?",
+      "options_json": "{\"A\": \"It ensures data consistency by preventing duplicate values.\", \"B\": \"It uniquely identifies each record in the table.\", \"C\": \"It improves query performance by indexing the column.\", \"D\": \"It restricts access to the table for specific users.\"}",
+      "correct_option": "B",
+      "explanation": "The PRIMARY KEY constraint uniquely identifies each record in the table, preventing duplicate values and ensuring data consistency. This allows for efficient querying and manipulation of the data."
+    },
+    {
+      "skill_name": "MySQL",
+      "difficulty": "medium",
+      "question_text": "What does the AUTO_INCREMENT keyword do in MySQL?",
+      "options_json": "{\"A\": \"It increments the primary key value automatically for each new row inserted.\", \"B\": \"It creates a unique identifier for each row.\", \"C\": \"It enables foreign key constraints.\", \"D\": \"It optimizes query performance.\"}",
+      "correct_option": "A",
+      "explanation": "The AUTO_INCREMENT keyword is used to automatically increment the value of an integer column, typically used as a primary key. This ensures that each new row inserted has a unique identifier."
+    },
+    {
+      "skill_name": "MySQL",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the PRIMARY KEY constraint in a MySQL table?",
+      "options_json": "{\"A\": \"To enforce uniqueness on a column or set of columns.\", \"B\": \"To create an index on a column or set of columns.\", \"C\": \"To specify the default value for a column.\", \"D\": \"To enable transactions in a database.\"}",
+      "correct_option": "A",
+      "explanation": "The PRIMARY KEY constraint is used to uniquely identify each record in a table, preventing duplicate values. This ensures data integrity and allows for efficient querying and joining of tables."
+    },
+    {
+      "skill_name": "MySQL",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the FOREIGN KEY constraint in a MySQL database?",
+      "options_json": "{\"A\": \"To enforce referential integrity between tables.\", \"B\": \"To improve query performance by reducing the number of joins required.\", \"C\": \"To increase storage capacity by allowing duplicate values in a column.\", \"D\": \"To enable transactions and locking mechanisms.\"}",
+      "correct_option": "A",
+      "explanation": "The FOREIGN KEY constraint is used to ensure that data in one table matches the data in another table, maintaining referential integrity. This helps prevent orphaned records and ensures data consistency across related tables."
+    }
+  ],
+  "total_questions": 5
+}

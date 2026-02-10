@@ -1,0 +1,46 @@
+{
+  "skill_name": "Agile",
+  "questions": [
+    {
+      "skill_name": "Agile",
+      "difficulty": "easy",
+      "question_text": "What is the primary goal of the Agile methodology?",
+      "options_json": "{\"A\": \"To deliver a working product at the end of each sprint\", \"B\": \"To follow a traditional waterfall approach with iterative development\", \"C\": \"To prioritize features based on business value and customer needs\", \"D\": \"To use a rigid project management framework\"}",
+      "correct_option": "A",
+      "explanation": "The primary goal of Agile is to deliver working software in short cycles, allowing for flexibility and adaptability. This approach prioritizes delivering functional product over following a traditional plan."
+    },
+    {
+      "skill_name": "Agile",
+      "difficulty": "easy",
+      "question_text": "What is the primary goal of an Agile team?",
+      "options_json": "{\"A\": \"To follow a strict plan and timeline\", \"B\": \"To deliver working software in short iterations\", \"C\": \"To assign tasks to individual team members\", \"D\": \"To hold regular meetings with stakeholders\"}",
+      "correct_option": "B",
+      "explanation": "Agile teams focus on delivering working software in short iterations, allowing for flexibility and adaptability. This approach enables teams to respond quickly to changing requirements."
+    },
+    {
+      "skill_name": "Agile",
+      "difficulty": "medium",
+      "question_text": "What is a key principle of Agile development?",
+      "options_json": "{\"A\": \"Following a strict project schedule\", \"B\": \"Embracing change and flexibility in the development process\", \"C\": \"Assigning tasks to team members based on their seniority\", \"D\": \"Having a single point of contact for all stakeholders\"}",
+      "correct_option": "B",
+      "explanation": "Agile development emphasizes adaptability and responding to change over following a rigid plan. This principle allows teams to be more flexible and responsive to changing requirements."
+    },
+    {
+      "skill_name": "Agile",
+      "difficulty": "medium",
+      "question_text": "What is a key principle of the Agile methodology?",
+      "options_json": "{\"A\": \"Following a strict plan and timeline\", \"B\": \"Embracing change and iterative development\", \"C\": \"Focusing on individual work rather than team collaboration\", \"D\": \"Prioritizing features based solely on business value\"}",
+      "correct_option": "B",
+      "explanation": "Agile emphasizes flexibility and adaptability, allowing teams to respond quickly to changing requirements. This is in contrast to traditional methodologies that focus on rigid plans and timelines."
+    },
+    {
+      "skill_name": "Agile",
+      "difficulty": "hard",
+      "question_text": "What is the primary goal of a Sprint Planning meeting in Agile?",
+      "options_json": "{\"A\": \"To define and prioritize the Product Backlog\", \"B\": \"To estimate the effort required for each task\", \"C\": \"To break down large tasks into smaller ones\", \"D\": \"To assign team members to specific tasks\"}",
+      "correct_option": "A",
+      "explanation": "The primary goal of a Sprint Planning meeting is to define and prioritize the Product Backlog, ensuring that the team has a clear understanding of what needs to be accomplished during the upcoming sprint. This helps the team focus on delivering high-priority features."
+    }
+  ],
+  "total_questions": 5
+}

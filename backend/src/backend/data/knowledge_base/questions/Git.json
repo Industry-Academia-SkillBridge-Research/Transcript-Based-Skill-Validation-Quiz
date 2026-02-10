@@ -1,0 +1,46 @@
+{
+  "skill_name": "Git",
+  "questions": [
+    {
+      "skill_name": "Git",
+      "difficulty": "easy",
+      "question_text": "What does 'git add' do?",
+      "options_json": "{\"A\": \"Stages changes for commit\", \"B\": \"Removes files from repository\", \"C\": \"Checks out a different branch\", \"D\": \"Lists all commits\"}",
+      "correct_option": "A",
+      "explanation": "git add stages the changes in your working directory so they can be committed. This is an essential step before committing any changes."
+    },
+    {
+      "skill_name": "Git",
+      "difficulty": "medium",
+      "question_text": "What does 'git reset --hard' do in Git?",
+      "options_json": "{\"A\": \"Reverts all changes made since last commit and discards them.\", \"B\": \"Stages all changes made since last commit but doesn't commit them yet.\", \"C\": \"Commits all changes made since last commit with a default message.\", \"D\": \"Discards all local changes and brings the repository back to its previous state.\"}",
+      "correct_option": "D",
+      "explanation": "Git reset --hard discards all local changes and brings the repository back to its previous state, effectively undoing any changes made since the last commit. This is useful when you want to start over or revert to a previous version of your code."
+    },
+    {
+      "skill_name": "Git",
+      "difficulty": "medium",
+      "question_text": "What does 'git reset --hard' do?",
+      "options_json": "{\"A\": \"It undoes all changes made since the last commit, but keeps them in the staging area.\", \"B\": \"It discards all uncommitted changes and resets the branch to the specified state.\", \"C\": \"It moves the current branch to a different branch in the repository.\", \"D\": \"It adds all files in the current directory to the staging area.\"}",
+      "correct_option": "B",
+      "explanation": "When you run 'git reset --hard', it discards all uncommitted changes and resets the branch to the specified state, effectively reverting any local modifications. This is useful for getting back to a clean commit history or for undoing unintended changes."
+    },
+    {
+      "skill_name": "Git",
+      "difficulty": "hard",
+      "question_text": "What happens when you run `git reset --hard HEAD~1`?",
+      "options_json": "{\"A\": \"It reverts all changes made since the last commit and discards any uncommitted changes.\", \"B\": \"It moves the current branch to a new commit that is one step back in the history.\", \"C\": \"It removes the most recent commit from the repository's history.\", \"D\": \"It creates a new branch with the same name as the current branch.\"}",
+      "correct_option": "A",
+      "explanation": "This command reverts all changes made since the last commit and discards any uncommitted changes, effectively resetting the working directory to match the state of the repository at the previous commit."
+    },
+    {
+      "skill_name": "Git",
+      "difficulty": "hard",
+      "question_text": "What happens when you commit a file with a conflicting name in Git?",
+      "options_json": "{\"A\": \"Git will overwrite the existing file\", \"B\": \"Git will rename the new file to avoid conflict\", \"C\": \"Git will throw an error and not allow the commit\", \"D\": \"Git will ask for user input to resolve the conflict\"}",
+      "correct_option": "C",
+      "explanation": "When a conflicting name is encountered, Git throws an error and does not proceed with the commit. This prevents accidental overwrites or data loss."
+    }
+  ],
+  "total_questions": 5
+}

@@ -24,7 +24,9 @@ export default function SkillsPage() {
 
       try {
         const data = await getClaimedSkills(studentId);
-        setSkills(Array.isArray(data) ? data : []);
+        // Extract job skill scores from the API response
+        const jobSkills = data.job_skill_scores || [];
+        setSkills(jobSkills);
       } catch (err) {
         setError(err.response?.data || { message: err.message });
       } finally {
@@ -108,52 +110,47 @@ export default function SkillsPage() {
               <TableHeader>
                 <TableRow>
                   <TableHead className="w-12">Select</TableHead>
-                  <TableHead>Parent Skill</TableHead>
-                  <TableHead>Parent Score</TableHead>
-                  <TableHead>Parent Level</TableHead>
-                  <TableHead>Confidence</TableHead>
-                  <TableHead className="w-28">Actions</TableHead>
+                  <TableHead>Job Skill</TableHead>
+                  <TableHead>Category</TableHead>
+                  <TableHead>Level</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
-                {skills.map((skill, index) => (
-                  <TableRow key={index}>
-                    <TableCell>
-                      <input
-                        type="checkbox"
-                        checked={selectedSkills.includes(skill.parent_skill)}
-                        onChange={() => handleSkillToggle(skill.parent_skill)}
-                        className="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary cursor-pointer"
-                        disabled={
-                          !selectedSkills.includes(skill.parent_skill) &&
-                          selectedSkills.length >= 5
-                        }
-                      />
-                    </TableCell>
-                    <TableCell className="font-medium">{skill.parent_skill}</TableCell>
-                    <TableCell>{skill.parent_score?.toFixed(2) || 'N/A'}</TableCell>
-                    <TableCell>
-                      <span className={`inline-flex items-center rounded-full px-2 py-1 text-xs font-medium ${
-                        skill.parent_level === 'Advanced' ? 'bg-green-100 text-green-700' :
-                        skill.parent_level === 'Intermediate' ? 'bg-blue-100 text-blue-700' :
-                        'bg-gray-100 text-gray-700'
-                      }`}>
-                        {skill.parent_level || 'N/A'}
-                      </span>
-                    </TableCell>
-                    <TableCell>{skill.confidence?.toFixed(2) || 'N/A'}</TableCell>
-                    <TableCell>
-                      <Button
-                        variant="ghost"
-                        size="sm"
-                        onClick={() => navigate(`/students/${studentId}/skills/${encodeURIComponent(skill.parent_skill)}/explain`)}
-                        className="text-blue-600 hover:text-blue-700"
-                      >
-                        Explain
-                      </Button>
-                    </TableCell>
-                  </TableRow>
-                ))}
+                {skills.map((skill, index) => {
+                  const level = skill.score >= 80 ? 'Advanced' : skill.score >= 60 ? 'Intermediate' : 'Beginner';
+                  const skillName = skill.job_skill_name || skill.skill_name || skill.job_skill_id;
+                  return (
+                    <TableRow key={index}>
+                      <TableCell>
+                        <input
+                          type="checkbox"
+                          checked={selectedSkills.includes(skillName)}
+                          onChange={() => handleSkillToggle(skillName)}
+                          className="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary cursor-pointer"
+                          disabled={
+                            !selectedSkills.includes(skillName) &&
+                            selectedSkills.length >= 5
+                          }
+                        />
+                      </TableCell>
+                      <TableCell className="font-medium">{skillName}</TableCell>
+                      <TableCell>
+                        <span className="inline-flex items-center rounded-full px-2 py-1 text-xs font-medium bg-purple-100 text-purple-700">
+                          {skill.category}
+                        </span>
+                      </TableCell>
+                      <TableCell>
+                        <span className={`inline-flex items-center rounded-full px-2 py-1 text-xs font-medium ${
+                          level === 'Advanced' ? 'bg-green-100 text-green-700' :
+                          level === 'Intermediate' ? 'bg-blue-100 text-blue-700' :
+                          'bg-red-100 text-red-700'
+                        }`}>
+                          {level}
+                        </span>
+                      </TableCell>
+                    </TableRow>
+                  );
+                })}
               </TableBody>
             </Table>
           ) : (

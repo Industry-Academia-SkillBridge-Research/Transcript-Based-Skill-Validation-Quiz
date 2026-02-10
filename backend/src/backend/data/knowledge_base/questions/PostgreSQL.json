@@ -1,0 +1,46 @@
+{
+  "skill_name": "PostgreSQL",
+  "questions": [
+    {
+      "skill_name": "PostgreSQL",
+      "difficulty": "easy",
+      "question_text": "What is the purpose of the PRIMARY KEY constraint in PostgreSQL?",
+      "options_json": "{\"A\": \"To uniquely identify each row in a table\", \"B\": \"To enforce data integrity by preventing duplicate values\", \"C\": \"To create an index on the column\", \"D\": \"To make the column case-insensitive\"}",
+      "correct_option": "A",
+      "explanation": "The PRIMARY KEY constraint ensures that each row in a table has a unique identifier. This helps to maintain data consistency and prevent duplicate records."
+    },
+    {
+      "skill_name": "PostgreSQL",
+      "difficulty": "easy",
+      "question_text": "What does the 'CREATE TABLE' statement do in PostgreSQL?",
+      "options_json": "{\"A\": \"Creates a new database\", \"B\": \"Creates a new table within an existing database\", \"C\": \"Deletes an existing table\", \"D\": \"Triggers a backup of the current database\"}",
+      "correct_option": "B",
+      "explanation": "The 'CREATE TABLE' statement is used to create a new table within an existing PostgreSQL database. This allows you to organize your data into structured tables with defined columns and relationships."
+    },
+    {
+      "skill_name": "PostgreSQL",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the UNIQUE constraint in PostgreSQL?",
+      "options_json": "{\"A\": \"To ensure data consistency by preventing duplicate values in a column.\", \"B\": \"To enforce primary key constraints on multiple columns.\", \"C\": \"To restrict insertions or updates that would violate a unique index.\", \"D\": \"To speed up query execution by indexing the column.\"}",
+      "correct_option": "A",
+      "explanation": "The UNIQUE constraint ensures data consistency by preventing duplicate values in a column, which helps maintain data integrity. It can be used to enforce uniqueness on one or more columns."
+    },
+    {
+      "skill_name": "PostgreSQL",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the \"EXPLAIN\" command in PostgreSQL?",
+      "options_json": "{\"A\": \"To optimize query performance by analyzing execution plans\", \"B\": \"To debug SQL queries and identify syntax errors\", \"C\": \"To manage database connections and sessions\", \"D\": \"To create new tables and indexes\"}",
+      "correct_option": "A",
+      "explanation": "The \"EXPLAIN\" command is used to analyze the execution plan of a query, helping developers optimize performance by identifying potential bottlenecks. This information can be used to adjust indexing strategies or rewrite queries for better efficiency."
+    },
+    {
+      "skill_name": "PostgreSQL",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the `pg_repack` utility in PostgreSQL?",
+      "options_json": "{\"A\": \"To repair corrupted tables\", \"B\": \"To reorganize and compact tables to reduce bloat\", \"C\": \"To optimize query performance\", \"D\": \"To backup database data\"}",
+      "correct_option": "B",
+      "explanation": "The `pg_repack` utility is used to reorganize and compact tables in PostgreSQL, reducing table bloat and improving query performance. This is especially useful for large tables that have experienced significant growth over time."
+    }
+  ],
+  "total_questions": 5
+}

@@ -1,0 +1,190 @@
+{
+  "skill_name": "Networking & Protocol Management",
+  "questions": [
+    {
+      "skill_name": "Networking & Protocol Management",
+      "difficulty": "easy",
+      "question_text": "What does the 'ip default-gateway' command configure on a router?",
+      "options_json": "{\"A\": \"The IP address of the router's interface\", \"B\": \"The IP address of the default gateway\", \"C\": \"The subnet mask for the router's interface\", \"D\": \"The DNS server IP address\"}",
+      "correct_option": "B",
+      "explanation": "This command sets the IP address of the device that will forward packets to other networks. It is used to configure the default gateway on a router."
+    },
+    {
+      "skill_name": "Networking & Protocol Management",
+      "difficulty": "easy",
+      "question_text": "What does the 'ip default-gateway' command do on a router?",
+      "options_json": "{\"A\": \"Sets the IP address of the router's interface\", \"B\": \"Specifies the default gateway for outgoing traffic\", \"C\": \"Configures the router's DNS server\", \"D\": \"Enables RIP routing protocol\"}",
+      "correct_option": "B",
+      "explanation": "The 'ip default-gateway' command specifies the IP address of the next-hop router that will forward packets to. This is used for outgoing traffic when a packet needs to be sent to a destination network not directly connected to the local network."
+    },
+    {
+      "skill_name": "Networking & Protocol Management",
+      "difficulty": "easy",
+      "question_text": "What is the primary function of a router's IP routing table?",
+      "options_json": "{\"A\": \"To store a list of all connected devices on the network\", \"B\": \"To determine the best path for data packets to travel between networks\", \"C\": \"To filter incoming traffic based on source and destination IP addresses\", \"D\": \"To assign IP addresses to devices on the network\"}",
+      "correct_option": "B",
+      "explanation": "A router's routing table is used to determine the best path for data packets to travel between networks. This allows routers to efficiently forward traffic between connected networks."
+    },
+    {
+      "skill_name": "Networking & Protocol Management",
+      "difficulty": "easy",
+      "question_text": "What does the 'ip default-gateway' command do in a router configuration?",
+      "options_json": "{\"A\": \"Sets the IP address of the router's interface\", \"B\": \"Specifies the IP address of the default gateway for the network\", \"C\": \"Configures the router to use DHCP for its own IP address\", \"D\": \"Enables RIP routing protocol on the router\"}",
+      "correct_option": "B",
+      "explanation": "The 'ip default-gateway' command specifies the IP address of the device that serves as the gateway for packets destined for other networks. This is necessary for the router to forward traffic to other networks."
+    },
+    {
+      "skill_name": "Networking & Protocol Management",
+      "difficulty": "easy",
+      "question_text": "What is the primary function of Spanning Tree Protocol (STP) in a network?",
+      "options_json": "{\"A\": \"To prevent network loops and ensure path redundancy\", \"B\": \"To improve network security by blocking malicious traffic\", \"C\": \"To optimize network performance by reducing latency\", \"D\": \"To manage network congestion and packet loss\"}",
+      "correct_option": "A",
+      "explanation": "STP prevents network loops by identifying and blocking redundant paths, ensuring that data packets take the most efficient route through the network."
+    },
+    {
+      "skill_name": "Networking & Protocol Management",
+      "difficulty": "easy",
+      "question_text": "What does the 'default' keyword in a Cisco router's access-list configuration do?",
+      "options_json": "{\"A\": \"It allows all traffic by default, unless explicitly denied.\", \"B\": \"It denies all traffic by default, unless explicitly allowed.\", \"C\": \"It sets the access-list to read-only mode.\", \"D\": \"It enables the router's firewall.\"}",
+      "correct_option": "A",
+      "explanation": "The 'default' keyword in a Cisco router's access-list configuration allows all traffic by default, unless explicitly denied. This means that any traffic not matched by an explicit deny statement will be allowed to pass through the router."
+    },
+    {
+      "skill_name": "Networking & Protocol Management",
+      "difficulty": "easy",
+      "question_text": "What is the primary function of a router in a network?",
+      "options_json": "{\"A\": \"To connect multiple devices to a single network segment\", \"B\": \"To forward packets between different networks based on IP addresses and subnet masks\", \"C\": \"To provide power over Ethernet (PoE) to connected devices\", \"D\": \"To act as a firewall to block incoming traffic\"}",
+      "correct_option": "B",
+      "explanation": "A router's primary function is to forward packets between different networks based on IP addresses and subnet masks. This allows devices on different networks to communicate with each other."
+    },
+    {
+      "skill_name": "Networking & Protocol Management",
+      "difficulty": "easy",
+      "question_text": "What does the 'ip default-gateway' command do on a Cisco router?",
+      "options_json": "{\"A\": \"Sets the IP address of the router's interface\", \"B\": \"Configures the router to use a specific subnet mask\", \"C\": \"Specifies the IP address of the default gateway for the network\", \"D\": \"Enables RIP routing protocol on the router\"}",
+      "correct_option": "C",
+      "explanation": "The 'ip default-gateway' command specifies the IP address of the default gateway for the network, allowing traffic to be forwarded to other networks. This is a fundamental configuration step in setting up a Cisco router."
+    },
+    {
+      "skill_name": "Networking & Protocol Management",
+      "difficulty": "medium",
+      "question_text": "What is the primary function of a Spanning Tree Protocol (STP) in a network?",
+      "options_json": "{\"A\": \"To prevent network loops and provide redundancy\", \"B\": \"To improve network security by blocking malicious traffic\", \"C\": \"To optimize network performance by reducing latency\", \"D\": \"To enable VLAN trunking between switches\"}",
+      "correct_option": "A",
+      "explanation": "STP prevents network loops and provides redundancy by dynamically switching off redundant paths, ensuring a loop-free topology."
+    },
+    {
+      "skill_name": "Networking & Protocol Management",
+      "difficulty": "medium",
+      "question_text": "What is the primary function of a router's Spanning Tree Protocol (STP)?",
+      "options_json": "{\"A\": \"To prevent network loops by blocking redundant paths\", \"B\": \"To improve network security by encrypting data packets\", \"C\": \"To optimize network performance by load balancing traffic\", \"D\": \"To manage network addressing and subnetting\"}",
+      "correct_option": "A",
+      "explanation": "STP is used to prevent network loops by blocking redundant paths, ensuring that data packets take the most efficient route through the network."
+    },
+    {
+      "skill_name": "Networking & Protocol Management",
+      "difficulty": "medium",
+      "question_text": "What is the primary function of a spanning tree protocol in a network?",
+      "options_json": "{\"A\": \"To prevent network loops and ensure data integrity\", \"B\": \"To prioritize traffic based on packet size\", \"C\": \"To optimize routing table updates\", \"D\": \"To manage network congestion\"}",
+      "correct_option": "A",
+      "explanation": "The spanning tree protocol prevents network loops by dynamically adjusting the network topology, ensuring data integrity and preventing broadcast storms."
+    },
+    {
+      "skill_name": "Networking & Protocol Management",
+      "difficulty": "medium",
+      "question_text": "What type of protocol is used for transmitting data over a network when a connection needs to be established first?",
+      "options_json": "{\"A\": \"TCP (Transmission Control Protocol)\", \"B\": \"UDP (User Datagram Protocol)\", \"C\": \"ICMP (Internet Control Message Protocol)\", \"D\": \"IGMP (Internet Group Management Protocol)\"}",
+      "correct_option": "A",
+      "explanation": "TCP is a connection-oriented protocol, which means it establishes a connection with the destination device before sending data. This ensures reliable delivery of packets and prevents packet loss."
+    },
+    {
+      "skill_name": "Networking & Protocol Management",
+      "difficulty": "medium",
+      "question_text": "What is the primary function of Spanning Tree Protocol (STP) in a network?",
+      "options_json": "{\"A\": \"To prevent network loops and provide redundant paths for failover\", \"B\": \"To optimize network bandwidth by aggregating multiple connections\", \"C\": \"To improve network security by filtering traffic based on source IP addresses\", \"D\": \"To enable VLAN trunking between switches\"}",
+      "correct_option": "A",
+      "explanation": "STP prevents network loops and provides redundant paths for failover, ensuring network stability and preventing broadcast storms."
+    },
+    {
+      "skill_name": "Networking & Protocol Management",
+      "difficulty": "hard",
+      "question_text": "A network administrator needs to configure a router to allow HTTP traffic from hosts on VLAN 10, but block it for hosts on VLAN 20. What type of ACL should be used?",
+      "options_json": "{\"A\": \"Standard ACL (outbound)\", \"B\": \"Extended ACL (inbound)\", \"C\": \"Reflexive ACL\", \"D\": \"Time-based ACL\"}",
+      "correct_option": "B",
+      "explanation": "An extended ACL (inbound) is used to filter traffic entering the router, allowing the administrator to block HTTP traffic for hosts on VLAN 20."
+    },
+    {
+      "skill_name": "Networking & Protocol Management",
+      "difficulty": "hard",
+      "question_text": "A network administrator needs to configure a router to forward traffic between two VLANs. The VLANs are configured on separate interfaces, and the router has an IP address of 192.168.1.1/24. Which command should be used to enable routing between the VLANs?",
+      "options_json": "{\"A\": \"ip route-cache\", \"B\": \"ip pim sparse-mode\", \"C\": \"router eigrp 100\", \"D\": \"no ip directed-broadcast\"}",
+      "correct_option": "D",
+      "explanation": "The 'no ip directed-broadcast' command is used to enable routing between VLANs on a router. This command prevents the router from sending directed broadcasts, allowing traffic to be forwarded between the VLANs."
+    },
+    {
+      "skill_name": "Networking & Protocol Management",
+      "difficulty": "hard",
+      "question_text": "A network administrator needs to configure a router to forward traffic between two VLANs. Which of the following commands would achieve this?",
+      "options_json": "{\"A\": \"vlan 10 routing enable\", \"B\": \"switchport trunk allowed vlan add 10,20\", \"C\": \"ip route-vlan 10 192.168.1.0/24\", \"D\": \"spanning-tree portfast trunk\"}",
+      "correct_option": "B",
+      "explanation": "This command adds VLANs 10 and 20 to the allowed list on a trunk port, allowing traffic between them to be forwarded by the router."
+    },
+    {
+      "skill_name": "Networking & Protocol Management",
+      "difficulty": "hard",
+      "question_text": "A network administrator configures a router with an EIGRP process. Which option is true regarding the configuration?",
+      "options_json": "{\"A\": \"The 'router eigrp' command must be used in global configuration mode.\", \"B\": \"The 'network' command under the EIGRP process is required to specify the network address.\", \"C\": \"EIGRP uses DUAL (Diffusing Update Algorithm) for route calculation.\", \"D\": \"The 'neighbor\"}",
+      "correct_option": "B",
+      "explanation": "To enable EIGRP on a specific network, the 'network' command under the EIGRP process is required. This specifies the network address that EIGRP will advertise and use for routing."
+    },
+    {
+      "skill_name": "Networking & Protocol Management",
+      "difficulty": "hard",
+      "question_text": "A network administrator configures a router with multiple VLANs. Which protocol is used for trunking between switches and routers?",
+      "options_json": "{\"A\": \"STP (Spanning Tree Protocol)\", \"B\": \"VTP (Virtual Trunking Protocol)\", \"C\": \"RSTP (Rapid Spanning Tree Protocol)\", \"D\": \"PVST+ (Per-VLAN Spanning Tree Plus)\"}",
+      "correct_option": "B",
+      "explanation": "VTP is used for trunking between switches and routers to allow multiple VLANs to be carried over a single link. This allows for easier management of VLANs across the network."
+    },
+    {
+      "skill_name": "Networking & Protocol Management",
+      "difficulty": "hard",
+      "question_text": "A network engineer needs to configure a router with multiple VLANs. Which of the following commands will create a new VLAN and assign it to the correct VLAN ID on a Cisco IOS device?",
+      "options_json": "{\"A\": \"vlan database\", \"B\": \"switch vlan 10\", \"C\": \"interface vlan 10\", \"D\": \"ip vlan 10\"}",
+      "correct_option": "C",
+      "explanation": "The 'interface vlan' command is used to create a new VLAN and assign it to the correct VLAN ID on a Cisco IOS device. This command configures the interface as part of the specified VLAN."
+    },
+    {
+      "skill_name": "Networking & Protocol Management",
+      "difficulty": "hard",
+      "question_text": "A network engineer is configuring a Cisco router's EIGRP routing protocol. Which command will enable EIGRP on an interface and set its autonomous system number (AS) to 100?",
+      "options_json": "{\"A\": \"router eigrp 100\", \"B\": \"network 10.1.1.0 0.0.0.255\", \"C\": \"ip eigrp as-number 100\", \"D\": \"router eigrp 100 network 10.1.1.0 0.0.0.255\"}",
+      "correct_option": "A",
+      "explanation": "The correct command to enable EIGRP on an interface and set its AS number is 'router eigrp 100'. The other options are either incorrect or incomplete."
+    },
+    {
+      "skill_name": "Networking & Protocol Management",
+      "difficulty": "hard",
+      "question_text": "A network administrator needs to configure a router with multiple VLANs. Which of the following commands will create a new VLAN and assign it to a specific interface?",
+      "options_json": "{\"A\": \"vlan 10 switchport access vlan 10\", \"B\": \"interface fastethernet0/1 switchport mode trunk\", \"C\": \"interface fastethernet0/1 switchport access vlan 10\", \"D\": \"no shutdown\"}",
+      "correct_option": "C",
+      "explanation": "The correct answer is C because the command 'interface fastethernet0/1 switchport access vlan 10' creates a new VLAN and assigns it to the specified interface. This configuration allows devices on that interface to communicate with each other within the same VLAN."
+    },
+    {
+      "skill_name": "Networking & Protocol Management",
+      "difficulty": "hard",
+      "question_text": "A network administrator needs to configure a router with multiple VLANs. Which of the following commands will create a new VLAN and assign it an ID of 10, while also setting the VLAN name to 'Sales'?",
+      "options_json": "{\"A\": \"vlan database\\nvlan 10\\nname Sales\", \"B\": \"configure terminal\\ncopy running-config startup-config\", \"C\": \"interface vlan 10\\nip address 192.168.1.1 255.255.255.0\", \"D\": \"no shutdown\"}",
+      "correct_option": "A",
+      "explanation": "The correct command sequence creates a new VLAN with ID 10 and assigns it the name 'Sales'. This is done by entering VLAN configuration mode, creating the VLAN, and setting its name."
+    },
+    {
+      "skill_name": "Networking & Protocol Management",
+      "difficulty": "hard",
+      "question_text": "A network administrator has configured a router with three VLANs: VLAN1, VLAN2, and VLAN3. Which of the following trunking protocols will allow all three VLANs to be carried over a single link?",
+      "options_json": "{\"A\": \"IEEE 802.11\", \"B\": \"ISL (Inter-Switch Link)\", \"C\": \"PVST+ (Per-VLAN Spanning Tree Plus)\", \"D\": \"IEEE 802.1Q\"}",
+      "correct_option": "D",
+      "explanation": "IEEE 802.1Q is a trunking protocol that allows multiple VLANs to be carried over a single link, making it the correct choice for this scenario."
+    }
+  ],
+  "total_questions": 23
+}

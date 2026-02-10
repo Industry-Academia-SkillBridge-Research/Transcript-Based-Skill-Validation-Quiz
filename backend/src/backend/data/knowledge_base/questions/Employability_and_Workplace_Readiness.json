@@ -1,0 +1,198 @@
+{
+  "skill_name": "Employability & Workplace Readiness",
+  "questions": [
+    {
+      "skill_name": "Employability & Workplace Readiness",
+      "difficulty": "easy",
+      "question_text": "What should you do if you're unsure about a task assigned by your supervisor?",
+      "options_json": "{\"A\": \"Ask for clarification immediately\", \"B\": \"Wait until the next day to ask for help\", \"C\": \"Try to figure it out on your own and then ask for feedback\", \"D\": \"Do nothing and hope it gets done somehow\"}",
+      "correct_option": "A",
+      "explanation": "It's essential to clarify any doubts about a task to ensure you understand what's expected of you. Asking for clarification immediately shows that you're proactive and willing to learn."
+    },
+    {
+      "skill_name": "Employability & Workplace Readiness",
+      "difficulty": "easy",
+      "question_text": "What should you do if your manager asks you to work on a task that is outside of your job role?",
+      "options_json": "{\"A\": \"Politely decline and explain why it's not part of your job\", \"B\": \"Ask for clarification on what the task entails before starting\", \"C\": \"Volunteer to take on the new responsibility without question\", \"D\": \"Tell your manager that you're too busy with other tasks\"}",
+      "correct_option": "A",
+      "explanation": "This is because it's essential to communicate clearly about one's job responsibilities and boundaries. Politely declining and explaining why it's not part of your role helps maintain a professional relationship with your manager."
+    },
+    {
+      "skill_name": "Employability & Workplace Readiness",
+      "difficulty": "easy",
+      "question_text": "What should you do when your manager asks you to work on a project outside of your job role?",
+      "options_json": "{\"A\": \"Politely decline and explain why it's not within your job description.\", \"B\": \"Volunteer for the new task without asking any questions.\", \"C\": \"Ask your manager for more information about the project before making a decision.\", \"D\": \"Tell your manager that you're too busy with your current tasks to take on anything else.\"}",
+      "correct_option": "A",
+      "explanation": "Declining and explaining why it's not within your job description shows professionalism and respect for your role. It also helps prevent overcommitting and ensures you can deliver quality work in your assigned tasks."
+    },
+    {
+      "skill_name": "Employability & Workplace Readiness",
+      "difficulty": "easy",
+      "question_text": "What should you do if a colleague is not pulling their weight in a team project?",
+      "options_json": "{\"A\": \"Tell them they're doing it wrong and try to take over the task\", \"B\": \"Politely ask them for help and offer to support them\", \"C\": \"Report them to your manager without discussing with them first\", \"D\": \"Just ignore the issue and focus on your own tasks\"}",
+      "correct_option": "B",
+      "explanation": "This is an example of good teamwork and communication skills, which are essential in a professional setting. By asking for help and offering support, you can resolve issues and maintain a positive working relationship."
+    },
+    {
+      "skill_name": "Employability & Workplace Readiness",
+      "difficulty": "easy",
+      "question_text": "What is a key aspect of professionalism in the workplace?",
+      "options_json": "{\"A\": \"Arriving late to work regularly\", \"B\": \"Responding promptly to emails and messages\", \"C\": \"Taking long breaks during working hours\", \"D\": \"Using social media for personal purposes during work\"}",
+      "correct_option": "B",
+      "explanation": "Responding promptly to emails and messages is essential in maintaining a professional image and ensuring effective communication with colleagues and clients. This helps to build trust and credibility in the workplace."
+    },
+    {
+      "skill_name": "Employability & Workplace Readiness",
+      "difficulty": "easy",
+      "question_text": "What should you do if your manager asks you to work on a task outside of your job description?",
+      "options_json": "{\"A\": \"Refuse to do the task and tell your manager that it's not part of your job.\", \"B\": \"Ask your manager for clarification on why this task is important and how it relates to your role.\", \"C\": \"Volunteer to take on the new responsibility without asking any questions.\", \"D\": \"Tell your colleagues about the task and ask them if they think you should do it.\"}",
+      "correct_option": "B",
+      "explanation": "You should ask for clarification so that you understand the expectations and can perform the task effectively. This shows that you are proactive, willing to learn, and committed to delivering quality work."
+    },
+    {
+      "skill_name": "Employability & Workplace Readiness",
+      "difficulty": "easy",
+      "question_text": "What should you do if your manager asks you to take on a new task outside of your job description?",
+      "options_json": "{\"A\": \"Refuse to do it, as it's not part of my job\", \"B\": \"Ask for clarification and guidance from the manager\", \"C\": \"Accept the task without question and figure it out yourself\", \"D\": \"Tell your manager that you're too busy with other tasks\"}",
+      "correct_option": "B",
+      "explanation": "You should ask for clarification to understand the expectations and requirements of the new task. This shows that you are proactive, willing to learn, and committed to delivering high-quality work."
+    },
+    {
+      "skill_name": "Employability & Workplace Readiness",
+      "difficulty": "easy",
+      "question_text": "What should you do if your manager asks you to work on a project outside of your job role?",
+      "options_json": "{\"A\": \"Politely decline and explain why it's not suitable for your role\", \"B\": \"Accept the task without questioning, as it's an opportunity to learn\", \"C\": \"Ask your manager for more information about the project before making a decision\", \"D\": \"Tell your manager that you're too busy with other tasks\"}",
+      "correct_option": "C",
+      "explanation": "This is because asking questions and seeking clarification shows initiative and a willingness to learn, which are essential soft skills in any workplace. It also helps prevent misunderstandings and ensures that the task is completed correctly."
+    },
+    {
+      "skill_name": "Employability & Workplace Readiness",
+      "difficulty": "medium",
+      "question_text": "What is the primary reason for attending a job interview?",
+      "options_json": "{\"A\": \"To showcase your skills and qualifications\", \"B\": \"To learn more about the company culture\", \"C\": \"To negotiate salary and benefits\", \"D\": \"To meet with colleagues\"}",
+      "correct_option": "A",
+      "explanation": "Attending a job interview is primarily to demonstrate one's skills, qualifications, and fit for the role. This allows employers to assess potential candidates."
+    },
+    {
+      "skill_name": "Employability & Workplace Readiness",
+      "difficulty": "medium",
+      "question_text": "What should you do if a colleague is consistently late to meetings?",
+      "options_json": "{\"A\": \"Politely remind them of the meeting schedule and time\", \"B\": \"Talk to your manager about the issue, but not directly to the colleague\", \"C\": \"Avoid discussing it with anyone and just deal with it yourself\", \"D\": \"Confront the colleague about their behavior in front of others\"}",
+      "correct_option": "A",
+      "explanation": "Reminding a colleague politely about meeting schedules helps maintain a positive working relationship. It also shows that you are considerate of their time and responsibilities."
+    },
+    {
+      "skill_name": "Employability & Workplace Readiness",
+      "difficulty": "medium",
+      "question_text": "What should you do if a colleague is not pulling their weight on a team project?",
+      "options_json": "{\"A\": \"Take charge and lead the project to success, even if it means doing extra work.\", \"B\": \"Politely speak with your colleague about their performance and offer help if needed.\", \"C\": \"Report the issue to your supervisor or HR department immediately.\", \"D\": \"Just ignore the situation and hope it resolves itself.\"}",
+      "correct_option": "B",
+      "explanation": "This is an example of effective communication and teamwork, which are essential soft skills in any workplace. By addressing the issue directly with your colleague, you can resolve the problem and maintain a positive working relationship."
+    },
+    {
+      "skill_name": "Employability & Workplace Readiness",
+      "difficulty": "medium",
+      "question_text": "Which of the following is a key aspect of adapting to an industry's expectations in a new job?",
+      "options_json": "{\"A\": \"Focusing solely on individual goals and achievements\", \"B\": \"Understanding and aligning with the company culture and values\", \"C\": \"Prioritizing technical skills over soft skills\", \"D\": \"Avoiding team meetings and collaborations\"}",
+      "correct_option": "B",
+      "explanation": "Adapting to an industry's expectations requires understanding and aligning with the company culture and values, which is essential for a smooth transition into a new role. This involves being aware of the organization's norms, policies, and expectations."
+    },
+    {
+      "skill_name": "Employability & Workplace Readiness",
+      "difficulty": "medium",
+      "question_text": "What should you do if a colleague is not pulling their weight in a team project?",
+      "options_json": "{\"A\": \"Tell them they're doing it wrong and try to take over the task\", \"B\": \"Politely point out their mistake and offer help to get back on track\", \"C\": \"Avoid confrontation and let your manager handle it\", \"D\": \"Blame it on a lack of resources or equipment\"}",
+      "correct_option": "B",
+      "explanation": "This is an example of effective communication and teamwork skills, which are essential in the workplace. By addressing the issue politely and offering help, you can resolve the problem without damaging relationships."
+    },
+    {
+      "skill_name": "Employability & Workplace Readiness",
+      "difficulty": "medium",
+      "question_text": "What should you do if a colleague is consistently late to team meetings?",
+      "options_json": "{\"A\": \"Politely remind them of the meeting schedule and time.\", \"B\": \"Talk to your manager about addressing the issue with the colleague.\", \"C\": \"Avoid bringing it up, as it's not my concern.\", \"D\": \"Tell the colleague that they're being unprofessional.\"}",
+      "correct_option": "A",
+      "explanation": "Reminding a colleague of their responsibilities in a polite manner is an effective way to address the issue without escalating tensions. This approach demonstrates good communication and teamwork skills, which are essential for a harmonious work environment."
+    },
+    {
+      "skill_name": "Employability & Workplace Readiness",
+      "difficulty": "medium",
+      "question_text": "What should you do if a colleague is consistently late to meetings and it's affecting your work?",
+      "options_json": "{\"A\": \"Politely tell them that their tardiness is impacting the team's productivity.\", \"B\": \"Talk to HR about the issue, as it may be a company-wide problem.\", \"C\": \"Just accept it as part of working with a team and adjust your schedule accordingly.\", \"D\": \"Confront the colleague directly and tell them they're being irresponsible.\"}",
+      "correct_option": "A",
+      "explanation": "Addressing the issue in a professional manner helps maintain a positive work environment. Politely telling the colleague about the impact on productivity is an appropriate way to address the situation without escalating it."
+    },
+    {
+      "skill_name": "Employability & Workplace Readiness",
+      "difficulty": "hard",
+      "question_text": "You're working on a team project and your colleague is consistently late to meetings. How would you handle this situation?",
+      "options_json": "{\"A\": \"Confront the colleague about their tardiness in front of the rest of the team.\", \"B\": \"Politely remind the colleague about the meeting schedule and ask them to make an effort to be on time.\", \"C\": \"Document the issue and report it to your supervisor, as it's affecting the team's productivity.\", \"D\": \"Ignore the issue and focus on completing your own tasks.\"}",
+      "correct_option": "B",
+      "explanation": "Option B is the correct answer because it addresses the issue in a professional manner without being confrontational. It also shows an understanding of teamwork and communication skills, which are essential in a workplace setting."
+    },
+    {
+      "skill_name": "Employability & Workplace Readiness",
+      "difficulty": "hard",
+      "question_text": "A new employee is struggling with their workload and is consistently late to meetings. What should a team lead do in this situation?",
+      "options_json": "{\"A\": \"Provide additional training on time management and prioritize tasks.\", \"B\": \"Increase the employee's workload to help them learn to manage their time better.\", \"C\": \"Have an open conversation with the employee about their performance and provide feedback.\", \"D\": \"Reassign the employee to a different team.\"}",
+      "correct_option": "C",
+      "explanation": "A team lead should have an open conversation with the employee to discuss their performance, provide feedback, and help them understand what is expected of them. This approach helps to address the issue while also maintaining a positive working relationship."
+    },
+    {
+      "skill_name": "Employability & Workplace Readiness",
+      "difficulty": "hard",
+      "question_text": "In a team meeting, a colleague interrupts you while you're presenting. How do you handle the situation?",
+      "options_json": "{\"A\": \"Politely tell them to wait until you finish speaking.\", \"B\": \"Ask the team leader to intervene and address the interrupter.\", \"C\": \"Get defensive and argue with the interrupter.\", \"D\": \"Try to speak over the interrupter and continue presenting.\"}",
+      "correct_option": "A",
+      "explanation": "This is an example of effective communication and conflict resolution skills, which are essential in a professional setting. By politely telling the colleague to wait, you maintain respect for their opinion while also asserting your right to be heard."
+    },
+    {
+      "skill_name": "Employability & Workplace Readiness",
+      "difficulty": "hard",
+      "question_text": "A new employee is struggling to adapt to a team-based work environment. Which of the following actions would be most appropriate for their supervisor to take?",
+      "options_json": "{\"A\": \"Assign them a solo project to focus on without interruptions.\", \"B\": \"Provide additional training on communication and collaboration skills.\", \"C\": \"Transfer them to a different team that is more suitable for their work style.\", \"D\": \"Give them a written warning for not adapting quickly enough.\"}",
+      "correct_option": "B",
+      "explanation": "The correct answer, B, demonstrates an understanding of the importance of teamwork and collaboration in most workplaces. Providing additional training on communication and collaboration skills is a supportive and proactive approach to helping the employee adapt."
+    },
+    {
+      "skill_name": "Employability & Workplace Readiness",
+      "difficulty": "hard",
+      "question_text": "What should you do if a colleague is consistently late to meetings and impacting team productivity?",
+      "options_json": "{\"A\": \"Politely remind them of the meeting schedule and expected punctuality.\", \"B\": \"Avoid confrontation and let the manager handle it.\", \"C\": \"Address the issue directly with the colleague, but avoid being confrontational.\", \"D\": \"Report the behavior to HR immediately.\"}",
+      "correct_option": "A",
+      "explanation": "Politely reminding a colleague of their responsibilities helps maintain a positive work environment and promotes teamwork. Addressing the issue directly also shows initiative and professionalism."
+    },
+    {
+      "skill_name": "Employability & Workplace Readiness",
+      "difficulty": "hard",
+      "question_text": "A new employee is struggling to adapt to a team-based work environment. Which of the following actions would be most appropriate for their manager to take?",
+      "options_json": "{\"A\": \"Assign them a solo project to focus on individual performance.\", \"B\": \"Provide additional training on teamwork and collaboration skills.\", \"C\": \"Give them more responsibilities to help them feel more integrated into the team.\", \"D\": \"Consider relocating them to a different department where they can work independently.\"}",
+      "correct_option": "B",
+      "explanation": "This action addresses the employee's struggle with teamwork and collaboration, which is essential for success in most workplaces. Providing additional training helps the employee develop the necessary skills to adapt to the team-based environment."
+    },
+    {
+      "skill_name": "Employability & Workplace Readiness",
+      "difficulty": "hard",
+      "question_text": "You are working on a team project and your colleague's code is causing conflicts with yours. What should you do?",
+      "options_json": "{\"A\": \"Politely ask them to rewrite their code to avoid future conflicts.\", \"B\": \"Suggest using a version control system like Git to manage changes and resolve conflicts.\", \"C\": \"Report the issue to your manager, stating that it's not your responsibility to resolve the conflict.\", \"D\": \"Ignore the issue and hope it resolves itself.\"}",
+      "correct_option": "B",
+      "explanation": "Using a version control system like Git is an industry-standard approach to managing changes and resolving conflicts in collaborative projects. This demonstrates adaptability to industry expectations and effective use of industrial tools and technologies."
+    },
+    {
+      "skill_name": "Employability & Workplace Readiness",
+      "difficulty": "hard",
+      "question_text": "You've been asked to work on a project with a tight deadline, but your team member is struggling to meet their tasks. What should you do?",
+      "options_json": "{\"A\": \"Tell them to work faster and ignore the struggles they're facing.\", \"B\": \"Offer support and help them prioritize their tasks to meet the deadline.\", \"C\": \"Report the issue to your manager, as it's not your responsibility to handle team conflicts.\", \"D\": \"Suggest a new deadline that is more realistic for the project.\"}",
+      "correct_option": "B",
+      "explanation": "Offering support and help prioritizing tasks demonstrates empathy and teamwork skills, which are essential in a professional setting. This approach also helps to maintain a positive team dynamic and ensures the project's success."
+    },
+    {
+      "skill_name": "Employability & Workplace Readiness",
+      "difficulty": "hard",
+      "question_text": "A new employee is asked to work on a project with a tight deadline. However, they notice that their team lead has not provided any clear instructions or expectations for the task. What should the employee do?",
+      "options_json": "{\"A\": \"Start working on the project immediately and hope it turns out okay\", \"B\": \"Ask the team lead for clarification and specific instructions before starting work\", \"C\": \"Suggest a different deadline to the team lead, as they feel it's unrealistic\", \"D\": \"Politely decline to work on the project due to lack of clear expectations\"}",
+      "correct_option": "B",
+      "explanation": "The employee should ask for clarification and specific instructions before starting work, as this demonstrates their ability to adapt to workplace expectations and communicate effectively with their team lead."
+    }
+  ],
+  "total_questions": 24
+}

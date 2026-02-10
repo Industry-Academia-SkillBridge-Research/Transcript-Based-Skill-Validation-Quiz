@@ -1,0 +1,54 @@
+{
+  "skill_name": "React Native",
+  "questions": [
+    {
+      "skill_name": "React Native",
+      "difficulty": "easy",
+      "question_text": "What is the primary use of the 'useState' hook in React Native?",
+      "options_json": "{\"A\": \"To update the state of a component\", \"B\": \"To handle user input\", \"C\": \"To manage the lifecycle of a component\", \"D\": \"To render a component conditionally\"}",
+      "correct_option": "A",
+      "explanation": "The 'useState' hook is used to update the state of a React Native component, allowing it to re-render with new data."
+    },
+    {
+      "skill_name": "React Native",
+      "difficulty": "easy",
+      "question_text": "What is the primary purpose of using a Navigator in React Native?",
+      "options_json": "{\"A\": \"To handle user input and interactions\", \"B\": \"To manage navigation between screens\", \"C\": \"To optimize app performance\", \"D\": \"To implement authentication\"}",
+      "correct_option": "B",
+      "explanation": "The Navigator component is used to manage the navigation flow between different screens in a React Native app. It helps to keep the navigation logic separate from the rest of the code."
+    },
+    {
+      "skill_name": "React Native",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the 'useEffect' hook in React Native?",
+      "options_json": "{\"A\": \"To handle user input\", \"B\": \"To manage side effects, such as API calls or timer events\", \"C\": \"To render components conditionally\", \"D\": \"To update the state of a component\"}",
+      "correct_option": "B",
+      "explanation": "The 'useEffect' hook is used to handle side effects in React Native, which can include API calls or timer events. This allows you to perform actions that affect the outside world."
+    },
+    {
+      "skill_name": "React Native",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of using the 'useMemo' hook in React Native?",
+      "options_json": "{\"A\": \"To memoize expensive function calls and prevent unnecessary re-renders.\", \"B\": \"To optimize component performance by caching values between renders.\", \"C\": \"To handle side effects in functional components.\", \"D\": \"To manage state changes in the application.\"}",
+      "correct_option": "A",
+      "explanation": "The 'useMemo' hook is used to memoize expensive function calls, which prevents unnecessary re-renders and improves component performance. This is especially useful when working with complex computations or data processing."
+    },
+    {
+      "skill_name": "React Native",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of using the 'useFocusEffect' hook in a React Native screen?",
+      "options_json": "{\"A\": \"To handle navigation between screens\", \"B\": \"To detect when the user has navigated away from the current screen\", \"C\": \"To optimize performance by preventing unnecessary re-renders\", \"D\": \"To display a loading indicator while data is being fetched\"}",
+      "correct_option": "B",
+      "explanation": "The 'useFocusEffect' hook is used to detect when the user has navigated away from the current screen, allowing you to handle focus-related logic. This can be useful for tasks such as saving unsaved changes or dismissing keyboards."
+    },
+    {
+      "skill_name": "React Native",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of using the `useCallback` hook in React Native?",
+      "options_json": "{\"A\": \"To memoize a function so it's not recreated on every render\", \"B\": \"To handle state changes in a component\", \"C\": \"To optimize performance by reducing unnecessary re-renders\", \"D\": \"To create a new instance of a class\"}",
+      "correct_option": "A",
+      "explanation": "The `useCallback` hook is used to memoize a function so it's not recreated on every render, which can improve performance by reducing unnecessary re-renders."
+    }
+  ],
+  "total_questions": 6
+}

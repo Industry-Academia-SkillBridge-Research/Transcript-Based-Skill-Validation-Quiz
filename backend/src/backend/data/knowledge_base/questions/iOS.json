@@ -1,0 +1,46 @@
+{
+  "skill_name": "iOS",
+  "questions": [
+    {
+      "skill_name": "iOS",
+      "difficulty": "easy",
+      "question_text": "What is the primary purpose of a segue in iOS?",
+      "options_json": "{\"A\": \"To navigate between view controllers\", \"B\": \"To animate the transition between views\", \"C\": \"To handle user input\", \"D\": \"To manage memory\"}",
+      "correct_option": "A",
+      "explanation": "A segue is used to navigate between view controllers in an iOS app. This allows for a smooth and intuitive user experience."
+    },
+    {
+      "skill_name": "iOS",
+      "difficulty": "easy",
+      "question_text": "What is the purpose of the 'Storyboard' in Xcode?",
+      "options_json": "{\"A\": \"To design the layout of a user interface\", \"B\": \"To create and manage database connections\", \"C\": \"To write code for an app's functionality\", \"D\": \"To test an app's performance\"}",
+      "correct_option": "A",
+      "explanation": "The Storyboard in Xcode is used to design the layout of a user interface, allowing developers to create and arrange UI elements visually. This makes it easier to plan and implement the app's UI."
+    },
+    {
+      "skill_name": "iOS",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the `@objc` attribute in Swift?",
+      "options_json": "{\"A\": \"To make a class accessible from Objective-C code\", \"B\": \"To enable ARC (Automatic Reference Counting)\", \"C\": \"To create a singleton class\", \"D\": \"To implement a protocol\"}",
+      "correct_option": "A",
+      "explanation": "The `@objc` attribute is used to make Swift classes and properties accessible from Objective-C code, allowing for interoperability between the two languages. This is particularly useful when working with existing Objective-C frameworks or libraries."
+    },
+    {
+      "skill_name": "iOS",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the `@objc` attribute in Swift?",
+      "options_json": "{\"A\": \"To make a class or method accessible from Objective-C\", \"B\": \"To enable ARC (Automatic Reference Counting)\", \"C\": \"To create a protocol\", \"D\": \"To use a third-party framework\"}",
+      "correct_option": "A",
+      "explanation": "The `@objc` attribute is used to make Swift classes and methods accessible from Objective-C, allowing for interoperability between the two languages. This is particularly useful when working with existing Objective-C code or frameworks."
+    },
+    {
+      "skill_name": "iOS",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of using a delegate in iOS?",
+      "options_json": "{\"A\": \"To pass data between view controllers\", \"B\": \"To handle asynchronous tasks\", \"C\": \"To communicate with other classes or objects\", \"D\": \"To manage memory allocation\"}",
+      "correct_option": "C",
+      "explanation": "A delegate is an object that receives notifications from another class when a specific event occurs. In iOS, delegates are commonly used to handle events such as button clicks or network requests."
+    }
+  ],
+  "total_questions": 5
+}

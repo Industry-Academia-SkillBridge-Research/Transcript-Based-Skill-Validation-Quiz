@@ -1,0 +1,30 @@
+{
+  "skill_name": "OLAP",
+  "questions": [
+    {
+      "skill_name": "OLAP",
+      "difficulty": "easy",
+      "question_text": "What does OLAP stand for?",
+      "options_json": "{\"A\": \"Online Analytical Processing\", \"B\": \"Object Language and Parsing\", \"C\": \"Operational Layer and Application\", \"D\": \"Object Linking and Embedding\"}",
+      "correct_option": "A",
+      "explanation": "OLAP is a technology used for data analysis and business intelligence. It allows users to analyze large amounts of data quickly and efficiently."
+    },
+    {
+      "skill_name": "OLAP",
+      "difficulty": "medium",
+      "question_text": "What is the primary function of a Data Warehouse in Business Intelligence?",
+      "options_json": "{\"A\": \"To store raw data from various sources for future use\", \"B\": \"To perform complex analytics and machine learning tasks\", \"C\": \"To provide a centralized repository of integrated data for reporting and analysis\", \"D\": \"To handle real-time data processing\"}",
+      "correct_option": "C",
+      "explanation": "A Data Warehouse is designed to store and manage large amounts of data from various sources, providing a single source of truth for business intelligence. This allows organizations to make informed decisions based on integrated and analyzed data."
+    },
+    {
+      "skill_name": "OLAP",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of a star schema in data warehousing?",
+      "options_json": "{\"A\": \"To store large amounts of historical data\", \"B\": \"To improve query performance by reducing data redundancy\", \"C\": \"To enable data mining and predictive analytics\", \"D\": \"To simplify ETL processes\"}",
+      "correct_option": "B",
+      "explanation": "A star schema is designed to reduce data redundancy, making it easier for queries to retrieve the required information. This improves query performance by reducing the amount of data that needs to be processed."
+    }
+  ],
+  "total_questions": 3
+}

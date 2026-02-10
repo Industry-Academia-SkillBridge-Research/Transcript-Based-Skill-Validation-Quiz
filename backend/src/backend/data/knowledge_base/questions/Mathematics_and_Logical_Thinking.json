@@ -1,0 +1,150 @@
+{
+  "skill_name": "Mathematics & Logical Thinking",
+  "questions": [
+    {
+      "skill_name": "Mathematics & Logical Thinking",
+      "difficulty": "easy",
+      "question_text": "What is the result of 2^3 in binary?",
+      "options_json": "{\"A\": \"1000\", \"B\": \"1010\", \"C\": \"1100\", \"D\": \"1110\"}",
+      "correct_option": "A",
+      "explanation": "In binary, 2^3 is equal to 8, which is represented as 1000. This is because each digit in the binary representation represents a power of 2."
+    },
+    {
+      "skill_name": "Mathematics & Logical Thinking",
+      "difficulty": "easy",
+      "question_text": "What is the result of the expression x ∧ (¬x) in Boolean Algebra?",
+      "options_json": "{\"A\": \"1\", \"B\": \"0\", \"C\": \"x\", \"D\": \"\\u00acx\"}",
+      "correct_option": "B",
+      "explanation": "In Boolean Algebra, the expression x ∧ (¬x) is a conjunction of x and its negation. This will always result in 0, as there can be no overlap between an element and its complement."
+    },
+    {
+      "skill_name": "Mathematics & Logical Thinking",
+      "difficulty": "easy",
+      "question_text": "What is the result of x AND NOT y in Boolean Algebra?",
+      "options_json": "{\"A\": \"x OR y\", \"B\": \"x AND y\", \"C\": \"NOT x\", \"D\": \"x\"}",
+      "correct_option": "B",
+      "explanation": "In Boolean Algebra, the result of x AND NOT y is simply x AND y because the NOT operation has no effect on the AND operation."
+    },
+    {
+      "skill_name": "Mathematics & Logical Thinking",
+      "difficulty": "easy",
+      "question_text": "What is the result of 2 XOR 3 in Boolean Algebra?",
+      "options_json": "{\"A\": \"5\", \"B\": \"1\", \"C\": \"0\", \"D\": \"Not defined\"}",
+      "correct_option": "B",
+      "explanation": "In Boolean Algebra, XOR (exclusive or) operation returns 1 if the operands are different. In this case, 2 and 3 are different."
+    },
+    {
+      "skill_name": "Mathematics & Logical Thinking",
+      "difficulty": "easy",
+      "question_text": "What is the value of x in the equation 2x = 6?",
+      "options_json": "{\"A\": \"3\", \"B\": \"4\", \"C\": \"5\", \"D\": \"6\"}",
+      "correct_option": "A",
+      "explanation": "To find the value of x, we need to isolate x by dividing both sides of the equation by 2. This gives us x = 3."
+    },
+    {
+      "skill_name": "Mathematics & Logical Thinking",
+      "difficulty": "easy",
+      "question_text": "What is the result of the expression (A ∧ B) ∨ A in Boolean Algebra?",
+      "options_json": "{\"A\": \"A \\u2228 B\", \"B\": \"(A \\u2227 B) \\u2228 B\", \"C\": \"A\", \"D\": \"A \\u2227 B\"}",
+      "correct_option": "B",
+      "explanation": "The expression (A ∧ B) ∨ A simplifies to (A ∧ B) ∨ A, which is equivalent to A ∨ B. However, since A is already present in the expression, we can simplify it further by removing the redundant term."
+    },
+    {
+      "skill_name": "Mathematics & Logical Thinking",
+      "difficulty": "easy",
+      "question_text": "What is the result of the Boolean expression (A ∧ B) ∨ C?",
+      "options_json": "{\"A\": \"(A \\u2227 B) \\u2228 C\", \"B\": \"A \\u2227 (B \\u2228 C)\", \"C\": \"A \\u2228 (B \\u2227 C)\", \"D\": \"A\"}",
+      "correct_option": "A",
+      "explanation": "The correct answer is the result of applying the distributive law to the given expression. The expression can be simplified by distributing the OR operation over the AND operation."
+    },
+    {
+      "skill_name": "Mathematics & Logical Thinking",
+      "difficulty": "medium",
+      "question_text": "If f(x) = x^2 + 3x - 4, what is the derivative of f(x) at x=1?",
+      "options_json": "{\"A\": \"f'(x) = 2x + 3\", \"B\": \"f'(x) = 2x + 6\", \"C\": \"f'(x) = 2x - 7\", \"D\": \"f'(x) = x^2 + 5\"}",
+      "correct_option": "A",
+      "explanation": "The derivative of f(x) at x=1 is found by substituting x=1 into the derivative function, which gives f'(1) = 2(1) + 3 = 5. The correct answer is option A."
+    },
+    {
+      "skill_name": "Mathematics & Logical Thinking",
+      "difficulty": "medium",
+      "question_text": "If f(x) = x^2 + 3x - 4, what is f'(1)?",
+      "options_json": "{\"A\": \"f'(1) = 5\", \"B\": \"f'(1) = 7\", \"C\": \"f'(1) = 2\", \"D\": \"f'(1) = -1\"}",
+      "correct_option": "C",
+      "explanation": "To find f'(1), we need to differentiate the function f(x) with respect to x and then evaluate it at x=1. The derivative of f(x) = x^2 + 3x - 4 is f'(x) = 2x + 3, so f'(1) = 2(1) + 3 = 5."
+    },
+    {
+      "skill_name": "Mathematics & Logical Thinking",
+      "difficulty": "medium",
+      "question_text": "If f(x) = x^2 + 3x - 4, find f'(1)",
+      "options_json": "{\"A\": \"f'(1) = 5\", \"B\": \"f'(1) = 6\", \"C\": \"f'(1) = 7\", \"D\": \"f'(1) = 2\"}",
+      "correct_option": "D",
+      "explanation": "To find the derivative of f(x), we use the power rule for differentiation. The derivative of x^2 is 2x, and the derivative of a constant is zero."
+    },
+    {
+      "skill_name": "Mathematics & Logical Thinking",
+      "difficulty": "medium",
+      "question_text": "In Boolean Algebra, what is the result of A ∧ (A ∨ B)?",
+      "options_json": "{\"A\": \"A \\u2227 B\", \"B\": \"A\", \"C\": \"B\", \"D\": \"A\"}",
+      "correct_option": "B",
+      "explanation": "The expression A ∧ (A ∨ B) simplifies to A, because the OR operation with A results in A, and then ANDing it with itself doesn't change its value."
+    },
+    {
+      "skill_name": "Mathematics & Logical Thinking",
+      "difficulty": "medium",
+      "question_text": "What is the result of the expression (A ∧ B) ∨ (A ∧ ¬B)?",
+      "options_json": "{\"A\": \"(A \\u2227 B)\", \"B\": \"(A \\u2227 \\u00acB)\", \"C\": \"A\", \"D\": \"B\"}",
+      "correct_option": "C",
+      "explanation": "The expression (A ∧ B) ∨ (A ∧ ¬B) simplifies to A, because the result of both sub-expressions is A. This is due to the properties of conjunction and disjunction in Boolean algebra."
+    },
+    {
+      "skill_name": "Mathematics & Logical Thinking",
+      "difficulty": "medium",
+      "question_text": "If f(x) = x^2 + 3x - 4, what is the derivative of f(x) at x = 1?",
+      "options_json": "{\"A\": \"f'(x) = 2x + 5\", \"B\": \"f'(x) = 2x + 3\", \"C\": \"f'(x) = 2x - 4\", \"D\": \"f'(1) = 6\"}",
+      "correct_option": "D",
+      "explanation": "The derivative of f(x) is found using the power rule, and then evaluated at x = 1. The correct answer is the value of the derivative at x = 1."
+    },
+    {
+      "skill_name": "Mathematics & Logical Thinking",
+      "difficulty": "medium",
+      "question_text": "Find the derivative of f(x) = x^3 - 2x^2 + x using the power rule.",
+      "options_json": "{\"A\": \"f'(x) = 3x^2 - 4x + 1\", \"B\": \"f'(x) = 3x^2 - 2x\", \"C\": \"f'(x) = 3x^2 + x\", \"D\": \"f'(x) = x^2\"}",
+      "correct_option": "A",
+      "explanation": "The derivative of f(x) = x^n is given by f'(x) = nx^(n-1). Applying this rule to each term in the function, we get f'(x) = 3x^2 - 4x + 1."
+    },
+    {
+      "skill_name": "Mathematics & Logical Thinking",
+      "difficulty": "hard",
+      "question_text": "Let f(x) = x^2 + 3x - 4. Find the derivative of f(x) at x = -1 using the limit definition.",
+      "options_json": "{\"A\": \"f'(-1) = 6\", \"B\": \"f'(-1) = -2\", \"C\": \"f'(-1) = 0\", \"D\": \"f'(-1) is undefined\"}",
+      "correct_option": "B",
+      "explanation": "The derivative of f(x) at x = a can be found using the limit definition as f'(a) = lim(h -> 0) [f(a + h) - f(a)]/h. In this case, we need to find f'(-1) by evaluating the limit."
+    },
+    {
+      "skill_name": "Mathematics & Logical Thinking",
+      "difficulty": "hard",
+      "question_text": "Given a function f(x) = x^2 + 3x - 4, find the derivative of f(x) using the power rule.",
+      "options_json": "{\"A\": \"f'(x) = 2x + 3\", \"B\": \"f'(x) = x^2 + 6x - 8\", \"C\": \"f'(x) = 2x + 1\", \"D\": \"f'(x) = x^2 + 3\"}",
+      "correct_option": "A",
+      "explanation": "The derivative of f(x) is found by applying the power rule to each term, resulting in f'(x) = 2x + 3. This is because the derivative of x^n is nx^(n-1)."
+    },
+    {
+      "skill_name": "Mathematics & Logical Thinking",
+      "difficulty": "hard",
+      "question_text": "Given a function f(x) = x^2 + 3x - 4, find the derivative of f(x) at x = -1 using the limit definition.",
+      "options_json": "{\"A\": \"f'(x) = 2x + 3\", \"B\": \"f'(x) = 2x + 6\", \"C\": \"f'(-1) = 0\", \"D\": \"f'(-1) = -10\"}",
+      "correct_option": "D",
+      "explanation": "The derivative of f(x) at x = -1 is found by evaluating the limit as h approaches 0 of [f(-1 + h) - f(-1)]/h. This results in a value of -10."
+    },
+    {
+      "skill_name": "Mathematics & Logical Thinking",
+      "difficulty": "hard",
+      "question_text": "If f(x) = x^2 + 3x - 4, find f'(5)",
+      "options_json": "{\"A\": \"f'(5) = 10 + 15 - 4\", \"B\": \"f'(5) = 25 + 15 - 20\", \"C\": \"f'(5) = 2(5)^2 + 3(5) - 4\", \"D\": \"f'(5) = (5^2 + 3*5 - 4)'\"}",
+      "correct_option": "A",
+      "explanation": "To find the derivative of f(x), we apply the power rule for each term. Then, we evaluate the result at x=5."
+    }
+  ],
+  "total_questions": 18
+}

@@ -1,0 +1,54 @@
+{
+  "skill_name": "Apache Kafka",
+  "questions": [
+    {
+      "skill_name": "Apache Kafka",
+      "difficulty": "easy",
+      "question_text": "What is the primary purpose of a Kafka topic?",
+      "options_json": "{\"A\": \"To store and manage data in real-time\", \"B\": \"To handle high traffic and load balancing\", \"C\": \"To implement message queuing and buffering\", \"D\": \"To provide data encryption and security\"}",
+      "correct_option": "A",
+      "explanation": "Kafka topics are designed to store and manage large volumes of data in real-time, making them ideal for big data processing and streaming applications."
+    },
+    {
+      "skill_name": "Apache Kafka",
+      "difficulty": "easy",
+      "question_text": "What is the primary purpose of a topic in Apache Kafka?",
+      "options_json": "{\"A\": \"To store data from multiple producers\", \"B\": \"To route messages to different consumers\", \"C\": \"To provide a buffer for producers to send messages at their own pace\", \"D\": \"To handle transactions\"}",
+      "correct_option": "C",
+      "explanation": "A topic in Apache Kafka serves as a buffer that allows producers to send messages at their own pace, providing a decoupling between producers and consumers."
+    },
+    {
+      "skill_name": "Apache Kafka",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of a Kafka topic?",
+      "options_json": "{\"A\": \"To store and manage metadata about Kafka brokers\", \"B\": \"To buffer and distribute messages across multiple consumer groups\", \"C\": \"To handle high-throughput and provide low-latency data processing\", \"D\": \"To implement a message queue for asynchronous communication\"}",
+      "correct_option": "B",
+      "explanation": "A Kafka topic is used to buffer and distribute messages across multiple consumer groups, allowing for efficient and scalable data processing. This enables applications to handle large volumes of data in real-time."
+    },
+    {
+      "skill_name": "Apache Kafka",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of a Kafka topic?",
+      "options_json": "{\"A\": \"To store data in a database\", \"B\": \"To buffer and distribute data between systems\", \"C\": \"To manage user authentication\", \"D\": \"To optimize network latency\"}",
+      "correct_option": "B",
+      "explanation": "Kafka topics are designed to buffer and distribute data between systems, making them ideal for building scalable data pipelines. This allows multiple consumers to subscribe to the same topic and process the data independently."
+    },
+    {
+      "skill_name": "Apache Kafka",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of a Kafka topic's partition key?",
+      "options_json": "{\"A\": \"To determine the replication factor for the topic\", \"B\": \"To distribute the data across multiple brokers\", \"C\": \"To enable parallel processing of messages within the topic\", \"D\": \"To specify the retention period for the topic\"}",
+      "correct_option": "C",
+      "explanation": "The partition key is used to determine how messages are distributed across partitions, allowing for parallel processing and improved scalability. This enables efficient handling of large volumes of data within a Kafka cluster."
+    },
+    {
+      "skill_name": "Apache Kafka",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of a Kafka Streams application?",
+      "options_json": "{\"A\": \"To process and transform data in real-time\", \"B\": \"To store data in a fault-tolerant manner\", \"C\": \"To handle high-throughput and provide low-latency\", \"D\": \"To act as a message broker between producers and consumers\"}",
+      "correct_option": "A",
+      "explanation": "Kafka Streams applications are designed to process and transform data in real-time, making it suitable for applications that require event-driven processing. This is achieved through the use of stream processing APIs."
+    }
+  ],
+  "total_questions": 6
+}

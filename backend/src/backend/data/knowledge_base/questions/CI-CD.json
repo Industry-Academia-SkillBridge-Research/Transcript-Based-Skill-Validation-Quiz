@@ -1,0 +1,38 @@
+{
+  "skill_name": "CI/CD",
+  "questions": [
+    {
+      "skill_name": "CI/CD",
+      "difficulty": "easy",
+      "question_text": "What is the primary purpose of a Continuous Integration (CI) tool?",
+      "options_json": "{\"A\": \"To automate deployment to production\", \"B\": \"To run automated tests on code changes\", \"C\": \"To monitor application performance in real-time\", \"D\": \"To manage infrastructure as code\"}",
+      "correct_option": "B",
+      "explanation": "A Continuous Integration tool's primary purpose is to automate the testing of code changes, ensuring that new code does not break existing functionality. This helps catch errors early on and improves overall development efficiency."
+    },
+    {
+      "skill_name": "CI/CD",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of a CI/CD pipeline?",
+      "options_json": "{\"A\": \"To automate testing and deployment processes\", \"B\": \"To manage version control and code changes\", \"C\": \"To monitor application performance and logs\", \"D\": \"To handle user authentication and authorization\"}",
+      "correct_option": "A",
+      "explanation": "A CI/CD pipeline automates the build, test, and deployment of software, allowing for faster and more reliable delivery. This process enables teams to respond quickly to changes in requirements or code."
+    },
+    {
+      "skill_name": "CI/CD",
+      "difficulty": "hard",
+      "question_text": "Which of the following CI/CD tools is primarily used for containerized applications?",
+      "options_json": "{\"A\": \"Jenkins\", \"B\": \"CircleCI\", \"C\": \"GitLab CI/CD\", \"D\": \"Kubernetes\"}",
+      "correct_option": "B",
+      "explanation": "CircleCI is a cloud-based CI/CD tool that specializes in containerized applications, making it a popular choice for Docker and Kubernetes environments."
+    },
+    {
+      "skill_name": "CI/CD",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of a Continuous Integration (CI) pipeline in DevOps?",
+      "options_json": "{\"A\": \"To automate testing and deployment of code changes\", \"B\": \"To monitor application performance and logs\", \"C\": \"To manage infrastructure as code using tools like Terraform or CloudFormation\", \"D\": \"To perform static code analysis for security vulnerabilities\"}",
+      "correct_option": "A",
+      "explanation": "The primary purpose of a CI pipeline is to automate the testing and deployment of code changes, ensuring that new code does not break existing functionality. This helps catch errors early on and reduces the risk of downstream failures."
+    }
+  ],
+  "total_questions": 4
+}

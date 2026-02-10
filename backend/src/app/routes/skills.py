@@ -9,6 +9,7 @@ from app.db import get_db
 from app.models.skill import SkillProfileClaimed, SkillEvidence
 from app.schemas.skill import ClaimedSkillOut, SkillEvidenceOut
 from app.services.skill_scoring import compute_claimed_skills
+from app.services.job_skill_scoring import compute_job_skill_scores_for_student
 import logging
 
 logger = logging.getLogger(__name__)
@@ -22,14 +23,20 @@ def get_claimed_skills(student_id: str, db: Session = Depends(get_db)):
     Get all claimed skills for a student.
     
     Computes skills on-the-fly from transcript data.
+    Supports both:
+    - New system: Direct job skills (from course_skill_mapping_new.csv)
+    - Old system: Child skills + Job skills aggregation
     
     Args:
         student_id: Student identifier
         db: Database session
         
     Returns:
-        List of claimed skills with scores and confidence, sorted by score descending
+        Dictionary with:
+        - claimed_skills: List of skills with scores
+        - job_skill_scores: List for frontend display (compatible format)
     """
+    # Compute child skills (existing logic)
     result = compute_claimed_skills(student_id, db)
     
     if result["skills_computed"] == 0:
@@ -38,7 +45,46 @@ def get_claimed_skills(student_id: str, db: Session = Depends(get_db)):
             detail=f"No courses or skill mappings found for student {student_id}"
         )
     
-    return result["claimed_skills"]
+    # Try job skills computation (old system)
+    child_skill_scores = {
+        skill['skill_name']: skill['claimed_score']
+        for skill in result["claimed_skills"]
+    }
+    
+    try:
+        job_skills_result = compute_job_skill_scores_for_student(student_id, db)
+        # Old system: has job_skill_details from aggregation
+        if job_skills_result.get("job_skill_details"):
+            result["job_skill_scores"] = job_skills_result["job_skill_details"]
+            result["job_skill_details"] = job_skills_result["job_skill_details"]
+            result["mapping_stats"] = job_skills_result["mapping_stats"]
+        else:
+            # New system: claimed_skills ARE job skills (no aggregation needed)
+            result["job_skill_scores"] = [
+                {
+                    "job_skill_name": skill["skill_name"],
+                    "job_skill_id": skill["skill_name"].upper().replace(" ", "_"),
+                    "score": skill["claimed_score"],
+                    "category": "General",  # Could be enhanced with category lookup
+                    "level": "Advanced" if skill["claimed_score"] >= 80 else "Intermediate" if skill["claimed_score"] >= 60 else "Beginner"
+                }
+                for skill in result["claimed_skills"]
+            ]
+    except Exception as e:
+        logger.warning(f"Job skills computation failed, using claimed skills directly: {e}")
+        # Fallback: treat claimed_skills as job skills
+        result["job_skill_scores"] = [
+            {
+                "job_skill_name": skill["skill_name"],
+                "job_skill_id": skill["skill_name"].upper().replace(" ", "_"),
+                "score": skill["claimed_score"],
+                "category": "General",
+                "level": "Advanced" if skill["claimed_score"] >= 80 else "Intermediate" if skill["claimed_score"] >= 60 else "Beginner"
+            }
+            for skill in result["claimed_skills"]
+        ]
+    
+    return result
 
 
 @router.get("/{student_id}/explain/skill/{skill_name}")

@@ -1,0 +1,54 @@
+{
+  "skill_name": "Terraform",
+  "questions": [
+    {
+      "skill_name": "Terraform",
+      "difficulty": "easy",
+      "question_text": "What does Terraform's 'terraform init' command do?",
+      "options_json": "{\"A\": \"It creates a new AWS account.\", \"B\": \"It initializes the working directory by downloading plugins and modules.\", \"C\": \"It deploys an existing infrastructure to the cloud.\", \"D\": \"It generates Terraform configuration files from scratch.\"}",
+      "correct_option": "B",
+      "explanation": "Terraform's 'terraform init' command initializes the working directory by downloading plugins and modules, preparing it for further use. This is a crucial step before creating or applying any infrastructure configurations."
+    },
+    {
+      "skill_name": "Terraform",
+      "difficulty": "easy",
+      "question_text": "What is Terraform used for?",
+      "options_json": "{\"A\": \"Infrastructure as Code (IaC)\", \"B\": \"Cloud Security\", \"C\": \"DevOps Automation\", \"D\": \"Container Orchestration\"}",
+      "correct_option": "A",
+      "explanation": "Terraform is used to manage and provision infrastructure resources through code, making it a key tool for Infrastructure as Code (IaC). This allows developers to define and deploy infrastructure configurations in a version-controlled manner."
+    },
+    {
+      "skill_name": "Terraform",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of a terraform state file?",
+      "options_json": "{\"A\": \"To store Terraform configuration files\", \"B\": \"To track changes made to infrastructure resources\", \"C\": \"To manage Terraform workspace configurations\", \"D\": \"None of the above\"}",
+      "correct_option": "B",
+      "explanation": "The terraform state file is used to track changes made to infrastructure resources, allowing Terraform to keep a record of what has been created or modified. This helps with reproducibility and prevents Terraform from making unintended changes."
+    },
+    {
+      "skill_name": "Terraform",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the 'terraform init' command?",
+      "options_json": "{\"A\": \"To apply changes to the infrastructure\", \"B\": \"To initialize a Terraform working directory and download plugins\", \"C\": \"To destroy existing infrastructure\", \"D\": \"To validate configuration files\"}",
+      "correct_option": "B",
+      "explanation": "The 'terraform init' command is used to initialize a Terraform working directory, downloading the necessary plugins for the configuration. This step is essential before applying any changes to the infrastructure."
+    },
+    {
+      "skill_name": "Terraform",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the `terraform init` command?",
+      "options_json": "{\"A\": \"To create a new Terraform configuration file\", \"B\": \"To download and install required providers for the current working directory\", \"C\": \"To plan and apply infrastructure changes to AWS\", \"D\": \"To destroy existing infrastructure\"}",
+      "correct_option": "B",
+      "explanation": "The `terraform init` command is used to download and install the required Terraform providers for the current working directory, allowing you to manage infrastructure resources."
+    },
+    {
+      "skill_name": "Terraform",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the 'depends_on' attribute in a Terraform resource block?",
+      "options_json": "{\"A\": \"To specify the order in which resources are created or updated\", \"B\": \"To indicate that one resource depends on another for its configuration\", \"C\": \"To enable parallel execution of dependent resources\", \"D\": \"To configure a resource to be deleted before another\"}",
+      "correct_option": "B",
+      "explanation": "The 'depends_on' attribute is used to specify that one resource's configuration depends on the creation or update of another resource. This allows Terraform to manage dependencies between resources and ensure they are created in the correct order."
+    }
+  ],
+  "total_questions": 6
+}

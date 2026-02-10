@@ -32,7 +32,71 @@
       "options_json": "{\"A\": \"To provide a common interface for related classes\", \"B\": \"To enable runtime polymorphism through function overriding\", \"C\": \"To encapsulate data and behavior, promoting code reuse\", \"D\": \"To implement the Singleton design pattern\"}",
       "correct_option": "A",
       "explanation": "Abstract classes in C++ provide a common interface for related classes, allowing for polymorphism and facilitating code reuse through inheritance."
+    },
+    {
+      "skill_name": "Object-Oriented Design & Programming",
+      "difficulty": "easy",
+      "question_text": "What is the main purpose of encapsulation in object-oriented programming?",
+      "options_json": "{\"A\": \"To expose internal implementation details to external classes\", \"B\": \"To hide sensitive data and limit access to it through controlled methods\", \"C\": \"To improve code readability by using descriptive variable names\", \"D\": \"To reduce the size of the program by eliminating unnecessary variables\"}",
+      "correct_option": "B",
+      "explanation": "Encapsulation is used to hide sensitive data and limit access to it through controlled methods, ensuring that internal implementation details are not exposed to external classes. This helps prevent data corruption or misuse."
+    },
+    {
+      "skill_name": "Object-Oriented Design & Programming",
+      "difficulty": "hard",
+      "question_text": "Which of the following is a fundamental principle of object-oriented programming that promotes modularity and reusability?",
+      "options_json": "{\"A\": \"Inheritance allows for code reuse, but can lead to tight coupling.\", \"B\": \"Encapsulation ensures data hiding, making it harder to modify or extend existing code.\", \"C\": \"Abstraction provides a simplified view of complex systems by exposing only necessary information.\", \"D\": \"Polymorphism enables objects of different classes to be treated as instances of a common superclass.\"}",
+      "correct_option": "C",
+      "explanation": "Abstraction is a fundamental principle that promotes modularity and reusability by providing a simplified view of complex systems, making it easier to modify or extend existing code without affecting other parts of the system."
+    },
+    {
+      "skill_name": "Object-Oriented Design & Programming",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of encapsulation in object-oriented programming?",
+      "options_json": "{\"A\": \"To reduce code duplication by promoting inheritance\", \"B\": \"To hide internal implementation details and expose only necessary information to the outside world\", \"C\": \"To improve performance by reducing memory usage\", \"D\": \"To simplify debugging by providing direct access to object properties\"}",
+      "correct_option": "B",
+      "explanation": "Encapsulation is a fundamental concept in OOP that helps to hide internal implementation details and expose only necessary information to the outside world, thereby improving modularity and maintainability of code."
+    },
+    {
+      "skill_name": "Object-Oriented Design & Programming",
+      "difficulty": "hard",
+      "question_text": "What is the primary benefit of using abstraction in object-oriented programming?",
+      "options_json": "{\"A\": \"It allows for more efficient memory usage by reducing the number of objects created.\", \"B\": \"It enables developers to focus on essential features and hide implementation details.\", \"C\": \"It improves code readability by providing a simplified interface to complex functionality.\", \"D\": \"It facilitates the use of inheritance by allowing for more derived classes.\"}",
+      "correct_option": "B",
+      "explanation": "Abstraction allows developers to focus on essential features and hide implementation details, making it easier to modify or extend the code without affecting other parts of the program. This is particularly useful in complex systems where a high degree of modularity is required."
+    },
+    {
+      "skill_name": "Object-Oriented Design & Programming",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of Encapsulation in Object-Oriented Programming?",
+      "options_json": "{\"A\": \"To expose object's internal state to other objects\", \"B\": \"To hide object's internal state and show only necessary information to other objects\", \"C\": \"To improve code readability by using meaningful variable names\", \"D\": \"To reduce code complexity by avoiding inheritance\"}",
+      "correct_option": "B",
+      "explanation": "Encapsulation is used to hide an object's internal state from the outside world, exposing only necessary information through public methods. This helps protect data integrity and improve modularity."
+    },
+    {
+      "skill_name": "Object-Oriented Design & Programming",
+      "difficulty": "hard",
+      "question_text": "Consider a class hierarchy where 'Vehicle' is the base class and 'Car', 'Truck', and 'Motorcycle' are subclasses. What is the primary benefit of using inheritance in this scenario?",
+      "options_json": "{\"A\": \"It allows for code reuse, reducing duplication across classes.\", \"B\": \"It enables polymorphism, allowing objects to be treated as their base class type.\", \"C\": \"It facilitates encapsulation by hiding implementation details from subclasses.\", \"D\": \"It promotes abstraction by providing a general interface for related classes.\"}",
+      "correct_option": "A",
+      "explanation": "Inheritance allows for code reuse, reducing duplication across classes. By inheriting common attributes and methods from the 'Vehicle' class, subclasses can focus on their unique characteristics without duplicating code."
+    },
+    {
+      "skill_name": "Object-Oriented Design & Programming",
+      "difficulty": "hard",
+      "question_text": "Which of the following is an example of encapsulation in C++?",
+      "options_json": "{\"A\": \"Declaring a variable as public to access it from any class\", \"B\": \"Using private access modifiers for data members and providing public methods to manipulate them\", \"C\": \"Inheriting properties from a base class using inheritance\", \"D\": \"Implementing multiple interfaces in a single class\"}",
+      "correct_option": "B",
+      "explanation": "Encapsulation is achieved by hiding the implementation details of an object and only exposing necessary information through public methods. This is done to prevent direct access to sensitive data, promoting code modularity and reusability."
+    },
+    {
+      "skill_name": "Object-Oriented Design & Programming",
+      "difficulty": "hard",
+      "question_text": "Consider a class hierarchy with a base class `Vehicle` and two derived classes `Car` and `Motorcycle`. If we add a method `accelerate()` to the `Vehicle` class, which implementation will be called when we call `myCar.accelerate()`?",
+      "options_json": "{\"A\": \"The implementation in the `Vehicle` class\", \"B\": \"The implementation in the `Car` class\", \"C\": \"The implementation in the `Motorcycle` class\", \"D\": \"It will throw a compilation error\"}",
+      "correct_option": "B",
+      "explanation": "Polymorphism allows the correct method to be called based on the object's actual type, which is `Car`. This is an example of runtime polymorphism."
     }
   ],
-  "total_questions": 4
+  "total_questions": 12
 }

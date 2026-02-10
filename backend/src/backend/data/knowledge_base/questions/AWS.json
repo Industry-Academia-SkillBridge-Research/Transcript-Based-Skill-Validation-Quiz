@@ -1,0 +1,46 @@
+{
+  "skill_name": "AWS",
+  "questions": [
+    {
+      "skill_name": "AWS",
+      "difficulty": "easy",
+      "question_text": "What is AWS Lambda?",
+      "options_json": "{\"A\": \"A serverless compute service that runs code in response to events\", \"B\": \"An object storage service for static websites and mobile apps\", \"C\": \"A fully managed relational database service\", \"D\": \"An API gateway service for creating RESTful APIs\"}",
+      "correct_option": "A",
+      "explanation": "AWS Lambda is a serverless compute service that allows you to run code in response to events, eliminating the need to provision or manage servers. It's often used for real-time data processing and event-driven computing."
+    },
+    {
+      "skill_name": "AWS",
+      "difficulty": "easy",
+      "question_text": "What is Amazon S3?",
+      "options_json": "{\"A\": \"Amazon's cloud-based relational database service\", \"B\": \"Amazon's object storage solution for storing and serving large amounts of data\", \"C\": \"Amazon's cloud-based analytics service\", \"D\": \"Amazon's cloud-based serverless computing platform\"}",
+      "correct_option": "B",
+      "explanation": "Amazon S3 is a highly durable, scalable, and secure object storage solution for storing and serving large amounts of data. It provides a simple interface to store and retrieve objects in the form of files."
+    },
+    {
+      "skill_name": "AWS",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of an AWS IAM Role?",
+      "options_json": "{\"A\": \"To grant access to EC2 instances\", \"B\": \"To define permissions for users and groups\", \"C\": \"To create a new VPC\", \"D\": \"To configure Route 53 DNS records\"}",
+      "correct_option": "B",
+      "explanation": "An AWS IAM Role defines the permissions for an EC2 instance, allowing it to access other AWS resources. This is in contrast to an IAM User or Group, which grants permissions to users and groups."
+    },
+    {
+      "skill_name": "AWS",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of an Amazon S3 bucket policy?",
+      "options_json": "{\"A\": \"To restrict access to a specific AWS account\", \"B\": \"To define the permissions for accessing objects within the bucket\", \"C\": \"To specify the encryption method used by the bucket\", \"D\": \"To configure the bucket's lifecycle management\"}",
+      "correct_option": "B",
+      "explanation": "An S3 bucket policy defines the permissions for accessing objects within the bucket, such as read or write access. This allows administrators to control who can access and modify data stored in the bucket."
+    },
+    {
+      "skill_name": "AWS",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of an AWS IAM Role?",
+      "options_json": "{\"A\": \"To grant access to EC2 instances for users and services\", \"B\": \"To restrict access to S3 buckets based on user identity\", \"C\": \"To provide temporary security credentials for AWS services\", \"D\": \"To manage access to VPC resources\"}",
+      "correct_option": "C",
+      "explanation": "An IAM Role provides temporary security credentials to EC2 instances, Lambda functions, and other AWS services. This allows these services to interact with other AWS services without needing long-term credentials."
+    }
+  ],
+  "total_questions": 5
+}

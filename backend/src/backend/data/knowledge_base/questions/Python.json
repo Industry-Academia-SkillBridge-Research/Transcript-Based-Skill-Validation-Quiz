@@ -1,0 +1,46 @@
+{
+  "skill_name": "Python",
+  "questions": [
+    {
+      "skill_name": "Python",
+      "difficulty": "easy",
+      "question_text": "What does the 'is' keyword in Python do?",
+      "options_json": "{\"A\": \"It checks if a variable is of a certain data type.\", \"B\": \"It checks if two variables are equal.\", \"C\": \"It assigns a value to a variable.\", \"D\": \"It deletes a variable.\"}",
+      "correct_option": "A",
+      "explanation": "The 'is' keyword in Python is used for identity comparison, checking if both variables point to the same object in memory. This is different from the '==' operator which checks for equality of values."
+    },
+    {
+      "skill_name": "Python",
+      "difficulty": "easy",
+      "question_text": "What does the 'is' keyword do in Python?",
+      "options_json": "{\"A\": \"It checks if a variable is equal to a certain value.\", \"B\": \"It checks if two variables point to the same object in memory.\", \"C\": \"It assigns a new value to a variable.\", \"D\": \"It deletes a variable.\"}",
+      "correct_option": "B",
+      "explanation": "The 'is' keyword in Python checks if two variables point to the same object in memory, not just if their values are equal. This is different from the '==' operator which checks for value equality."
+    },
+    {
+      "skill_name": "Python",
+      "difficulty": "medium",
+      "question_text": "What does the 'with' keyword do in Python when used with a file?",
+      "options_json": "{\"A\": \"It opens and closes the file automatically.\", \"B\": \"It reads the entire file into memory.\", \"C\": \"It writes to the file without overwriting any existing data.\", \"D\": \"It deletes the file permanently.\"}",
+      "correct_option": "A",
+      "explanation": "The 'with' keyword in Python is used with a context manager, which ensures that resources such as files are properly cleaned up after use. This includes opening and closing the file automatically, preventing resource leaks."
+    },
+    {
+      "skill_name": "Python",
+      "difficulty": "medium",
+      "question_text": "What does the 'with' statement do in Python?",
+      "options_json": "{\"A\": \"It is used for exception handling.\", \"B\": \"It is used to open and close files.\", \"C\": \"It is used to create a context manager.\", \"D\": \"It is used to import modules.\"}",
+      "correct_option": "C",
+      "explanation": "The 'with' statement in Python is used to create a context manager, which automatically takes care of resources such as file handles or locks. This ensures that the resource is properly cleaned up after use, even if an exception occurs."
+    },
+    {
+      "skill_name": "Python",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the `__init_subclass__` method in Python?",
+      "options_json": "{\"A\": \"To create a new instance of a class\", \"B\": \"To register a subclass with its parent class\", \"C\": \"To override a method from the parent class\", \"D\": \"To add a new attribute to an existing class\"}",
+      "correct_option": "B",
+      "explanation": "The `__init_subclass__` method is used by classes to register their subclasses and perform any necessary setup or initialization. This allows the parent class to keep track of its subclasses and provide them with additional functionality."
+    }
+  ],
+  "total_questions": 5
+}

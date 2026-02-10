@@ -1,0 +1,222 @@
+{
+  "skill_name": "Information Security Analytics",
+  "questions": [
+    {
+      "skill_name": "Information Security Analytics",
+      "difficulty": "easy",
+      "question_text": "A network intrusion detection system (NIDS) is monitoring a network and detects a suspicious packet. What should be the next step?",
+      "options_json": "{\"A\": \"Block the IP address of the source of the packet\", \"B\": \"Alert the security team to investigate further\", \"C\": \"Allow the packet to pass through the network\", \"D\": \"Disconnect the entire network\"}",
+      "correct_option": "B",
+      "explanation": "The next step should be to alert the security team to investigate further, as blocking or disconnecting the network could cause unnecessary downtime and disconnection of legitimate traffic. Investigating further will help determine if it's a false positive or an actual threat."
+    },
+    {
+      "skill_name": "Information Security Analytics",
+      "difficulty": "easy",
+      "question_text": "A network administrator notices that a system is experiencing high CPU usage due to a specific process. Which of the following would be an effective step in mitigating this issue?",
+      "options_json": "{\"A\": \"Increase the system's memory allocation to the process\", \"B\": \"Monitor the process for signs of malware or unauthorized access\", \"C\": \"Kill the process and investigate further\", \"D\": \"Implement a new firewall rule to block incoming traffic\"}",
+      "correct_option": "C",
+      "explanation": "Killing the process would allow the administrator to investigate further without allowing the issue to escalate. Monitoring for malware or unauthorized access may not address the immediate issue."
+    },
+    {
+      "skill_name": "Information Security Analytics",
+      "difficulty": "easy",
+      "question_text": "A network administrator notices that a system is experiencing high CPU usage due to a process consuming excessive resources. What type of threat analysis should be performed first?",
+      "options_json": "{\"A\": \"Vulnerability Assessment\", \"B\": \"Intrusion Detection & Prevention\", \"C\": \"Security Threats Analysis\", \"D\": \"Risk Management & Mitigation\"}",
+      "correct_option": "C",
+      "explanation": "Security Threats Analysis should be performed first to identify the root cause of the issue, which may be a malicious process or a software vulnerability. This will help the administrator determine the best course of action to mitigate the threat."
+    },
+    {
+      "skill_name": "Information Security Analytics",
+      "difficulty": "easy",
+      "question_text": "A network administrator notices that a server is experiencing high CPU usage due to a process consuming excessive resources. Which of the following would be an effective step in mitigating this issue?",
+      "options_json": "{\"A\": \"Implementing a firewall rule to block incoming traffic on the affected port\", \"B\": \"Monitoring the process and its resource consumption using system logs\", \"C\": \"Killing the process immediately without further investigation\", \"D\": \"Increasing the server's RAM to alleviate the load\"}",
+      "correct_option": "B",
+      "explanation": "Monitoring the process and its resource consumption allows for a deeper understanding of the issue, enabling targeted mitigation strategies. Killing the process immediately could lead to data loss or corruption."
+    },
+    {
+      "skill_name": "Information Security Analytics",
+      "difficulty": "easy",
+      "question_text": "What type of attack involves an attacker sending a large amount of data to a network or system in order to overwhelm it?",
+      "options_json": "{\"A\": \"Phishing\", \"B\": \"Denial of Service (DoS)\", \"C\": \"Malware\", \"D\": \"SQL Injection\"}",
+      "correct_option": "B",
+      "explanation": "A Denial of Service attack involves flooding a network or system with traffic in order to make it unavailable to users. This type of attack can be used to disrupt business operations and is often used by hackers as a form of cyber terrorism."
+    },
+    {
+      "skill_name": "Information Security Analytics",
+      "difficulty": "easy",
+      "question_text": "A network administrator notices that a system is experiencing high CPU usage due to a process consuming excessive resources. What type of threat analysis should be performed to identify the root cause?",
+      "options_json": "{\"A\": \"Vulnerability Assessment\", \"B\": \"Intrusion Detection & Prevention\", \"C\": \"Security Threats Analysis\", \"D\": \"Risk Management & Mitigation\"}",
+      "correct_option": "C",
+      "explanation": "Security Threats Analysis is used to identify and classify potential security threats, which can help determine the root cause of high CPU usage. This type of analysis focuses on understanding the nature of a threat rather than just its symptoms."
+    },
+    {
+      "skill_name": "Information Security Analytics",
+      "difficulty": "easy",
+      "question_text": "What type of attack involves an attacker sending a large amount of traffic to a network or system in order to overwhelm it?",
+      "options_json": "{\"A\": \"Phishing\", \"B\": \"Denial-of-Service (DoS)\", \"C\": \"Man-in-the-Middle (MitM)\", \"D\": \"SQL Injection\"}",
+      "correct_option": "B",
+      "explanation": "A Denial-of-Service (DoS) attack involves flooding a network or system with traffic in order to make it unavailable to users. This type of attack is often used by hackers to disrupt business operations."
+    },
+    {
+      "skill_name": "Information Security Analytics",
+      "difficulty": "easy",
+      "question_text": "What is the primary function of an Intrusion Detection System (IDS)?",
+      "options_json": "{\"A\": \"To prevent intrusions by blocking malicious traffic\", \"B\": \"To detect and alert on potential security threats in real-time\", \"C\": \"To perform vulnerability assessments on network devices\", \"D\": \"To manage risk by implementing security controls\"}",
+      "correct_option": "B",
+      "explanation": "An IDS is designed to monitor network traffic for signs of unauthorized access or malicious activity, alerting administrators to potential threats in real-time."
+    },
+    {
+      "skill_name": "Information Security Analytics",
+      "difficulty": "medium",
+      "question_text": "An organization has implemented an intrusion detection system (IDS) that alerts on potential threats. However, the IDS is configured to alert on all traffic exceeding a certain threshold of packets per second. What type of alert would this configuration likely generate?",
+      "options_json": "{\"A\": \"False Positive\", \"B\": \"True Positive\", \"C\": \"False Negative\", \"D\": \"Network Anomaly\"}",
+      "correct_option": "D",
+      "explanation": "This configuration would likely generate a network anomaly alert, as it is detecting unusual traffic patterns. A true positive would be an actual security threat, while a false positive or negative would not accurately describe this scenario."
+    },
+    {
+      "skill_name": "Information Security Analytics",
+      "difficulty": "medium",
+      "question_text": "A network administrator notices that a server is experiencing high CPU usage due to a process consuming excessive resources. Which of the following would be an effective step in mitigating this issue?",
+      "options_json": "{\"A\": \"Implementing a firewall rule to block incoming traffic on the affected port\", \"B\": \"Running a vulnerability scan to identify potential weaknesses in the system\", \"C\": \"Configuring the server's resource limits to prevent excessive CPU usage\", \"D\": \"Increasing the server's RAM to improve performance\"}",
+      "correct_option": "C",
+      "explanation": "Configuring the server's resource limits would prevent the process from consuming excessive resources, thereby mitigating the issue. This approach is more effective than increasing the server's RAM or implementing a firewall rule."
+    },
+    {
+      "skill_name": "Information Security Analytics",
+      "difficulty": "medium",
+      "question_text": "An organization's security team detects a series of login attempts from an unknown IP address. Which of the following is the most appropriate action?",
+      "options_json": "{\"A\": \"Block the IP address and notify the network administrator\", \"B\": \"Alert the incident response team to investigate further\", \"C\": \"Implement a new firewall rule to block all incoming traffic from that IP\", \"D\": \"Increase the password complexity requirements for all users\"}",
+      "correct_option": "A",
+      "explanation": "Blocking the IP address prevents potential unauthorized access, while notifying the network administrator allows them to investigate and take further action if necessary."
+    },
+    {
+      "skill_name": "Information Security Analytics",
+      "difficulty": "medium",
+      "question_text": "An organization's network has been compromised by an attacker who is using a zero-day exploit. Which of the following security measures would be most effective in preventing similar attacks in the future?",
+      "options_json": "{\"A\": \"Implementing a web application firewall (WAF) to detect and block malicious traffic\", \"B\": \"Conducting regular vulnerability assessments and penetration testing to identify weaknesses\", \"C\": \"Deploying an intrusion prevention system (IPS) to detect and prevent known attacks\", \"D\": \"Implementing a sandbox environment for testing suspicious files before they are executed\"}",
+      "correct_option": "B",
+      "explanation": "Regular vulnerability assessments and penetration testing can help identify weaknesses in the network that could be exploited by attackers. This proactive approach can help prevent similar attacks in the future."
+    },
+    {
+      "skill_name": "Information Security Analytics",
+      "difficulty": "medium",
+      "question_text": "An organization's network logs show a sudden spike in HTTP traffic from an unknown IP address. Which of the following would be the most effective response?",
+      "options_json": "{\"A\": \"Block all incoming HTTP traffic to prevent potential attacks\", \"B\": \"Implement a web application firewall (WAF) to inspect and filter suspicious traffic\", \"C\": \"Conduct a vulnerability scan on the network to identify potential entry points\", \"D\": \"Increase logging levels to gather more information about the incident\"}",
+      "correct_option": "B",
+      "explanation": "Implementing a WAF would allow for real-time inspection and filtering of suspicious traffic, providing an effective response to potential attacks. This approach balances security with minimal disruption to legitimate traffic."
+    },
+    {
+      "skill_name": "Information Security Analytics",
+      "difficulty": "medium",
+      "question_text": "A network administrator notices that a server is experiencing high CPU usage due to a specific process. Upon further investigation, it's discovered that this process is communicating with an external IP address on port 80. What type of threat is this likely indicative of?",
+      "options_json": "{\"A\": \"Denial of Service (DoS) attack\", \"B\": \"Remote File Inclusion (RFI) vulnerability\", \"C\": \"Command and Control (C2) communication\", \"D\": \"SQL Injection attack\"}",
+      "correct_option": "C",
+      "explanation": "This behavior is indicative of Command and Control (C2) communication, where the server is being controlled remotely by an attacker. This type of threat can lead to data exfiltration, lateral movement, and other malicious activities."
+    },
+    {
+      "skill_name": "Information Security Analytics",
+      "difficulty": "medium",
+      "question_text": "Which of the following security threats is often associated with a type of malware that disguises itself as legitimate software?",
+      "options_json": "{\"A\": \"Phishing attack\", \"B\": \"Drive-by download\", \"C\": \"SQL injection\", \"D\": \"Rootkit\"}",
+      "correct_option": "B",
+      "explanation": "A drive-by download is a type of malware that can infect a system without the user's knowledge or interaction, often through exploited vulnerabilities in web browsers. This makes it difficult to detect and mitigate."
+    },
+    {
+      "skill_name": "Information Security Analytics",
+      "difficulty": "medium",
+      "question_text": "An organization's network has been compromised by a malware that is communicating with its command and control server over port 80. Which of the following would be an effective countermeasure to prevent further attacks?",
+      "options_json": "{\"A\": \"Implementing a web application firewall (WAF) to block traffic on port 80\", \"B\": \"Configuring the network's intrusion prevention system (IPS) to detect and block malware communication\", \"C\": \"Enabling two-factor authentication for all users to prevent unauthorized access\", \"D\": \"Conducting a vulnerability assessment to identify potential entry points\"}",
+      "correct_option": "B",
+      "explanation": "An IPS can effectively detect and block malware communication, preventing further attacks. This is because the IPS can analyze network traffic in real-time and take action based on predefined rules."
+    },
+    {
+      "skill_name": "Information Security Analytics",
+      "difficulty": "medium",
+      "question_text": "An organization's network logs show a sudden spike in DNS queries to an unknown domain. Which of the following is the most likely cause?",
+      "options_json": "{\"A\": \"Phishing attack\", \"B\": \"Malware infection\", \"C\": \"Unauthorized access attempt via DNS tunneling\", \"D\": \"Network congestion\"}",
+      "correct_option": "C",
+      "explanation": "DNS tunneling is a technique used to bypass security controls by hiding malicious traffic within legitimate DNS queries. This can be indicative of an unauthorized access attempt."
+    },
+    {
+      "skill_name": "Information Security Analytics",
+      "difficulty": "medium",
+      "question_text": "An organization's network logs show a sudden spike in HTTP traffic on port 80. Which of the following is the most likely cause?",
+      "options_json": "{\"A\": \"A new web application has been deployed, causing an increase in legitimate traffic.\", \"B\": \"The organization's firewall rules have been compromised, allowing unauthorized access to the network.\", \"C\": \"A malware outbreak is scanning for vulnerabilities on port 80.\", \"D\": \"The network monitoring tool is experiencing a false positive.\"}",
+      "correct_option": "C",
+      "explanation": "This is likely due to a malware outbreak scanning for vulnerabilities on port 80, as it would explain the sudden spike in HTTP traffic. This type of activity is often indicative of a security threat and should be investigated further."
+    },
+    {
+      "skill_name": "Information Security Analytics",
+      "difficulty": "hard",
+      "question_text": "A network administrator notices that a system is experiencing high CPU usage due to an unknown process. Upon further investigation, it's discovered that the process is using a previously unknown vulnerability in a third-party library. What type of threat should be categorized for this incident?",
+      "options_json": "{\"A\": \"Advanced Persistent Threat (APT)\", \"B\": \"Zero-Day Attack\", \"C\": \"Malware Infection\", \"D\": \"SQL Injection\"}",
+      "correct_option": "B",
+      "explanation": "This is a zero-day attack because the vulnerability in the third-party library was not previously known or patched. The unknown process and high CPU usage are indicators of malicious activity."
+    },
+    {
+      "skill_name": "Information Security Analytics",
+      "difficulty": "hard",
+      "question_text": "A network intrusion detection system (NIDS) is deployed to monitor traffic on a corporate network. However, it is configured to only alert on attacks that have been seen before in the past year. What type of attack would this NIDS likely miss?",
+      "options_json": "{\"A\": \"Zero-day exploit\", \"B\": \"SQL injection attack\", \"C\": \"Cross-site scripting (XSS) attack\", \"D\": \"Brute-force login attempt\"}",
+      "correct_option": "A",
+      "explanation": "This NIDS would likely miss a zero-day exploit because it is only configured to alert on attacks that have been seen before in the past year, and a zero-day exploit is an attack that has never been seen before. This highlights the limitations of signature-based intrusion detection systems."
+    },
+    {
+      "skill_name": "Information Security Analytics",
+      "difficulty": "hard",
+      "question_text": "An attacker uses a zero-day exploit to gain access to a network. Which of the following security controls would be most effective in detecting this type of attack?",
+      "options_json": "{\"A\": \"Intrusion Detection System (IDS)\", \"B\": \"Security Information and Event Management (SIEM) system\", \"C\": \"Network-based Intrusion Prevention System (IPS)\", \"D\": \"Host-based Intrusion Detection System (HIDS)\"}",
+      "correct_option": "C",
+      "explanation": "A Network-based Intrusion Prevention System (IPS) can detect and prevent zero-day exploits by analyzing network traffic in real-time. This type of system is most effective at detecting unknown threats."
+    },
+    {
+      "skill_name": "Information Security Analytics",
+      "difficulty": "hard",
+      "question_text": "A network intrusion detection system (NIDS) is monitoring network traffic and detects a suspicious packet with a TCP flag combination of URG, ACK, and PSH. What type of attack is this likely to be?",
+      "options_json": "{\"A\": \"TCP SYN Flood Attack\", \"B\": \"TCP Session Hijacking Attempt\", \"C\": \"Malformed Packet Injection\", \"D\": \"Denial of Service (DoS) Attack\"}",
+      "correct_option": "B",
+      "explanation": "This type of attack is likely to be a TCP session hijacking attempt because the URG, ACK, and PSH flags are being used in an unusual combination, which can be used to inject malicious data into a legitimate connection."
+    },
+    {
+      "skill_name": "Information Security Analytics",
+      "difficulty": "hard",
+      "question_text": "An attacker has gained access to a network through a compromised VPN endpoint. Which of the following is the most likely initial action taken by the attacker?",
+      "options_json": "{\"A\": \"Establishing a reverse shell to maintain persistence and escalate privileges\", \"B\": \"Lateral movement to other systems on the network, exploiting vulnerabilities as they go\", \"C\": \"Stealing sensitive data from the compromised system before attempting further exploitation\", \"D\": \"Installing malware on the compromised system to create a botnet\"}",
+      "correct_option": "A",
+      "explanation": "The attacker will likely establish a reverse shell to maintain persistence and escalate privileges, as this allows them to maintain control over the compromised system and potentially gain access to more sensitive areas of the network."
+    },
+    {
+      "skill_name": "Information Security Analytics",
+      "difficulty": "hard",
+      "question_text": "An attacker has gained access to a network by exploiting a zero-day vulnerability in an unpatched system. Which of the following security controls would be most effective in preventing similar attacks in the future?",
+      "options_json": "{\"A\": \"Implementing a web application firewall (WAF) to filter incoming traffic\", \"B\": \"Conducting regular vulnerability assessments and patch management\", \"C\": \"Deploying an intrusion prevention system (IPS) to detect and block malicious traffic\", \"D\": \"Enforcing strict access controls and least privilege principles for all users\"}",
+      "correct_option": "B",
+      "explanation": "Regular vulnerability assessments and patch management are essential in preventing similar attacks, as they help identify and remediate vulnerabilities before they can be exploited. This control is most effective in preventing zero-day attacks."
+    },
+    {
+      "skill_name": "Information Security Analytics",
+      "difficulty": "hard",
+      "question_text": "A network-based intrusion detection system (IDS) has detected a potential threat, but it is unable to determine whether the traffic is malicious or not. What should be done next?",
+      "options_json": "{\"A\": \"Allow the traffic and monitor for further anomalies.\", \"B\": \"Block the traffic immediately to prevent potential damage.\", \"C\": \"Send an alert to the security team, but allow the traffic to continue.\", \"D\": \"Disable the IDS temporarily to investigate the cause of the false positive.\"}",
+      "correct_option": "B",
+      "explanation": "Blocking the traffic immediately prevents potential damage and maintains network integrity. Allowing the traffic or sending an alert without blocking it may lead to further compromise of the system."
+    },
+    {
+      "skill_name": "Information Security Analytics",
+      "difficulty": "hard",
+      "question_text": "An attacker has gained access to a network through a compromised VPN connection. Which of the following is the most likely initial action taken by the attacker?",
+      "options_json": "{\"A\": \"Establishing a reverse shell to maintain persistence and escalate privileges\", \"B\": \"Stealing sensitive data such as login credentials or financial information\", \"C\": \"Installing malware to spread laterally within the network\", \"D\": \"Configuring the compromised VPN connection to act as a proxy for further attacks\"}",
+      "correct_option": "A",
+      "explanation": "The attacker would likely establish a reverse shell to maintain persistence and escalate privileges, allowing them to move freely within the network and potentially gain access to sensitive data or systems."
+    },
+    {
+      "skill_name": "Information Security Analytics",
+      "difficulty": "hard",
+      "question_text": "An attacker has gained access to a network and is attempting to move laterally. Which of the following techniques would be most effective in detecting this activity?",
+      "options_json": "{\"A\": \"Network-Based Intrusion Detection System (NIDS)\", \"B\": \"Host-Based Intrusion Prevention System (HIPS)\", \"C\": \"Security Information and Event Management (SIEM) system\", \"D\": \"Endpoint Detection and Response (EDR)\"}",
+      "correct_option": "A",
+      "explanation": "A Network-Based Intrusion Detection System (NIDS) can detect malicious traffic patterns and alert on lateral movement attempts. This is because NIDS systems are typically deployed at network boundaries, providing a comprehensive view of network activity."
+    }
+  ],
+  "total_questions": 27
+}

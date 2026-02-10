@@ -1,0 +1,54 @@
+{
+  "skill_name": "Apache Spark",
+  "questions": [
+    {
+      "skill_name": "Apache Spark",
+      "difficulty": "easy",
+      "question_text": "What is Apache Spark's primary use case?",
+      "options_json": "{\"A\": \"Data Warehousing\", \"B\": \"Real-time Analytics\", \"C\": \"Machine Learning\", \"D\": \"Stream Processing\"}",
+      "correct_option": "B",
+      "explanation": "Apache Spark is primarily used for real-time analytics, allowing users to process and analyze large datasets in a timely manner. This makes it ideal for applications such as recommendation systems or fraud detection."
+    },
+    {
+      "skill_name": "Apache Spark",
+      "difficulty": "easy",
+      "question_text": "What does the 'rdd' in RDD stand for?",
+      "options_json": "{\"A\": \"Resilient Distributed Dataset\", \"B\": \"Random Data Distribution\", \"C\": \"Relational Database Design\", \"D\": \"Resource Description Document\"}",
+      "correct_option": "A",
+      "explanation": "RDD stands for Resilient Distributed Dataset, which is a fundamental data structure in Apache Spark. It represents an immutable collection of objects that can be split across multiple nodes in the cluster."
+    },
+    {
+      "skill_name": "Apache Spark",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of the 'repartition' method in Apache Spark?",
+      "options_json": "{\"A\": \"To increase the number of partitions for efficient data processing\", \"B\": \"To decrease the number of partitions for reduced memory usage\", \"C\": \"To shuffle data between nodes for load balancing\", \"D\": \"To cache data in memory for faster access\"}",
+      "correct_option": "A",
+      "explanation": "The 'repartition' method is used to increase the number of partitions, allowing Spark to process large datasets more efficiently. This is particularly useful when dealing with big data."
+    },
+    {
+      "skill_name": "Apache Spark",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of using the 'map' function in Apache Spark?",
+      "options_json": "{\"A\": \"To filter out unnecessary data\", \"B\": \"To apply a transformation to each element in a dataset\", \"C\": \"To group similar data together\", \"D\": \"To sort data in ascending order\"}",
+      "correct_option": "B",
+      "explanation": "The 'map' function is used to apply a transformation to each element in a dataset, allowing for efficient processing of large-scale data. This is particularly useful when working with big data and requires the application of complex transformations."
+    },
+    {
+      "skill_name": "Apache Spark",
+      "difficulty": "hard",
+      "question_text": "What is the primary advantage of using Resilient Distributed Datasets (RDDs) in Apache Spark?",
+      "options_json": "{\"A\": \"Faster data processing due to in-memory computation\", \"B\": \"Easier data sharing between tasks through caching\", \"C\": \"Improved fault tolerance with automatic checkpointing\", \"D\": \"Reduced memory usage by storing intermediate results on disk\"}",
+      "correct_option": "A",
+      "explanation": "RDDs enable in-memory computation, which significantly accelerates data processing. This is particularly beneficial for large-scale datasets and complex analytics."
+    },
+    {
+      "skill_name": "Apache Spark",
+      "difficulty": "hard",
+      "question_text": "What is the main advantage of using Resilient Distributed Datasets (RDDs) in Apache Spark?",
+      "options_json": "{\"A\": \"Faster data processing due to in-memory computation\", \"B\": \"Easier data sharing between nodes in a cluster\", \"C\": \"Improved fault tolerance through checkpointing\", \"D\": \"Reduced memory usage by storing intermediate results on disk\"}",
+      "correct_option": "A",
+      "explanation": "RDDs enable faster data processing by storing intermediate results in memory, reducing the need for disk I/O and improving overall performance. This is particularly beneficial when working with large datasets."
+    }
+  ],
+  "total_questions": 6
+}

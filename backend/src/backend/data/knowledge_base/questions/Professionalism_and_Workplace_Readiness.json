@@ -1,0 +1,254 @@
+{
+  "skill_name": "Professionalism & Workplace Readiness",
+  "questions": [
+    {
+      "skill_name": "Professionalism & Workplace Readiness",
+      "difficulty": "easy",
+      "question_text": "What is a key aspect of being a team player in the workplace?",
+      "options_json": "{\"A\": \"To always take credit for others' ideas.\", \"B\": \"To respect and value diversity in the workplace.\", \"C\": \"To prioritize individual goals over teamwork.\", \"D\": \"To gossip about colleagues behind their backs.\"}",
+      "correct_option": "B",
+      "explanation": "Respecting and valuing diversity is essential for effective teamwork. It promotes inclusivity, fosters creativity, and helps to build strong working relationships."
+    },
+    {
+      "skill_name": "Professionalism & Workplace Readiness",
+      "difficulty": "easy",
+      "question_text": "What should you do if you're unsure about a work-related issue?",
+      "options_json": "{\"A\": \"Ask your manager for guidance\", \"B\": \"Seek advice from a colleague\", \"C\": \"Look up the answer online\", \"D\": \"Ignore it and hope it goes away\"}",
+      "correct_option": "A",
+      "explanation": "Asking your manager for guidance is an important aspect of professionalism, as it shows that you value their expertise and are willing to learn. This approach also helps prevent potential mistakes or miscommunications."
+    },
+    {
+      "skill_name": "Professionalism & Workplace Readiness",
+      "difficulty": "easy",
+      "question_text": "Which of the following is a key aspect of diversity and inclusion in the workplace?",
+      "options_json": "{\"A\": \"Providing equal opportunities for all employees to advance in their careers\", \"B\": \"Focusing on individual differences rather than promoting teamwork\", \"C\": \"Encouraging open communication and respect among colleagues from diverse backgrounds\", \"D\": \"Implementing a strict dress code policy\"}",
+      "correct_option": "C",
+      "explanation": "Promoting open communication and respect among colleagues from diverse backgrounds is essential for creating an inclusive work environment. This helps to break down barriers and foster a sense of belonging among employees."
+    },
+    {
+      "skill_name": "Professionalism & Workplace Readiness",
+      "difficulty": "easy",
+      "question_text": "What is the primary benefit of a diverse team in the workplace?",
+      "options_json": "{\"A\": \"Increased productivity and efficiency\", \"B\": \"Improved communication and collaboration\", \"C\": \"Enhanced creativity and innovation\", \"D\": \"Reduced costs and expenses\"}",
+      "correct_option": "C",
+      "explanation": "A diverse team brings together individuals with unique perspectives, experiences, and skills, leading to enhanced creativity and innovation. This is particularly important in today's fast-paced business environment where adaptability and creative problem-solving are essential."
+    },
+    {
+      "skill_name": "Professionalism & Workplace Readiness",
+      "difficulty": "easy",
+      "question_text": "What is a key aspect of maintaining professionalism in the workplace?",
+      "options_json": "{\"A\": \"Being on time for meetings and deadlines\", \"B\": \"Using social media to express personal opinions about colleagues or supervisors\", \"C\": \"Respecting diversity and inclusion in the workplace\", \"D\": \"Taking extended breaks during work hours\"}",
+      "correct_option": "C",
+      "explanation": "Maintaining professionalism in the workplace involves respecting and valuing diversity and inclusion, creating a positive and respectful environment for all employees."
+    },
+    {
+      "skill_name": "Professionalism & Workplace Readiness",
+      "difficulty": "easy",
+      "question_text": "What is the primary goal of diversity and inclusion in a workplace?",
+      "options_json": "{\"A\": \"To increase employee turnover rates\", \"B\": \"To create a culture where everyone feels valued and respected\", \"C\": \"To reduce costs by hiring cheaper labor\", \"D\": \"To promote a competitive work environment\"}",
+      "correct_option": "B",
+      "explanation": "A diverse and inclusive workplace fosters an environment where employees feel valued, respected, and empowered to contribute their best. This leads to increased job satisfaction, productivity, and retention."
+    },
+    {
+      "skill_name": "Professionalism & Workplace Readiness",
+      "difficulty": "easy",
+      "question_text": "What should you do if a colleague is consistently late to meetings?",
+      "options_json": "{\"A\": \"Call them out in front of others for being unprofessional\", \"B\": \"Politely remind them about the meeting schedule and ask if everything is okay\", \"C\": \"Ignore the issue and focus on your own work\", \"D\": \"Report them to a supervisor for disciplinary action\"}",
+      "correct_option": "B",
+      "explanation": "Reminding a colleague about their tardiness in a polite manner shows respect for their time while also addressing the issue. This approach promotes a positive and respectful work environment."
+    },
+    {
+      "skill_name": "Professionalism & Workplace Readiness",
+      "difficulty": "easy",
+      "question_text": "What is the primary benefit of a diverse and inclusive workplace?",
+      "options_json": "{\"A\": \"Increased productivity and efficiency\", \"B\": \"Improved communication and collaboration among team members\", \"C\": \"Enhanced creativity and innovation\", \"D\": \"Better decision-making\"}",
+      "correct_option": "B",
+      "explanation": "A diverse and inclusive workplace fosters an environment where individuals from different backgrounds and perspectives can share their ideas, leading to improved communication and collaboration among team members."
+    },
+    {
+      "skill_name": "Professionalism & Workplace Readiness",
+      "difficulty": "easy",
+      "question_text": "Which of the following is a key aspect of maintaining professionalism in the workplace?",
+      "options_json": "{\"A\": \"Arriving late to meetings and appointments\", \"B\": \"Respecting colleagues' opinions and ideas\", \"C\": \"Using social media to share confidential information\", \"D\": \"Taking extended breaks during work hours\"}",
+      "correct_option": "B",
+      "explanation": "Maintaining professionalism in the workplace involves respecting colleagues' opinions and ideas, even if they differ from your own. This helps create a positive and inclusive team environment."
+    },
+    {
+      "skill_name": "Professionalism & Workplace Readiness",
+      "difficulty": "easy",
+      "question_text": "Which of the following is a key aspect of maintaining a positive and respectful work environment?",
+      "options_json": "{\"A\": \"Arriving late to meetings without notice\", \"B\": \"Being open-minded and inclusive towards colleagues from diverse backgrounds\", \"C\": \"Using company resources for personal gain\", \"D\": \"Gossiping about coworkers\"}",
+      "correct_option": "B",
+      "explanation": "Being open-minded and inclusive is essential in a diverse workplace, as it promotes collaboration and respect among team members. This helps to create a positive work environment where everyone feels valued and supported."
+    },
+    {
+      "skill_name": "Professionalism & Workplace Readiness",
+      "difficulty": "medium",
+      "question_text": "What should you do if a colleague is consistently late to meetings and it's affecting your work?",
+      "options_json": "{\"A\": \"Politely tell them that their tardiness is impacting the team's productivity.\", \"B\": \"Gather evidence of their tardiness and report it to HR.\", \"C\": \"Try to adjust your own schedule to accommodate their late arrival.\", \"D\": \"Avoid discussing the issue with them directly and instead send an email.\"}",
+      "correct_option": "A",
+      "explanation": "This response shows professionalism by addressing the issue in a respectful manner, while also considering the impact on the team's productivity. It's a constructive way to handle the situation without escalating it unnecessarily."
+    },
+    {
+      "skill_name": "Professionalism & Workplace Readiness",
+      "difficulty": "medium",
+      "question_text": "What should you do if a colleague is consistently late to meetings and affecting your team's productivity?",
+      "options_json": "{\"A\": \"Politely remind them of the meeting schedule and expected punctuality.\", \"B\": \"Avoid addressing the issue directly, as it may lead to conflict.\", \"C\": \"Document their tardiness and report it to a supervisor.\", \"D\": \"Suggest rescheduling meetings for earlier in the day.\"}",
+      "correct_option": "A",
+      "explanation": "Addressing the issue directly shows professionalism and respect for colleagues' time, while also maintaining a positive team dynamic. This approach encourages open communication and helps resolve the problem effectively."
+    },
+    {
+      "skill_name": "Professionalism & Workplace Readiness",
+      "difficulty": "medium",
+      "question_text": "Which of the following is an example of a microaggression in the workplace?",
+      "options_json": "{\"A\": \"A colleague asks you about your weekend, but doesn't ask others.\", \"B\": \"You overhear a coworker making a comment about someone's accent.\", \"C\": \"Your manager gives you more responsibilities than other team members.\", \"D\": \"You're asked to work on a project with a diverse group of people.\"}",
+      "correct_option": "B",
+      "explanation": "Microaggressions are subtle, unintentional comments or actions that can be hurtful and create a hostile work environment. In this case, overhearing a coworker making a comment about someone's accent is an example of a microaggression."
+    },
+    {
+      "skill_name": "Professionalism & Workplace Readiness",
+      "difficulty": "medium",
+      "question_text": "What should you do if a colleague is not pulling their weight on a team project?",
+      "options_json": "{\"A\": \"Publicly criticize them in front of the team to motivate them.\", \"B\": \"Have a private conversation with them to understand their challenges and offer support.\", \"C\": \"Take over some of their responsibilities to ensure the project's success.\", \"D\": \"Report them to your supervisor for underperformance.\"}",
+      "correct_option": "B",
+      "explanation": "Having a private conversation shows empathy and helps to resolve issues collaboratively, which is essential in teamwork. Public criticism or taking over responsibilities can damage relationships and create more problems."
+    },
+    {
+      "skill_name": "Professionalism & Workplace Readiness",
+      "difficulty": "medium",
+      "question_text": "Which of the following is an example of unconscious bias in the workplace?",
+      "options_json": "{\"A\": \"A manager giving a promotion to their favorite employee based on performance.\", \"B\": \"A hiring committee consisting only of people from the same cultural background.\", \"C\": \"An employee being reprimanded for speaking out against a company policy they disagree with.\", \"D\": \"A team leader encouraging open communication and feedback among team members.\"}",
+      "correct_option": "B",
+      "explanation": "Unconscious bias occurs when we make judgments or decisions based on stereotypes or assumptions, often without realizing it. In this case, a hiring committee consisting only of people from the same cultural background may unintentionally discriminate against candidates from other backgrounds."
+    },
+    {
+      "skill_name": "Professionalism & Workplace Readiness",
+      "difficulty": "medium",
+      "question_text": "What is the primary benefit of a diverse and inclusive work environment?",
+      "options_json": "{\"A\": \"Increased productivity and efficiency\", \"B\": \"Improved employee morale and job satisfaction\", \"C\": \"Enhanced creativity and innovation\", \"D\": \"Reduced risk of legal liability\"}",
+      "correct_option": "C",
+      "explanation": "A diverse and inclusive work environment fosters an exchange of ideas, perspectives, and experiences, leading to enhanced creativity and innovation. This, in turn, can drive business growth and competitiveness."
+    },
+    {
+      "skill_name": "Professionalism & Workplace Readiness",
+      "difficulty": "medium",
+      "question_text": "What is the primary reason for maintaining a professional online presence?",
+      "options_json": "{\"A\": \"To showcase personal interests and hobbies\", \"B\": \"To establish credibility and build trust with colleagues and clients\", \"C\": \"To share confidential company information\", \"D\": \"To avoid using social media altogether\"}",
+      "correct_option": "B",
+      "explanation": "Maintaining a professional online presence is essential for establishing credibility and building trust with colleagues and clients, which can lead to new opportunities and career advancement."
+    },
+    {
+      "skill_name": "Professionalism & Workplace Readiness",
+      "difficulty": "hard",
+      "question_text": "An employee discovers that a colleague is using company resources for personal gain. What should they do?",
+      "options_json": "{\"A\": \"Report the incident to HR immediately, but not disclose any details until further instructions are given.\", \"B\": \"Confront the colleague directly and try to resolve the issue informally.\", \"C\": \"Document the evidence and report it anonymously through the company's whistleblower policy.\", \"D\": \"Ignore the situation and hope it resolves itself.\"}",
+      "correct_option": "A",
+      "explanation": "Reporting the incident to HR immediately is the correct course of action as it ensures a thorough investigation and prevents any potential retaliation against the employee who reported the misconduct. It also allows HR to handle the situation professionally and in accordance with company policies."
+    },
+    {
+      "skill_name": "Professionalism & Workplace Readiness",
+      "difficulty": "hard",
+      "question_text": "A manager is aware that an employee has been consistently late and has affected team productivity. However, the manager also knows that the employee's child has a serious illness and requires frequent hospital visits during working hours. What should the manager do?",
+      "options_json": "{\"A\": \"Reprimand the employee for being consistently late\", \"B\": \"Allow the employee flexible work arrangements to care for their child\", \"C\": \"Fire the employee due to poor attendance\", \"D\": \"Document the employee's tardiness and discuss it with HR\"}",
+      "correct_option": "B",
+      "explanation": "The manager should allow the employee flexible work arrangements to balance their work responsibilities with family obligations, demonstrating empathy and understanding of diversity and inclusion. This approach also promotes a positive work environment."
+    },
+    {
+      "skill_name": "Professionalism & Workplace Readiness",
+      "difficulty": "hard",
+      "question_text": "An employee discovers that a colleague is consistently making derogatory comments towards people from different cultural backgrounds. What should the employee do?",
+      "options_json": "{\"A\": \"Report the incident to HR immediately, as it's their responsibility to handle diversity and inclusion issues.\", \"B\": \"Talk to the colleague privately and explain how their behavior is affecting others, but avoid involving HR.\", \"C\": \"Document the incidents and share them with the team leader, but don't take any further action.\", \"D\": \"Ignore the situation, as it's not your problem.\"}",
+      "correct_option": "A",
+      "explanation": "The employee should report the incident to HR immediately because they are responsible for handling diversity and inclusion issues. This ensures that the company takes appropriate action to address the behavior and prevent future incidents."
+    },
+    {
+      "skill_name": "Professionalism & Workplace Readiness",
+      "difficulty": "hard",
+      "question_text": "An employee is asked by their manager to share confidential information about a colleague's performance. What should they do?",
+      "options_json": "{\"A\": \"Share the information with the colleague to help them improve.\", \"B\": \"Refuse to share the information and report the request to HR.\", \"C\": \"Share the information with the manager, but only after discussing it with the colleague first.\", \"D\": \"Ignore the request and continue working as usual.\"}",
+      "correct_option": "B",
+      "explanation": "The employee should refuse to share confidential information about a colleague's performance, as this is a breach of confidentiality and potentially illegal. Reporting the request to HR is the correct course of action."
+    },
+    {
+      "skill_name": "Professionalism & Workplace Readiness",
+      "difficulty": "hard",
+      "question_text": "An employee discovers that a colleague has been misusing company resources for personal gain. What should they do?",
+      "options_json": "{\"A\": \"Report the incident to HR immediately, as it is their responsibility to address the issue.\", \"B\": \"Confront the colleague directly and try to resolve the issue privately.\", \"C\": \"Document the evidence and report it to management, but also speak with the colleague about the behavior.\", \"D\": \"Ignore the situation and hope it resolves itself.\"}",
+      "correct_option": "A",
+      "explanation": "Reporting the incident to HR immediately is the most appropriate course of action as it ensures a formal investigation and resolution. This approach also protects the employee from potential retaliation or conflict with the colleague."
+    },
+    {
+      "skill_name": "Professionalism & Workplace Readiness",
+      "difficulty": "hard",
+      "question_text": "A manager discovers that an employee has been using company resources for personal gain. What should the manager do?",
+      "options_json": "{\"A\": \"Confront the employee privately and address the issue immediately.\", \"B\": \"Document the incident and report it to HR, but not confront the employee directly.\", \"C\": \"Ignore the situation and hope it doesn't happen again.\", \"D\": \"Publicly reprimand the employee in front of their colleagues.\"}",
+      "correct_option": "A",
+      "explanation": "The manager should address the issue immediately to maintain a professional work environment and prevent further misuse of company resources. Confronting the employee privately shows that the manager is taking the situation seriously and is committed to upholding company policies."
+    },
+    {
+      "skill_name": "Professionalism & Workplace Readiness",
+      "difficulty": "easy",
+      "question_text": "What is the primary benefit of a diverse and inclusive work environment?",
+      "options_json": "{\"A\": \"Increased productivity and efficiency\", \"B\": \"Improved communication and collaboration among team members\", \"C\": \"Enhanced creativity and innovation\", \"D\": \"Reduced employee turnover and absenteeism\"}",
+      "correct_option": "B",
+      "explanation": "A diverse and inclusive work environment fosters a culture of respect, understanding, and empathy among team members, leading to improved communication and collaboration."
+    },
+    {
+      "skill_name": "Professionalism & Workplace Readiness",
+      "difficulty": "easy",
+      "question_text": "What is a key aspect of maintaining a positive and inclusive work environment?",
+      "options_json": "{\"A\": \"Focusing on individual achievements over team goals\", \"B\": \"Encouraging open communication and respect for diverse perspectives\", \"C\": \"Prioritizing tasks based on personal interests rather than job requirements\", \"D\": \"Avoiding conflicts with colleagues to maintain a peaceful work environment\"}",
+      "correct_option": "B",
+      "explanation": "Open communication and respect for diverse perspectives are essential in creating a positive and inclusive work environment. This helps team members feel valued, heard, and supported."
+    },
+    {
+      "skill_name": "Professionalism & Workplace Readiness",
+      "difficulty": "easy",
+      "question_text": "Which of the following is an example of a professional behavior in a workplace?",
+      "options_json": "{\"A\": \"Arriving late to meetings without notice\", \"B\": \"Respecting colleagues' workspaces and personal belongings\", \"C\": \"Using company resources for personal gain\", \"D\": \"Interrupting others while they are speaking\"}",
+      "correct_option": "B",
+      "explanation": "Respecting colleagues' workspaces and personal belongings is an important aspect of maintaining a professional environment. It shows consideration for others and helps to build trust within the team."
+    },
+    {
+      "skill_name": "Professionalism & Workplace Readiness",
+      "difficulty": "easy",
+      "question_text": "What is the primary goal of diversity and inclusion in the workplace?",
+      "options_json": "{\"A\": \"To increase competition among employees\", \"B\": \"To create a work environment where everyone feels valued and respected\", \"C\": \"To reduce costs by hiring cheaper labor\", \"D\": \"To prioritize one culture over others\"}",
+      "correct_option": "B",
+      "explanation": "A diverse and inclusive workplace fosters a positive and productive environment, leading to better collaboration and employee satisfaction. This is achieved when all employees feel valued and respected, regardless of their background or identity."
+    },
+    {
+      "skill_name": "Professionalism & Workplace Readiness",
+      "difficulty": "easy",
+      "question_text": "What should you do if you witness a colleague being bullied at work?",
+      "options_json": "{\"A\": \"Report it to HR immediately\", \"B\": \"Try to intervene and stop the bullying yourself\", \"C\": \"Ignore it and hope it goes away\", \"D\": \"Talk to your manager about it\"}",
+      "correct_option": "A",
+      "explanation": "Reporting bullying behavior to HR is a responsible and professional action that helps maintain a safe work environment. Ignoring or intervening in the situation can escalate the issue."
+    },
+    {
+      "skill_name": "Professionalism & Workplace Readiness",
+      "difficulty": "easy",
+      "question_text": "What should you do if you're unsure about a work-related policy or procedure?",
+      "options_json": "{\"A\": \"Ask your manager directly for clarification.\", \"B\": \"Check the company's intranet or handbook for guidance.\", \"C\": \"Discuss it with colleagues to see what they think.\", \"D\": \"Wait until you're told what to do by a supervisor.\"}",
+      "correct_option": "A",
+      "explanation": "Asking your manager directly shows respect for their authority and helps ensure you understand the policy or procedure correctly. It's also a sign of professionalism and a willingness to learn."
+    },
+    {
+      "skill_name": "Professionalism & Workplace Readiness",
+      "difficulty": "easy",
+      "question_text": "What is the primary benefit of having a diverse team in the workplace?",
+      "options_json": "{\"A\": \"Increased productivity and efficiency\", \"B\": \"Better decision-making through varied perspectives\", \"C\": \"Improved communication among team members\", \"D\": \"Enhanced company image\"}",
+      "correct_option": "B",
+      "explanation": "A diverse team brings together individuals with different backgrounds, experiences, and viewpoints, leading to more informed and well-rounded decision-making. This is particularly important in a globalized business environment where teams often work across cultures and time zones."
+    },
+    {
+      "skill_name": "Professionalism & Workplace Readiness",
+      "difficulty": "medium",
+      "question_text": "What is the primary goal of diversity and inclusion initiatives in a workplace?",
+      "options_json": "{\"A\": \"To increase employee turnover rates\", \"B\": \"To create a work environment where everyone feels valued and respected\", \"C\": \"To reduce training costs for new employees\", \"D\": \"To prioritize the needs of one particular demographic over others\"}",
+      "correct_option": "B",
+      "explanation": "Diversity and inclusion initiatives aim to foster an inclusive culture where all employees feel welcome, valued, and respected. This leads to increased job satisfaction, productivity, and retention."
+    }
+  ],
+  "total_questions": 31
+}

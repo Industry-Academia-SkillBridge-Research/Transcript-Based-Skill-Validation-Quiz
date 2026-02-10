@@ -1,0 +1,38 @@
+{
+  "skill_name": "GraphQL",
+  "questions": [
+    {
+      "skill_name": "GraphQL",
+      "difficulty": "easy",
+      "question_text": "What does the @directive in GraphQL do?",
+      "options_json": "{\"A\": \"It's used for authentication and authorization\", \"B\": \"It's used to define a field on an object type\", \"C\": \"It's used to specify a resolver function for a field\", \"D\": \"It's used to add metadata about the schema\"}",
+      "correct_option": "C",
+      "explanation": "The @directive is used to specify a resolver function for a field, which is responsible for fetching the data for that field. This allows developers to define custom logic for retrieving data from their database or other sources."
+    },
+    {
+      "skill_name": "GraphQL",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of a GraphQL schema?",
+      "options_json": "{\"A\": \"To define the database structure\", \"B\": \"To specify the types and resolvers for a GraphQL API\", \"C\": \"To handle authentication and authorization\", \"D\": \"To optimize query performance\"}",
+      "correct_option": "B",
+      "explanation": "A GraphQL schema defines the types and resolvers for a GraphQL API, which allows clients to query specific data. This is in contrast to a traditional database schema, which defines the structure of the underlying data."
+    },
+    {
+      "skill_name": "GraphQL",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the @deprecated directive in GraphQL?",
+      "options_json": "{\"A\": \"To mark a field as deprecated and prevent it from being used in queries.\", \"B\": \"To indicate that a field has been removed, but its previous value can still be accessed through a resolver.\", \"C\": \"To specify the type of a field's argument.\", \"D\": \"To add additional validation to a field.\"}",
+      "correct_option": "A",
+      "explanation": "The @deprecated directive is used to mark a field as deprecated, indicating that it should no longer be used in queries. This helps prevent the use of deprecated fields and makes it easier for clients to migrate to new schema versions."
+    },
+    {
+      "skill_name": "GraphQL",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of a GraphQL schema in a server-side application?",
+      "options_json": "{\"A\": \"To define the database schema and relationships between tables\", \"B\": \"To specify the types of data that can be queried or mutated by clients\", \"C\": \"To implement authentication and authorization mechanisms for users\", \"D\": \"To handle caching and indexing of frequently accessed data\"}",
+      "correct_option": "B",
+      "explanation": "A GraphQL schema defines the types of data that can be queried or mutated, allowing clients to request specific fields and enabling more efficient data transfer. This is in contrast to a traditional RESTful API, where the server-side application is responsible for defining the structure of the data."
+    }
+  ],
+  "total_questions": 4
+}

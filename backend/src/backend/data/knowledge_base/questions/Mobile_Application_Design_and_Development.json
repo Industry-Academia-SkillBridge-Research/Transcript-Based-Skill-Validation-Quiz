@@ -1,0 +1,158 @@
+{
+  "skill_name": "Mobile Application Design & Development",
+  "questions": [
+    {
+      "skill_name": "Mobile Application Design & Development",
+      "difficulty": "easy",
+      "question_text": "What is the primary purpose of a Lifecycle callback in Android?",
+      "options_json": "{\"A\": \"To handle user input events\", \"B\": \"To manage the app's memory and CPU resources\", \"C\": \"To perform initialization tasks when the app starts\", \"D\": \"To update the app's UI components\"}",
+      "correct_option": "C",
+      "explanation": "Lifecycle callbacks in Android are used to perform initialization tasks, such as setting up database connections or loading data from a server, when the app starts. This ensures that the app is properly initialized before it becomes visible to the user."
+    },
+    {
+      "skill_name": "Mobile Application Design & Development",
+      "difficulty": "easy",
+      "question_text": "What is the primary purpose of an Android Activity?",
+      "options_json": "{\"A\": \"To handle user input and interactions\", \"B\": \"To manage application data storage\", \"C\": \"To display a user interface for the app\", \"D\": \"To perform background tasks such as networking\"}",
+      "correct_option": "C",
+      "explanation": "An Android Activity is responsible for displaying a user interface for the app. It can also handle user input and interactions, but its primary purpose is to display the UI."
+    },
+    {
+      "skill_name": "Mobile Application Design & Development",
+      "difficulty": "easy",
+      "question_text": "What is the primary purpose of a Fragment in Android app development?",
+      "options_json": "{\"A\": \"To handle user input from multiple screens\", \"B\": \"To manage different UI components across multiple activities\", \"C\": \"To store and retrieve data from a database\", \"D\": \"To create a reusable piece of code that can be used in multiple places\"}",
+      "correct_option": "D",
+      "explanation": "A Fragment is a self-contained piece of code that can be reused throughout an app, making it easier to manage complex UI components and layouts."
+    },
+    {
+      "skill_name": "Mobile Application Design & Development",
+      "difficulty": "easy",
+      "question_text": "What is the primary function of an Android Activity?",
+      "options_json": "{\"A\": \"To handle user input and display data\", \"B\": \"To manage system resources such as memory and CPU\", \"C\": \"To provide a user interface for the application\", \"D\": \"To store and retrieve data from the database\"}",
+      "correct_option": "A",
+      "explanation": "An Android Activity is responsible for handling user input, displaying data, and managing the lifecycle of the application. It provides a user interface for the app and interacts with other components."
+    },
+    {
+      "skill_name": "Mobile Application Design & Development",
+      "difficulty": "easy",
+      "question_text": "What is the primary purpose of a Service in Android app development?",
+      "options_json": "{\"A\": \"To handle user input and provide feedback\", \"B\": \"To run background tasks and perform operations independently\", \"C\": \"To manage application data storage and retrieval\", \"D\": \"To display UI components and layout\"}",
+      "correct_option": "B",
+      "explanation": "A Service in Android is used to run background tasks, such as network requests or file processing, without blocking the main thread. This allows for more efficient use of system resources."
+    },
+    {
+      "skill_name": "Mobile Application Design & Development",
+      "difficulty": "easy",
+      "question_text": "What is the primary function of an Activity in Android?",
+      "options_json": "{\"A\": \"To handle user input and display data\", \"B\": \"To manage application resources such as memory and storage\", \"C\": \"To communicate with other devices via Bluetooth or Wi-Fi\", \"D\": \"To run background tasks without user interaction\"}",
+      "correct_option": "A",
+      "explanation": "An Activity in Android is responsible for handling user input, displaying data, and managing the application's lifecycle. It is the entry point for any Android app and is used to interact with the user."
+    },
+    {
+      "skill_name": "Mobile Application Design & Development",
+      "difficulty": "easy",
+      "question_text": "What is responsible for managing the lifecycle of an Android activity?",
+      "options_json": "{\"A\": \"Android Service\", \"B\": \"Android Context\", \"C\": \"Activity Manager\", \"D\": \"Application Component\"}",
+      "correct_option": "D",
+      "explanation": "An application component is responsible for managing the lifecycle of an Android activity. This includes creating, starting, and stopping activities."
+    },
+    {
+      "skill_name": "Mobile Application Design & Development",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of a Service in Android app development?",
+      "options_json": "{\"A\": \"To handle user input and provide a UI for the user\", \"B\": \"To perform background tasks, such as data synchronization or network requests\", \"C\": \"To manage application lifecycle and state\", \"D\": \"To display notifications to the user\"}",
+      "correct_option": "B",
+      "explanation": "A Service in Android app development is used to perform long-running operations in the background, such as data synchronization or network requests. This allows the main thread of the application to remain responsive and efficient."
+    },
+    {
+      "skill_name": "Mobile Application Design & Development",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of a Fragment in Android app development?",
+      "options_json": "{\"A\": \"To handle user input from multiple screens\", \"B\": \"To reuse UI components across different activities\", \"C\": \"To manage data persistence and caching\", \"D\": \"To create a responsive and dynamic user interface\"}",
+      "correct_option": "B",
+      "explanation": "Fragments are used to reuse UI components, making it easier to manage complex layouts and user interfaces. This is particularly useful in Android app development where screen sizes and orientations can vary."
+    },
+    {
+      "skill_name": "Mobile Application Design & Development",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of a Service in Android application development?",
+      "options_json": "{\"A\": \"To handle user input and display data on the screen\", \"B\": \"To run long-running operations in the background, such as network requests or file I/O\", \"C\": \"To manage the lifecycle of an activity or fragment\", \"D\": \"To provide a way to communicate between activities\"}",
+      "correct_option": "B",
+      "explanation": "Services are used to run long-running operations in the background, allowing the user to continue interacting with the app without interruption. This is particularly useful for tasks such as network requests or file I/O."
+    },
+    {
+      "skill_name": "Mobile Application Design & Development",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of a Service in Android OS?",
+      "options_json": "{\"A\": \"To handle user input and provide feedback\", \"B\": \"To run in the background and perform tasks without user interaction\", \"C\": \"To manage memory and optimize app performance\", \"D\": \"To display UI components and layout\"}",
+      "correct_option": "B",
+      "explanation": "A Service is a component that runs in the background to perform long-running operations or handle network requests, making it ideal for tasks that don't require direct user interaction."
+    },
+    {
+      "skill_name": "Mobile Application Design & Development",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of the AndroidManifest.xml file in an Android app?",
+      "options_json": "{\"A\": \"To declare the app's UI components and layout\", \"B\": \"To define the app's activities, services, and broadcast receivers\", \"C\": \"To specify the app's permissions and data storage requirements\", \"D\": \"To configure the app's network connectivity and API interactions\"}",
+      "correct_option": "B",
+      "explanation": "The AndroidManifest.xml file serves as a declaration of the app's components, including activities, services, and broadcast receivers. This information is essential for the Android system to understand how the app functions and what it requires to run."
+    },
+    {
+      "skill_name": "Mobile Application Design & Development",
+      "difficulty": "hard",
+      "question_text": "In Android, what is the primary purpose of a Service component?",
+      "options_json": "{\"A\": \"To handle user input and display data on the screen\", \"B\": \"To perform long-running operations or background tasks\", \"C\": \"To manage the app's lifecycle and navigation\", \"D\": \"To store and retrieve data from the app's database\"}",
+      "correct_option": "B",
+      "explanation": "A Service component is designed to run in the background, performing tasks that don't require a user interface, such as downloading data or updating the app's state."
+    },
+    {
+      "skill_name": "Mobile Application Design & Development",
+      "difficulty": "hard",
+      "question_text": "In Android, what is the purpose of the Service component?",
+      "options_json": "{\"A\": \"To handle user input and display data on the screen\", \"B\": \"To run background tasks that are not directly related to the current activity\", \"C\": \"To provide a way for activities to communicate with each other\", \"D\": \"To manage the lifecycle of other components in the app\"}",
+      "correct_option": "B",
+      "explanation": "The Service component is used to run background tasks that are not directly related to the current activity, such as playing music or updating data. This allows the app to continue running even when the user navigates away from it."
+    },
+    {
+      "skill_name": "Mobile Application Design & Development",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of a Fragment in Android app development?",
+      "options_json": "{\"A\": \"To handle user input from multiple screens\", \"B\": \"To manage the lifecycle of an activity across multiple screens\", \"C\": \"To improve app performance by reducing memory usage\", \"D\": \"To provide a reusable UI component\"}",
+      "correct_option": "B",
+      "explanation": "Fragments are used to manage the lifecycle of an activity across multiple screens, allowing for more efficient use of resources and easier navigation between screens."
+    },
+    {
+      "skill_name": "Mobile Application Design & Development",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of a Service in Android application development?",
+      "options_json": "{\"A\": \"To handle user input and provide a UI for the app\", \"B\": \"To run background tasks and perform operations independently of the main thread\", \"C\": \"To manage the lifecycle of other components, such as Activities and Fragments\", \"D\": \"To store data locally on the device\"}",
+      "correct_option": "B",
+      "explanation": "A Service in Android is designed to run background tasks and perform operations independently of the main thread, allowing for more efficient use of system resources. This enables features like music playback or location tracking without blocking the user interface."
+    },
+    {
+      "skill_name": "Mobile Application Design & Development",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of a Service in Android app development?",
+      "options_json": "{\"A\": \"To handle user input and provide a UI for the app\", \"B\": \"To run tasks in the background without affecting the app's main thread\", \"C\": \"To store data locally on the device\", \"D\": \"To manage network connections and APIs\"}",
+      "correct_option": "B",
+      "explanation": "A Service is designed to run independently of the app's main thread, allowing for tasks like music playback or location tracking without blocking the UI. This makes it ideal for background operations."
+    },
+    {
+      "skill_name": "Mobile Application Design & Development",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of using a Fragment in Android app development?",
+      "options_json": "{\"A\": \"To handle multiple screens and orientations\", \"B\": \"To reuse UI components across different activities\", \"C\": \"To improve app performance by reducing memory usage\", \"D\": \"To enable data synchronization between devices\"}",
+      "correct_option": "B",
+      "explanation": "Fragments allow developers to reuse UI components and layout structures, making it easier to manage complex user interfaces. This is particularly useful when developing apps with multiple screens or activities."
+    },
+    {
+      "skill_name": "Mobile Application Design & Development",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of a ContentProvider in Android?",
+      "options_json": "{\"A\": \"To manage database connections for an app\", \"B\": \"To provide data to multiple apps through a single interface\", \"C\": \"To handle user authentication and authorization\", \"D\": \"To optimize app performance by caching frequently accessed data\"}",
+      "correct_option": "B",
+      "explanation": "A ContentProvider in Android is used to manage access to data, allowing multiple apps to share the same data through a single interface. This enables data consistency and reduces duplication of effort."
+    }
+  ],
+  "total_questions": 19
+}

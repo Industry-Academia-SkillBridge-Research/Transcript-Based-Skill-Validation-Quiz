@@ -1,0 +1,46 @@
+{
+  "skill_name": "Unit Testing",
+  "questions": [
+    {
+      "skill_name": "Unit Testing",
+      "difficulty": "easy",
+      "question_text": "What does a unit test typically check?",
+      "options_json": "{\"A\": \"The entire system's functionality\", \"B\": \"A single unit of code's behavior in isolation\", \"C\": \"The performance of the system under load\", \"D\": \"The security vulnerabilities in the code\"}",
+      "correct_option": "B",
+      "explanation": "Unit tests check a small part of the code to ensure it behaves as expected. This helps catch bugs early and prevent them from propagating throughout the system."
+    },
+    {
+      "skill_name": "Unit Testing",
+      "difficulty": "easy",
+      "question_text": "What is the primary purpose of a unit test?",
+      "options_json": "{\"A\": \"To verify that an entire application works as expected\", \"B\": \"To ensure individual units of code are working correctly\", \"C\": \"To catch errors in the compiler\", \"D\": \"To optimize code for better performance\"}",
+      "correct_option": "B",
+      "explanation": "Unit tests focus on verifying that small, isolated pieces of code (units) behave as expected. This helps ensure that changes to the codebase do not introduce bugs."
+    },
+    {
+      "skill_name": "Unit Testing",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of a mock object in unit testing?",
+      "options_json": "{\"A\": \"To test the integration between multiple units of code\", \"B\": \"To isolate dependencies and make individual units easier to test\", \"C\": \"To verify the correctness of a single unit of code in isolation\", \"D\": \"To reduce the number of test cases required for a given feature\"}",
+      "correct_option": "B",
+      "explanation": "A mock object is used to isolate dependencies and make individual units easier to test, allowing developers to focus on one unit at a time. This makes it easier to identify and fix issues in the code."
+    },
+    {
+      "skill_name": "Unit Testing",
+      "difficulty": "hard",
+      "question_text": "What is a key benefit of using mocking libraries in unit testing?",
+      "options_json": "{\"A\": \"To test complex interactions between multiple classes\", \"B\": \"To isolate dependencies and make tests more reliable\", \"C\": \"To reduce the number of test cases needed\", \"D\": \"To improve code coverage\"}",
+      "correct_option": "B",
+      "explanation": "Mocking libraries allow you to isolate dependencies, making your tests more reliable by controlling the inputs and outputs. This is particularly useful when testing complex interactions between multiple classes."
+    },
+    {
+      "skill_name": "Unit Testing",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of a mock object in unit testing?",
+      "options_json": "{\"A\": \"To test the integration between multiple units of code\", \"B\": \"To isolate dependencies and make individual units testable\", \"C\": \"To increase code coverage by testing more lines of code\", \"D\": \"To reduce the number of tests needed for a given piece of code\"}",
+      "correct_option": "B",
+      "explanation": "A mock object is used to isolate dependencies and make individual units testable, allowing developers to focus on one unit at a time. This makes it easier to write targeted tests that cover specific functionality."
+    }
+  ],
+  "total_questions": 5
+}

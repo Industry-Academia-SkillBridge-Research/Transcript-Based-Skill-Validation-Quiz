@@ -1,0 +1,174 @@
+{
+  "skill_name": "Advanced Database Design & Management",
+  "questions": [
+    {
+      "skill_name": "Advanced Database Design & Management",
+      "difficulty": "easy",
+      "question_text": "What is the primary purpose of indexing in a database?",
+      "options_json": "{\"A\": \"To improve query performance by reducing the number of disk I/O operations.\", \"B\": \"To increase data security by encrypting sensitive information.\", \"C\": \"To optimize transactions and concurrency control.\", \"D\": \"To compress data storage to reduce physical space requirements.\"}",
+      "correct_option": "A",
+      "explanation": "Indexing helps the database system locate specific data quickly, reducing the time it takes to execute queries. This is especially important for large datasets where a full table scan would be inefficient."
+    },
+    {
+      "skill_name": "Advanced Database Design & Management",
+      "difficulty": "easy",
+      "question_text": "Which of the following indexing techniques is most suitable for handling semi-structured data?",
+      "options_json": "{\"A\": \"B-tree index\", \"B\": \"Hash index\", \"C\": \"Full-text search index\", \"D\": \"XML index\"}",
+      "correct_option": "D",
+      "explanation": "An XML index is specifically designed to handle semi-structured data, making it the most suitable choice. This type of index allows for efficient querying and retrieval of complex XML documents."
+    },
+    {
+      "skill_name": "Advanced Database Design & Management",
+      "difficulty": "easy",
+      "question_text": "What type of indexing is best suited for columns with a high cardinality?",
+      "options_json": "{\"A\": \"B-tree indexing\", \"B\": \"Hash indexing\", \"C\": \"Full-text indexing\", \"D\": \"Bitmap indexing\"}",
+      "correct_option": "A",
+      "explanation": "B-tree indexing is best suited for columns with a high cardinality because it allows for efficient range queries and can handle large datasets. This type of indexing is particularly useful in object-relational databases."
+    },
+    {
+      "skill_name": "Advanced Database Design & Management",
+      "difficulty": "easy",
+      "question_text": "What is the primary benefit of using indexing in a database?",
+      "options_json": "{\"A\": \"Improved query performance by reducing disk I/O\", \"B\": \"Enhanced data security through encryption\", \"C\": \"Simplified database administration tasks\", \"D\": \"Increased storage capacity\"}",
+      "correct_option": "A",
+      "explanation": "Indexing allows the database to quickly locate specific data, reducing the time it takes to execute queries and improving overall system performance."
+    },
+    {
+      "skill_name": "Advanced Database Design & Management",
+      "difficulty": "medium",
+      "question_text": "In an Object-Relational Database, which of the following is a benefit of using XML data type for semi-structured data?",
+      "options_json": "{\"A\": \"Improved query performance due to optimized indexing\", \"B\": \"Enhanced ability to store and manage complex relationships between objects\", \"C\": \"Simplified data exchange with external systems through standardized schema\", \"D\": \"Increased storage space requirements for large datasets\"}",
+      "correct_option": "C",
+      "explanation": "Using XML data type allows for a standardized schema, making it easier to exchange data with external systems. This is particularly useful in Object-Relational Databases where data is often complex and semi-structured."
+    },
+    {
+      "skill_name": "Advanced Database Design & Management",
+      "difficulty": "medium",
+      "question_text": "Consider a database that stores semi-structured data in XML format. Which of the following indexing techniques is most suitable for querying this type of data?",
+      "options_json": "{\"A\": \"B-tree index on the XML document ID\", \"B\": \"Full-text search index on the XML content\", \"C\": \"XML-specific index on the element and attribute names\", \"D\": \"Materialized view on the frequently queried elements\"}",
+      "correct_option": "C",
+      "explanation": "An XML-specific index allows for efficient querying of specific elements and attributes within the semi-structured data, whereas the other options may not provide optimal performance."
+    },
+    {
+      "skill_name": "Advanced Database Design & Management",
+      "difficulty": "medium",
+      "question_text": "Consider a database that stores XML documents. Which indexing technique is most suitable for querying specific elements within these documents?",
+      "options_json": "{\"A\": \"B-tree index on the document ID\", \"B\": \"Full-text index on the XML content\", \"C\": \"XML-specific index, such as XPATH or XPath-index\", \"D\": \"Create a separate relational table for each element\"}",
+      "correct_option": "C",
+      "explanation": "An XML-specific index allows for efficient querying of specific elements within the documents. This is particularly useful when dealing with semi-structured data like XML."
+    },
+    {
+      "skill_name": "Advanced Database Design & Management",
+      "difficulty": "medium",
+      "question_text": "When designing an object-relational database, which of the following indexing strategies is most effective for improving query performance on a column with high cardinality and frequent updates?",
+      "options_json": "{\"A\": \"B-tree index with a large page size\", \"B\": \"Hash index with a small bucket size\", \"C\": \"GIN index with a custom operator class\", \"D\": \"Full-text search index with stopword removal\"}",
+      "correct_option": "C",
+      "explanation": "A GIN (Generalized Inverted Index) index with a custom operator class is well-suited for columns with high cardinality and frequent updates, as it allows for efficient querying of complex data types. This approach outperforms the other options in terms of query performance."
+    },
+    {
+      "skill_name": "Advanced Database Design & Management",
+      "difficulty": "medium",
+      "question_text": "Consider a database that stores XML documents. What indexing technique is most suitable for querying attributes within these documents?",
+      "options_json": "{\"A\": \"B-tree index on the document ID\", \"B\": \"Full-text search index on the attribute values\", \"C\": \"XML-specific index, such as an XPath index\", \"D\": \"Materialized view of the XML data\"}",
+      "correct_option": "C",
+      "explanation": "An XPath index is specifically designed for querying attributes within XML documents. It allows for efficient retrieval of relevant data."
+    },
+    {
+      "skill_name": "Advanced Database Design & Management",
+      "difficulty": "medium",
+      "question_text": "In an object-relational database, which of the following is a benefit of using XML data type for storing semi-structured data?",
+      "options_json": "{\"A\": \"Improved query performance due to indexing\", \"B\": \"Better support for complex queries and joins\", \"C\": \"Ability to store and manage semi-structured data in a more efficient way\", \"D\": \"Reduced storage space requirements\"}",
+      "correct_option": "C",
+      "explanation": "Using XML data type allows for more flexible and efficient storage of semi-structured data, making it easier to manage and query."
+    },
+    {
+      "skill_name": "Advanced Database Design & Management",
+      "difficulty": "medium",
+      "question_text": "Consider a database that stores XML documents. Which indexing technique is most suitable for efficient querying of specific elements within these documents?",
+      "options_json": "{\"A\": \"B-tree index on the document ID\", \"B\": \"XML-specific index, such as an XPath index\", \"C\": \"Full-text search index on the element values\", \"D\": \"In-memory caching of frequently accessed documents\"}",
+      "correct_option": "B",
+      "explanation": "An XML-specific index allows for efficient querying of specific elements within the documents. This is because it can directly support XPath expressions and other XML query languages."
+    },
+    {
+      "skill_name": "Advanced Database Design & Management",
+      "difficulty": "medium",
+      "question_text": "In an object-relational database, what is the primary benefit of using a denormalized schema for storing semi-structured data?",
+      "options_json": "{\"A\": \"Improved query performance due to reduced join operations\", \"B\": \"Enhanced ability to handle complex transactions and concurrency control\", \"C\": \"Simplified data modeling and improved data integrity\", \"D\": \"Increased storage efficiency by minimizing redundant data\"}",
+      "correct_option": "A",
+      "explanation": "Denormalized schemas can improve query performance by reducing the need for join operations, which are often costly in object-relational databases. This is particularly beneficial when working with semi-structured data that requires frequent querying."
+    },
+    {
+      "skill_name": "Advanced Database Design & Management",
+      "difficulty": "hard",
+      "question_text": "Consider a database with a large collection of semi-structured XML documents. Which indexing technique would be most effective for querying specific elements within these documents?",
+      "options_json": "{\"A\": \"B-tree index on the document ID\", \"B\": \"XML-specific index on element paths\", \"C\": \"Full-text search index on element values\", \"D\": \"Materialized view on frequently queried elements\"}",
+      "correct_option": "B",
+      "explanation": "An XML-specific index allows for efficient querying of specific elements within the documents, while a B-tree index or full-text search index may not be as effective in this scenario. A materialized view would require additional maintenance and updates."
+    },
+    {
+      "skill_name": "Advanced Database Design & Management",
+      "difficulty": "hard",
+      "question_text": "Consider a database that stores semi-structured XML data. Which indexing technique is most suitable for efficient querying of XPath expressions?",
+      "options_json": "{\"A\": \"B-tree indexing with path-based keys\", \"B\": \"XML-specific indexing using Xindice\", \"C\": \"Full-text search indexing with relevance ranking\", \"D\": \"Materialized view indexing with pre-computed results\"}",
+      "correct_option": "B",
+      "explanation": "Xindice is a specialized indexing technique designed for efficient querying of XPath expressions in XML data. It allows for fast lookup and retrieval of specific elements within the XML document."
+    },
+    {
+      "skill_name": "Advanced Database Design & Management",
+      "difficulty": "hard",
+      "question_text": "Consider a database that stores XML documents with varying structure. Which indexing technique is most suitable for efficient querying of specific elements within these documents?",
+      "options_json": "{\"A\": \"B-tree index on the document ID\", \"B\": \"XML index on the element path\", \"C\": \"Full-text search index on the element value\", \"D\": \"Materialized view on the XML data\"}",
+      "correct_option": "B",
+      "explanation": "An XML index on the element path allows for efficient querying of specific elements within the documents, as it enables the database to quickly locate and retrieve relevant data. This is particularly useful in databases that store semi-structured data like XML documents."
+    },
+    {
+      "skill_name": "Advanced Database Design & Management",
+      "difficulty": "hard",
+      "question_text": "Consider a database that stores XML documents. The XML schema is as follows: <root><name>string</name><age>integer</age></root>. Which of the following indexing strategies would be most effective for querying the age attribute?",
+      "options_json": "{\"A\": \"Create an index on the name attribute\", \"B\": \"Create a full-text index on the XML document\", \"C\": \"Create a functional index on the age attribute\", \"D\": \"Create a secondary index on the age attribute\"}",
+      "correct_option": "C",
+      "explanation": "A functional index allows for efficient querying of specific attributes within an XML document. This is particularly useful when querying the age attribute, as it can be evaluated independently of other attributes."
+    },
+    {
+      "skill_name": "Advanced Database Design & Management",
+      "difficulty": "hard",
+      "question_text": "Consider a database that stores semi-structured XML data. Which indexing technique is most suitable for querying this type of data?",
+      "options_json": "{\"A\": \"B-tree index on the XML document ID\", \"B\": \"Full-text search index on the XML content\", \"C\": \"XML-specific index, such as XPATH or XPath-index\", \"D\": \"Create a relational table with denormalized XML data\"}",
+      "correct_option": "C",
+      "explanation": "An XML-specific index, such as XPATH or XPath-index, is most suitable for querying semi-structured XML data because it allows for efficient retrieval of specific elements within the XML documents. This type of index can significantly improve query performance in databases that store large amounts of XML data."
+    },
+    {
+      "skill_name": "Advanced Database Design & Management",
+      "difficulty": "hard",
+      "question_text": "Consider a database that stores XML documents. Which indexing technique is most suitable for querying elements within these documents?",
+      "options_json": "{\"A\": \"B-tree index on the document ID\", \"B\": \"Full-text search index on the element content\", \"C\": \"XML-specific index on the element path\", \"D\": \"Hash index on the element value\"}",
+      "correct_option": "C",
+      "explanation": "An XML-specific index allows for efficient querying of elements within the documents, whereas the other options are not tailored to the structure of XML data."
+    },
+    {
+      "skill_name": "Advanced Database Design & Management",
+      "difficulty": "hard",
+      "question_text": "Consider a database that stores semi-structured XML data. An index is created on an attribute of the XML document's root element. However, queries frequently access nested elements within the document. What indexing technique can improve query performance in this scenario?",
+      "options_json": "{\"A\": \"Creating a secondary index on the nested element\", \"B\": \"Using a full-text search index on the entire XML document\", \"C\": \"Applying an XPath-based index to the root element's attribute\", \"D\": \"Storing the XML data in a relational format and indexing it accordingly\"}",
+      "correct_option": "C",
+      "explanation": "An XPath-based index allows for efficient querying of nested elements within the XML document. This is particularly useful when queries frequently access specific paths within the document."
+    },
+    {
+      "skill_name": "Advanced Database Design & Management",
+      "difficulty": "hard",
+      "question_text": "Consider a database that stores XML documents. Which indexing technique is most suitable for efficient querying of XPath expressions?",
+      "options_json": "{\"A\": \"B-tree index on the document ID\", \"B\": \"Full-text search index on the XML content\", \"C\": \"XML-specific index, such as Xindice or eXist\", \"D\": \"Materialized view of the XML data\"}",
+      "correct_option": "C",
+      "explanation": "An XML-specific index is designed to efficiently support XPath expressions and other XML querying operations. It provides fast access to specific elements within the XML documents."
+    },
+    {
+      "skill_name": "Advanced Database Design & Management",
+      "difficulty": "hard",
+      "question_text": "Consider a database that stores semi-structured XML data. An index is created on an attribute of the root element. However, queries often access attributes deep within the XML hierarchy. Which indexing strategy would be most effective in this scenario?",
+      "options_json": "{\"A\": \"Create a secondary index on the frequently accessed attribute\", \"B\": \"Use a covering index that includes all relevant attributes\", \"C\": \"Implement a full-text search index for efficient querying\", \"D\": \"Denormalize the database to store frequently accessed data in separate tables\"}",
+      "correct_option": "B",
+      "explanation": "A covering index would reduce the number of disk accesses required to retrieve relevant data, improving query performance. This is particularly important when dealing with semi-structured XML data where queries often access attributes at various depths."
+    }
+  ],
+  "total_questions": 21
+}

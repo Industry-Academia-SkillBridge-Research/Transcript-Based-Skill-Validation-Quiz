@@ -1,0 +1,78 @@
+{
+  "skill_name": "HTML",
+  "questions": [
+    {
+      "skill_name": "HTML",
+      "difficulty": "easy",
+      "question_text": "What does the <header> element represent in HTML?",
+      "options_json": "{\"A\": \"A container for navigation links and page title\", \"B\": \"A section for introductory content or a site's logo\", \"C\": \"A footer element that contains copyright information\", \"D\": \"A sidebar element that contains related content\"}",
+      "correct_option": "A",
+      "explanation": "The <header> element is used to group together introductory content, navigation links, and other metadata about a document. It's typically placed at the top of an HTML page."
+    },
+    {
+      "skill_name": "HTML",
+      "difficulty": "easy",
+      "question_text": "What does the HTML tag do?",
+      "options_json": "{\"A\": \"It is used for styling web pages.\", \"B\": \"It is used to link external stylesheets.\", \"C\": \"It is used to define headings and subheadings on a webpage.\", \"D\": \"It is used to create tables in HTML.\"}",
+      "correct_option": "C",
+      "explanation": "The tag is used to define headings and subheadings on a webpage. It is commonly used for titles, subtitles, and other headings."
+    },
+    {
+      "skill_name": "HTML",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the <noscript> tag in HTML?",
+      "options_json": "{\"A\": \"To provide an alternative content for users with JavaScript disabled\", \"B\": \"To add a comment to the HTML code\", \"C\": \"To define a new style rule for a webpage\", \"D\": \"To create a link to another webpage\"}",
+      "correct_option": "A",
+      "explanation": "The <noscript> tag is used to provide an alternative content for users with JavaScript disabled. This allows the browser to display a message or an alternative version of the page when JavaScript is not supported."
+    },
+    {
+      "skill_name": "HTML",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the <header> element in HTML?",
+      "options_json": "{\"A\": \"To define a navigation menu for the webpage\", \"B\": \"To provide metadata about the document, such as title and author\", \"C\": \"To group together introductory content, logos, or other elements at the top of the page\", \"D\": \"To create a horizontal rule\"}",
+      "correct_option": "C",
+      "explanation": "The <header> element is used to group together introductory content, such as headings, images, or links, that are typically placed at the top of an HTML document. This helps with accessibility and semantic meaning."
+    },
+    {
+      "skill_name": "HTML",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the <canvas> element in HTML5?",
+      "options_json": "{\"A\": \"To create interactive web pages with JavaScript\", \"B\": \"To display images on a webpage\", \"C\": \"To draw graphics and charts on a webpage\", \"D\": \"To add CSS styles to an HTML document\"}",
+      "correct_option": "C",
+      "explanation": "The <canvas> element is used to create dynamic, interactive graphics and charts on a webpage. It allows developers to draw shapes, lines, and other graphical elements using JavaScript."
+    },
+    {
+      "skill_name": "HTML",
+      "difficulty": "easy",
+      "question_text": "What is the purpose of the <header> element in HTML?",
+      "options_json": "{\"A\": \"To define a navigation menu for the webpage\", \"B\": \"To provide metadata about the document\", \"C\": \"To contain introductory content or a logo\", \"D\": \"To create a footer section\"}",
+      "correct_option": "C",
+      "explanation": "The <header> element is used to contain introductory content, such as a logo, navigation menu, or other introductory elements. It provides a clear and semantic way to structure the content of a webpage."
+    },
+    {
+      "skill_name": "HTML",
+      "difficulty": "easy",
+      "question_text": "What is the purpose of the <head> element in an HTML document?",
+      "options_json": "{\"A\": \"To define the structure and content of a web page\", \"B\": \"To link external stylesheets or scripts to the document\", \"C\": \"To specify the character encoding of the document\", \"D\": \"To create a navigation menu\"}",
+      "correct_option": "B",
+      "explanation": "The <head> element is used to link external stylesheets, scripts, and metadata to the HTML document. This allows for better organization and separation of concerns in web development."
+    },
+    {
+      "skill_name": "HTML",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the <bdo> element in HTML?",
+      "options_json": "{\"A\": \"To specify the directionality of a block-level element\", \"B\": \"To indicate that the text it contains should be displayed in a different language\", \"C\": \"To create a new paragraph\", \"D\": \"To add emphasis to surrounding text\"}",
+      "correct_option": "B",
+      "explanation": "The <bdo> element is used to specify the directionality of the text it contains, allowing for correct display in languages that read from right-to-left. This is particularly important for languages such as Arabic and Hebrew."
+    },
+    {
+      "skill_name": "HTML",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the <noscript> element in HTML?",
+      "options_json": "{\"A\": \"To provide an alternative content for users with JavaScript disabled\", \"B\": \"To load external scripts asynchronously\", \"C\": \"To define a block of code that will be executed when the page loads\", \"D\": \"To specify the character encoding of the document\"}",
+      "correct_option": "A",
+      "explanation": "The <noscript> element provides an alternative content for users with JavaScript disabled, ensuring that they can still access and interact with the webpage. This is particularly important for accessibility reasons."
+    }
+  ],
+  "total_questions": 9
+}

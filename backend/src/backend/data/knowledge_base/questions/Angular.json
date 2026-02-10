@@ -1,0 +1,46 @@
+{
+  "skill_name": "Angular",
+  "questions": [
+    {
+      "skill_name": "Angular",
+      "difficulty": "easy",
+      "question_text": "What does the Angular CLI do?",
+      "options_json": "{\"A\": \"It generates a new Angular project\", \"B\": \"It compiles and runs an existing Angular project\", \"C\": \"It creates a new component in an existing Angular project\", \"D\": \"It updates dependencies of an existing Angular project\"}",
+      "correct_option": "A",
+      "explanation": "The Angular CLI is used to create, build, and serve Angular applications. It's the primary tool for setting up a new Angular project."
+    },
+    {
+      "skill_name": "Angular",
+      "difficulty": "easy",
+      "question_text": "What does ngFor do in Angular?",
+      "options_json": "{\"A\": \"It is a directive used for two-way data binding.\", \"B\": \"It is a directive used to loop through an array and display its elements in the template.\", \"C\": \"It is a service used for dependency injection.\", \"D\": \"It is a pipe used for formatting dates.\"}",
+      "correct_option": "B",
+      "explanation": "ngFor is a directive used to loop through an array and display its elements in the template. This allows you to easily render lists of data without having to write custom logic."
+    },
+    {
+      "skill_name": "Angular",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the '@NgModule' decorator in Angular?",
+      "options_json": "{\"A\": \"To define a new component\", \"B\": \"To define a new module\", \"C\": \"To inject dependencies into a service\", \"D\": \"To configure routing\"}",
+      "correct_option": "B",
+      "explanation": "The '@NgModule' decorator is used to define a new Angular module, which is a collection of related components, directives, and pipes. This allows for modular code organization and reuse."
+    },
+    {
+      "skill_name": "Angular",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of using the 'trackBy' function in Angular?",
+      "options_json": "{\"A\": \"To improve performance by reducing the number of DOM updates\", \"B\": \"To enable change detection on a specific property\", \"C\": \"To implement a custom sorting algorithm\", \"D\": \"To handle errors in the component\"}",
+      "correct_option": "A",
+      "explanation": "The 'trackBy' function is used to improve performance by providing a unique identifier for each item in an array, allowing Angular to efficiently update the DOM. This is particularly useful when working with large datasets."
+    },
+    {
+      "skill_name": "Angular",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the `@NgModule` decorator in Angular?",
+      "options_json": "{\"A\": \"To define a component's template and styles\", \"B\": \"To specify dependencies for a module\", \"C\": \"To enable lazy loading of modules\", \"D\": \"To create a new instance of an existing module\"}",
+      "correct_option": "B",
+      "explanation": "The `@NgModule` decorator is used to specify the dependencies and metadata for a module, enabling Angular to compile and execute it correctly. This includes specifying which components, directives, and pipes are part of the module."
+    }
+  ],
+  "total_questions": 5
+}

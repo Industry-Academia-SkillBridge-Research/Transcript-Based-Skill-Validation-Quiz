@@ -1,0 +1,46 @@
+{
+  "skill_name": "Ansible",
+  "questions": [
+    {
+      "skill_name": "Ansible",
+      "difficulty": "easy",
+      "question_text": "What does Ansible use to connect to remote hosts?",
+      "options_json": "{\"A\": \"SSH\", \"B\": \"WinRM\", \"C\": \"Telnet\", \"D\": \"SNMP\"}",
+      "correct_option": "A",
+      "explanation": "Ansible uses SSH to establish a secure connection with remote hosts. This allows Ansible to execute playbooks and tasks on the target machines."
+    },
+    {
+      "skill_name": "Ansible",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the 'hosts' file in an Ansible playbook?",
+      "options_json": "{\"A\": \"To specify the target hosts for the playbook to run on\", \"B\": \"To define the inventory of hosts that can be managed by Ansible\", \"C\": \"To configure the network settings for the Ansible control node\", \"D\": \"To enable or disable specific modules in the playbook\"}",
+      "correct_option": "A",
+      "explanation": "The 'hosts' file is used to specify the target hosts for the playbook to run on. This allows Ansible to know which machines to apply the configuration changes to."
+    },
+    {
+      "skill_name": "Ansible",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the 'delegate_to' parameter in an Ansible playbook?",
+      "options_json": "{\"A\": \"To specify a host that will run the task on behalf of other hosts\", \"B\": \"To limit the execution of a task to a specific group of hosts\", \"C\": \"To enable parallelism for a specific task\", \"D\": \"To specify a user that will run the task\"}",
+      "correct_option": "A",
+      "explanation": "The 'delegate_to' parameter is used to specify a host that will run the task on behalf of other hosts, allowing for more efficient execution and reducing the load on other hosts."
+    },
+    {
+      "skill_name": "Ansible",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of using the 'delegate_to' parameter in an Ansible playbook?",
+      "options_json": "{\"A\": \"To specify a remote user for the task\", \"B\": \"To delegate the execution of a task to a specific host or group\", \"C\": \"To define a new variable for the current play\", \"D\": \"To enable parallelism in Ansible\"}",
+      "correct_option": "B",
+      "explanation": "The 'delegate_to' parameter is used to delegate the execution of a task to a specific host or group, allowing for more granular control over where tasks are executed. This can be useful in large-scale deployments or when certain tasks require specialized resources."
+    },
+    {
+      "skill_name": "Ansible",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the `become` directive in an Ansible playbook?",
+      "options_json": "{\"A\": \"To specify a user account for the Ansible service to run as\", \"B\": \"To enable privilege escalation for the current task\", \"C\": \"To set the working directory for the Ansible tasks\", \"D\": \"To configure the Ansible server\"}",
+      "correct_option": "B",
+      "explanation": "The `become` directive is used to enable privilege escalation, allowing the Ansible service to run with elevated privileges when necessary. This is typically used in conjunction with a password or SSH key for authentication."
+    }
+  ],
+  "total_questions": 5
+}

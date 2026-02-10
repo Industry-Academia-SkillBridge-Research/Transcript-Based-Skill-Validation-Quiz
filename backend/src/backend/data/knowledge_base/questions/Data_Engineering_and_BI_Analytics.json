@@ -1,0 +1,134 @@
+{
+  "skill_name": "Data Engineering & BI Analytics",
+  "questions": [
+    {
+      "skill_name": "Data Engineering & BI Analytics",
+      "difficulty": "easy",
+      "question_text": "What is the primary purpose of a Data Warehouse?",
+      "options_json": "{\"A\": \"To store raw data from various sources\", \"B\": \"To provide a centralized repository for business intelligence and analytics\", \"C\": \"To perform real-time data processing\", \"D\": \"To handle big data\"}",
+      "correct_option": "B",
+      "explanation": "A Data Warehouse is designed to store data in a way that allows for easy querying and analysis, making it a centralized repository for business intelligence and analytics."
+    },
+    {
+      "skill_name": "Data Engineering & BI Analytics",
+      "difficulty": "easy",
+      "question_text": "What is the primary purpose of a data warehouse?",
+      "options_json": "{\"A\": \"To store raw, unprocessed data from various sources\", \"B\": \"To perform complex analytics and machine learning tasks\", \"C\": \"To provide a centralized repository for business intelligence and reporting\", \"D\": \"To handle real-time streaming data\"}",
+      "correct_option": "C",
+      "explanation": "A data warehouse is designed to store integrated, processed data from various sources, making it easier to access and analyze. This allows businesses to make informed decisions based on a unified view of their operations."
+    },
+    {
+      "skill_name": "Data Engineering & BI Analytics",
+      "difficulty": "medium",
+      "question_text": "In a Data Warehousing Architecture, which of the following is NOT a characteristic of a Star Schema?",
+      "options_json": "{\"A\": \"Fact tables are related to multiple dimension tables through foreign keys.\", \"B\": \"Dimension tables contain only attributes that describe the fact table.\", \"C\": \"Star Schemas are suitable for complex queries and large data volumes.\", \"D\": \"All fact tables must have a primary key.\"}",
+      "correct_option": "A",
+      "explanation": "In a Star Schema, fact tables are related to multiple dimension tables through foreign keys. This is actually a characteristic of an Snowflake Schema, not a Star Schema."
+    },
+    {
+      "skill_name": "Data Engineering & BI Analytics",
+      "difficulty": "medium",
+      "question_text": "Which of the following is a characteristic of a star schema in data warehousing?",
+      "options_json": "{\"A\": \"It uses a fact table and multiple dimension tables.\", \"B\": \"It uses a single dimension table to store all attributes.\", \"C\": \"It uses a snowflake schema for large datasets.\", \"D\": \"It is used for transactional data only.\"}",
+      "correct_option": "A",
+      "explanation": "A star schema uses a central fact table and multiple dimension tables to provide efficient querying and analysis capabilities. This design allows for fast aggregation and filtering of data."
+    },
+    {
+      "skill_name": "Data Engineering & BI Analytics",
+      "difficulty": "medium",
+      "question_text": "In a star schema, what is the primary purpose of the fact table?",
+      "options_json": "{\"A\": \"To store aggregated data from multiple dimensions\", \"B\": \"To serve as the central hub for related data\", \"C\": \"To provide a link between dimension tables and measure values\", \"D\": \"To store historical data over time\"}",
+      "correct_option": "C",
+      "explanation": "The fact table in a star schema provides a link between dimension tables and measure values, allowing for efficient querying and analysis. This design enables fast aggregation of data from multiple dimensions."
+    },
+    {
+      "skill_name": "Data Engineering & BI Analytics",
+      "difficulty": "medium",
+      "question_text": "In a Data Warehouse, which of the following is NOT a characteristic of a fact table?",
+      "options_json": "{\"A\": \"Contains aggregate data from multiple dimensions.\", \"B\": \"Has a composite primary key consisting of one or more dimension keys and a measure key.\", \"C\": \"Typically has a high cardinality, meaning it contains many unique values.\", \"D\": \"Is used to store transactional data.\"}",
+      "correct_option": "D",
+      "explanation": "A fact table typically stores aggregate data from multiple dimensions, not transactional data. Transactional data is stored in the dimension tables."
+    },
+    {
+      "skill_name": "Data Engineering & BI Analytics",
+      "difficulty": "medium",
+      "question_text": "In a Data Warehouse, which of the following is an advantage of using a Dimensional Data Model over a Relational Data Model?",
+      "options_json": "{\"A\": \"Improved query performance due to reduced join operations\", \"B\": \"Simplified ETL processes through standardized data structures\", \"C\": \"Enhanced data security through row-level access control\", \"D\": \"Increased storage requirements due to redundant data\"}",
+      "correct_option": "B",
+      "explanation": "Dimensional Data Models simplify ETL processes by standardizing data structures, reducing the complexity of data transformations and enabling more efficient data loading."
+    },
+    {
+      "skill_name": "Data Engineering & BI Analytics",
+      "difficulty": "medium",
+      "question_text": "In a star schema, what is the primary function of the fact table?",
+      "options_json": "{\"A\": \"To store aggregated data for analysis\", \"B\": \"To serve as the bridge between dimensions and measures\", \"C\": \"To hold detailed transactional data\", \"D\": \"To support OLAP operations\"}",
+      "correct_option": "B",
+      "explanation": "The fact table in a star schema serves as the bridge between dimensions and measures, allowing for efficient analysis and aggregation of data. It contains the measures or metrics that are being analyzed."
+    },
+    {
+      "skill_name": "Data Engineering & BI Analytics",
+      "difficulty": "medium",
+      "question_text": "In a star schema data warehouse, what is the primary purpose of the fact table?",
+      "options_json": "{\"A\": \"To store aggregated data from multiple dimensions\", \"B\": \"To serve as the central hub for querying and analysis\", \"C\": \"To contain only dimension keys, not measures or metrics\", \"D\": \"To be used exclusively for ETL/ELT processes\"}",
+      "correct_option": "B",
+      "explanation": "The fact table serves as the central hub for querying and analysis in a star schema data warehouse. It contains aggregated data from multiple dimensions, making it easier to analyze and report on."
+    },
+    {
+      "skill_name": "Data Engineering & BI Analytics",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of a fact table in a star schema?",
+      "options_json": "{\"A\": \"To store aggregated data from multiple dimensions\", \"B\": \"To serve as a bridge between dimension tables and measure groups\", \"C\": \"To contain only foreign keys referencing dimension tables\", \"D\": \"To hold raw, unprocessed data\"}",
+      "correct_option": "A",
+      "explanation": "A fact table stores aggregated data from multiple dimensions, making it easier to perform complex analytics. This allows for efficient querying and analysis of the data."
+    },
+    {
+      "skill_name": "Data Engineering & BI Analytics",
+      "difficulty": "medium",
+      "question_text": "In a Data Warehousing Architecture, which of the following is NOT a characteristic of a Dimensional Model?",
+      "options_json": "{\"A\": \"Fact tables are used to store transactional data.\", \"B\": \"Dimensional models use a star or snowflake schema.\", \"C\": \"Measures are used as attributes in dimension tables.\", \"D\": \"Surrogate keys are used instead of natural keys.\"}",
+      "correct_option": "C",
+      "explanation": "In a Dimensional Model, measures are stored in fact tables and used as measures, not attributes. Using measures as attributes in dimension tables is incorrect."
+    },
+    {
+      "skill_name": "Data Engineering & BI Analytics",
+      "difficulty": "hard",
+      "question_text": "In a star schema, what is the primary purpose of the fact table?",
+      "options_json": "{\"A\": \"To store aggregated data and perform calculations\", \"B\": \"To serve as a bridge between dimensions and measures\", \"C\": \"To provide a centralized location for all business facts\", \"D\": \"To enable fast querying through indexing\"}",
+      "correct_option": "C",
+      "explanation": "The fact table in a star schema serves as a centralized location for all business facts, allowing for efficient querying and analysis. This design enables the aggregation of data from multiple dimensions."
+    },
+    {
+      "skill_name": "Data Engineering & BI Analytics",
+      "difficulty": "hard",
+      "question_text": "In a star schema, what is the primary function of the fact table?",
+      "options_json": "{\"A\": \"To store aggregated data and perform calculations on it.\", \"B\": \"To serve as a bridge between dimensions and measures.\", \"C\": \"To contain all the foreign keys referencing dimension tables.\", \"D\": \"To enable fast querying and analysis of large datasets.\"}",
+      "correct_option": "A",
+      "explanation": "The fact table in a star schema stores aggregated data, which enables fast querying and analysis. It contains measures that are calculated from the dimensions."
+    },
+    {
+      "skill_name": "Data Engineering & BI Analytics",
+      "difficulty": "hard",
+      "question_text": "In a star schema, what is the purpose of the fact table?",
+      "options_json": "{\"A\": \"To store aggregated data and perform calculations\", \"B\": \"To serve as a bridge between dimensions and measures\", \"C\": \"To provide a single point of truth for metrics and KPIs\", \"D\": \"To enable data warehousing architecture\"}",
+      "correct_option": "C",
+      "explanation": "The fact table in a star schema serves as the central repository for metrics and KPIs, providing a single point of truth for business intelligence. This allows for efficient querying and analysis."
+    },
+    {
+      "skill_name": "Data Engineering & BI Analytics",
+      "difficulty": "hard",
+      "question_text": "In a star schema, which of the following is NOT a characteristic of a fact table?",
+      "options_json": "{\"A\": \"Contains measures or metrics that are aggregated from the dimension tables.\", \"B\": \"Has a large number of rows compared to the dimension tables.\", \"C\": \"Is often used for complex calculations and aggregations.\", \"D\": \"Has a fixed, predefined set of columns.\"}",
+      "correct_option": "D",
+      "explanation": "A fact table in a star schema has a dynamic, flexible structure that allows it to accommodate various measures and metrics. It does not have a fixed set of columns like a dimension table does."
+    },
+    {
+      "skill_name": "Data Engineering & BI Analytics",
+      "difficulty": "hard",
+      "question_text": "In a star schema data warehouse, what is the primary purpose of the fact table?",
+      "options_json": "{\"A\": \"To store aggregated data for reporting and analysis\", \"B\": \"To serve as a bridge between the dimension tables and the end-user application\", \"C\": \"To provide a centralized repository for all business processes\", \"D\": \"To enable ETL/ELT processes to load data into the data warehouse\"}",
+      "correct_option": "A",
+      "explanation": "The fact table stores aggregated data that can be used for reporting and analysis. It is the central component of a star schema, allowing users to analyze data from multiple dimensions."
+    }
+  ],
+  "total_questions": 16
+}

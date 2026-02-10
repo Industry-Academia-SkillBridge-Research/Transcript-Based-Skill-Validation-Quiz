@@ -1,0 +1,54 @@
+{
+  "skill_name": "Pandas",
+  "questions": [
+    {
+      "skill_name": "Pandas",
+      "difficulty": "easy",
+      "question_text": "What does the 'head()' function in Pandas do?",
+      "options_json": "{\"A\": \"It returns the first five rows of a DataFrame.\", \"B\": \"It returns the last five rows of a DataFrame.\", \"C\": \"It returns the summary statistics of a DataFrame.\", \"D\": \"It returns the mean of all values in a DataFrame.\"}",
+      "correct_option": "A",
+      "explanation": "The 'head()' function is used to display the first few rows of a DataFrame, which can be helpful for initial data exploration. This allows you to quickly see the structure and content of your dataset."
+    },
+    {
+      "skill_name": "Pandas",
+      "difficulty": "easy",
+      "question_text": "What does the pandas DataFrame function do?",
+      "options_json": "{\"A\": \"It creates a new Excel file from a CSV file.\", \"B\": \"It converts a dictionary into a DataFrame.\", \"C\": \"It reads data from a CSV file and stores it in memory as a table.\", \"D\": \"It performs statistical analysis on the data.\"}",
+      "correct_option": "C",
+      "explanation": "The pandas DataFrame function is used to read data from a CSV file into a table-like structure in memory, making it easy to manipulate and analyze the data. This is an essential step in working with data in Python."
+    },
+    {
+      "skill_name": "Pandas",
+      "difficulty": "medium",
+      "question_text": "What does the `dropna()` function in pandas do?",
+      "options_json": "{\"A\": \"It removes rows with missing values from a DataFrame.\", \"B\": \"It replaces missing values in a DataFrame with a specified value.\", \"C\": \"It adds a new column to a DataFrame with default values.\", \"D\": \"It deletes columns with missing values from a DataFrame.\"}",
+      "correct_option": "A",
+      "explanation": "The `dropna()` function removes rows or columns with missing values, depending on the axis specified. It is often used for data cleaning and preprocessing."
+    },
+    {
+      "skill_name": "Pandas",
+      "difficulty": "medium",
+      "question_text": "What does the 'reset_index' function in pandas do?",
+      "options_json": "{\"A\": \"It removes duplicate rows from a DataFrame.\", \"B\": \"It resets the index of a DataFrame, assigning the original index to a new column.\", \"C\": \"It sorts the values in a DataFrame alphabetically.\", \"D\": \"It merges two DataFrames based on a common column.\"}",
+      "correct_option": "B",
+      "explanation": "The 'reset_index' function resets the index of a DataFrame, assigning the original index to a new column. This is useful when you want to preserve the original index values for further analysis or processing."
+    },
+    {
+      "skill_name": "Pandas",
+      "difficulty": "hard",
+      "question_text": "How does Pandas handle duplicate index values when creating a DataFrame?",
+      "options_json": "{\"A\": \"It raises an error and stops execution.\", \"B\": \"It automatically assigns a new unique integer index.\", \"C\": \"It appends the duplicate value to the existing index.\", \"D\": \"It uses the first occurrence of the duplicate index as the main index.\"}",
+      "correct_option": "B",
+      "explanation": "Pandas handles duplicate index values by automatically assigning a new unique integer index. This is because Pandas DataFrames are designed to handle duplicate indices, and this approach ensures data integrity."
+    },
+    {
+      "skill_name": "Pandas",
+      "difficulty": "hard",
+      "question_text": "You have a DataFrame with a categorical column 'Color' and you want to get the count of each unique color. Which function would you use?",
+      "options_json": "{\"A\": \"value_counts()\", \"B\": \"groupby().count()\", \"C\": \"nunique()\", \"D\": \"describe()\"}",
+      "correct_option": "A",
+      "explanation": "The value_counts() function is used to get the count of each unique value in a Series. This is particularly useful when dealing with categorical data."
+    }
+  ],
+  "total_questions": 6
+}

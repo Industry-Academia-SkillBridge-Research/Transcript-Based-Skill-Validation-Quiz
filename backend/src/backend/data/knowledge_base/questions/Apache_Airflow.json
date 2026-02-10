@@ -1,0 +1,54 @@
+{
+  "skill_name": "Apache Airflow",
+  "questions": [
+    {
+      "skill_name": "Apache Airflow",
+      "difficulty": "easy",
+      "question_text": "What is the primary purpose of a DAG in Apache Airflow?",
+      "options_json": "{\"A\": \"To schedule and manage ETL processes\", \"B\": \"To monitor and troubleshoot workflow execution\", \"C\": \"To create and manage user interfaces for workflows\", \"D\": \"To handle data storage and retrieval\"}",
+      "correct_option": "A",
+      "explanation": "A DAG (Directed Acyclic Graph) in Apache Airflow is used to define and schedule ETL processes, making it easier to manage and automate data pipelines."
+    },
+    {
+      "skill_name": "Apache Airflow",
+      "difficulty": "easy",
+      "question_text": "What is the primary function of a DAG in Apache Airflow?",
+      "options_json": "{\"A\": \"To schedule and manage ETL processes\", \"B\": \"To monitor and visualize task dependencies\", \"C\": \"To automate data pipelines for machine learning models\", \"D\": \"To handle user authentication and authorization\"}",
+      "correct_option": "A",
+      "explanation": "A DAG (Directed Acyclic Graph) in Apache Airflow is used to define the workflow of a job, including dependencies between tasks. It serves as the primary means of scheduling and managing ETL processes."
+    },
+    {
+      "skill_name": "Apache Airflow",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of a DAG in Apache Airflow?",
+      "options_json": "{\"A\": \"To schedule and manage ETL jobs\", \"B\": \"To monitor and troubleshoot workflows\", \"C\": \"To automate data pipelines\", \"D\": \"To create custom operators\"}",
+      "correct_option": "C",
+      "explanation": "A DAG (Directed Acyclic Graph) in Apache Airflow is used to define the workflow of a job, including dependencies and relationships between tasks. This allows for automation of complex data pipelines."
+    },
+    {
+      "skill_name": "Apache Airflow",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of a DAG in Apache Airflow?",
+      "options_json": "{\"A\": \"To schedule and manage tasks as part of a workflow\", \"B\": \"To visualize the dependencies between tasks\", \"C\": \"To monitor and troubleshoot task executions\", \"D\": \"To automate data processing pipelines\"}",
+      "correct_option": "A",
+      "explanation": "A DAG (Directed Acyclic Graph) in Apache Airflow is a collection of tasks that are scheduled and managed as part of a workflow. It allows users to define the dependencies between tasks and schedule them for execution."
+    },
+    {
+      "skill_name": "Apache Airflow",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of using a DAG (Directed Acyclic Graph) in Apache Airflow?",
+      "options_json": "{\"A\": \"To visualize the workflow and dependencies between tasks\", \"B\": \"To schedule and manage the execution of tasks\", \"C\": \"To monitor and troubleshoot task failures\", \"D\": \"To optimize resource allocation for large-scale workflows\"}",
+      "correct_option": "B",
+      "explanation": "A DAG in Apache Airflow is used to define the workflow and dependencies between tasks, which are then scheduled and managed by the Airflow scheduler. This allows users to easily manage complex workflows and ensure that tasks are executed in the correct order."
+    },
+    {
+      "skill_name": "Apache Airflow",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of using XComs in Apache Airflow?",
+      "options_json": "{\"A\": \"To share data between tasks within a DAG\", \"B\": \"To trigger the execution of a new task\", \"C\": \"To handle errors and exceptions in a workflow\", \"D\": \"To implement conditional logic in a DAG\"}",
+      "correct_option": "A",
+      "explanation": "XComs are used to share data between tasks within a DAG, allowing for more complex workflows. This is particularly useful when tasks need to access or modify shared state."
+    }
+  ],
+  "total_questions": 6
+}

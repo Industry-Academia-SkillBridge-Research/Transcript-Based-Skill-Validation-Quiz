@@ -1,0 +1,46 @@
+{
+  "skill_name": "Scrum",
+  "questions": [
+    {
+      "skill_name": "Scrum",
+      "difficulty": "easy",
+      "question_text": "What is the primary goal of a Sprint in Scrum?",
+      "options_json": "{\"A\": \"To complete as many tasks as possible\", \"B\": \"To deliver working software at the end of the Sprint\", \"C\": \"To follow a strict schedule and plan\", \"D\": \"To assign tasks to team members\"}",
+      "correct_option": "B",
+      "explanation": "The primary goal of a Sprint is to deliver working software that meets the product backlog items. This ensures that the team delivers value to the customer at the end of each Sprint."
+    },
+    {
+      "skill_name": "Scrum",
+      "difficulty": "medium",
+      "question_text": "What is the primary goal of the Sprint Review in Scrum?",
+      "options_json": "{\"A\": \"To demonstrate the working software to stakeholders\", \"B\": \"To review and discuss the progress made during the sprint\", \"C\": \"To plan the next sprint's tasks and activities\", \"D\": \"To identify and prioritize potential product backlog items\"}",
+      "correct_option": "A",
+      "explanation": "The Sprint Review is a crucial event in Scrum where the development team demonstrates the working software to stakeholders, ensuring everyone understands the progress made during the sprint. This helps stakeholders provide feedback and make informed decisions about future development."
+    },
+    {
+      "skill_name": "Scrum",
+      "difficulty": "medium",
+      "question_text": "What is the primary goal of a Sprint Review in Scrum?",
+      "options_json": "{\"A\": \"To demonstrate progress to stakeholders\", \"B\": \"To identify and prioritize new features for the next sprint\", \"C\": \"To inspect and adapt the product increment\", \"D\": \"To evaluate the team's velocity\"}",
+      "correct_option": "C",
+      "explanation": "The Sprint Review is an essential event in Scrum where the development team presents the work completed during the sprint to stakeholders. The primary goal of this review is to inspect and adapt the product increment, ensuring it meets the requirements and expectations."
+    },
+    {
+      "skill_name": "Scrum",
+      "difficulty": "hard",
+      "question_text": "What is the primary goal of the Sprint Review in Scrum?",
+      "options_json": "{\"A\": \"To demonstrate the working software to stakeholders\", \"B\": \"To review and discuss the progress made during the sprint\", \"C\": \"To plan the next sprint's tasks and objectives\", \"D\": \"To identify and prioritize potential risks for the project\"}",
+      "correct_option": "A",
+      "explanation": "The Sprint Review is a critical event in Scrum where the Development Team demonstrates the working software to stakeholders, gathering feedback and ensuring that it meets the requirements. This process helps to validate the product increment and make necessary adjustments before proceeding further."
+    },
+    {
+      "skill_name": "Scrum",
+      "difficulty": "hard",
+      "question_text": "What is the primary responsibility of a Scrum Master?",
+      "options_json": "{\"A\": \"To manage and prioritize the team's tasks\", \"B\": \"To facilitate and enable the team to work efficiently\", \"C\": \"To make technical decisions for the team\", \"D\": \"To act as a project manager\"}",
+      "correct_option": "B",
+      "explanation": "A Scrum Master facilitates and enables the development team to work efficiently, removing impediments and ensuring that the team follows Scrum principles. This allows the team to focus on delivering working software."
+    }
+  ],
+  "total_questions": 5
+}

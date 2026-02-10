@@ -1,0 +1,38 @@
+{
+  "skill_name": "Android",
+  "questions": [
+    {
+      "skill_name": "Android",
+      "difficulty": "easy",
+      "question_text": "What is the purpose of the setContentView() method in Android?",
+      "options_json": "{\"A\": \"To set the layout for a new activity\", \"B\": \"To set the theme for an existing activity\", \"C\": \"To inflate a layout from XML\", \"D\": \"To create a new fragment\"}",
+      "correct_option": "C",
+      "explanation": "The setContentView() method is used to inflate a layout from XML and set it as the content view of an Activity. This allows developers to define their UI in XML files."
+    },
+    {
+      "skill_name": "Android",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the setContentView() method in Android?",
+      "options_json": "{\"A\": \"To set the layout for the activity\", \"B\": \"To set the theme for the activity\", \"C\": \"To inflate a view from an XML file\", \"D\": \"To set the font style for the activity\"}",
+      "correct_option": "A",
+      "explanation": "The setContentView() method is used to set the layout for the activity. This allows you to define the user interface of your app."
+    },
+    {
+      "skill_name": "Android",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the 'apply' and 'merge' methods in Android's SharedPreferences?",
+      "options_json": "{\"A\": \"To apply changes to the preferences immediately, without requiring a restart.\", \"B\": \"To merge new preferences with existing ones, overwriting any duplicate keys.\", \"C\": \"To save data locally on the device, such as user settings or app data.\", \"D\": \"To load default values for preferences if they are not set.\"}",
+      "correct_option": "A",
+      "explanation": "The 'apply' method applies changes to the preferences immediately, without requiring a restart. This is useful when you want to ensure that your app's settings take effect right away."
+    },
+    {
+      "skill_name": "Android",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the 'onSaveInstanceState' method in Android?",
+      "options_json": "{\"A\": \"To save the state of a fragment when it is detached from its activity\", \"B\": \"To save the state of an activity's UI components when it is paused or stopped\", \"C\": \"To save the state of a service when it is destroyed\", \"D\": \"To save the state of a broadcast receiver when it is unregistered\"}",
+      "correct_option": "B",
+      "explanation": "The 'onSaveInstanceState' method is used to save the state of an activity's UI components, such as the current selection in a list view or the text in an edit text field. This allows the activity to restore its previous state when it is resumed."
+    }
+  ],
+  "total_questions": 4
+}

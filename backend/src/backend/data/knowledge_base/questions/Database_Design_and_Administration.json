@@ -1,0 +1,158 @@
+{
+  "skill_name": "Database Design & Administration",
+  "questions": [
+    {
+      "skill_name": "Database Design & Administration",
+      "difficulty": "easy",
+      "question_text": "What does normalization in database design aim to achieve?",
+      "options_json": "{\"A\": \"To reduce data redundancy and improve data integrity\", \"B\": \"To increase storage space and improve query performance\", \"C\": \"To simplify the schema and make it easier to maintain\", \"D\": \"To add more tables to the database\"}",
+      "correct_option": "A",
+      "explanation": "Normalization reduces data redundancy, improves data integrity, and makes it easier to modify the schema. It does not directly impact storage space or query performance."
+    },
+    {
+      "skill_name": "Database Design & Administration",
+      "difficulty": "easy",
+      "question_text": "What is the primary purpose of a database schema?",
+      "options_json": "{\"A\": \"To store data in a physical storage device\", \"B\": \"To define the structure and organization of data within a database\", \"C\": \"To optimize database performance by indexing frequently accessed columns\", \"D\": \"To create backup copies of the database\"}",
+      "correct_option": "B",
+      "explanation": "A database schema defines the structure and organization of data, including relationships between tables. This helps ensure data consistency and facilitates querying."
+    },
+    {
+      "skill_name": "Database Design & Administration",
+      "difficulty": "easy",
+      "question_text": "What does a primary key uniquely identify in a database table?",
+      "options_json": "{\"A\": \"A unique combination of columns that can be null\", \"B\": \"A column or set of columns that contains unique values for each row\", \"C\": \"A field used to store the date and time a record was created\", \"D\": \"A field used to store the date and time a record was last updated\"}",
+      "correct_option": "B",
+      "explanation": "A primary key uniquely identifies each row in a database table, making it a fundamental concept in database design."
+    },
+    {
+      "skill_name": "Database Design & Administration",
+      "difficulty": "easy",
+      "question_text": "What does the primary key in a database table uniquely identify?",
+      "options_json": "{\"A\": \"The table's name\", \"B\": \"Each row in the table\", \"C\": \"The database administrator\", \"D\": \"The data type of each column\"}",
+      "correct_option": "B",
+      "explanation": "The primary key is a unique identifier for each row in a table, ensuring that no two rows have the same value. This helps prevent data duplication and inconsistencies."
+    },
+    {
+      "skill_name": "Database Design & Administration",
+      "difficulty": "easy",
+      "question_text": "What does a primary key do in a database?",
+      "options_json": "{\"A\": \"It uniquely identifies each record in a table.\", \"B\": \"It determines the order of records in a table.\", \"C\": \"It allows for duplicate values in a column.\", \"D\": \"It is used to join tables together.\"}",
+      "correct_option": "A",
+      "explanation": "A primary key ensures that each record has a unique identifier, preventing duplicates and improving data integrity. It also enables efficient querying and joining of related data."
+    },
+    {
+      "skill_name": "Database Design & Administration",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of a database index?",
+      "options_json": "{\"A\": \"To improve data security by encrypting sensitive information\", \"B\": \"To speed up query performance by providing quick access to frequently accessed data\", \"C\": \"To enforce data consistency and integrity through constraints and triggers\", \"D\": \"To optimize database storage space by compressing large tables\"}",
+      "correct_option": "B",
+      "explanation": "A database index is a data structure that improves query performance by allowing the database to quickly locate specific data. This is particularly useful for queries that frequently access the same data."
+    },
+    {
+      "skill_name": "Database Design & Administration",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of indexing in a database?",
+      "options_json": "{\"A\": \"To improve data security by encrypting sensitive information\", \"B\": \"To speed up query performance by reducing the number of disk accesses\", \"C\": \"To optimize storage space by compressing large datasets\", \"D\": \"To enforce referential integrity between related tables\"}",
+      "correct_option": "B",
+      "explanation": "Indexing helps the database system locate specific data quickly, thereby improving query performance. This is achieved by creating a data structure that allows for efficient searching and retrieval of data."
+    },
+    {
+      "skill_name": "Database Design & Administration",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of normalization in database design?",
+      "options_json": "{\"A\": \"To reduce data redundancy and improve data integrity\", \"B\": \"To increase storage capacity and improve query performance\", \"C\": \"To simplify database schema and improve scalability\", \"D\": \"To enhance user experience and improve application responsiveness\"}",
+      "correct_option": "A",
+      "explanation": "Normalization is a process of organizing data in a database to minimize data redundancy and improve data integrity. By normalizing the data, we can ensure that each piece of data is stored in one place and one place only."
+    },
+    {
+      "skill_name": "Database Design & Administration",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of a database schema in logical database design?",
+      "options_json": "{\"A\": \"To define the physical storage layout of data\", \"B\": \"To establish relationships between entities and tables\", \"C\": \"To specify the data types and constraints for each column\", \"D\": \"To optimize database performance and security\"}",
+      "correct_option": "C",
+      "explanation": "A database schema defines the structure of a database, including the relationships between tables and the data types of each column. This helps ensure data consistency and facilitates querying."
+    },
+    {
+      "skill_name": "Database Design & Administration",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of a foreign key in a database?",
+      "options_json": "{\"A\": \"To establish relationships between tables\", \"B\": \"To improve data security by restricting access\", \"C\": \"To increase storage capacity by duplicating data\", \"D\": \"To enhance query performance by indexing frequently used columns\"}",
+      "correct_option": "A",
+      "explanation": "Foreign keys are used to establish relationships between tables, allowing for the creation of complex and normalized database structures. This enables efficient querying and manipulation of related data."
+    },
+    {
+      "skill_name": "Database Design & Administration",
+      "difficulty": "hard",
+      "question_text": "Which of the following SQL query optimization techniques is most effective for improving query performance in a large database?",
+      "options_json": "{\"A\": \"Reordering joins to reduce subquery complexity\", \"B\": \"Using indexes on frequently accessed columns\", \"C\": \"Applying data compression to reduce storage needs\", \"D\": \"Increasing the buffer pool size\"}",
+      "correct_option": "B",
+      "explanation": "Using indexes on frequently accessed columns can significantly improve query performance by reducing the time it takes for the database to locate and retrieve required data. This is particularly effective in large databases with complex queries."
+    },
+    {
+      "skill_name": "Database Design & Administration",
+      "difficulty": "hard",
+      "question_text": "What is the primary benefit of using a normalized database design in a large-scale enterprise system?",
+      "options_json": "{\"A\": \"Improved data security through encryption and access control\", \"B\": \"Reduced data redundancy and improved data integrity\", \"C\": \"Enhanced scalability and performance through distributed architecture\", \"D\": \"Simplified data backup and recovery processes\"}",
+      "correct_option": "B",
+      "explanation": "Normalized database design reduces data redundancy, which improves data integrity by minimizing the risk of data inconsistencies. This is particularly important in large-scale enterprise systems where data accuracy and reliability are critical."
+    },
+    {
+      "skill_name": "Database Design & Administration",
+      "difficulty": "hard",
+      "question_text": "Which of the following database normalization techniques is used to remove partial dependencies?",
+      "options_json": "{\"A\": \"1NF (First Normal Form)\", \"B\": \"2NF (Second Normal Form)\", \"C\": \"3NF (Third Normal Form)\", \"D\": \"BCNF (Boyce-Codd Normal Form)\"}",
+      "correct_option": "C",
+      "explanation": "3NF is used to remove partial dependencies by ensuring that each non-key attribute depends on the entire primary key. This helps in reducing data redundancy and improving data integrity."
+    },
+    {
+      "skill_name": "Database Design & Administration",
+      "difficulty": "hard",
+      "question_text": "A database designer wants to create a table for storing employee information. The designer decides to use a composite primary key consisting of two columns: 'employee_id' and 'department_name'. Which of the following is a potential drawback of this design?",
+      "options_json": "{\"A\": \"It allows for efficient querying of employees by department.\", \"B\": \"It enables easy identification of duplicate employee records.\", \"C\": \"It can lead to data inconsistency if the composite key is not properly maintained.\", \"D\": \"It reduces the need for indexing on individual columns.\"}",
+      "correct_option": "C",
+      "explanation": "Using a composite primary key can lead to data inconsistency if the designer fails to maintain it correctly, resulting in potential errors and data loss. This design choice may also increase the complexity of database operations."
+    },
+    {
+      "skill_name": "Database Design & Administration",
+      "difficulty": "hard",
+      "question_text": "Which of the following database normalization techniques is used to eliminate non-key, non-additive dependencies?",
+      "options_json": "{\"A\": \"Denormalization\", \"B\": \"Functional Dependency Elimination\", \"C\": \"Transitive Dependency Elimination\", \"D\": \"Boyce-Codd Normal Form (BCNF)\"}",
+      "correct_option": "C",
+      "explanation": "Transitive dependency elimination is used to eliminate non-key, non-additive dependencies. This technique is essential in maintaining data consistency and reducing data redundancy."
+    },
+    {
+      "skill_name": "Database Design & Administration",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of normalization in database design?",
+      "options_json": "{\"A\": \"To reduce data redundancy and improve data integrity\", \"B\": \"To increase storage capacity and reduce query performance\", \"C\": \"To simplify data modeling and improve user experience\", \"D\": \"To enhance security features and protect against SQL injection\"}",
+      "correct_option": "A",
+      "explanation": "Normalization is a process of organizing the data in a database to minimize data redundancy and improve data integrity. It helps to eliminate data anomalies and ensure that each piece of data is stored in one place."
+    },
+    {
+      "skill_name": "Database Design & Administration",
+      "difficulty": "hard",
+      "question_text": "Which of the following database normalization techniques is used to remove data redundancy by storing each non-key attribute in a separate table?",
+      "options_json": "{\"A\": \"Denormalization\", \"B\": \"Functional Dependency\", \"C\": \"Boyce-Codd Normal Form (BCNF)\", \"D\": \"Third Normal Form (3NF)\"}",
+      "correct_option": "D",
+      "explanation": "Third Normal Form is used to remove data redundancy by storing each non-key attribute in a separate table, thus improving data integrity and reducing data anomalies."
+    },
+    {
+      "skill_name": "Database Design & Administration",
+      "difficulty": "hard",
+      "question_text": "Which of the following normalization techniques is used to remove partial dependencies in a table?",
+      "options_json": "{\"A\": \"1NF (First Normal Form)\", \"B\": \"2NF (Second Normal Form)\", \"C\": \"3NF (Third Normal Form)\", \"D\": \"BCNF (Boyce-Codd Normal Form)\"}",
+      "correct_option": "C",
+      "explanation": "3NF is used to remove partial dependencies by ensuring that each non-key attribute depends on the entire primary key. This helps in maintaining data integrity and reducing data redundancy."
+    },
+    {
+      "skill_name": "Database Design & Administration",
+      "difficulty": "hard",
+      "question_text": "Which of the following indexing techniques is most suitable for a column with high cardinality and low selectivity?",
+      "options_json": "{\"A\": \"Bitmap Indexing\", \"B\": \"Function-Based Indexing\", \"C\": \"Composite Indexing\", \"D\": \"Column-Store Indexing\"}",
+      "correct_option": "D",
+      "explanation": "Column-store indexing is most suitable for columns with high cardinality and low selectivity, as it allows for efficient storage and retrieval of data."
+    }
+  ],
+  "total_questions": 19
+}

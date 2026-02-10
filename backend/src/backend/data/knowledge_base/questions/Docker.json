@@ -1,0 +1,54 @@
+{
+  "skill_name": "Docker",
+  "questions": [
+    {
+      "skill_name": "Docker",
+      "difficulty": "easy",
+      "question_text": "What is the primary purpose of a Dockerfile?",
+      "options_json": "{\"A\": \"To create a new container from an existing image\", \"B\": \"To define the instructions for building an image\", \"C\": \"To run a container with a specific command\", \"D\": \"To manage multiple containers on a single host\"}",
+      "correct_option": "B",
+      "explanation": "A Dockerfile is used to define the steps needed to build an image, including copying files, installing dependencies, and setting environment variables. This allows developers to create a consistent and reproducible build process for their applications."
+    },
+    {
+      "skill_name": "Docker",
+      "difficulty": "easy",
+      "question_text": "What does Docker use to store container data?",
+      "options_json": "{\"A\": \"Virtual Machine\", \"B\": \"Container File System\", \"C\": \"Host Operating System\", \"D\": \"Union File System\"}",
+      "correct_option": "D",
+      "explanation": "Docker uses a Union File System to store container data, allowing for efficient use of disk space and easy management of container file systems."
+    },
+    {
+      "skill_name": "Docker",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of a Dockerfile?",
+      "options_json": "{\"A\": \"To create a new container from an existing image\", \"B\": \"To define the instructions for building an image\", \"C\": \"To run a command in an already running container\", \"D\": \"To list all available images on the system\"}",
+      "correct_option": "B",
+      "explanation": "A Dockerfile is used to specify the base image, copy files into it, and install dependencies. This allows for consistent builds across different environments."
+    },
+    {
+      "skill_name": "Docker",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of a Dockerfile?",
+      "options_json": "{\"A\": \"To define environment variables for the container\", \"B\": \"To specify the base image and dependencies for the application\", \"C\": \"To configure network settings for the container\", \"D\": \"To create a new user account within the container\"}",
+      "correct_option": "B",
+      "explanation": "A Dockerfile is used to define the base image, copy dependencies, and specify any necessary build steps. This allows developers to package their application and its dependencies into a single container."
+    },
+    {
+      "skill_name": "Docker",
+      "difficulty": "hard",
+      "question_text": "What happens when you run `docker stop` on a container that is not running?",
+      "options_json": "{\"A\": \"The container will be deleted from the Docker host.\", \"B\": \"The container will be paused, but still running in the background.\", \"C\": \"Nothing will happen, as the container is already stopped.\", \"D\": \"The container will be restarted with a new random name.\"}",
+      "correct_option": "C",
+      "explanation": "Running `docker stop` on a container that is not running does nothing, as it is already in the desired state. This command is used to send a SIGTERM signal to running containers, but if they are already stopped, there's no action to take."
+    },
+    {
+      "skill_name": "Docker",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of a Dockerfile in a Docker project?",
+      "options_json": "{\"A\": \"To define the environment variables for the container\", \"B\": \"To specify the base image and dependencies for the application\", \"C\": \"To configure the network settings for the container\", \"D\": \"To set up the persistent storage for the container\"}",
+      "correct_option": "B",
+      "explanation": "A Dockerfile is used to define the base image, copy dependencies, and specify any necessary build instructions. This allows developers to create a consistent environment across different machines."
+    }
+  ],
+  "total_questions": 6
+}

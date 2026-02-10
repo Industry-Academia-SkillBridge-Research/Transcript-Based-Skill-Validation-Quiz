@@ -1,0 +1,38 @@
+{
+  "skill_name": "JUnit",
+  "questions": [
+    {
+      "skill_name": "JUnit",
+      "difficulty": "easy",
+      "question_text": "What does @Test annotation in JUnit do?",
+      "options_json": "{\"A\": \"It marks a method as a test case.\", \"B\": \"It marks a class as a test suite.\", \"C\": \"It marks a field as a test data provider.\", \"D\": \"It marks a constructor as a test fixture.\"}",
+      "correct_option": "A",
+      "explanation": "The @Test annotation in JUnit is used to mark a method as a test case. This allows the JUnit framework to identify and run the method as part of a test suite."
+    },
+    {
+      "skill_name": "JUnit",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the @Before annotation in JUnit?",
+      "options_json": "{\"A\": \"To run a method before each test case\", \"B\": \"To run a method after each test case\", \"C\": \"To mark a method as a test case\", \"D\": \"To ignore a test case\"}",
+      "correct_option": "A",
+      "explanation": "The @Before annotation is used to indicate that the annotated method should be executed before each test case. This allows you to set up any necessary state or resources for your tests."
+    },
+    {
+      "skill_name": "JUnit",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the @AfterEach annotation in JUnit?",
+      "options_json": "{\"A\": \"To run a method after each test case\", \"B\": \"To run a method before each test suite\", \"C\": \"To mark a method as not relevant to testing\", \"D\": \"To ignore a specific test case\"}",
+      "correct_option": "A",
+      "explanation": "The @AfterEach annotation is used to specify methods that should be executed after each test case. This allows for setup and teardown code to be run consistently across all test cases."
+    },
+    {
+      "skill_name": "JUnit",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the @BeforeClass annotation in JUnit?",
+      "options_json": "{\"A\": \"To run a method before each test case\", \"B\": \"To run a method after each test case\", \"C\": \"To indicate that a method should be executed only once, before all test cases in a class\", \"D\": \"To mark a method as a test case\"}",
+      "correct_option": "C",
+      "explanation": "The @BeforeClass annotation is used to indicate that a method should be executed only once, before all test cases in a class. This is useful for setting up shared resources or performing initialization tasks."
+    }
+  ],
+  "total_questions": 4
+}

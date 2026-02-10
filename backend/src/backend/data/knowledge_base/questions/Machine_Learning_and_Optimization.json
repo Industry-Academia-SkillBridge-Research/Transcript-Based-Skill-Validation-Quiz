@@ -1,0 +1,118 @@
+{
+  "skill_name": "Machine Learning & Optimization",
+  "questions": [
+    {
+      "skill_name": "Machine Learning & Optimization",
+      "difficulty": "easy",
+      "question_text": "What type of neural network is commonly used for image classification tasks?",
+      "options_json": "{\"A\": \"Perceptron\", \"B\": \"Convolutional Neural Network (CNN)\", \"C\": \"Recurrent Neural Network (RNN)\", \"D\": \"Long Short-Term Memory (LSTM)\"}",
+      "correct_option": "B",
+      "explanation": "Convolutional Neural Networks are well-suited for image classification tasks due to their ability to extract spatial hierarchies of features."
+    },
+    {
+      "skill_name": "Machine Learning & Optimization",
+      "difficulty": "easy",
+      "question_text": "What is a key characteristic of Perceptrons?",
+      "options_json": "{\"A\": \"They can learn non-linear relationships between inputs and outputs.\", \"B\": \"They are a type of Convolutional Neural Network.\", \"C\": \"They use backpropagation for training.\", \"D\": \"They are limited to linearly separable data.\"}",
+      "correct_option": "D",
+      "explanation": "Perceptrons are limited to linearly separable data, meaning they can only learn relationships between inputs and outputs that can be separated by a linear boundary. This is in contrast to more complex neural networks like Multilayer Perceptrons."
+    },
+    {
+      "skill_name": "Machine Learning & Optimization",
+      "difficulty": "easy",
+      "question_text": "What type of neural network is commonly used for image recognition tasks?",
+      "options_json": "{\"A\": \"Perceptron\", \"B\": \"Convolutional Neural Network (CNN)\", \"C\": \"Recurrent Neural Network (RNN)\", \"D\": \"Long Short-Term Memory (LSTM)\"}",
+      "correct_option": "B",
+      "explanation": "Convolutional Neural Networks are designed to process data with grid-like topology, such as images. They use convolutional and pooling layers to extract features from the input data."
+    },
+    {
+      "skill_name": "Machine Learning & Optimization",
+      "difficulty": "easy",
+      "question_text": "What is the primary function of a Perceptron?",
+      "options_json": "{\"A\": \"To classify images using convolutional neural networks\", \"B\": \"To learn and make predictions based on input features\", \"C\": \"To optimize complex functions using genetic algorithms\", \"D\": \"To train deep sequence models for natural language processing\"}",
+      "correct_option": "B",
+      "explanation": "A Perceptron is a type of neural network that learns to make predictions by adjusting its weights based on input features. It's a fundamental building block for more complex machine learning models."
+    },
+    {
+      "skill_name": "Machine Learning & Optimization",
+      "difficulty": "medium",
+      "question_text": "What type of optimization method is commonly used in training Neural Networks, particularly when dealing with large datasets?",
+      "options_json": "{\"A\": \"Stochastic Gradient Descent (SGD)\", \"B\": \"Genetic Algorithm\", \"C\": \"Linear Programming\", \"D\": \"Quadratic Programming\"}",
+      "correct_option": "A",
+      "explanation": "Stochastic Gradient Descent is an optimization method that updates the model parameters based on the gradient of the loss function with respect to each parameter, making it suitable for large datasets."
+    },
+    {
+      "skill_name": "Machine Learning & Optimization",
+      "difficulty": "medium",
+      "question_text": "What type of neural network is commonly used for image classification tasks?",
+      "options_json": "{\"A\": \"Recurrent Neural Network (RNN)\", \"B\": \"Convolutional Neural Network (CNN)\", \"C\": \"Perceptron\", \"D\": \"Long Short-Term Memory (LSTM)\"}",
+      "correct_option": "B",
+      "explanation": "Convolutional Neural Networks are well-suited for image classification tasks because they can extract local features from images, such as edges and textures."
+    },
+    {
+      "skill_name": "Machine Learning & Optimization",
+      "difficulty": "medium",
+      "question_text": "What is a key characteristic of Convolutional Neural Networks (CNNs) that allows them to efficiently process images?",
+      "options_json": "{\"A\": \"They use Recurrent Neural Network (RNN) architecture.\", \"B\": \"They apply multiple convolutional and pooling layers to extract features from the input image.\", \"C\": \"They are trained using Stochastic Gradient Descent (SGD) optimization algorithm.\", \"D\": \"They require a large number of training samples to achieve good performance.\"}",
+      "correct_option": "B",
+      "explanation": "Convolutional Neural Networks apply multiple convolutional and pooling layers to extract features from the input image, allowing them to efficiently process images. This architecture is particularly well-suited for image classification tasks."
+    },
+    {
+      "skill_name": "Machine Learning & Optimization",
+      "difficulty": "medium",
+      "question_text": "What is a key characteristic of Convolutional Neural Networks (CNNs) that allows them to efficiently process image data?",
+      "options_json": "{\"A\": \"The use of multiple hidden layers with non-linear activations.\", \"B\": \"The application of convolutional and pooling layers to extract local features.\", \"C\": \"The incorporation of recurrent connections to model temporal dependencies.\", \"D\": \"The utilization of stochastic gradient descent for optimization.\"}",
+      "correct_option": "B",
+      "explanation": "Convolutional Neural Networks are designed to efficiently process image data by applying convolutional and pooling layers, which extract local features from the input. This allows CNNs to learn spatial hierarchies of features without requiring explicit spatial coordinates."
+    },
+    {
+      "skill_name": "Machine Learning & Optimization",
+      "difficulty": "medium",
+      "question_text": "What type of neural network is commonly used for image classification tasks, and is particularly effective when applied to images with spatial hierarchies?",
+      "options_json": "{\"A\": \"Recurrent Neural Network (RNN)\", \"B\": \"Convolutional Neural Network (CNN)\", \"C\": \"Long Short-Term Memory (LSTM) network\", \"D\": \"Perceptron\"}",
+      "correct_option": "B",
+      "explanation": "Convolutional Neural Networks are well-suited for image classification tasks because they can extract spatial hierarchies of features, such as edges and shapes."
+    },
+    {
+      "skill_name": "Machine Learning & Optimization",
+      "difficulty": "medium",
+      "question_text": "What type of neural network is commonly used for image classification tasks, as it can learn spatial hierarchies of features?",
+      "options_json": "{\"A\": \"Perceptron\", \"B\": \"Convolutional Neural Network (CNN)\", \"C\": \"Recurrent Neural Network (RNN)\", \"D\": \"Long Short-Term Memory (LSTM)\"}",
+      "correct_option": "B",
+      "explanation": "Convolutional Neural Networks are designed to efficiently process data with grid-like topology, such as images. They can learn spatial hierarchies of features, making them well-suited for image classification tasks."
+    },
+    {
+      "skill_name": "Machine Learning & Optimization",
+      "difficulty": "medium",
+      "question_text": "What is a key characteristic of Convolutional Neural Networks (CNNs) compared to traditional Neural Networks?",
+      "options_json": "{\"A\": \"They use more layers in their architecture\", \"B\": \"They are designed specifically for image classification tasks\", \"C\": \"They apply the same filter at every location and scale in an input image\", \"D\": \"They require significantly more computational resources\"}",
+      "correct_option": "C",
+      "explanation": "Convolutional Neural Networks apply the same filter at every location and scale in an input image, which allows them to extract local features and be invariant to translation. This is a key characteristic that distinguishes CNNs from traditional Neural Networks."
+    },
+    {
+      "skill_name": "Machine Learning & Optimization",
+      "difficulty": "hard",
+      "question_text": "In a Convolutional Neural Network (CNN), what is the primary purpose of the pooling layer?",
+      "options_json": "{\"A\": \"To increase the spatial dimensions of feature maps\", \"B\": \"To reduce the spatial dimensions of feature maps and downsample the data\", \"C\": \"To introduce non-linearity to the network\", \"D\": \"To improve the generalization ability of the model\"}",
+      "correct_option": "B",
+      "explanation": "The pooling layer reduces the spatial dimensions of feature maps, which helps in reducing the number of parameters and improving the robustness of the model."
+    },
+    {
+      "skill_name": "Machine Learning & Optimization",
+      "difficulty": "hard",
+      "question_text": "In a Convolutional Neural Network (CNN), what is the primary purpose of using max pooling?",
+      "options_json": "{\"A\": \"To reduce the spatial dimensions of the feature maps and prevent overfitting\", \"B\": \"To increase the number of feature detectors in each layer\", \"C\": \"To enable the network to learn more complex patterns\", \"D\": \"To speed up the training process by reducing the number of parameters\"}",
+      "correct_option": "A",
+      "explanation": "Max pooling is used to reduce the spatial dimensions of feature maps, which helps prevent overfitting and reduces the number of parameters in the network."
+    },
+    {
+      "skill_name": "Machine Learning & Optimization",
+      "difficulty": "hard",
+      "question_text": "In a Convolutional Neural Network (CNN), what is the primary purpose of using max-pooling in the convolutional layers?",
+      "options_json": "{\"A\": \"To reduce the dimensionality of the input data\", \"B\": \"To increase the number of feature maps\", \"C\": \"To downsample the spatial dimensions of the feature maps\", \"D\": \"To introduce non-linearity in the network\"}",
+      "correct_option": "C",
+      "explanation": "Max-pooling is used to reduce the spatial dimensions of the feature maps, which helps to increase the translation invariance and reduce the number of parameters in the network."
+    }
+  ],
+  "total_questions": 14
+}

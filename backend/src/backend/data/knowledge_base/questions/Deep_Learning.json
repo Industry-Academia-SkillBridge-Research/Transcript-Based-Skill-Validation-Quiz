@@ -1,0 +1,54 @@
+{
+  "skill_name": "Deep Learning",
+  "questions": [
+    {
+      "skill_name": "Deep Learning",
+      "difficulty": "easy",
+      "question_text": "What does the term 'Activation Function' refer to in a neural network?",
+      "options_json": "{\"A\": \"A type of neural network layer that applies non-linear transformations to inputs.\", \"B\": \"The process by which neurons transmit signals to each other.\", \"C\": \"A method for training deep learning models using large amounts of data.\", \"D\": \"A technique used to prevent overfitting in neural networks.\"}",
+      "correct_option": "A",
+      "explanation": "Activation functions are used to introduce non-linearity into the model, allowing it to learn complex relationships between inputs and outputs. Examples include ReLU and Sigmoid."
+    },
+    {
+      "skill_name": "Deep Learning",
+      "difficulty": "easy",
+      "question_text": "What is the primary function of a Convolutional Neural Network (CNN)?",
+      "options_json": "{\"A\": \"To perform natural language processing tasks\", \"B\": \"To classify images and detect objects within them\", \"C\": \"To generate new music compositions\", \"D\": \"To translate languages\"}",
+      "correct_option": "B",
+      "explanation": "CNNs are particularly useful for image classification and object detection due to their ability to extract spatial hierarchies of features from images."
+    },
+    {
+      "skill_name": "Deep Learning",
+      "difficulty": "medium",
+      "question_text": "What is the primary function of a Convolutional Neural Network (CNN) in image classification?",
+      "options_json": "{\"A\": \"To detect edges and lines in an image\", \"B\": \"To classify objects into predefined categories\", \"C\": \"To generate new images based on existing ones\", \"D\": \"To perform object detection\"}",
+      "correct_option": "B",
+      "explanation": "CNNs are designed to recognize patterns and features in images, making them ideal for image classification tasks. They learn to classify objects into predefined categories by analyzing the spatial hierarchies of features."
+    },
+    {
+      "skill_name": "Deep Learning",
+      "difficulty": "medium",
+      "question_text": "What is the primary function of a Convolutional Neural Network (CNN) in image classification tasks?",
+      "options_json": "{\"A\": \"To perform feature extraction and dimensionality reduction\", \"B\": \"To classify images into predefined categories\", \"C\": \"To generate new images from scratch\", \"D\": \"To detect objects within an image\"}",
+      "correct_option": "B",
+      "explanation": "CNNs are designed to learn spatial hierarchies of features, allowing them to effectively classify images. This is achieved through the use of convolutional and pooling layers."
+    },
+    {
+      "skill_name": "Deep Learning",
+      "difficulty": "hard",
+      "question_text": "What is the primary advantage of using a Residual Network (ResNet) over other deep neural network architectures?",
+      "options_json": "{\"A\": \"It allows for faster training times due to its simplicity.\", \"B\": \"It enables the use of pre-trained models as feature extractors, reducing the need for extensive fine-tuning.\", \"C\": \"It is more computationally expensive than other architectures.\", \"D\": \"It only works well with image classification tasks.\"}",
+      "correct_option": "B",
+      "explanation": "Residual Networks (ResNets) enable the use of pre-trained models as feature extractors, reducing the need for extensive fine-tuning. This is a significant advantage over other deep neural network architectures, as it allows for more efficient and effective transfer learning."
+    },
+    {
+      "skill_name": "Deep Learning",
+      "difficulty": "hard",
+      "question_text": "What is the primary function of a batch normalization layer in a deep neural network?",
+      "options_json": "{\"A\": \"To reduce overfitting by normalizing the input data to have zero mean and unit variance.\", \"B\": \"To speed up training by reducing the number of parameters in the model.\", \"C\": \"To improve the interpretability of the model by providing feature importance scores.\", \"D\": \"To increase the capacity of the model by allowing it to learn more complex patterns.\"}",
+      "correct_option": "A",
+      "explanation": "Batch normalization helps reduce internal covariate shift, which can lead to overfitting. By normalizing the input data, batch normalization allows the model to focus on learning the underlying patterns rather than being distracted by large input values."
+    }
+  ],
+  "total_questions": 6
+}
