@@ -33,7 +33,7 @@
 ### What Makes This Unique
 
 ✅ **Evidence-Based Scoring** - Skills derived from actual academic performance, not self-reported  
-✅ **Three-Level Skill Hierarchy** - Child Skills (135) → Parent Skills (27) → Job Skills (65)  
+✅ **Direct Job Skills System** - Industry-standard skill tags (65 skills) mapped directly from courses  
 ✅ **AI-Powered Quiz Generation** - Uses local LLM (Llama 3.2) with RAG for context-aware questions  
 ✅ **Question Bank System** - Pre-generated questions for instant quiz delivery  
 ✅ **Explainable AI** - Complete transparency showing how every score is calculated  
@@ -43,11 +43,19 @@
 ### Core Capabilities
 
 1. **PDF Transcript Processing** - Automatic course extraction from academic transcripts
-2. **Multi-Level Skill Mapping** - Hierarchical skill taxonomy with weighted relationships
+2. **Direct Job Skills Mapping** - Courses mapped to 65 industry-standard skill tags (PYTHON, SQL, JAVA, etc.)
 3. **Advanced Scoring Algorithm** - Time-decayed, credit-weighted, performance-based scoring
 4. **Adaptive Quiz Generation** - Difficulty-balanced questions from question bank or AI
 5. **Skill Verification** - Quiz-based validation with confidence scoring
-6. **Job Recommendation** - Role matching using cosine similarity and SHAP interpretability
+6. **Job Recommendation** - Role matching using validated job skills
+
+### Current System Architecture (Simplified)
+
+**Active System:**
+- Courses → **Job Skills (65)** → Quiz → Job Matching ✅ **CURRENT**
+
+**Legacy (Not cleaned up yet):**
+- Child Skills (135) and Parent Skills (27) - old three-tier system 🗑️ **UNUSED**
 
 ---
 
@@ -94,10 +102,10 @@
 - [x] Error handling for malformed PDFs
 
 #### 🎯 Skill Computation
-- [x] **Three-level skill hierarchy**:
-  - Child Skills (135 granular skills)
-  - Parent Skills (27 category-level skills)
-  - Job Skills (65 industry-standard tags)
+- [x] **Direct Job Skills System (Current):**
+  - 65 industry-standard job skill tags (PYTHON, SQL, JAVA, DOCKER, AWS, etc.)
+  - Organized into 12 categories (Programming, Databases, Web, DevOps, Cloud, etc.)
+  - Courses map directly to job skills via `course_skill_map.csv`
 - [x] **Advanced scoring algorithm**:
   - Grade normalization (GPA/4.0)
   - Credit weighting
@@ -107,6 +115,8 @@
 - [x] Confidence score calculation
 - [x] Skill level classification (Beginner/Intermediate/Advanced)
 - [x] Automatic skill computation on transcript upload
+
+**Note:** Child Skills (135) and Parent Skills (27) exist in codebase but are **legacy artifacts not yet cleaned up**
 
 #### 🧠 Quiz System
 - [x] **Dual Quiz Generation**:
@@ -178,6 +188,27 @@
 ---
 
 ## 4. System Architecture
+
+### ⚠️ Important: Current vs Legacy Code
+
+**CURRENT WORKING SYSTEM (What you're using):**
+```
+Courses → Job Skills (65) → Quizzes → Job Matching
+```
+- **Data:** `job_skills.csv` + `course_skill_map.csv`
+- **UI:** Displays job skills (Python, SQL, Java, etc.)
+- **Database:** Stores in `skill_profile_claimed` table
+- **Scoring:** Direct scoring via `skill_scoring.py`
+
+**LEGACY CODE (Still in project, not cleaned up):**
+```
+Child Skills (135) + Parent Skills (27) + Old aggregation logic
+```
+- **Files:** `childskill_to_jobskill_map.csv`, `skill_group_map.csv`, `child_skills_unique.csv`, `parent_skills_unique.csv`
+- **Services:** `parent_skill_scoring.py`, `job_skill_scoring.py` (old aggregation)
+- **Status:** 🗑️ **Unused artifacts** - need cleanup but haven't been removed yet
+
+---
 
 ### High-Level Architecture
 
@@ -264,20 +295,22 @@
               └──────────┬────────────┘
                          │
 ┌────────────────────────▼───────────────────────────────────┐
-│                  2. SKILL COMPUTATION                       │
+│                  2. SKILL COMPUTATION (CURRENT)             │
 │                                                              │
-│  course_skill_map.csv ──→ [Child Skill Scoring]            │
+│  course_skill_map.csv ──→ [Job Skill Scoring]              │
 │                              │                              │
-│                              ├──→ Child Skills (135)        │
+│                              ├──→ Job Skills (65)           │
+│                              │    • PYTHON, SQL, JAVA       │
+│                              │    • DOCKER, AWS, GIT        │
+│                              │    • HTML, CSS, REACT        │
 │                              │                              │
-│  skill_group_map.csv ───────┼──→ [Parent Aggregation]      │
-│                              │     │                        │
-│  childskill_to_jobskill ────┼─────┼──→ [Job Aggregation]  │
-│                              │     │     │                  │
-│                              ▼     ▼     ▼                  │
-│                           Skills Database                   │
-│                    (Child | Parent | Job)                   │
+│                              ▼                              │
+│                     Skills → Database                       │
+│                  (Stored in skill_profile_claimed)          │
 └────────────────────────┬───────────────────────────────────┘
+                         │
+                         │ Note: Child/Parent skill files exist
+                         │ but are LEGACY artifacts (not cleaned)
                          │
                          ▼
 ┌─────────────────────────────────────────────────────────────┐
@@ -385,8 +418,9 @@
 
 #### Formula Overview
 
+**Current System (Direct Job Skills):**
 ```
-Skill Score = (Σ Contributions / Σ Evidence Weights) × 100
+Job Skill Score = (Σ Contributions / Σ Evidence Weights) × 100
 
 Where:
   Contribution = grade_norm × evidence_weight
@@ -396,7 +430,11 @@ Components:
   grade_norm = GPA / 4.0
   recency = e^(-λ × years_since)  where λ = 0.4
   confidence = 1 - e^(-α × total_evidence_weight)  where α = 0.25
+  
+Skill Names: Python, SQL, Java, Docker, Linux, Git, etc. (65 job skills)
 ```
+
+**Note:** The three-level child→parent→job hierarchy was the old system. Current system maps courses **directly to job skills**.
 
 #### Step-by-Step Example
 
@@ -583,15 +621,19 @@ Transcript-Based-Skill-Validation-Quiz/
 ├── 🔙 backend/
 │   │
 │   ├── 📊 data/                               # CSV datasets & mappings
-│   │   ├── job_skills.csv                     # 65 canonical job skills
-│   │   ├── course_skill_map.csv               # Course → Child Skill mapping
-│   │   ├── childskill_to_jobskill_map.csv     # Child → Job Skill mapping
-│   │   ├── skill_group_map.csv                # Child → Parent Skill mapping
-│   │   ├── Job_data.csv                       # Job postings dataset
-│   │   ├── child_skills_unique.csv            # List of child skills
-│   │   ├── parent_skills_unique.csv           # List of parent skills
-│   │   ├── job_parent_skill_features.csv      # Job matching features
-│   │   └── knowledge_base/                    # Docs for RAG
+│   │   ├── **ACTIVE FILES (CURRENT SYSTEM):**
+│   │   ├── job_skills.csv                     # ✅ 65 job skills master list
+│   │   ├── course_skill_map.csv               # ✅ Course → Job Skill mapping (MAIN)
+│   │   ├── Job_data.csv                       # ✅ Job postings dataset
+│   │   ├── knowledge_base/                    # ✅ Docs for RAG quiz generation
+│   │   │
+│   │   ├── **LEGACY FILES (NOT CLEANED UP YET):**
+│   │   ├── childskill_to_jobskill_map.csv     # 🗑️ Old child→job mapping
+│   │   ├── skill_group_map.csv                # 🗑️ Old child→parent mapping
+│   │   ├── child_skills_unique.csv            # 🗑️ Old 135 child skills list
+│   │   ├── parent_skills_unique.csv           # 🗑️ Old 27 parent skills list
+│   │   ├── course_skill_mapping_new.csv       # 🗑️ Migration artifact
+│   │   └── job_parent_skill_features.csv      # 🗑️ Old job matching features
 │   │
 │   ├── 📓 notebooks/
 │   │   └── clean_job_data.ipynb               # Data cleaning notebook
@@ -1785,14 +1827,17 @@ Navigate to Upload Page
 #### Step 3: View Skills
 ```
 Skills Page displays:
-├─ Job Skills (65 industry tags)
-│  ├─ PYTHON: 85.3 (Advanced)
+├─ Job Skills (Industry-standard tags)
+│  ├─ Python: 85.3 (Advanced)
 │  ├─ SQL: 78.2 (Advanced)
-│  ├─ JAVA: 72.1 (Intermediate)
-│  └─ ...
+│  ├─ Java: 72.1 (Intermediate)
+│  ├─ Git: 68.5 (Intermediate)
+│  ├─ Docker: 65.0 (Intermediate)
+│  ├─ Linux: 82.1 (Advanced)
+│  └─ ... (total 65 possible job skills)
 │
 └─ Actions:
-   ├─ Click "Explain Score" → See evidence breakdown
+   ├─ Click "Explain Score" → See course evidence
    ├─ Select skills for quiz (max 5)
    └─ Click "Plan Quiz"
 ```
@@ -1892,7 +1937,8 @@ Navigate to Portfolio Page
 
 4. **Data Engineering**
    - CSV-based flexible skill mappings
-   - Three-level skill hierarchy (135 → 27 → 65)
+   - Direct course-to-job-skill mapping (simplified, industry-focused)
+   - 65 job skills across 12 categories (Programming, Databases, Web, DevOps, Cloud, etc.)
    - Automatic backup and migration scripts
    - Database normalization and optimization
 
@@ -2047,12 +2093,12 @@ def test_job_recommendations():
 **Courses:** 24 courses extracted  
 **Skills Computed:** 45 child skills, 18 parent skills, 23 job skills
 
-**Top Job Skills:**
-1. TCP/IP: 100.0
-2. Computer Networks: 95.2
-3. Linux: 88.7
-4. SQL: 88.6
-5. Python: 85.3
+**Top Job Skills (Current System):**
+1. Linux: 88.7 (Advanced)
+2. SQL: 88.6 (Advanced)
+3. Python: 85.3 (Advanced)
+4. Git: 72.0 (Intermediate)
+5. Docker: 68.5 (Intermediate)
 
 **Quiz Performance:**
 - Questions generated: 15 (3 skills × 5 questions)
@@ -2193,11 +2239,11 @@ This project represents a comprehensive full-stack AI/ML application that bridge
 
 ### Key Innovations
 
-1. **Evidence-Based Methodology** - Skills derived from actual academic performance
-2. **Three-Level Skill Hierarchy** - Flexible mapping from granular to industry-standard
-3. **Dual Quiz System** - AI generation for quality, question bank for speed
-4. **Complete Transparency** - Explainable AI showing all calculation steps
-5. **Job Market Alignment** - Direct matching to real industry requirements
+1. **Evidence-Based Methodology** - Skills derived from actual academic performance, not self-reported
+2. **Direct Job Skills Mapping** - Courses map directly to 65 industry-standard skill tags (simplified approach)
+3. **Dual Quiz System** - AI generation for quality, question bank for instant delivery (<1s)
+4. **Complete Transparency** - Explainable AI showing all calculation steps with course evidence
+5. **Job Market Alignment** - Industry-recognized skills for better job matching and portfolios
 
 ### Project Statistics
 
@@ -2206,13 +2252,14 @@ This project represents a comprehensive full-stack AI/ML application that bridge
 - **Components:** 50+ React components
 - **API Endpoints:** 25+
 - **Database Models:** 10+
-- **Data Files:** 15+ CSV mappings
+- **Data Files:** CSV mappings (active + legacy)
 - **Documentation:** 15+ comprehensive guides
-- **Skills Tracked:** 135 child, 27 parent, 65 job skills
+- **Skills Tracked:** **65 job skills** (active system) | 135 child + 27 parent (legacy, not cleaned)
 - **Development Time:** 3+ months
 
 ### Future Enhancements
 
+- [ ] Clean up legacy child/parent skill files and code
 - [ ] Authentication & authorization system
 - [ ] Multi-tenant support (multiple universities)
 - [ ] Mobile app (React Native)
