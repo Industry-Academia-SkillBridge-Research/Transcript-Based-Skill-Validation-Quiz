@@ -1,0 +1,54 @@
+{
+  "skill_name": "Redis",
+  "questions": [
+    {
+      "skill_name": "Redis",
+      "difficulty": "easy",
+      "question_text": "What is Redis used for?",
+      "options_json": "{\"A\": \"Relational database management system\", \"B\": \"In-memory data store\", \"C\": \"Object-oriented programming language\", \"D\": \"Cloud-based storage solution\"}",
+      "correct_option": "B",
+      "explanation": "Redis is an in-memory data store that can be used as a database, but it's not a relational database management system. It stores data entirely in RAM for fast access."
+    },
+    {
+      "skill_name": "Redis",
+      "difficulty": "easy",
+      "question_text": "What does Redis stand for?",
+      "options_json": "{\"A\": \"Remote Data Storage\", \"B\": \"Revised Database System\", \"C\": \"Real-time Data Server\", \"D\": \"Rapid Data Retrieval\"}",
+      "correct_option": "B",
+      "explanation": "Redis stands for Revised Database System, which is an in-memory data store. It's a NoSQL database that can be used as a drop-in replacement for traditional databases."
+    },
+    {
+      "skill_name": "Redis",
+      "difficulty": "medium",
+      "question_text": "What happens when you use the Redis command `UNLINK`?",
+      "options_json": "{\"A\": \"It deletes the key and its associated value from memory, but not from disk.\", \"B\": \"It only marks the key for deletion in memory, but does not delete it from disk.\", \"C\": \"It permanently deletes the key and its associated value from both memory and disk.\", \"D\": \"It moves the key to a different Redis node.\"}",
+      "correct_option": "A",
+      "explanation": "The `UNLINK` command in Redis is used to delete keys from memory, but not from disk. This means that the data will still be stored on disk and can be recovered if needed."
+    },
+    {
+      "skill_name": "Redis",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the Redis WATCH command?",
+      "options_json": "{\"A\": \"To execute a Lua script that modifies data in Redis\", \"B\": \"To lock a key and prevent other clients from modifying it until the transaction is committed or aborted\", \"C\": \"To increment the value of a counter in Redis\", \"D\": \"To delete a key in Redis\"}",
+      "correct_option": "B",
+      "explanation": "The WATCH command in Redis is used to lock a key and prevent other clients from modifying it until the transaction is committed or aborted. This ensures data consistency across multiple operations."
+    },
+    {
+      "skill_name": "Redis",
+      "difficulty": "hard",
+      "question_text": "What happens when you use the Redis command `UNLINK` on a key that does not exist?",
+      "options_json": "{\"A\": \"It returns an error and does nothing.\", \"B\": \"It creates a new key with the same name as the deleted one.\", \"C\": \"It silently ignores the command and continues execution.\", \"D\": \"It returns a success message but still performs the deletion operation.\"}",
+      "correct_option": "A",
+      "explanation": "The `UNLINK` command in Redis requires an existing key to delete. If the key does not exist, it will return an error and do nothing."
+    },
+    {
+      "skill_name": "Redis",
+      "difficulty": "hard",
+      "question_text": "What happens when you use Redis' `MSET` command with a key that already exists?",
+      "options_json": "{\"A\": \"The value of the existing key is overwritten.\", \"B\": \"The new value is added as an additional value for the existing key.\", \"C\": \"The operation fails and returns an error.\", \"D\": \"The existing key is deleted.\"}",
+      "correct_option": "A",
+      "explanation": "When you use `MSET` with a key that already exists, the new value overwrites the existing one. This is because Redis' `MSET` command updates the values of multiple keys in a single operation."
+    }
+  ],
+  "total_questions": 6
+}

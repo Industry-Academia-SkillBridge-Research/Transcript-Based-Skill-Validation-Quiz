@@ -1,0 +1,38 @@
+{
+  "skill_name": "Security",
+  "questions": [
+    {
+      "skill_name": "Security",
+      "difficulty": "easy",
+      "question_text": "What is the primary purpose of a firewall?",
+      "options_json": "{\"A\": \"To block all incoming and outgoing traffic\", \"B\": \"To allow only necessary traffic to enter or leave a network\", \"C\": \"To encrypt data in transit\", \"D\": \"To detect and prevent malware\"}",
+      "correct_option": "B",
+      "explanation": "A firewall is designed to control incoming and outgoing network traffic based on predetermined security rules, allowing only necessary traffic to enter or leave a network. This helps protect against unauthorized access and malicious activity."
+    },
+    {
+      "skill_name": "Security",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of a Web Application Firewall (WAF)?",
+      "options_json": "{\"A\": \"To protect against malware and viruses\", \"B\": \"To filter incoming traffic based on predefined security rules\", \"C\": \"To monitor network activity for suspicious behavior\", \"D\": \"To encrypt sensitive data in transit\"}",
+      "correct_option": "B",
+      "explanation": "A Web Application Firewall (WAF) is a security system that monitors and controls incoming traffic to a web application based on predefined security rules. This helps protect against common web attacks such as SQL injection and cross-site scripting."
+    },
+    {
+      "skill_name": "Security",
+      "difficulty": "hard",
+      "question_text": "A web application uses a session-based authentication mechanism. An attacker intercepts a user's session cookie and uses it to access the user's account. What is the primary attack vector in this scenario?",
+      "options_json": "{\"A\": \"SQL injection\", \"B\": \"Cross-site scripting (XSS)\", \"C\": \"Session hijacking\", \"D\": \"Man-in-the-middle (MITM) attack\"}",
+      "correct_option": "C",
+      "explanation": "The primary attack vector in this scenario is session hijacking, as the attacker has obtained a valid session cookie and used it to access the user's account. This type of attack occurs when an attacker steals or obtains a legitimate user's session ID."
+    },
+    {
+      "skill_name": "Security",
+      "difficulty": "hard",
+      "question_text": "A web application uses a session management system that stores user sessions in memory. If an attacker gains access to the server, what is the most likely consequence?",
+      "options_json": "{\"A\": \"The attacker can steal sensitive data from all users' sessions.\", \"B\": \"The attacker can modify the security settings of the web application.\", \"C\": \"The attacker can only view the source code of the web application.\", \"D\": \"The session management system will automatically log out all users.\"}",
+      "correct_option": "A",
+      "explanation": "If an attacker gains access to the server, they can steal sensitive data from all users' sessions because session information is stored in memory. This allows attackers to gain unauthorized access to user accounts and sensitive data."
+    }
+  ],
+  "total_questions": 4
+}

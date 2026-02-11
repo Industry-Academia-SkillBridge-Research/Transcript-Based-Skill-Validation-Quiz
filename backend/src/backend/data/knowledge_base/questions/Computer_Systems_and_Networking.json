@@ -1,0 +1,142 @@
+{
+  "skill_name": "Computer Systems & Networking",
+  "questions": [
+    {
+      "skill_name": "Computer Systems & Networking",
+      "difficulty": "easy",
+      "question_text": "What is the primary function of a router in a network?",
+      "options_json": "{\"A\": \"To connect multiple devices to a single network\", \"B\": \"To forward data packets between networks using IP addresses\", \"C\": \"To provide power and connectivity to devices on a network\", \"D\": \"To store and manage files for users on the network\"}",
+      "correct_option": "B",
+      "explanation": "A router's primary function is to forward data packets between networks using IP addresses, allowing devices on different networks to communicate with each other."
+    },
+    {
+      "skill_name": "Computer Systems & Networking",
+      "difficulty": "easy",
+      "question_text": "What is the primary function of a router in a computer network?",
+      "options_json": "{\"A\": \"To connect multiple computers together\", \"B\": \"To forward data packets between networks\", \"C\": \"To provide power to devices on the network\", \"D\": \"To manage user authentication and access control\"}",
+      "correct_option": "B",
+      "explanation": "Routers are responsible for forwarding data packets between different networks, allowing devices on one network to communicate with devices on another. This is a fundamental concept in networking fundamentals."
+    },
+    {
+      "skill_name": "Computer Systems & Networking",
+      "difficulty": "easy",
+      "question_text": "What does the 'n' in IPv6 address represent?",
+      "options_json": "{\"A\": \"Network prefix length\", \"B\": \"Subnet mask\", \"C\": \"Host ID\", \"D\": \"Port number\"}",
+      "correct_option": "A",
+      "explanation": "The 'n' in IPv6 address represents the network prefix length, which is used to determine the subnet mask."
+    },
+    {
+      "skill_name": "Computer Systems & Networking",
+      "difficulty": "easy",
+      "question_text": "What is the primary function of a Network Interface Card (NIC)?",
+      "options_json": "{\"A\": \"To convert digital signals into analog signals for transmission over phone lines.\", \"B\": \"To connect devices to a network and enable data transfer between them.\", \"C\": \"To provide power to devices connected to the network.\", \"D\": \"To compress data before sending it over the internet.\"}",
+      "correct_option": "B",
+      "explanation": "A Network Interface Card (NIC) is responsible for connecting devices to a network and enabling data transfer between them. It acts as an interface between the device's internal hardware and the external network infrastructure."
+    },
+    {
+      "skill_name": "Computer Systems & Networking",
+      "difficulty": "medium",
+      "question_text": "What is the primary function of a router in a network?",
+      "options_json": "{\"A\": \"To provide power to devices on the network\", \"B\": \"To connect multiple networks together and route traffic between them\", \"C\": \"To act as a firewall to block malicious traffic\", \"D\": \"To manage user accounts and access permissions\"}",
+      "correct_option": "B",
+      "explanation": "A router's primary function is to forward packets of data between different networks, allowing devices on one network to communicate with devices on another. This enables the creation of larger, more complex networks that can span multiple locations."
+    },
+    {
+      "skill_name": "Computer Systems & Networking",
+      "difficulty": "medium",
+      "question_text": "What is the primary function of the Data Link Layer in the OSI model?",
+      "options_json": "{\"A\": \"Error detection and correction\", \"B\": \"Routing between networks\", \"C\": \" Framing and error-free transfer of data frames\", \"D\": \"Authentication and encryption\"}",
+      "correct_option": "C",
+      "explanation": "The Data Link Layer is responsible for framing and error-free transfer of data frames between two devices on the same network. It provides a reliable data transfer service to the Network Layer."
+    },
+    {
+      "skill_name": "Computer Systems & Networking",
+      "difficulty": "medium",
+      "question_text": "What type of memory is volatile and loses its data when power is turned off?",
+      "options_json": "{\"A\": \"Cache Memory\", \"B\": \"RAM (Random Access Memory)\", \"C\": \"ROM (Read-Only Memory)\", \"D\": \"Flash Memory\"}",
+      "correct_option": "B",
+      "explanation": "RAM is a type of volatile memory that stores data temporarily while the computer is on. When power is turned off, all data in RAM is lost."
+    },
+    {
+      "skill_name": "Computer Systems & Networking",
+      "difficulty": "hard",
+      "question_text": "A network switch uses which of the following protocols to forward frames between ports?",
+      "options_json": "{\"A\": \"ARP (Address Resolution Protocol)\", \"B\": \"Spanning Tree Protocol (STP)\", \"C\": \"MAC Address Learning\", \"D\": \"IGMP Snooping\"}",
+      "correct_option": "C",
+      "explanation": "The network switch uses MAC address learning to populate its forwarding table and forward frames between ports. This allows the switch to efficiently route traffic within the network."
+    },
+    {
+      "skill_name": "Computer Systems & Networking",
+      "difficulty": "hard",
+      "question_text": "A computer system uses a 64-bit processor with a 32-bit address bus. What is the maximum amount of memory that can be addressed by this system?",
+      "options_json": "{\"A\": \"2^64 bytes\", \"B\": \"2^32 bytes\", \"C\": \"4 GB\", \"D\": \"16 exabytes\"}",
+      "correct_option": "B",
+      "explanation": "The address bus determines the maximum amount of memory that can be addressed, which is 2^32 in this case. This is because the address bus can only send 32 bits at a time."
+    },
+    {
+      "skill_name": "Computer Systems & Networking",
+      "difficulty": "hard",
+      "question_text": "In a combinational logic circuit, what is the primary function of the multiplexer (MUX)?",
+      "options_json": "{\"A\": \"To perform arithmetic operations on binary numbers\", \"B\": \"To select one of multiple input signals and direct it to the output\", \"C\": \"To store data temporarily in a register\", \"D\": \"To convert binary numbers from base-2 to base-10\"}",
+      "correct_option": "B",
+      "explanation": "A multiplexer is used to select one of multiple input signals and direct it to the output, which is essential in combinational logic circuits for data processing."
+    },
+    {
+      "skill_name": "Computer Systems & Networking",
+      "difficulty": "hard",
+      "question_text": "In a 32-bit CPU, what is the maximum number of bits that can be represented by an 8-bit address bus?",
+      "options_json": "{\"A\": \"16\", \"B\": \"24\", \"C\": \"28\", \"D\": \"32\"}",
+      "correct_option": "D",
+      "explanation": "The address bus is used to transmit the memory address from the CPU to the memory module. Since it's an 8-bit address bus, it can represent a maximum of 2^8 = 256 unique addresses, which requires at least 9 bits (2^8 + 1) to represent, but since we're dealing with a 32-bit CPU, the correct answer is the maximum number of bits that can be represented by an 8-bit address bus in this context."
+    },
+    {
+      "skill_name": "Computer Systems & Networking",
+      "difficulty": "hard",
+      "question_text": "In a CPU's pipeline, which stage is responsible for decoding the instruction opcode and operand addresses?",
+      "options_json": "{\"A\": \"Instruction Fetch (IF)\", \"B\": \"Instruction Decode (ID)\", \"C\": \"Execution (EX)\", \"D\": \"Memory Access (MA)\"}",
+      "correct_option": "B",
+      "explanation": "The Instruction Decode stage decodes the instruction opcode and operand addresses, allowing the CPU to determine what operation needs to be performed. This stage is critical in determining the correct execution of instructions."
+    },
+    {
+      "skill_name": "Computer Systems & Networking",
+      "difficulty": "hard",
+      "question_text": "A network with a single point of failure is said to be what?",
+      "options_json": "{\"A\": \"Fault-tolerant\", \"B\": \"Scalable\", \"C\": \"Redundant\", \"D\": \"Single-point-of-failure\"}",
+      "correct_option": "D",
+      "explanation": "A single point of failure is a component or link that, if it fails, will cause the entire network to fail. In this case, option D is correct because it directly answers the question."
+    },
+    {
+      "skill_name": "Computer Systems & Networking",
+      "difficulty": "hard",
+      "question_text": "What type of memory access is used in a CPU pipeline to fetch instructions from main memory?",
+      "options_json": "{\"A\": \"Cache Memory Access\", \"B\": \"Main Memory Access with TLB (Translation Lookaside Buffer)\", \"C\": \"Register Transfer\", \"D\": \"Bus Arbitration\"}",
+      "correct_option": "B",
+      "explanation": "The correct answer is B, Main Memory Access with TLB. This is because in a CPU pipeline, the instruction fetch stage requires accessing main memory to retrieve instructions, and the TLB is used for translation of virtual addresses to physical addresses."
+    },
+    {
+      "skill_name": "Computer Systems & Networking",
+      "difficulty": "hard",
+      "question_text": "A network with a star topology has a central device that connects all other devices. Which layer of the OSI model is responsible for providing logical addressing and routing in this type of network?",
+      "options_json": "{\"A\": \"Data Link Layer (DLL)\", \"B\": \"Network Layer (NL)\", \"C\": \"Transport Layer (TL)\", \"D\": \"Session Layer (SL)\"}",
+      "correct_option": "B",
+      "explanation": "The Network Layer is responsible for providing logical addressing and routing in a star topology network. This layer uses IP addresses to route data between devices."
+    },
+    {
+      "skill_name": "Computer Systems & Networking",
+      "difficulty": "hard",
+      "question_text": "A network switch uses which type of memory to store and forward frames?",
+      "options_json": "{\"A\": \"SRAM (Static RAM)\", \"B\": \"DRAM (Dynamic RAM)\", \"C\": \"Flash Memory\", \"D\": \"EEPROM\"}",
+      "correct_option": "A",
+      "explanation": "The correct answer is A because SRAM has faster access times and lower latency, making it suitable for high-speed network applications. This allows the switch to quickly store and forward frames."
+    },
+    {
+      "skill_name": "Computer Systems & Networking",
+      "difficulty": "hard",
+      "question_text": "A network device uses a checksum to detect errors in data transmission. Which layer of the OSI model is responsible for this function?",
+      "options_json": "{\"A\": \"Physical Layer (Layer 1)\", \"B\": \"Data Link Layer (Layer 2)\", \"C\": \"Transport Layer (Layer 4)\", \"D\": \"Session Layer (Layer 5)\"}",
+      "correct_option": "B",
+      "explanation": "The Data Link Layer is responsible for error-free transfer of data frames between two devices on the same network, and uses checksums to detect errors."
+    }
+  ],
+  "total_questions": 17
+}

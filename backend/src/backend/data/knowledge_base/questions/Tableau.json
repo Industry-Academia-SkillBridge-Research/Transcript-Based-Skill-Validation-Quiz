@@ -1,0 +1,54 @@
+{
+  "skill_name": "Tableau",
+  "questions": [
+    {
+      "skill_name": "Tableau",
+      "difficulty": "easy",
+      "question_text": "What does Tableau's Data Interpreter do?",
+      "options_json": "{\"A\": \"It connects to various data sources, such as databases and spreadsheets.\", \"B\": \"It creates visualizations based on the connected data.\", \"C\": \"It enables data blending across multiple data sources.\", \"D\": \"It optimizes query performance for large datasets.\"}",
+      "correct_option": "A",
+      "explanation": "Tableau's Data Interpreter connects to various data sources, allowing users to access and analyze their data. This is the first step in creating visualizations or performing analysis in Tableau."
+    },
+    {
+      "skill_name": "Tableau",
+      "difficulty": "easy",
+      "question_text": "What does 'Data Visualization' mean in Tableau?",
+      "options_json": "{\"A\": \"Creating reports with charts and graphs\", \"B\": \"Analyzing data to identify trends and patterns\", \"C\": \"Designing dashboards for business users\", \"D\": \"Developing complex statistical models\"}",
+      "correct_option": "A",
+      "explanation": "Data Visualization in Tableau refers to creating interactive and dynamic visualizations of data, such as charts, graphs, and maps. This helps users quickly understand the insights hidden within their data."
+    },
+    {
+      "skill_name": "Tableau",
+      "difficulty": "medium",
+      "question_text": "What does Tableau's 'Extract' feature do?",
+      "options_json": "{\"A\": \"It creates a physical copy of the data in a database.\", \"B\": \"It loads data into memory for faster analysis.\", \"C\": \"It enables data refresh and updates from the original source.\", \"D\": \"It optimizes query performance by rewriting SQL queries.\"}",
+      "correct_option": "C",
+      "explanation": "Tableau's 'Extract' feature allows users to create a physical copy of the data in a database, enabling data refresh and updates from the original source. This is useful for large datasets or when the data source is not easily accessible."
+    },
+    {
+      "skill_name": "Tableau",
+      "difficulty": "medium",
+      "question_text": "What is the primary function of a data visualization in Tableau?",
+      "options_json": "{\"A\": \"To present raw data in a clear and concise manner\", \"B\": \"To identify trends and patterns within large datasets\", \"C\": \"To create interactive dashboards for business users\", \"D\": \"To perform complex statistical analysis\"}",
+      "correct_option": "B",
+      "explanation": "A data visualization in Tableau is primarily used to identify trends and patterns within large datasets, allowing users to gain insights and make informed decisions. This is achieved through the use of various visualization types, such as bar charts and scatter plots."
+    },
+    {
+      "skill_name": "Tableau",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of using a calculated field in Tableau?",
+      "options_json": "{\"A\": \"To create a new dimension for analysis\", \"B\": \"To perform data aggregation and grouping\", \"C\": \"To filter out irrelevant data\", \"D\": \"To create a new measure for calculation\"}",
+      "correct_option": "D",
+      "explanation": "Calculated fields in Tableau are used to create new measures that can be used for calculations, such as aggregations and filtering. They allow users to perform complex analysis on their data."
+    },
+    {
+      "skill_name": "Tableau",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of using a data visualization tool like Tableau in a business setting?",
+      "options_json": "{\"A\": \"To create interactive dashboards for presentations\", \"B\": \"To perform complex statistical analysis on large datasets\", \"C\": \"To connect to various data sources and enable data-driven decision making\", \"D\": \"To automate reporting tasks using pre-built templates\"}",
+      "correct_option": "C",
+      "explanation": "Tableau is primarily used for connecting to various data sources, enabling users to create interactive dashboards that facilitate data-driven decision making. This allows business users to easily explore and analyze their data."
+    }
+  ],
+  "total_questions": 6
+}

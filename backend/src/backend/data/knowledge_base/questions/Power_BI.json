@@ -1,0 +1,38 @@
+{
+  "skill_name": "Power BI",
+  "questions": [
+    {
+      "skill_name": "Power BI",
+      "difficulty": "easy",
+      "question_text": "What does Power BI stand for?",
+      "options_json": "{\"A\": \"Business Intelligence Platform\", \"B\": \"Powerful Business Insights\", \"C\": \"Productivity and Business Integration\", \"D\": \"Powerful Business Interface\"}",
+      "correct_option": "A",
+      "explanation": "Power BI stands for Power Business Intelligence, which is a business analytics service by Microsoft. It allows users to create interactive visualizations and business intelligence reports."
+    },
+    {
+      "skill_name": "Power BI",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of a data model in Power BI?",
+      "options_json": "{\"A\": \"To create interactive visualizations\", \"B\": \"To define relationships between tables and entities\", \"C\": \"To optimize database performance\", \"D\": \"To automate report scheduling\"}",
+      "correct_option": "B",
+      "explanation": "A data model in Power BI defines the structure of your data, including relationships between tables and entities. This allows for efficient querying and analysis."
+    },
+    {
+      "skill_name": "Power BI",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the 'Modeling' tab in Power BI?",
+      "options_json": "{\"A\": \"To create visualizations for reports\", \"B\": \"To define data models and relationships between tables\", \"C\": \"To configure data source connections\", \"D\": \"To schedule report refreshes\"}",
+      "correct_option": "B",
+      "explanation": "The 'Modeling' tab in Power BI is used to define the data model, including creating tables, defining relationships between them, and configuring measures. This allows users to create a clear and consistent structure for their data."
+    },
+    {
+      "skill_name": "Power BI",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of using DAX formulas in Power BI?",
+      "options_json": "{\"A\": \"To create complex calculations for data analysis\", \"B\": \"To format and visualize data in reports\", \"C\": \"To connect to external data sources\", \"D\": \"To perform data modeling\"}",
+      "correct_option": "A",
+      "explanation": "DAX formulas are used to create complex calculations for data analysis, such as calculating running totals or percentages. They allow users to manipulate and analyze data in a more advanced way."
+    }
+  ],
+  "total_questions": 4
+}

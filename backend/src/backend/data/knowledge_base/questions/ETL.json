@@ -1,0 +1,102 @@
+{
+  "skill_name": "ETL",
+  "questions": [
+    {
+      "skill_name": "ETL",
+      "difficulty": "easy",
+      "question_text": "What does ETL stand for in data engineering?",
+      "options_json": "{\"A\": \"Extract, Transform, and Load\", \"B\": \"Extract, Transfer, and Load\", \"C\": \"Extract, Translate, and Load\", \"D\": \"Extract, Transform, and Delete\"}",
+      "correct_option": "A",
+      "explanation": "ETL stands for Extract, Transform, and Load. This process involves extracting data from various sources, transforming it into a standardized format, and loading it into a target system."
+    },
+    {
+      "skill_name": "ETL",
+      "difficulty": "easy",
+      "question_text": "What is the primary purpose of a Data Warehouse?",
+      "options_json": "{\"A\": \"Data Transformation and Loading\", \"B\": \"Business Intelligence Reporting\", \"C\": \"Real-time Data Processing\", \"D\": \"Data Backup and Recovery\"}",
+      "correct_option": "A",
+      "explanation": "A Data Warehouse is primarily used for data transformation and loading, allowing for easier analysis and reporting. This process involves extracting data from various sources, transforming it into a standardized format, and loading it into the warehouse."
+    },
+    {
+      "skill_name": "ETL",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of a Data Warehouse?",
+      "options_json": "{\"A\": \"Data Transformation and Loading\", \"B\": \"Data Analysis and Reporting\", \"C\": \"Data Storage and Retrieval\", \"D\": \"Data Validation and Quality Control\"}",
+      "correct_option": "A",
+      "explanation": "A Data Warehouse is primarily used for storing data in a way that allows for efficient querying and analysis, making it easier to extract insights from the data. This process involves transforming and loading data into the warehouse."
+    },
+    {
+      "skill_name": "ETL",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of a staging area in an ETL process?",
+      "options_json": "{\"A\": \"To store raw data before it's transformed into a usable format\", \"B\": \"To perform complex calculations on large datasets\", \"C\": \"To load data directly into the target database or system\", \"D\": \"To handle errors and exceptions during the ETL process\"}",
+      "correct_option": "A",
+      "explanation": "The staging area is used to temporarily hold raw data before it's transformed into a usable format, making it easier to manage and process. This allows for more efficient data processing and reduces the risk of data corruption."
+    },
+    {
+      "skill_name": "ETL",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of a data pipeline in ETL?",
+      "options_json": "{\"A\": \"To transform raw data into a format suitable for analysis\", \"B\": \"To load data from multiple sources into a centralized repository\", \"C\": \"To extract data from a database and store it in a data warehouse\", \"D\": \"To perform data quality checks on extracted data\"}",
+      "correct_option": "A",
+      "explanation": "The primary purpose of a data pipeline is to transform raw data into a format suitable for analysis, making it easier to understand and work with. This involves cleaning, aggregating, and formatting the data as needed."
+    },
+    {
+      "skill_name": "ETL",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of a Data Warehouse in an ETL process?",
+      "options_json": "{\"A\": \"To store raw data from various sources\", \"B\": \"To transform and load data into a centralized repository for analysis\", \"C\": \"To perform real-time data processing and analytics\", \"D\": \"To handle large volumes of unstructured data\"}",
+      "correct_option": "B",
+      "explanation": "A Data Warehouse is designed to store transformed and aggregated data from various sources, making it easier for analysts to access and analyze. This allows for faster decision-making and improved business outcomes."
+    },
+    {
+      "skill_name": "ETL",
+      "difficulty": "easy",
+      "question_text": "What is the primary goal of the Extract phase in ETL?",
+      "options_json": "{\"A\": \"To load data into a target system\", \"B\": \"To transform data from one format to another\", \"C\": \"To extract relevant data from various sources\", \"D\": \"To perform data quality checks\"}",
+      "correct_option": "C",
+      "explanation": "The Extract phase is responsible for extracting relevant data from various sources, such as databases or files. This data is then passed on to the Transform phase for further processing."
+    },
+    {
+      "skill_name": "ETL",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of a data transformation in an ETL process?",
+      "options_json": "{\"A\": \"To load data from source systems into a target system\", \"B\": \"To convert data formats to match the target system's requirements\", \"C\": \"To perform data quality checks and validation\", \"D\": \"To schedule and automate the ETL process\"}",
+      "correct_option": "B",
+      "explanation": "A data transformation is used to convert data from one format to another, ensuring it matches the target system's requirements. This step is crucial in maintaining data consistency and integrity."
+    },
+    {
+      "skill_name": "ETL",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of a Data Warehouse in an ETL process?",
+      "options_json": "{\"A\": \"To store raw data from various sources\", \"B\": \"To perform complex data transformations and aggregations\", \"C\": \"To provide a centralized repository for business intelligence and analytics\", \"D\": \"To load data into a production database\"}",
+      "correct_option": "C",
+      "explanation": "A Data Warehouse is designed to store integrated, transformed, and aggregated data from various sources, making it easier to access and analyze. This allows businesses to make informed decisions based on historical trends and patterns."
+    },
+    {
+      "skill_name": "ETL",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of a data warehouse in an ETL process?",
+      "options_json": "{\"A\": \"To store raw data from various sources\", \"B\": \"To perform data transformation and aggregation\", \"C\": \"To load data into a data mart for reporting purposes\", \"D\": \"To handle data quality issues\"}",
+      "correct_option": "B",
+      "explanation": "A data warehouse is used to store transformed and aggregated data, making it easier to analyze and report on. This is in contrast to raw data, which is typically stored in a data lake or other staging area."
+    },
+    {
+      "skill_name": "ETL",
+      "difficulty": "hard",
+      "question_text": "What is the primary function of a data warehouse in an ETL process?",
+      "options_json": "{\"A\": \"Data transformation and loading into a target system\", \"B\": \"Data aggregation and reporting for business intelligence\", \"C\": \"Data quality checks and validation before loading\", \"D\": \"Data backup and recovery\"}",
+      "correct_option": "B",
+      "explanation": "A data warehouse is primarily used for data aggregation and reporting to support business intelligence. It provides a centralized repository of integrated data from various sources, making it easier to analyze and make informed decisions."
+    },
+    {
+      "skill_name": "ETL",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of a staging table in an ETL process?",
+      "options_json": "{\"A\": \"To store raw data from source systems before loading it into a warehouse or lake.\", \"B\": \"To perform complex transformations and aggregations on large datasets.\", \"C\": \"To optimize query performance by reducing the amount of data being processed.\", \"D\": \"To implement data governance and security controls.\"}",
+      "correct_option": "A",
+      "explanation": "A staging table is used to store raw data from source systems in a standardized format, allowing for efficient loading into a warehouse or lake. This enables data engineers to perform ETL operations without having to directly interact with the source system's schema."
+    }
+  ],
+  "total_questions": 12
+}

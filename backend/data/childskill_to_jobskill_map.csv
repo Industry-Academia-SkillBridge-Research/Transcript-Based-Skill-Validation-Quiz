@@ -1,0 +1,50 @@
+ChildSkill,JobSkillID,MapWeight,Notes
+Agile Development & SCRUM,AGILE,0.8,Contains: Agile
+Agile Development & SCRUM,SCRUM,0.8,Contains: Scrum
+Agile Software Development & Scrum Practices,AGILE,0.8,Contains: Agile
+Agile Software Development & Scrum Practices,SCRUM,0.8,Contains: Scrum
+Android OS & Application Components,ANDROID,0.8,Contains: Android
+AngularJS & TypeScript MVC Development,TYPESCRIPT,0.8,Contains: TypeScript
+AngularJS & TypeScript MVC Development,ANGULAR,0.8,Contains: AngularJS
+Application Testing & Security,UNITTESTING,0.8,Contains: Testing
+Application Testing & Security,SECURITY,0.8,Contains: Security
+C++ Programming Implementation,C,0.8,Contains: C
+Client-side Development with JavaScript Frameworks,JAVASCRIPT,0.8,Contains: JavaScript
+Data Modeling & ER Diagrams,UML,0.8,Contains: Modeling
+Database Design & Conceptual Modeling,UML,0.8,Contains: Modeling
+Database Security & Performance Optimization,SECURITY,0.8,Contains: Security
+Database Server Configuration,ANSIBLE,0.8,Contains: Configuration
+ETL/ELT Processes,ETL,0.8,Contains: ETL
+Functional & Object-Oriented Analysis & Design,OOP,0.8,Contains: Object-Oriented
+HTML/CSS & UI Design,HTML,0.8,Contains: HTML
+HTML/CSS & UI Design,CSS,0.8,Contains: CSS
+Hypothesis Testing,UNITTESTING,0.8,Contains: Testing
+Hypothesis Testing & Chi-Squared Tests,UNITTESTING,0.8,Contains: Testing
+"Java Frameworks (JAX-WS, Servlets, JSP)",JAVA,0.8,Contains: Java
+Java Programming Fundamentals,JAVA,0.8,Contains: Java
+JavaScript/PHP Web Development,JAVASCRIPT,0.8,Contains: JavaScript
+JavaScript/PHP Web Development,PHP,0.8,Contains: PHP
+Network Device Configuration (Routers/Switches),ANSIBLE,0.8,Contains: Configuration
+Network Security & ACLs,SECURITY,0.8,Contains: Security
+Networking Fundamentals & ISO/OSI Layers,TCPIP,0.8,Contains: Networking
+OLAP Cube Design,OLAP,0.8,Contains: OLAP
+Object-Oriented Concepts & Recap,OOP,0.8,Contains: Object-Oriented
+Object-Oriented Programming Fundamentals,OOP,0.8,Contains: Object-Oriented
+Procedural Programming Concepts,C,0.8,Contains: Procedural
+RESTful Web Services,RESTAPI,0.8,Contains: RESTful
+Requirements Engineering & UML,UML,0.8,Contains: UML
+Routing & TCP/UDP Protocols,ROUTING,0.8,Contains: Routing
+SQL Database Management (DDL/DML),SQL,0.8,Contains: SQL
+SQL Querying & Database Programming,SQL,0.8,Contains: SQL
+Security Monitoring & Reporting,SECURITY,0.8,Contains: Security
+Security Threats Analysis,SECURITY,0.8,Contains: Security
+Software Design & Testing,UNITTESTING,0.8,Contains: Testing
+Software Life Cycle Modeling,UML,0.8,Contains: Modeling
+Software Testing & Unit Testing,UNITTESTING,0.8,Contains: Testing
+Software Testing & User Acceptance,UNITTESTING,0.8,Contains: Testing
+"Supportive Software Processes (Configuration, Version, Release Management)",ANSIBLE,0.8,Contains: Configuration
+System Security & Administration Scripting,SECURITY,0.8,Contains: Security
+UML Modeling & Behavioral Modeling,UML,0.8,Contains: UML
+"VLAN, Spanning Tree & Trunking",VLAN,0.8,Contains: VLAN
+Web-based Application Development using Java,JAVA,0.8,Contains: Java
+e-Commerce & Web Security,SECURITY,0.8,Contains: Security

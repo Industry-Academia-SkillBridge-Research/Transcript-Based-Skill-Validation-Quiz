@@ -1,0 +1,46 @@
+{
+  "skill_name": "UML",
+  "questions": [
+    {
+      "skill_name": "UML",
+      "difficulty": "easy",
+      "question_text": "What does UML stand for?",
+      "options_json": "{\"A\": \"Unified Modeling Language\", \"B\": \"Universal Markup Language\", \"C\": \"User Manual Language\", \"D\": \"Universal Model List\"}",
+      "correct_option": "A",
+      "explanation": "UML stands for Unified Modeling Language, which is a standardized language used to create diagrams and models of software systems. It provides a common notation for visualizing and documenting the structure and behavior of complex systems."
+    },
+    {
+      "skill_name": "UML",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of a Use Case in UML?",
+      "options_json": "{\"A\": \"To describe the system's architecture\", \"B\": \"To define the interactions between the system and its users\", \"C\": \"To create a detailed design of the system's components\", \"D\": \"To model the system's data structures\"}",
+      "correct_option": "B",
+      "explanation": "A Use Case in UML is used to describe the interactions between the system and its users, highlighting the functional requirements of the system. This helps developers understand how the system will be used by its end-users."
+    },
+    {
+      "skill_name": "UML",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of using a class diagram in UML?",
+      "options_json": "{\"A\": \"To show the relationships between classes and objects\", \"B\": \"To model the behavior of a system\", \"C\": \"To identify potential security threats\", \"D\": \"To create a detailed design document\"}",
+      "correct_option": "A",
+      "explanation": "Class diagrams are used to visualize the structure of a system, including the relationships between classes and objects. This helps developers understand how different components interact with each other."
+    },
+    {
+      "skill_name": "UML",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of a Use Case in UML?",
+      "options_json": "{\"A\": \"To describe the system's architecture\", \"B\": \"To define the interactions between the system and its users\", \"C\": \"To model the database schema\", \"D\": \"To create a detailed design document\"}",
+      "correct_option": "B",
+      "explanation": "A Use Case in UML is used to describe the interactions between the system and its users, including the functional requirements of the system. This helps developers understand how the system will be used and what features are required."
+    },
+    {
+      "skill_name": "UML",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of using an Abstract Class in UML?",
+      "options_json": "{\"A\": \"To represent a class that cannot be instantiated directly\", \"B\": \"To define a common interface for related classes\", \"C\": \"To create a new subclass with additional methods\", \"D\": \"To override the behavior of an existing class\"}",
+      "correct_option": "A",
+      "explanation": "An Abstract Class is used to represent a class that cannot be instantiated directly, and serves as a blueprint for other classes to inherit from. It provides a way to define common attributes and methods that can be shared among related classes."
+    }
+  ],
+  "total_questions": 5
+}

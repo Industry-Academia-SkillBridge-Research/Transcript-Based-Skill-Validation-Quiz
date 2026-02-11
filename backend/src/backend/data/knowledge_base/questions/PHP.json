@@ -1,0 +1,30 @@
+{
+  "skill_name": "PHP",
+  "questions": [
+    {
+      "skill_name": "PHP",
+      "difficulty": "easy",
+      "question_text": "What does the PHP function 'var_dump()' do?",
+      "options_json": "{\"A\": \"Prints the value of a variable in a human-readable format.\", \"B\": \"Echoes the value of a variable to the screen.\", \"C\": \"Returns the value of a variable as a string.\", \"D\": \"Displays an error message if the variable is null.\"}",
+      "correct_option": "A",
+      "explanation": "The var_dump() function in PHP displays information about a variable, including its type and value. This can be useful for debugging purposes."
+    },
+    {
+      "skill_name": "PHP",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the 'unset' function in PHP?",
+      "options_json": "{\"A\": \"To delete a session variable\", \"B\": \"To remove an element from an array\", \"C\": \"To destroy all sessions\", \"D\": \"To unset a superglobal variable\"}",
+      "correct_option": "B",
+      "explanation": "The 'unset' function is used to remove a key from an array. This can be useful when you need to modify the structure of your data."
+    },
+    {
+      "skill_name": "PHP",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the 'use' statement in PHP?",
+      "options_json": "{\"A\": \"To import a namespace\", \"B\": \"To define a constant\", \"C\": \"To include a file\", \"D\": \"To create an instance of a class\"}",
+      "correct_option": "A",
+      "explanation": "The 'use' statement is used to import a namespace, allowing you to use its classes and functions without prefixing them with the namespace. This is useful for reducing code verbosity."
+    }
+  ],
+  "total_questions": 3
+}

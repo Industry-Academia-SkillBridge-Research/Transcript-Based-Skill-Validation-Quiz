@@ -1,0 +1,46 @@
+{
+  "skill_name": "Scala",
+  "questions": [
+    {
+      "skill_name": "Scala",
+      "difficulty": "easy",
+      "question_text": "What does the 'val' keyword in Scala do?",
+      "options_json": "{\"A\": \"It declares a variable that can be reassigned.\", \"B\": \"It declares a constant value that cannot be changed.\", \"C\": \"It is used for method declaration.\", \"D\": \"It is used for class declaration.\"}",
+      "correct_option": "B",
+      "explanation": "The 'val' keyword in Scala declares a constant value that cannot be changed. This is different from the 'var' keyword, which declares a variable that can be reassigned."
+    },
+    {
+      "skill_name": "Scala",
+      "difficulty": "easy",
+      "question_text": "What does the 'val' keyword do in Scala?",
+      "options_json": "{\"A\": \"Declares a variable that can be reassigned\", \"B\": \"Declares a constant value that cannot be changed\", \"C\": \"Is used for method declarations\", \"D\": \"Is used for class declarations\"}",
+      "correct_option": "B",
+      "explanation": "The 'val' keyword in Scala declares a constant value, which means it can only be assigned once. This is different from variables declared with the 'var' keyword."
+    },
+    {
+      "skill_name": "Scala",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the `match` expression in Scala?",
+      "options_json": "{\"A\": \"To pattern match on a value and execute different blocks of code based on the matched pattern.\", \"B\": \"To define a new function with a specific name.\", \"C\": \"To create a new object instance from a class.\", \"D\": \"To import a package into scope.\"}",
+      "correct_option": "A",
+      "explanation": "The `match` expression in Scala is used for pattern matching, which allows you to execute different blocks of code based on the matched pattern. This is particularly useful for handling different cases and exceptions in a concise manner."
+    },
+    {
+      "skill_name": "Scala",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the implicit keyword in Scala?",
+      "options_json": "{\"A\": \"To make a class or trait abstract\", \"B\": \"To convert between types implicitly\", \"C\": \"To create a singleton instance of a class\", \"D\": \"To override a method with a different return type\"}",
+      "correct_option": "B",
+      "explanation": "The implicit keyword in Scala is used to enable implicit conversions and views, allowing for more flexible and concise code. This allows the compiler to automatically convert between types when necessary."
+    },
+    {
+      "skill_name": "Scala",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the implicit conversion in Scala?",
+      "options_json": "{\"A\": \"To convert a value from one type to another\", \"B\": \"To provide a default value for a function parameter\", \"C\": \"To enable pattern matching on a value\", \"D\": \"To create a new instance of a class\"}",
+      "correct_option": "A",
+      "explanation": "Implicit conversions are used to convert values from one type to another, allowing for more flexibility in Scala code. For example, you can use implicit conversions to convert an integer to a string."
+    }
+  ],
+  "total_questions": 5
+}

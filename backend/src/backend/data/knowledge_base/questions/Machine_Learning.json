@@ -1,0 +1,54 @@
+{
+  "skill_name": "Machine Learning",
+  "questions": [
+    {
+      "skill_name": "Machine Learning",
+      "difficulty": "easy",
+      "question_text": "What does a neural network use to make predictions?",
+      "options_json": "{\"A\": \"Linear Regression\", \"B\": \"Decision Trees\", \"C\": \"Backpropagation and Forward Propagation\", \"D\": \"K-Means Clustering\"}",
+      "correct_option": "C",
+      "explanation": "Neural networks use backpropagation to adjust the model's weights during training, and forward propagation to make predictions. This process allows the network to learn from its mistakes and improve its accuracy."
+    },
+    {
+      "skill_name": "Machine Learning",
+      "difficulty": "easy",
+      "question_text": "What does a decision tree in machine learning do?",
+      "options_json": "{\"A\": \"It's a type of neural network\", \"B\": \"It makes predictions based on features and their relationships\", \"C\": \"It's used for clustering data\", \"D\": \"It's a type of regression algorithm\"}",
+      "correct_option": "B",
+      "explanation": "A decision tree is a supervised learning algorithm that uses a tree-like model to make predictions based on the features and their relationships. It works by recursively partitioning the data into subsets based on the most informative feature."
+    },
+    {
+      "skill_name": "Machine Learning",
+      "difficulty": "medium",
+      "question_text": "What is the primary goal of feature scaling in machine learning?",
+      "options_json": "{\"A\": \"To reduce the dimensionality of the data\", \"B\": \"To prevent features with large ranges from dominating the model\", \"C\": \"To improve the convergence rate of gradient descent algorithms\", \"D\": \"To increase the number of local minima in the loss function\"}",
+      "correct_option": "B",
+      "explanation": "Feature scaling is used to prevent features with large ranges from dominating the model, which can lead to biased results. This is particularly important when using distance-based algorithms such as k-nearest neighbors or support vector machines."
+    },
+    {
+      "skill_name": "Machine Learning",
+      "difficulty": "medium",
+      "question_text": "What is the primary goal of regularization in machine learning?",
+      "options_json": "{\"A\": \"To prevent overfitting by adding a penalty term to the loss function\", \"B\": \"To improve model interpretability by reducing feature dimensionality\", \"C\": \"To increase model complexity by allowing non-linear relationships between features\", \"D\": \"To speed up training time by reducing the number of parameters\"}",
+      "correct_option": "A",
+      "explanation": "Regularization is used to prevent overfitting by adding a penalty term to the loss function, which helps to reduce the model's capacity and improve its generalizability."
+    },
+    {
+      "skill_name": "Machine Learning",
+      "difficulty": "hard",
+      "question_text": "What is the primary difference between a Generative Adversarial Network (GAN) and a Variational Autoencoder (VAE)?",
+      "options_json": "{\"A\": \"GANs are used for unsupervised learning, while VAEs are used for supervised learning.\", \"B\": \"GANs generate new data samples, while VAEs reconstruct existing data.\", \"C\": \"GANs are more computationally expensive than VAEs.\", \"D\": \"VAEs are a type of neural network that can be used as a discriminator in GANs.\"}",
+      "correct_option": "B",
+      "explanation": "Generative Adversarial Networks (GANs) generate new data samples, whereas Variational Autoencoders (VAEs) reconstruct existing data. This is the primary difference between the two architectures."
+    },
+    {
+      "skill_name": "Machine Learning",
+      "difficulty": "hard",
+      "question_text": "What is the primary goal of regularization in neural networks?",
+      "options_json": "{\"A\": \"To reduce overfitting by adding a penalty term for large weights\", \"B\": \"To increase the capacity of the network to learn more complex patterns\", \"C\": \"To speed up training by reducing the number of iterations required\", \"D\": \"To improve the interpretability of the model's predictions\"}",
+      "correct_option": "A",
+      "explanation": "Regularization is used to prevent overfitting in neural networks by adding a penalty term for large weights, which encourages the network to find simpler solutions."
+    }
+  ],
+  "total_questions": 6
+}

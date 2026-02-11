@@ -1,0 +1,118 @@
+{
+  "skill_name": "Java & Object-Oriented Application Development",
+  "questions": [
+    {
+      "skill_name": "Java & Object-Oriented Application Development",
+      "difficulty": "easy",
+      "question_text": "What is the purpose of the 'this' keyword in Java?",
+      "options_json": "{\"A\": \"To refer to a class variable\", \"B\": \"To refer to an instance variable\", \"C\": \"To refer to a method parameter\", \"D\": \"To create a new object\"}",
+      "correct_option": "B",
+      "explanation": "The 'this' keyword is used to refer to the current instance of a class, allowing access to its properties and methods. In this context, it's used to distinguish between an instance variable and a local variable with the same name."
+    },
+    {
+      "skill_name": "Java & Object-Oriented Application Development",
+      "difficulty": "easy",
+      "question_text": "What is the purpose of the 'extends' keyword in Java?",
+      "options_json": "{\"A\": \"To implement an interface\", \"B\": \"To inherit properties and behavior from a superclass\", \"C\": \"To override a method from a superclass\", \"D\": \"To create a new class\"}",
+      "correct_option": "B",
+      "explanation": "The 'extends' keyword is used to inherit properties and behavior from a superclass, allowing the subclass to build upon or modify the existing functionality."
+    },
+    {
+      "skill_name": "Java & Object-Oriented Application Development",
+      "difficulty": "easy",
+      "question_text": "What is the purpose of the 'final' keyword in a Java method?",
+      "options_json": "{\"A\": \"To indicate that the method cannot be overridden by subclasses\", \"B\": \"To prevent the method from being called directly\", \"C\": \"To specify the return type of the method\", \"D\": \"To indicate that the method is static\"}",
+      "correct_option": "A",
+      "explanation": "The 'final' keyword in a Java method indicates that it cannot be overridden by subclasses, which helps to prevent unexpected behavior and ensures code consistency."
+    },
+    {
+      "skill_name": "Java & Object-Oriented Application Development",
+      "difficulty": "easy",
+      "question_text": "What is the purpose of the 'final' keyword in Java?",
+      "options_json": "{\"A\": \"To prevent a method from being overridden in a subclass\", \"B\": \"To indicate that a variable cannot be changed once it's initialized\", \"C\": \"To make a class abstract, preventing instantiation\", \"D\": \"To enable multithreading\"}",
+      "correct_option": "B",
+      "explanation": "The 'final' keyword in Java is used to declare variables or methods that cannot be modified after they are initialized. This helps prevent unintended changes and ensures code reliability."
+    },
+    {
+      "skill_name": "Java & Object-Oriented Application Development",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the 'finally' block in a try-catch-finally statement?",
+      "options_json": "{\"A\": \"To handle exceptions that occur within the finally block itself.\", \"B\": \"To ensure that resources such as file handles or database connections are released regardless of whether an exception occurred.\", \"C\": \"To provide an alternative code path in case no exception occurs.\", \"D\": \"To repeat a section of code if an exception occurs.\"}",
+      "correct_option": "B",
+      "explanation": "The 'finally' block is used to release resources and perform cleanup actions, ensuring that they are released regardless of whether an exception occurred. This helps prevent resource leaks and maintain program integrity."
+    },
+    {
+      "skill_name": "Java & Object-Oriented Application Development",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the 'finally' block in a try-catch-finally structure in Java?",
+      "options_json": "{\"A\": \"To handle exceptions that occur within the finally block\", \"B\": \"To ensure that resources are released regardless of whether an exception occurs or not\", \"C\": \"To provide alternative code to be executed if an exception is thrown\", \"D\": \"To repeat a block of code in case of an exception\"}",
+      "correct_option": "B",
+      "explanation": "The 'finally' block is used to release resources, such as closing files or database connections, regardless of whether an exception occurs or not. This ensures that the program's state remains consistent and resources are properly cleaned up."
+    },
+    {
+      "skill_name": "Java & Object-Oriented Application Development",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the `synchronized` keyword in Java?",
+      "options_json": "{\"A\": \"To ensure thread safety in a multi-threaded environment\", \"B\": \"To implement the Observer design pattern\", \"C\": \"To create a new thread that runs concurrently with other threads\", \"D\": \"To enable lazy loading of objects\"}",
+      "correct_option": "A",
+      "explanation": "The `synchronized` keyword is used to ensure that only one thread can access a shared resource at a time, preventing data inconsistencies and ensuring thread safety."
+    },
+    {
+      "skill_name": "Java & Object-Oriented Application Development",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the 'synchronized' keyword in Java?",
+      "options_json": "{\"A\": \"To ensure thread safety in multi-threaded applications\", \"B\": \"To implement a lock on a resource to prevent concurrent access\", \"C\": \"To increase the performance of an application by reducing overhead\", \"D\": \"To create a new thread\"}",
+      "correct_option": "B",
+      "explanation": "The 'synchronized' keyword is used to ensure that only one thread can access a resource at a time, preventing concurrent modification and ensuring data consistency. This is particularly useful in multi-threaded applications where multiple threads may be accessing shared resources."
+    },
+    {
+      "skill_name": "Java & Object-Oriented Application Development",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the 'finally' block in a try-catch-finally statement in Java?",
+      "options_json": "{\"A\": \"To handle exceptions that occur within the finally block\", \"B\": \"To ensure that resources are released regardless of whether an exception occurs or not\", \"C\": \"To catch and rethrow exceptions\", \"D\": \"To execute code only when no exceptions occur\"}",
+      "correct_option": "B",
+      "explanation": "The 'finally' block is used to release system resources, such as file handles or database connections, regardless of whether an exception occurs or not. This ensures that resources are properly cleaned up and prevents resource leaks."
+    },
+    {
+      "skill_name": "Java & Object-Oriented Application Development",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the 'finally' block in a try-catch-finally structure?",
+      "options_json": "{\"A\": \"To handle exceptions that occur within the 'try' block.\", \"B\": \"To execute code regardless of whether an exception occurs or not.\", \"C\": \"To re-throw exceptions caught by the 'catch' block.\", \"D\": \"To create a new thread to handle the exception.\"}",
+      "correct_option": "B",
+      "explanation": "The 'finally' block is used to execute code regardless of whether an exception occurs or not, ensuring that resources are cleaned up properly. This is essential for maintaining program integrity and preventing resource leaks."
+    },
+    {
+      "skill_name": "Java & Object-Oriented Application Development",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the synchronized keyword in Java?",
+      "options_json": "{\"A\": \"To ensure thread safety for a block of code\", \"B\": \"To create a lock on an object\", \"C\": \"To increase the performance of a method\", \"D\": \"To reduce memory usage\"}",
+      "correct_option": "A",
+      "explanation": "The synchronized keyword in Java is used to ensure thread safety for a block of code by allowing only one thread to execute that block at a time. This prevents data inconsistency and ensures that shared resources are accessed safely."
+    },
+    {
+      "skill_name": "Java & Object-Oriented Application Development",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the 'synchronized' keyword in Java?",
+      "options_json": "{\"A\": \"To ensure thread safety in multi-threaded applications\", \"B\": \"To implement a lock on an object to prevent concurrent access\", \"C\": \"To create a new thread that runs concurrently with other threads\", \"D\": \"To increase the performance of a Java program\"}",
+      "correct_option": "B",
+      "explanation": "The 'synchronized' keyword in Java is used to implement a lock on an object, preventing concurrent access and ensuring thread safety. This is essential for multi-threaded applications where multiple threads may try to access shared resources simultaneously."
+    },
+    {
+      "skill_name": "Java & Object-Oriented Application Development",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of the 'synchronized' keyword in Java?",
+      "options_json": "{\"A\": \"To ensure thread safety by locking a resource\", \"B\": \"To implement lazy loading for large objects\", \"C\": \"To enable concurrent access to shared variables\", \"D\": \"To optimize memory usage by reducing object creation\"}",
+      "correct_option": "A",
+      "explanation": "The 'synchronized' keyword is used to ensure thread safety by locking a resource, preventing other threads from accessing it simultaneously. This helps prevent data inconsistencies and ensures that shared resources are accessed safely."
+    },
+    {
+      "skill_name": "Java & Object-Oriented Application Development",
+      "difficulty": "hard",
+      "question_text": "Which design pattern is used to manage dependencies between objects?",
+      "options_json": "{\"A\": \"Factory Pattern\", \"B\": \"Observer Pattern\", \"C\": \"Strategy Pattern\", \"D\": \"Template Method Pattern\"}",
+      "correct_option": "A",
+      "explanation": "The Factory Pattern is used to manage dependencies between objects by providing a way to create objects without specifying the exact class of object that will be created. This helps in decoupling the dependent classes from each other."
+    }
+  ],
+  "total_questions": 14
+}

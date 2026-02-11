@@ -1,0 +1,46 @@
+{
+  "skill_name": "Computer Vision",
+  "questions": [
+    {
+      "skill_name": "Computer Vision",
+      "difficulty": "easy",
+      "question_text": "What is the primary function of a convolutional neural network (CNN) in computer vision?",
+      "options_json": "{\"A\": \"Image classification and object detection\", \"B\": \"Image segmentation and feature extraction\", \"C\": \"Face recognition and facial expression analysis\", \"D\": \"Optical character recognition (OCR)\"}",
+      "correct_option": "A",
+      "explanation": "CNNs are widely used for image classification tasks, such as recognizing objects in images. They can also be used for object detection, which involves locating specific objects within an image."
+    },
+    {
+      "skill_name": "Computer Vision",
+      "difficulty": "easy",
+      "question_text": "What is the primary function of a Convolutional Neural Network (CNN) in Computer Vision?",
+      "options_json": "{\"A\": \"Object Detection and Recognition\", \"B\": \"Image Classification and Segmentation\", \"C\": \"Facial Recognition and Tracking\", \"D\": \"All of the above\"}",
+      "correct_option": "B",
+      "explanation": "CNNs are primarily used for image classification and segmentation tasks, such as categorizing images into classes like animals or vehicles. They can also be fine-tuned for object detection and recognition, but their primary function is image classification."
+    },
+    {
+      "skill_name": "Computer Vision",
+      "difficulty": "medium",
+      "question_text": "What is the primary goal of edge detection in computer vision?",
+      "options_json": "{\"A\": \"To identify objects within an image\", \"B\": \"To enhance the contrast between different regions of an image\", \"C\": \"To remove noise from an image\", \"D\": \"To segment an image into its constituent parts\"}",
+      "correct_option": "D",
+      "explanation": "Edge detection is used to identify the boundaries and contours within an image, which is essential for object recognition and segmentation tasks. This process helps in understanding the shape and structure of objects."
+    },
+    {
+      "skill_name": "Computer Vision",
+      "difficulty": "hard",
+      "question_text": "A convolutional neural network (CNN) is trained on a dataset of images. What is the primary purpose of the pooling layer in this architecture?",
+      "options_json": "{\"A\": \"To increase the spatial dimensions of the feature maps\", \"B\": \"To reduce the spatial dimensions of the feature maps and downsample the image data\", \"C\": \"To increase the number of feature channels\", \"D\": \"To apply non-linear transformations to the feature maps\"}",
+      "correct_option": "B",
+      "explanation": "The pooling layer reduces the spatial dimensions of the feature maps, effectively downsampling the image data. This helps reduce the dimensionality of the data and improves the network's ability to generalize."
+    },
+    {
+      "skill_name": "Computer Vision",
+      "difficulty": "hard",
+      "question_text": "A convolutional neural network (CNN) is trained on a dataset of images with bounding boxes around objects. What is the primary purpose of using a Region Proposal Network (RPN) in this context?",
+      "options_json": "{\"A\": \"To improve the accuracy of object detection by reducing false positives\", \"B\": \"To increase the speed of object detection by reducing the number of regions to process\", \"C\": \"To enable the network to learn features at multiple scales\", \"D\": \"None of the above\"}",
+      "correct_option": "A",
+      "explanation": "The RPN is used to generate candidate regions for object detection, which are then passed through a classifier to determine their class and location. This helps to reduce false positives by focusing on high-quality proposals."
+    }
+  ],
+  "total_questions": 5
+}

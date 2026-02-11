@@ -1,0 +1,54 @@
+{
+  "skill_name": "Routing",
+  "questions": [
+    {
+      "skill_name": "Routing",
+      "difficulty": "easy",
+      "question_text": "What does the 'default' route in a router configuration do?",
+      "options_json": "{\"A\": \"Forwards all traffic to a specific interface\", \"B\": \"Rejects all incoming traffic\", \"C\": \"Forwards traffic with no matching destination IP address\", \"D\": \"Blocks all outgoing traffic\"}",
+      "correct_option": "C",
+      "explanation": "The 'default' route, also known as the default gateway, forwards traffic with no matching destination IP address to a specified router. This ensures that packets are sent to their intended destinations even if there is no specific route defined for them."
+    },
+    {
+      "skill_name": "Routing",
+      "difficulty": "easy",
+      "question_text": "What is the primary function of a router in a network?",
+      "options_json": "{\"A\": \"To connect multiple networks together\", \"B\": \"To provide internet access to devices on a network\", \"C\": \"To block incoming traffic from unknown sources\", \"D\": \"To assign IP addresses to devices\"}",
+      "correct_option": "A",
+      "explanation": "Routers are responsible for connecting multiple networks together, allowing data to be transmitted between them. This is the primary function of a router in a network."
+    },
+    {
+      "skill_name": "Routing",
+      "difficulty": "medium",
+      "question_text": "What is the primary function of a router in a network?",
+      "options_json": "{\"A\": \"To connect multiple networks together and route traffic between them\", \"B\": \"To provide internet access to devices on a network\", \"C\": \"To act as a firewall for incoming and outgoing traffic\", \"D\": \"To manage network resources such as printers and servers\"}",
+      "correct_option": "A",
+      "explanation": "Routers are responsible for forwarding packets between networks, allowing devices to communicate with each other. They use routing tables to determine the best path for data to travel."
+    },
+    {
+      "skill_name": "Routing",
+      "difficulty": "medium",
+      "question_text": "What is the primary function of a default gateway in a network?",
+      "options_json": "{\"A\": \"To connect multiple networks together\", \"B\": \"To provide a backup path for traffic in case of a failure\", \"C\": \"To forward packets to their final destination when the local network cannot be reached\", \"D\": \"To reduce latency by caching frequently accessed data\"}",
+      "correct_option": "C",
+      "explanation": "A default gateway is used to forward packets to their final destination when the local network cannot be reached. This allows devices on a network to communicate with devices on other networks."
+    },
+    {
+      "skill_name": "Routing",
+      "difficulty": "hard",
+      "question_text": "What is the primary function of a router's routing table?",
+      "options_json": "{\"A\": \"To store and forward packets between networks\", \"B\": \"To determine the best path for packet forwarding based on network topology and traffic conditions\", \"C\": \"To authenticate incoming packets before forwarding them to their destination\", \"D\": \"To cache frequently accessed network resources\"}",
+      "correct_option": "B",
+      "explanation": "A router's routing table is used to determine the best path for packet forwarding based on network topology and traffic conditions, ensuring efficient data transmission. This process involves analyzing various factors such as network congestion, latency, and available bandwidth."
+    },
+    {
+      "skill_name": "Routing",
+      "difficulty": "hard",
+      "question_text": "What happens when a packet with a TTL (Time To Live) of 1 reaches a router?",
+      "options_json": "{\"A\": \"The router increments the TTL and forwards the packet.\", \"B\": \"The router decrements the TTL by 1, but still forwards the packet.\", \"C\": \"The router discards the packet because it has exceeded its hop limit.\", \"D\": \"The router sends an ICMP Time Exceeded message back to the sender.\"}",
+      "correct_option": "C",
+      "explanation": "When a packet's TTL reaches 0, it is discarded by the router. This prevents packets from looping indefinitely and causing network congestion."
+    }
+  ],
+  "total_questions": 6
+}

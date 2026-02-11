@@ -1,0 +1,54 @@
+{
+  "skill_name": "Kubernetes",
+  "questions": [
+    {
+      "skill_name": "Kubernetes",
+      "difficulty": "easy",
+      "question_text": "What is the primary function of a Kubernetes Deployment?",
+      "options_json": "{\"A\": \"To manage network policies for pods\", \"B\": \"To automate rollouts and rollbacks of application versions\", \"C\": \"To schedule tasks on worker nodes\", \"D\": \"To monitor container logs\"}",
+      "correct_option": "B",
+      "explanation": "A Kubernetes Deployment automates the rollout and rollback of application versions, ensuring that the desired state is maintained. It does this by managing replica sets, which in turn manage pods."
+    },
+    {
+      "skill_name": "Kubernetes",
+      "difficulty": "easy",
+      "question_text": "What is the primary purpose of a Deployment in Kubernetes?",
+      "options_json": "{\"A\": \"To manage persistent storage for applications\", \"B\": \"To automate rollouts and rollbacks of application code\", \"C\": \"To provide load balancing for services\", \"D\": \"To configure network policies\"}",
+      "correct_option": "B",
+      "explanation": "Deployments in Kubernetes are used to automate the rollout of new versions of an application, as well as roll back to a previous version if needed. This makes it easier to manage and maintain complex applications."
+    },
+    {
+      "skill_name": "Kubernetes",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of a Kubernetes Deployment?",
+      "options_json": "{\"A\": \"To manage the lifecycle of a Pod\", \"B\": \"To provide load balancing and high availability for an application\", \"C\": \"To automate rolling updates and rollbacks for an application\", \"D\": \"To manage storage resources for an application\"}",
+      "correct_option": "C",
+      "explanation": "A Kubernetes Deployment is responsible for automating rolling updates and rollbacks for an application, ensuring that the application remains available even during upgrades or failures."
+    },
+    {
+      "skill_name": "Kubernetes",
+      "difficulty": "medium",
+      "question_text": "What is the primary function of a Kubernetes Deployment?",
+      "options_json": "{\"A\": \"To manage the lifecycle of a Pod\", \"B\": \"To provide load balancing and service discovery\", \"C\": \"To schedule and run containers on worker nodes\", \"D\": \"To configure and manage network policies\"}",
+      "correct_option": "A",
+      "explanation": "A Kubernetes Deployment is responsible for managing the lifecycle of a Pod, including scaling, rolling updates, and self-healing. This ensures that applications are always available and running as expected."
+    },
+    {
+      "skill_name": "Kubernetes",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of a Kubernetes DaemonSet?",
+      "options_json": "{\"A\": \"To manage and orchestrate stateless applications\", \"B\": \"To deploy and manage pods across multiple nodes in an cluster\", \"C\": \"To provide persistent storage for stateful applications\", \"D\": \"To ensure that a specified number of replicas are running at any given time\"}",
+      "correct_option": "B",
+      "explanation": "A DaemonSet is used to deploy and manage pods across multiple nodes in a cluster, ensuring that the desired number of replicas are always running. This is particularly useful for applications that require a persistent presence on each node."
+    },
+    {
+      "skill_name": "Kubernetes",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of a DaemonSet in Kubernetes?",
+      "options_json": "{\"A\": \"To manage and scale stateless applications\", \"B\": \"To run a single copy of a container on each node in a cluster\", \"C\": \"To deploy and manage a group of pods across multiple nodes\", \"D\": \"To create a self-healing service for a stateful application\"}",
+      "correct_option": "B",
+      "explanation": "A DaemonSet is used to run a single copy of a container on each node in a cluster, making it ideal for running system services or daemons. This ensures that the container is always running and can be easily managed across multiple nodes."
+    }
+  ],
+  "total_questions": 6
+}

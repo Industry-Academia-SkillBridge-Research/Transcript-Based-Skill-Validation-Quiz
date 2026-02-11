@@ -1,0 +1,70 @@
+{
+  "skill_name": "TCP/IP",
+  "questions": [
+    {
+      "skill_name": "TCP/IP",
+      "difficulty": "easy",
+      "question_text": "What does TCP stand for in TCP/IP?",
+      "options_json": "{\"A\": \"Transmission Control Protocol\", \"B\": \"Transport Control Protocol\", \"C\": \"Technical Control Panel\", \"D\": \"Traffic Control Process\"}",
+      "correct_option": "A",
+      "explanation": "TCP stands for Transmission Control Protocol, which is a transport-layer protocol in the TCP/IP suite. It ensures reliable data transfer between devices."
+    },
+    {
+      "skill_name": "TCP/IP",
+      "difficulty": "easy",
+      "question_text": "What does the 'T' in TCP/IP stand for?",
+      "options_json": "{\"A\": \"Transmission\", \"B\": \"Transport\", \"C\": \"Traversal\", \"D\": \"Transfer\"}",
+      "correct_option": "B",
+      "explanation": "The 'T' in TCP/IP stands for Transport, which refers to the transport layer of the OSI model. This layer is responsible for providing reliable data transfer between devices."
+    },
+    {
+      "skill_name": "TCP/IP",
+      "difficulty": "medium",
+      "question_text": "What is the primary function of the TCP (Transmission Control Protocol) header?",
+      "options_json": "{\"A\": \"To provide error-free delivery of data packets\", \"B\": \"To ensure that data packets are delivered in the correct order\", \"C\": \"To manage congestion on the network by controlling packet flow\", \"D\": \"To establish a connection between devices before data transfer\"}",
+      "correct_option": "D",
+      "explanation": "The TCP header is responsible for establishing and maintaining connections between devices. This includes managing the exchange of data packets, ensuring reliable delivery, and handling errors."
+    },
+    {
+      "skill_name": "TCP/IP",
+      "difficulty": "medium",
+      "question_text": "What is the main purpose of the TCP (Transmission Control Protocol) header?",
+      "options_json": "{\"A\": \"To provide error-free delivery of data packets\", \"B\": \"To ensure reliable and ordered delivery of data packets\", \"C\": \"To provide congestion control and flow control\", \"D\": \"To encrypt data before transmission\"}",
+      "correct_option": "B",
+      "explanation": "The TCP header ensures that data is delivered reliably and in the correct order, which is essential for applications that require guaranteed delivery of data packets."
+    },
+    {
+      "skill_name": "TCP/IP",
+      "difficulty": "hard",
+      "question_text": "What is the primary function of the TCP three-way handshake?",
+      "options_json": "{\"A\": \"To establish a full-duplex connection between two hosts\", \"B\": \"To authenticate the sender and receiver\", \"C\": \"To ensure reliable data transfer over an unreliable network\", \"D\": \"To negotiate the maximum transmission unit (MTU)\"}",
+      "correct_option": "C",
+      "explanation": "The TCP three-way handshake is used to establish a connection between two hosts, ensuring that data is delivered reliably. This is achieved through sequence numbers and acknowledgments."
+    },
+    {
+      "skill_name": "TCP/IP",
+      "difficulty": "hard",
+      "question_text": "What is the primary difference between a TCP and UDP header?",
+      "options_json": "{\"A\": \"TCP headers are larger than UDP headers.\", \"B\": \"TCP headers contain sequence numbers, while UDP headers do not.\", \"C\": \"TCP is connection-oriented, while UDP is connectionless.\", \"D\": \"TCP uses port numbers for communication, while UDP does not.\"}",
+      "correct_option": "C",
+      "explanation": "TCP (Transmission Control Protocol) is a connection-oriented protocol that establishes a dedicated connection between the sender and receiver before data transfer begins. In contrast, UDP (User Datagram Protocol) is a connectionless protocol that does not establish a dedicated connection and instead relies on IP addressing for delivery."
+    },
+    {
+      "skill_name": "TCP/IP",
+      "difficulty": "hard",
+      "question_text": "What is the primary difference between TCP and UDP protocols?",
+      "options_json": "{\"A\": \"TCP is connection-oriented, while UDP is connectionless.\", \"B\": \"TCP uses port numbers for communication, whereas UDP does not.\", \"C\": \"TCP provides reliable data transfer, but UDP does not guarantee delivery.\", \"D\": \"UDP is used for real-time applications, while TCP is used for file transfers.\"}",
+      "correct_option": "C",
+      "explanation": "TCP provides reliable data transfer by ensuring that packets are delivered in the correct order and retransmitting lost or corrupted packets. UDP, on the other hand, does not guarantee delivery and is often used for real-time applications where speed is more important than reliability."
+    },
+    {
+      "skill_name": "TCP/IP",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of the SYN flag in a TCP handshake?",
+      "options_json": "{\"A\": \"To establish a full-duplex connection\", \"B\": \"To initiate the three-way handshake\", \"C\": \"To send data packets\", \"D\": \"To acknowledge received data\"}",
+      "correct_option": "B",
+      "explanation": "The SYN flag is used to initiate the three-way handshake, which establishes a connection between two devices. It is the first step in establishing a TCP connection."
+    }
+  ],
+  "total_questions": 8
+}

@@ -1,0 +1,158 @@
+{
+  "skill_name": "IT Project Management & Execution",
+  "questions": [
+    {
+      "skill_name": "IT Project Management & Execution",
+      "difficulty": "easy",
+      "question_text": "What is the primary goal of Agile Software Development?",
+      "options_json": "{\"A\": \"To follow a traditional Waterfall approach\", \"B\": \"To deliver working software in short iterations and continuous improvement\", \"C\": \"To focus solely on project planning and documentation\", \"D\": \"To ignore user feedback and testing\"}",
+      "correct_option": "B",
+      "explanation": "Agile Software Development emphasizes delivering working software in short iterations, with a focus on continuous improvement and customer satisfaction. This approach allows for flexibility and adaptability throughout the development process."
+    },
+    {
+      "skill_name": "IT Project Management & Execution",
+      "difficulty": "easy",
+      "question_text": "What is the primary goal of Agile software development?",
+      "options_json": "{\"A\": \"To follow a traditional Waterfall approach\", \"B\": \"To deliver working software in short iterations and continuous improvement\", \"C\": \"To minimize project costs at all costs\", \"D\": \"To assign tasks to team members without their input\"}",
+      "correct_option": "B",
+      "explanation": "Agile software development focuses on delivering working software in short iterations, allowing for continuous improvement and adaptation to changing requirements. This approach prioritizes flexibility and customer satisfaction over traditional project management methods."
+    },
+    {
+      "skill_name": "IT Project Management & Execution",
+      "difficulty": "medium",
+      "question_text": "Which Agile framework emphasizes iterative development, continuous improvement, and delivering working software in short cycles?",
+      "options_json": "{\"A\": \"Kanban\", \"B\": \"Scrum\", \"C\": \"Lean Software Development\", \"D\": \"Extreme Programming\"}",
+      "correct_option": "B",
+      "explanation": "Scrum emphasizes iterative development, continuous improvement, and delivering working software in short cycles. It also focuses on teamwork, accountability, and iterative progress toward well-defined goals."
+    },
+    {
+      "skill_name": "IT Project Management & Execution",
+      "difficulty": "medium",
+      "question_text": "In an Agile project, what is the primary goal of the Sprint Review?",
+      "options_json": "{\"A\": \"To demonstrate the working software to stakeholders\", \"B\": \"To identify and prioritize new features for the next sprint\", \"C\": \"To review and approve the project's budget\", \"D\": \"To conduct unit testing on individual components\"}",
+      "correct_option": "A",
+      "explanation": "The Sprint Review is an opportunity for the development team to demonstrate the working software to stakeholders, gather feedback, and ensure that the product meets the customer's needs. This process helps to identify any deviations from the original plan and make necessary adjustments."
+    },
+    {
+      "skill_name": "IT Project Management & Execution",
+      "difficulty": "medium",
+      "question_text": "What is the primary goal of a Sprint Planning meeting in Agile Software Development?",
+      "options_json": "{\"A\": \"To assign tasks to team members\", \"B\": \"To set project timelines and milestones\", \"C\": \"To define and prioritize product backlog items for the upcoming sprint\", \"D\": \"To conduct unit testing of the software\"}",
+      "correct_option": "C",
+      "explanation": "The primary goal of Sprint Planning is to ensure that the team has a clear understanding of what needs to be accomplished during the upcoming sprint, and to prioritize the work accordingly. This helps in achieving the project's goals and delivering working software at the end of each sprint."
+    },
+    {
+      "skill_name": "IT Project Management & Execution",
+      "difficulty": "medium",
+      "question_text": "What is the primary goal of Sprint Planning in Scrum?",
+      "options_json": "{\"A\": \"To assign tasks to team members\", \"B\": \"To define and prioritize product backlog items for the upcoming sprint\", \"C\": \"To conduct a thorough risk assessment for the project\", \"D\": \"To create a detailed project schedule\"}",
+      "correct_option": "B",
+      "explanation": "Sprint Planning is an essential part of Scrum that helps teams define and prioritize product backlog items for the upcoming sprint, ensuring they have a clear understanding of what needs to be accomplished."
+    },
+    {
+      "skill_name": "IT Project Management & Execution",
+      "difficulty": "medium",
+      "question_text": "In Agile Software Development, what is the primary purpose of a Sprint Review?",
+      "options_json": "{\"A\": \"To demonstrate the working software to stakeholders and gather feedback.\", \"B\": \"To identify and prioritize new features for the next sprint.\", \"C\": \"To conduct unit testing and ensure code quality.\", \"D\": \"To plan and schedule tasks for the upcoming sprint.\"}",
+      "correct_option": "A",
+      "explanation": "The Sprint Review is a critical event in Agile development where the working software is demonstrated to stakeholders, and feedback is gathered to improve the product. This process ensures that the team's efforts align with stakeholder expectations."
+    },
+    {
+      "skill_name": "IT Project Management & Execution",
+      "difficulty": "medium",
+      "question_text": "What is the primary goal of the Sprint Review in Scrum?",
+      "options_json": "{\"A\": \"To demonstrate the working software to stakeholders\", \"B\": \"To identify and prioritize new features for the next sprint\", \"C\": \"To review and approve the completed work from the previous sprint\", \"D\": \"To plan and schedule tasks for the upcoming sprint\"}",
+      "correct_option": "A",
+      "explanation": "The Sprint Review is a critical event in Scrum where the development team demonstrates the working software to stakeholders, gathering feedback and ensuring that it meets the requirements. This process helps identify any deviations from the expected outcome."
+    },
+    {
+      "skill_name": "IT Project Management & Execution",
+      "difficulty": "medium",
+      "question_text": "What is the primary goal of the Sprint Review meeting in Scrum?",
+      "options_json": "{\"A\": \"To demonstrate the working software to stakeholders\", \"B\": \"To prioritize tasks for the next sprint\", \"C\": \"To identify and mitigate potential roadblocks\", \"D\": \"To assign tasks to team members\"}",
+      "correct_option": "A",
+      "explanation": "The Sprint Review meeting is an opportunity for the development team to demonstrate the working software to stakeholders, gather feedback, and adjust the product backlog accordingly. This ensures that the team is on track to meet the sprint goals."
+    },
+    {
+      "skill_name": "IT Project Management & Execution",
+      "difficulty": "hard",
+      "question_text": "During a Scrum sprint, which of the following is NOT a responsibility of the Product Owner?",
+      "options_json": "{\"A\": \"Creating and maintaining the product backlog\", \"B\": \"Prioritizing user stories for development\", \"C\": \"Defining and managing the sprint goal\", \"D\": \"Writing unit tests for developed code\"}",
+      "correct_option": "D",
+      "explanation": "The Product Owner is responsible for creating and maintaining the product backlog, prioritizing user stories, and defining the sprint goal. Writing unit tests is a responsibility of the Development Team."
+    },
+    {
+      "skill_name": "IT Project Management & Execution",
+      "difficulty": "hard",
+      "question_text": "A Scrum team is planning a sprint, and they have identified that one of their user stories has multiple dependencies. Which of the following actions should be taken?",
+      "options_json": "{\"A\": \"Break down the user story into smaller tasks to reduce dependencies.\", \"B\": \"Prioritize the user story over others in the backlog to ensure it gets done first.\", \"C\": \"Use a Kanban board to visualize the workflow and dependencies.\", \"D\": \"Remove the user story from the sprint backlog due to high complexity.\"}",
+      "correct_option": "A",
+      "explanation": "Breaking down the user story into smaller tasks allows for better estimation, prioritization, and management of dependencies. This approach enables the team to make progress on the user story without getting bogged down by complex dependencies."
+    },
+    {
+      "skill_name": "IT Project Management & Execution",
+      "difficulty": "hard",
+      "question_text": "A Scrum Master is responsible for ensuring that the Development Team has all the necessary information and resources to complete their tasks. However, in a situation where the Product Owner is unavailable, who should the Scrum Master contact to get clarification on product requirements?",
+      "options_json": "{\"A\": \"The Development Team Lead\", \"B\": \"The Stakeholder\", \"C\": \"The Customer\", \"D\": \"The Scrum Coach\"}",
+      "correct_option": "D",
+      "explanation": "In a situation where the Product Owner is unavailable, the Scrum Master should contact the Scrum Coach for guidance on how to proceed. The Scrum Coach can provide expertise and support in facilitating the Scrum process."
+    },
+    {
+      "skill_name": "IT Project Management & Execution",
+      "difficulty": "hard",
+      "question_text": "During a Scrum sprint, which team member is responsible for ensuring that the development team has a clear understanding of the product backlog and can estimate task complexity?",
+      "options_json": "{\"A\": \"Scrum Master\", \"B\": \"Product Owner\", \"C\": \"Development Team Lead\", \"D\": \"Quality Assurance Engineer\"}",
+      "correct_option": "B",
+      "explanation": "The Product Owner is responsible for ensuring that the product backlog is up-to-date and reflects the current understanding of the project requirements. They are also responsible for prioritizing the backlog and ensuring that it aligns with business objectives."
+    },
+    {
+      "skill_name": "IT Project Management & Execution",
+      "difficulty": "hard",
+      "question_text": "In an Agile Scrum team, what is the primary responsibility of a Product Owner?",
+      "options_json": "{\"A\": \"To manage and prioritize the team's workload\", \"B\": \"To create and maintain the product backlog\", \"C\": \"To lead daily stand-up meetings\", \"D\": \"To conduct code reviews\"}",
+      "correct_option": "B",
+      "explanation": "The Product Owner is responsible for creating and maintaining the product backlog, which includes prioritizing features and requirements. This ensures that the team has a clear understanding of what needs to be developed next."
+    },
+    {
+      "skill_name": "IT Project Management & Execution",
+      "difficulty": "hard",
+      "question_text": "In an Agile team, which role is responsible for ensuring that the development team has a clear understanding of the requirements and priorities?",
+      "options_json": "{\"A\": \"Scrum Master\", \"B\": \"Product Owner\", \"C\": \"Development Team Lead\", \"D\": \"Business Analyst\"}",
+      "correct_option": "B",
+      "explanation": "The Product Owner is responsible for ensuring that the development team has a clear understanding of the requirements and priorities, as they are the single point of truth for the product backlog."
+    },
+    {
+      "skill_name": "IT Project Management & Execution",
+      "difficulty": "hard",
+      "question_text": "A Scrum Master is responsible for ensuring that the development team has all necessary resources and information to complete their tasks. However, this responsibility should not include which of the following?",
+      "options_json": "{\"A\": \"Prioritizing product backlog items with the Product Owner\", \"B\": \"Managing the team's workload and assigning tasks\", \"C\": \"Ensuring that the development team has all necessary resources and information to complete their tasks\", \"D\": \"Collaborating with stakeholders to identify and document project requirements\"}",
+      "correct_option": "A",
+      "explanation": "The Scrum Master's role is to facilitate the team's work, not to make decisions about task prioritization. Prioritizing product backlog items is a responsibility of the Product Owner."
+    },
+    {
+      "skill_name": "IT Project Management & Execution",
+      "difficulty": "hard",
+      "question_text": "During an Agile sprint, which of the following is NOT a responsibility of the Scrum Master?",
+      "options_json": "{\"A\": \"Ensuring the development team has all necessary resources and equipment to complete tasks.\", \"B\": \"Facilitating meetings such as Sprint Planning, Daily Scrum, and Sprint Review.\", \"C\": \"Managing and maintaining the product backlog.\", \"D\": \"Overseeing the entire project scope, including planning and execution.\"}",
+      "correct_option": "D",
+      "explanation": "The Scrum Master's role is to facilitate and support the development team, not manage the overall project scope. This responsibility falls under the Product Owner or Project Manager."
+    },
+    {
+      "skill_name": "IT Project Management & Execution",
+      "difficulty": "hard",
+      "question_text": "A Scrum Master is responsible for ensuring that the development team follows the Agile methodology, but they are not directly involved in which of the following activities?",
+      "options_json": "{\"A\": \"Writing user stories and acceptance criteria with the product owner\", \"B\": \"Developing a detailed project schedule and resource allocation plan\", \"C\": \"Facilitating daily Scrum meetings to ensure team members understand their tasks and progress\", \"D\": \"Reviewing and testing code before it is merged into the main branch\"}",
+      "correct_option": "B",
+      "explanation": "A Scrum Master's role is to facilitate the Agile process, but they are not typically involved in creating detailed project schedules or resource allocation plans. Those tasks are usually handled by a project manager or other team members."
+    },
+    {
+      "skill_name": "IT Project Management & Execution",
+      "difficulty": "hard",
+      "question_text": "In Agile Software Development, which Scrum role is responsible for ensuring that the development team has a clear understanding of the requirements and priorities?",
+      "options_json": "{\"A\": \"Product Owner\", \"B\": \"Scrum Master\", \"C\": \"Development Team\", \"D\": \"Stakeholder\"}",
+      "correct_option": "A",
+      "explanation": "The Product Owner is responsible for ensuring that the development team has a clear understanding of the requirements and priorities, as they are the single point of truth for the product backlog."
+    }
+  ],
+  "total_questions": 19
+}

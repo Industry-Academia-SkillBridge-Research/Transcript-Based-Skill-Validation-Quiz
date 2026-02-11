@@ -1,0 +1,198 @@
+{
+  "skill_name": "Software Development & Engineering Practices",
+  "questions": [
+    {
+      "skill_name": "Software Development & Engineering Practices",
+      "difficulty": "easy",
+      "question_text": "What is the primary purpose of a UML Use Case diagram?",
+      "options_json": "{\"A\": \"To show the sequence of events in a system\", \"B\": \"To model the static structure of a system, including classes and objects\", \"C\": \"To describe the interactions between a user and a system\", \"D\": \"To design a database schema\"}",
+      "correct_option": "C",
+      "explanation": "A UML Use Case diagram is used to model the interactions between a user and a system, highlighting the functional requirements of the system. It helps in understanding how users will interact with the system."
+    },
+    {
+      "skill_name": "Software Development & Engineering Practices",
+      "difficulty": "easy",
+      "question_text": "What is the primary purpose of a class diagram in UML?",
+      "options_json": "{\"A\": \"To model the behavior of an object\", \"B\": \"To show the relationships between classes and objects\", \"C\": \"To describe the user interface of a system\", \"D\": \"To define the database schema\"}",
+      "correct_option": "B",
+      "explanation": "A class diagram is used to visualize the structure of a system by showing the relationships between classes and objects. This helps developers understand how different components interact with each other."
+    },
+    {
+      "skill_name": "Software Development & Engineering Practices",
+      "difficulty": "easy",
+      "question_text": "What does the 'Factory Method' design pattern provide?",
+      "options_json": "{\"A\": \"A new instance of a class\", \"B\": \"A way to create objects without specifying the exact class\", \"C\": \"A method for testing object behavior\", \"D\": \"A technique for managing configuration settings\"}",
+      "correct_option": "B",
+      "explanation": "The Factory Method pattern provides a way to create objects without specifying the exact class, which helps with polymorphism and decoupling."
+    },
+    {
+      "skill_name": "Software Development & Engineering Practices",
+      "difficulty": "easy",
+      "question_text": "What does UML stand for?",
+      "options_json": "{\"A\": \"Unified Modeling Language\", \"B\": \"Universal Markup Language\", \"C\": \"User Manual Language\", \"D\": \"Universal Model Language\"}",
+      "correct_option": "A",
+      "explanation": "UML is a standardized modeling language used to create visual representations of software systems. It helps developers and stakeholders communicate effectively about system design."
+    },
+    {
+      "skill_name": "Software Development & Engineering Practices",
+      "difficulty": "easy",
+      "question_text": "What is the primary purpose of a Class Diagram in UML?",
+      "options_json": "{\"A\": \"To describe the behavior of an object\", \"B\": \"To show the relationships between classes and objects\", \"C\": \"To define the methods and attributes of a class\", \"D\": \"To create a sequence diagram\"}",
+      "correct_option": "B",
+      "explanation": "A Class Diagram is used to visualize the structure and organization of a system, including the relationships between classes and objects."
+    },
+    {
+      "skill_name": "Software Development & Engineering Practices",
+      "difficulty": "easy",
+      "question_text": "What is the primary purpose of a UML class diagram?",
+      "options_json": "{\"A\": \"To show the sequence of events in a use case\", \"B\": \"To model the structure and organization of a system's classes and objects\", \"C\": \"To define the database schema for a system\", \"D\": \"To create a user interface prototype\"}",
+      "correct_option": "B",
+      "explanation": "A UML class diagram is used to visualize the static view of a system, showing the structure and organization of its classes and objects. This helps developers understand how different components interact with each other."
+    },
+    {
+      "skill_name": "Software Development & Engineering Practices",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of using a Factory Method design pattern?",
+      "options_json": "{\"A\": \"To encapsulate complex object creation logic\", \"B\": \"To provide a way to implement the Singleton pattern\", \"C\": \"To enable polymorphic behavior in objects\", \"D\": \"To simplify unit testing\"}",
+      "correct_option": "A",
+      "explanation": "The Factory Method design pattern is used to encapsulate complex object creation logic, allowing for more flexibility and extensibility in the system. This makes it easier to add new types of objects without modifying existing code."
+    },
+    {
+      "skill_name": "Software Development & Engineering Practices",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of a Factory Method design pattern?",
+      "options_json": "{\"A\": \"To encapsulate complex object creation logic\", \"B\": \"To provide a way to implement the Singleton pattern\", \"C\": \"To enable polymorphism in object creation\", \"D\": \"To simplify the process of creating multiple objects\"}",
+      "correct_option": "C",
+      "explanation": "The Factory Method design pattern allows for polymorphic object creation, enabling different classes to create objects without specifying the exact class type. This promotes flexibility and extensibility in software systems."
+    },
+    {
+      "skill_name": "Software Development & Engineering Practices",
+      "difficulty": "medium",
+      "question_text": "Which design pattern is responsible for encapsulating a request that needs to be executed in a specific order?",
+      "options_json": "{\"A\": \"Factory Method Pattern\", \"B\": \"Observer Pattern\", \"C\": \"Command Pattern\", \"D\": \"Strategy Pattern\"}",
+      "correct_option": "C",
+      "explanation": "The Command Pattern is used to encapsulate a request that needs to be executed in a specific order, allowing for flexibility and extensibility in the system. This pattern is particularly useful when dealing with complex workflows or sequences of actions."
+    },
+    {
+      "skill_name": "Software Development & Engineering Practices",
+      "difficulty": "medium",
+      "question_text": "Which design pattern is used to provide a way to create objects without exposing the underlying logic, allowing for greater flexibility and easier maintenance?",
+      "options_json": "{\"A\": \"Factory Method Pattern\", \"B\": \"Abstract Factory Pattern\", \"C\": \"Builder Pattern\", \"D\": \"Prototype Pattern\"}",
+      "correct_option": "C",
+      "explanation": "The Builder Pattern is used to separate the construction of a complex object from its representation, allowing for more flexibility and easier maintenance. This pattern is particularly useful when dealing with objects that have many dependencies or require complex initialization."
+    },
+    {
+      "skill_name": "Software Development & Engineering Practices",
+      "difficulty": "medium",
+      "question_text": "Which design pattern is responsible for encapsulating a request so that it can be executed asynchronously?",
+      "options_json": "{\"A\": \"Factory Method Pattern\", \"B\": \"Observer Pattern\", \"C\": \"Command Pattern\", \"D\": \"Interpreter Pattern\"}",
+      "correct_option": "C",
+      "explanation": "The Command Pattern encapsulates a request as an object, allowing it to be executed asynchronously. This pattern is useful for decoupling the sender and receiver of requests."
+    },
+    {
+      "skill_name": "Software Development & Engineering Practices",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of the Factory Method design pattern?",
+      "options_json": "{\"A\": \"To implement the Singleton pattern in a class\", \"B\": \"To provide an interface for creating objects without specifying the exact class of object that will be created\", \"C\": \"To encapsulate complex business logic within a single method\", \"D\": \"To enable polymorphism through method overriding\"}",
+      "correct_option": "B",
+      "explanation": "The Factory Method pattern provides an interface for creating objects without specifying the exact class of object that will be created, allowing for greater flexibility and extensibility in software design. This is particularly useful when working with complex object hierarchies or when the type of object to be created may vary depending on certain conditions."
+    },
+    {
+      "skill_name": "Software Development & Engineering Practices",
+      "difficulty": "medium",
+      "question_text": "Which design pattern is used to provide a way to create an object without specifying the exact class of object that will be created?",
+      "options_json": "{\"A\": \"Factory Method Pattern\", \"B\": \"Observer Pattern\", \"C\": \"Strategy Pattern\", \"D\": \"Template Method Pattern\"}",
+      "correct_option": "A",
+      "explanation": "The Factory Method Pattern is a creational design pattern that provides a way to create an object without specifying the exact class of object that will be created. This allows for more flexibility and polymorphism in the code."
+    },
+    {
+      "skill_name": "Software Development & Engineering Practices",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of using a Factory Method design pattern in object-oriented programming?",
+      "options_json": "{\"A\": \"To implement the Singleton design pattern\", \"B\": \"To encapsulate object creation logic and provide a common interface for creating objects\", \"C\": \"To reduce coupling between classes by promoting loose coupling\", \"D\": \"To improve code readability\"}",
+      "correct_option": "B",
+      "explanation": "The Factory Method pattern provides a way to encapsulate object creation logic, allowing for more flexibility and extensibility in the system. It also promotes loose coupling by decoupling object creation from specific classes."
+    },
+    {
+      "skill_name": "Software Development & Engineering Practices",
+      "difficulty": "hard",
+      "question_text": "Which design pattern is used to decouple an object's creation from its usage, allowing for greater flexibility and extensibility in software systems?",
+      "options_json": "{\"A\": \"Factory Method Pattern\", \"B\": \"Abstract Factory Pattern\", \"C\": \"Builder Pattern\", \"D\": \"Prototype Pattern\"}",
+      "correct_option": "A",
+      "explanation": "The Factory Method Pattern is used to decouple an object's creation from its usage, allowing for greater flexibility and extensibility in software systems. This pattern provides a way to create objects without specifying the exact class of object that will be created."
+    },
+    {
+      "skill_name": "Software Development & Engineering Practices",
+      "difficulty": "hard",
+      "question_text": "Which design pattern is used to decouple an object's creation from its usage, allowing for more flexibility in software development?",
+      "options_json": "{\"A\": \"Factory Method Pattern\", \"B\": \"Abstract Factory Pattern\", \"C\": \"Builder Pattern\", \"D\": \"Prototype Pattern\"}",
+      "correct_option": "A",
+      "explanation": "The Factory Method Pattern is used to decouple an object's creation from its usage, allowing for more flexibility in software development. This pattern provides a way to create objects without specifying the exact class of object that will be created."
+    },
+    {
+      "skill_name": "Software Development & Engineering Practices",
+      "difficulty": "hard",
+      "question_text": "Which design pattern is responsible for creating and managing resources, such as database connections or file handles, ensuring they are properly released after use?",
+      "options_json": "{\"A\": \"Factory Method Pattern\", \"B\": \"Builder Pattern\", \"C\": \"Resource Acquisition Is Initialization (RAII)\", \"D\": \"Prototype Pattern\"}",
+      "correct_option": "C",
+      "explanation": "The Resource Acquisition Is Initialization (RAII) pattern is responsible for managing resources, ensuring they are properly released after use. This pattern is commonly used in C++ to manage resource acquisition and release."
+    },
+    {
+      "skill_name": "Software Development & Engineering Practices",
+      "difficulty": "hard",
+      "question_text": "Which design pattern is used to manage the creation of objects in a way that encapsulates the complexity of object creation?",
+      "options_json": "{\"A\": \"Factory Method Pattern\", \"B\": \"Builder Pattern\", \"C\": \"Prototype Pattern\", \"D\": \"Singleton Pattern\"}",
+      "correct_option": "B",
+      "explanation": "The Builder Pattern is used to manage the creation of objects in a way that encapsulates the complexity of object creation, allowing for more flexibility and extensibility."
+    },
+    {
+      "skill_name": "Software Development & Engineering Practices",
+      "difficulty": "hard",
+      "question_text": "Which design pattern is used to decouple objects from their dependencies, allowing for easier testing and maintenance?",
+      "options_json": "{\"A\": \"Factory Pattern\", \"B\": \"Observer Pattern\", \"C\": \"Dependency Injection Pattern\", \"D\": \"Strategy Pattern\"}",
+      "correct_option": "C",
+      "explanation": "The Dependency Injection Pattern is used to decouple objects from their dependencies, making it easier to test and maintain the system. This pattern allows for more flexibility and modularity in software design."
+    },
+    {
+      "skill_name": "Software Development & Engineering Practices",
+      "difficulty": "hard",
+      "question_text": "Which design pattern is used to create and manage a factory of objects, without specifying the exact class of object that will be created?",
+      "options_json": "{\"A\": \"Factory Method Pattern\", \"B\": \"Abstract Factory Pattern\", \"C\": \"Builder Pattern\", \"D\": \"Prototype Pattern\"}",
+      "correct_option": "A",
+      "explanation": "The Factory Method Pattern is used to create a factory of objects, allowing for decoupling between the object creation and the specific class of object. This pattern is useful when you need to create objects without specifying their exact class."
+    },
+    {
+      "skill_name": "Software Development & Engineering Practices",
+      "difficulty": "hard",
+      "question_text": "Which design pattern is used to provide a way to create objects without exposing the underlying logic, and is particularly useful when there are multiple dependencies between objects?",
+      "options_json": "{\"A\": \"Factory Method Pattern\", \"B\": \"Builder Pattern\", \"C\": \"Prototype Pattern\", \"D\": \"Singleton Pattern\"}",
+      "correct_option": "A",
+      "explanation": "The Factory Method Pattern provides a way to create objects without exposing the underlying logic, making it useful when there are multiple dependencies between objects. This pattern is particularly effective in situations where the type of object to be created is determined by complex business rules."
+    },
+    {
+      "skill_name": "Software Development & Engineering Practices",
+      "difficulty": "hard",
+      "question_text": "Which design pattern is used to decouple objects from their dependencies, allowing for easier maintenance and testing?",
+      "options_json": "{\"A\": \"Factory Method Pattern\", \"B\": \"Observer Pattern\", \"C\": \"Dependency Injection Pattern\", \"D\": \"Strategy Pattern\"}",
+      "correct_option": "C",
+      "explanation": "The Dependency Injection Pattern is used to decouple objects from their dependencies, allowing for easier maintenance and testing. This pattern promotes loose coupling and makes it easier to switch between different implementations."
+    },
+    {
+      "skill_name": "Software Development & Engineering Practices",
+      "difficulty": "hard",
+      "question_text": "Which design pattern is responsible for encapsulating a request that requires a long time to process, allowing other tasks to be executed in parallel?",
+      "options_json": "{\"A\": \"Factory Method Pattern\", \"B\": \"Observer Pattern\", \"C\": \"Template Method Pattern\", \"D\": \"Command Pattern\"}",
+      "correct_option": "D",
+      "explanation": "The Command Pattern encapsulates a request as an object, allowing for queuing and execution of the request at a later time. This enables other tasks to be executed in parallel without blocking."
+    },
+    {
+      "skill_name": "Software Development & Engineering Practices",
+      "difficulty": "hard",
+      "question_text": "Which design pattern is used to provide a way to create an object without specifying the exact class of object that will be created?",
+      "options_json": "{\"A\": \"Factory Method Pattern\", \"B\": \"Abstract Factory Pattern\", \"C\": \"Builder Pattern\", \"D\": \"Prototype Pattern\"}",
+      "correct_option": "A",
+      "explanation": "The Factory Method pattern provides a way to create an object without specifying the exact class of object that will be created. This is useful when you need to decouple object creation from specific classes."
+    }
+  ],
+  "total_questions": 24
+}

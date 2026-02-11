@@ -1,0 +1,54 @@
+{
+  "skill_name": "Linux",
+  "questions": [
+    {
+      "skill_name": "Linux",
+      "difficulty": "easy",
+      "question_text": "What does the command 'ls -l' do in Linux?",
+      "options_json": "{\"A\": \"Lists all files and directories in the current directory\", \"B\": \"Displays detailed information about each file, including permissions, owner, and size\", \"C\": \"Changes the ownership of a file to the current user\", \"D\": \"Deletes a file permanently\"}",
+      "correct_option": "B",
+      "explanation": "The 'ls -l' command displays detailed information about each file in the current directory, including permissions, owner, and size. This is useful for understanding the properties of files and directories."
+    },
+    {
+      "skill_name": "Linux",
+      "difficulty": "easy",
+      "question_text": "What is the purpose of the /etc/hosts file in Linux?",
+      "options_json": "{\"A\": \"To store system configuration files\", \"B\": \"To map hostnames to IP addresses\", \"C\": \"To manage user accounts\", \"D\": \"To configure network interfaces\"}",
+      "correct_option": "B",
+      "explanation": "The /etc/hosts file is used to map hostnames to IP addresses, allowing for easier identification of hosts on a network. This file can be edited manually to add or modify mappings."
+    },
+    {
+      "skill_name": "Linux",
+      "difficulty": "medium",
+      "question_text": "What command is used to list all files and directories in the current directory?",
+      "options_json": "{\"A\": \"ls -a\", \"B\": \"cd ..\", \"C\": \"mkdir newdir\", \"D\": \"rm -rf *\"}",
+      "correct_option": "A",
+      "explanation": "The ls -a command lists all files and directories in the current directory, including hidden ones. This is useful for getting a complete list of files in the current working directory."
+    },
+    {
+      "skill_name": "Linux",
+      "difficulty": "medium",
+      "question_text": "What command is used to list all running processes in Linux?",
+      "options_json": "{\"A\": \"ps -ef\", \"B\": \"top\", \"C\": \"lsof\", \"D\": \"netstat\"}",
+      "correct_option": "A",
+      "explanation": "The ps command is used to display information about running processes, and the -ef option displays detailed information about each process. This includes the process ID, user name, and command being executed."
+    },
+    {
+      "skill_name": "Linux",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the /etc/hosts file in Linux?",
+      "options_json": "{\"A\": \"To store system configuration files\", \"B\": \"To map hostnames to IP addresses\", \"C\": \"To manage user accounts and groups\", \"D\": \"To configure network interfaces\"}",
+      "correct_option": "B",
+      "explanation": "/etc/hosts is a plain text file that maps hostnames or domain names to IP addresses for the purposes of local name resolution. It is used when a hostname is not found in DNS."
+    },
+    {
+      "skill_name": "Linux",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of the /etc/hosts file in a Linux system?",
+      "options_json": "{\"A\": \"To store user account information\", \"B\": \"To map hostnames to IP addresses\", \"C\": \"To configure network interfaces\", \"D\": \"To manage system services\"}",
+      "correct_option": "B",
+      "explanation": "/etc/hosts is a text file that maps hostnames or domain names to IP addresses for the purposes of local hostname resolution and DNS lookups. This allows administrators to create custom hostname-to-IP mappings without relying on DNS servers."
+    }
+  ],
+  "total_questions": 6
+}

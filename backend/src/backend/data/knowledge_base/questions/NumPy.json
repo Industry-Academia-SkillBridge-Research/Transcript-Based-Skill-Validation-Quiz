@@ -1,0 +1,54 @@
+{
+  "skill_name": "NumPy",
+  "questions": [
+    {
+      "skill_name": "NumPy",
+      "difficulty": "easy",
+      "question_text": "What does the NumPy function np.mean() do?",
+      "options_json": "{\"A\": \"Calculates the standard deviation of an array\", \"B\": \"Calculates the median of an array\", \"C\": \"Calculates the mean (average) of an array\", \"D\": \"Calculates the variance of an array\"}",
+      "correct_option": "C",
+      "explanation": "The np.mean() function calculates the average value of all elements in a given array. This is useful for summarizing large datasets."
+    },
+    {
+      "skill_name": "NumPy",
+      "difficulty": "easy",
+      "question_text": "What does NumPy's `numpy.mean()` function calculate?",
+      "options_json": "{\"A\": \"The median of a dataset\", \"B\": \"The average (mean) of a dataset\", \"C\": \"The standard deviation of a dataset\", \"D\": \"The variance of a dataset\"}",
+      "correct_option": "B",
+      "explanation": "NumPy's `numpy.mean()` function calculates the mean, or average, of all elements in an array. This is a fundamental statistical concept used to summarize datasets."
+    },
+    {
+      "skill_name": "NumPy",
+      "difficulty": "medium",
+      "question_text": "What does the `np.where()` function in NumPy do?",
+      "options_json": "{\"A\": \"It returns the indices of the maximum value in an array.\", \"B\": \"It replaces elements in an array based on a condition.\", \"C\": \"It calculates the mean of all values in an array.\", \"D\": \"It sorts an array in ascending order.\"}",
+      "correct_option": "B",
+      "explanation": "The `np.where()` function is used to replace elements in an array based on a condition. For example, `np.where(arr > 5, arr * 2, arr)` would double all values greater than 5 in the array."
+    },
+    {
+      "skill_name": "NumPy",
+      "difficulty": "medium",
+      "question_text": "What does the NumPy function `np.unique()` do?",
+      "options_json": "{\"A\": \"Returns the unique elements of an array, preserving their original order.\", \"B\": \"Returns the number of unique elements in an array.\", \"C\": \"Removes duplicate values from an array.\", \"D\": \"Finds the maximum value in an array.\"}",
+      "correct_option": "A",
+      "explanation": "The `np.unique()` function returns the unique elements of an array, preserving their original order. This is useful for removing duplicates while maintaining the original order of elements."
+    },
+    {
+      "skill_name": "NumPy",
+      "difficulty": "hard",
+      "question_text": "What is the difference between numpy's vectorized operations and traditional for loops?",
+      "options_json": "{\"A\": \"Vectorized operations are faster but less memory efficient.\", \"B\": \"Vectorized operations are slower but more memory efficient.\", \"C\": \"Vectorized operations are equivalent to traditional for loops in terms of speed and memory usage.\", \"D\": \"Vectorized operations can only be used with arrays, not with other data structures.\"}",
+      "correct_option": "A",
+      "explanation": "Vectorized operations in NumPy are generally faster than traditional for loops because they leverage the power of C under the hood. This is why vectorized operations are often preferred over traditional for loops when working with large datasets."
+    },
+    {
+      "skill_name": "NumPy",
+      "difficulty": "hard",
+      "question_text": "What is the difference between numpy's array and matrix data types?",
+      "options_json": "{\"A\": \"Arrays are one-dimensional, while matrices are two-dimensional.\", \"B\": \"Matrices are a subclass of arrays in NumPy.\", \"C\": \"Arrays can store non-numeric values, but matrices cannot.\", \"D\": \"Arrays have a fixed size, while matrices do not.\"}",
+      "correct_option": "A",
+      "explanation": "In NumPy, arrays and matrices are both multi-dimensional data structures. However, arrays are one-dimensional by default, while matrices are two-dimensional and can be used for linear algebra operations."
+    }
+  ],
+  "total_questions": 6
+}

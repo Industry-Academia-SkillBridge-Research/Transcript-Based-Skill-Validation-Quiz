@@ -1,0 +1,54 @@
+{
+  "skill_name": "Azure",
+  "questions": [
+    {
+      "skill_name": "Azure",
+      "difficulty": "easy",
+      "question_text": "What is Azure Blob Storage?",
+      "options_json": "{\"A\": \"A cloud-based object storage solution for storing and serving large files\", \"B\": \"A cloud-based relational database service\", \"C\": \"A cloud-based message queuing service\", \"D\": \"A cloud-based content delivery network\"}",
+      "correct_option": "A",
+      "explanation": "Azure Blob Storage is a highly available and durable object storage solution for storing large files, such as images, videos, and documents. It provides scalable and secure access to these files."
+    },
+    {
+      "skill_name": "Azure",
+      "difficulty": "easy",
+      "question_text": "What is Azure Blob Storage used for?",
+      "options_json": "{\"A\": \"Data processing and analytics\", \"B\": \"Object storage for unstructured data\", \"C\": \"Relational database management\", \"D\": \"Serverless computing\"}",
+      "correct_option": "B",
+      "explanation": "Azure Blob Storage is designed to store large amounts of unstructured data, such as images and videos. It's a highly scalable and durable storage solution for objects."
+    },
+    {
+      "skill_name": "Azure",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of an Azure Resource Group?",
+      "options_json": "{\"A\": \"To manage and organize resources in a single location\", \"B\": \"To deploy and manage virtual machines\", \"C\": \"To monitor and troubleshoot Azure services\", \"D\": \"To create and manage storage accounts\"}",
+      "correct_option": "A",
+      "explanation": "An Azure Resource Group is used to group related resources together, making it easier to manage and deploy them. This helps with organization, security, and cost management."
+    },
+    {
+      "skill_name": "Azure",
+      "difficulty": "medium",
+      "question_text": "What is the primary function of Azure Active Directory (AAD) in an Azure subscription?",
+      "options_json": "{\"A\": \"To manage and monitor Azure resources\", \"B\": \"To provide identity and access management for users and applications\", \"C\": \"To configure network security groups and firewalls\", \"D\": \"To deploy and manage virtual machines\"}",
+      "correct_option": "B",
+      "explanation": "Azure Active Directory (AAD) is responsible for managing identities and access to Azure resources, as well as providing single sign-on capabilities for users and applications. This allows administrators to control who has access to which resources within the subscription."
+    },
+    {
+      "skill_name": "Azure",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of Azure Service Fabric?",
+      "options_json": "{\"A\": \"To provide a managed platform for deploying and managing microservices\", \"B\": \"To offer a scalable and secure way to host web applications\", \"C\": \"To enable real-time analytics and monitoring of Azure resources\", \"D\": \"To provide a containerization service for Azure\"}",
+      "correct_option": "A",
+      "explanation": "Azure Service Fabric is designed to manage the lifecycle of microservices, including deployment, scaling, and failover. It provides a flexible and scalable way to build and deploy distributed systems."
+    },
+    {
+      "skill_name": "Azure",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of an Azure Load Balancer?",
+      "options_json": "{\"A\": \"To distribute incoming traffic across multiple instances for high availability\", \"B\": \"To cache frequently accessed data to reduce latency\", \"C\": \"To encrypt data in transit between a client and an Azure instance\", \"D\": \"To monitor the performance of an Azure application\"}",
+      "correct_option": "A",
+      "explanation": "An Azure Load Balancer is used to distribute incoming traffic across multiple instances for high availability, ensuring that no single instance becomes overwhelmed. This helps prevent downtime and improves overall system reliability."
+    }
+  ],
+  "total_questions": 6
+}

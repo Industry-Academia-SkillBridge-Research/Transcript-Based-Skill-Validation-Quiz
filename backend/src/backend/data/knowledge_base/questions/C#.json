@@ -1,0 +1,38 @@
+{
+  "skill_name": "C#",
+  "questions": [
+    {
+      "skill_name": "C#",
+      "difficulty": "easy",
+      "question_text": "What does the 'using' directive in C# do?",
+      "options_json": "{\"A\": \"Declares a new namespace\", \"B\": \"Imports a namespace so it can be used in the code\", \"C\": \"Creates a new class\", \"D\": \"Defines a new method\"}",
+      "correct_option": "B",
+      "explanation": "The 'using' directive is used to import namespaces, allowing you to use their types without qualifying them with the namespace name. This makes your code more readable and easier to maintain."
+    },
+    {
+      "skill_name": "C#",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the 'using' directive in C#?",
+      "options_json": "{\"A\": \"To import namespaces and classes from other assemblies.\", \"B\": \"To create instances of objects.\", \"C\": \"To define methods and properties for a class.\", \"D\": \"To declare variables.\"}",
+      "correct_option": "A",
+      "explanation": "The 'using' directive is used to import namespaces and classes from other assemblies, making them available for use in the current code file. This allows developers to avoid having to fully qualify types with their namespace every time they are used."
+    },
+    {
+      "skill_name": "C#",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the using directive in C#?",
+      "options_json": "{\"A\": \"To import namespaces and classes from other assemblies.\", \"B\": \"To create a new instance of an object.\", \"C\": \"To define a class or interface.\", \"D\": \"To inherit properties from a base class.\"}",
+      "correct_option": "A",
+      "explanation": "The using directive is used to import namespaces and classes from other assemblies, allowing you to use their types without having to fully qualify them. This makes your code more readable and easier to maintain."
+    },
+    {
+      "skill_name": "C#",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the 'using' directive in C#?",
+      "options_json": "{\"A\": \"To import namespaces and make them available for use within a class or method.\", \"B\": \"To create a new instance of an object.\", \"C\": \"To override the behavior of a method from a base class.\", \"D\": \"To declare a variable.\"}",
+      "correct_option": "A",
+      "explanation": "The 'using' directive is used to import namespaces and make them available for use within a class or method. This allows developers to access classes, methods, and other types from the imported namespace without having to fully qualify their names with the namespace."
+    }
+  ],
+  "total_questions": 4
+}

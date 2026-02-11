@@ -1,0 +1,262 @@
+{
+  "skill_name": "Problem Solving & Algorithm Development",
+  "questions": [
+    {
+      "skill_name": "Problem Solving & Algorithm Development",
+      "difficulty": "easy",
+      "question_text": "What is the time complexity of inserting an element at the beginning of a singly linked list?",
+      "options_json": "{\"A\": \"O(1)\", \"B\": \"O(n)\", \"C\": \"O(log n)\", \"D\": \"O(sqrt(n))\"}",
+      "correct_option": "A",
+      "explanation": "Inserting an element at the beginning of a singly linked list requires updating the head pointer, which takes constant time. The rest of the list remains unchanged."
+    },
+    {
+      "skill_name": "Problem Solving & Algorithm Development",
+      "difficulty": "easy",
+      "question_text": "What is the time complexity of a Binary Search algorithm in an already sorted array?",
+      "options_json": "{\"A\": \"O(n)\", \"B\": \"O(log n)\", \"C\": \"O(1)\", \"D\": \"O(n log n)\"}",
+      "correct_option": "B",
+      "explanation": "Binary Search has a time complexity of O(log n) because it divides the search space in half with each comparison."
+    },
+    {
+      "skill_name": "Problem Solving & Algorithm Development",
+      "difficulty": "easy",
+      "question_text": "What is the time complexity of searching an element in a Linked List?",
+      "options_json": "{\"A\": \"O(1)\", \"B\": \"O(n)\", \"C\": \"O(log n)\", \"D\": \"O(n^2)\"}",
+      "correct_option": "B",
+      "explanation": "Searching an element in a Linked List requires traversing the list from the beginning, resulting in a linear time complexity. This is because each node must be checked until the target element is found."
+    },
+    {
+      "skill_name": "Problem Solving & Algorithm Development",
+      "difficulty": "easy",
+      "question_text": "What is the time complexity of a binary search algorithm in an array?",
+      "options_json": "{\"A\": \"O(n)\", \"B\": \"O(log n)\", \"C\": \"O(1)\", \"D\": \"O(n^2)\"}",
+      "correct_option": "B",
+      "explanation": "Binary search has a time complexity of O(log n) because it divides the search space in half with each comparison."
+    },
+    {
+      "skill_name": "Problem Solving & Algorithm Development",
+      "difficulty": "easy",
+      "question_text": "What is the time complexity of inserting an element at the beginning of a linked list?",
+      "options_json": "{\"A\": \"O(1)\", \"B\": \"O(n)\", \"C\": \"O(log n)\", \"D\": \"O(sqrt(n))\"}",
+      "correct_option": "A",
+      "explanation": "Inserting an element at the beginning of a linked list only requires updating the head pointer, which takes constant time. This is because we don't need to traverse the entire list."
+    },
+    {
+      "skill_name": "Problem Solving & Algorithm Development",
+      "difficulty": "easy",
+      "question_text": "What is the time complexity of a binary search algorithm in an already sorted array?",
+      "options_json": "{\"A\": \"O(n)\", \"B\": \"O(log n)\", \"C\": \"O(1)\", \"D\": \"O(n log n)\"}",
+      "correct_option": "B",
+      "explanation": "Binary search has a time complexity of O(log n) because it divides the search space in half with each comparison. This makes it more efficient than linear search for large datasets."
+    },
+    {
+      "skill_name": "Problem Solving & Algorithm Development",
+      "difficulty": "medium",
+      "question_text": "What is the time complexity of a binary search algorithm in an already sorted array?",
+      "options_json": "{\"A\": \"O(n)\", \"B\": \"O(log n)\", \"C\": \"O(1)\", \"D\": \"O(n log n)\"}",
+      "correct_option": "B",
+      "explanation": "Binary search has a time complexity of O(log n) because it divides the search space in half with each comparison. This makes it more efficient than linear search for large datasets."
+    },
+    {
+      "skill_name": "Problem Solving & Algorithm Development",
+      "difficulty": "medium",
+      "question_text": "Given a binary search tree, what is the time complexity of searching for an element in the tree?",
+      "options_json": "{\"A\": \"O(n)\", \"B\": \"O(log n)\", \"C\": \"O(1)\", \"D\": \"O(n log n)\"}",
+      "correct_option": "B",
+      "explanation": "The time complexity of searching for an element in a binary search tree is O(log n) because with each node, we are effectively halving the search space. This makes it more efficient than searching through a linked list or array."
+    },
+    {
+      "skill_name": "Problem Solving & Algorithm Development",
+      "difficulty": "medium",
+      "question_text": "Given a binary search tree, what is the time complexity of traversing all nodes in-order?",
+      "options_json": "{\"A\": \"O(n) where n is the number of nodes in the tree\", \"B\": \"O(log n) where n is the number of nodes in the tree\", \"C\": \"O(1)\", \"D\": \"O(n^2)\"}",
+      "correct_option": "A",
+      "explanation": "In-order traversal visits each node exactly once, resulting in a linear time complexity. This is because we visit each node once and perform constant-time operations for each node."
+    },
+    {
+      "skill_name": "Problem Solving & Algorithm Development",
+      "difficulty": "medium",
+      "question_text": "Given a binary search tree with n nodes, what is the time complexity of traversing it using an in-order traversal?",
+      "options_json": "{\"A\": \"O(n^2)\", \"B\": \"O(n log n)\", \"C\": \"O(n)\", \"D\": \"O(log n)\"}",
+      "correct_option": "C",
+      "explanation": "In-order traversal visits each node exactly once, resulting in a time complexity of O(n). This is because the tree is traversed sequentially."
+    },
+    {
+      "skill_name": "Problem Solving & Algorithm Development",
+      "difficulty": "medium",
+      "question_text": "What is the time complexity of a binary search algorithm in an array?",
+      "options_json": "{\"A\": \"O(n)\", \"B\": \"O(log n)\", \"C\": \"O(1)\", \"D\": \"O(n^2)\"}",
+      "correct_option": "B",
+      "explanation": "Binary search has a time complexity of O(log n) because with each comparison, it halves the search space. This is why binary search is more efficient than linear search for large datasets."
+    },
+    {
+      "skill_name": "Problem Solving & Algorithm Development",
+      "difficulty": "hard",
+      "question_text": "Given a binary search tree with nodes having left and right children, what is the time complexity of traversing all nodes in-order?",
+      "options_json": "{\"A\": \"O(n^2)\", \"B\": \"O(n log n)\", \"C\": \"O(n)\", \"D\": \"O(log n)\"}",
+      "correct_option": "C",
+      "explanation": "The time complexity of in-order traversal is O(n) because each node is visited once, and the tree has n nodes. This is because we only need to traverse down the left subtree, visit the current node, and then traverse down the right subtree."
+    },
+    {
+      "skill_name": "Problem Solving & Algorithm Development",
+      "difficulty": "hard",
+      "question_text": "Given a binary search tree with n nodes, what is the time complexity of finding an element in the tree using an in-order traversal?",
+      "options_json": "{\"A\": \"O(n)\", \"B\": \"O(log n)\", \"C\": \"O(1)\", \"D\": \"O(n log n)\"}",
+      "correct_option": "A",
+      "explanation": "In-order traversal visits each node once, resulting in a time complexity of O(n). This is because the algorithm needs to visit every node in the tree."
+    },
+    {
+      "skill_name": "Problem Solving & Algorithm Development",
+      "difficulty": "hard",
+      "question_text": "Given a binary search tree with nodes having left and right children, what is the time complexity of traversing all nodes in the tree using an in-order traversal algorithm?",
+      "options_json": "{\"A\": \"O(n) where n is the number of nodes in the tree\", \"B\": \"O(log n) where n is the number of nodes in the tree\", \"C\": \"O(1)\", \"D\": \"O(n^2)\"}",
+      "correct_option": "A",
+      "explanation": "In-order traversal visits each node once, resulting in a time complexity of O(n), where n is the number of nodes in the tree. This is because each node is visited exactly once during the traversal."
+    },
+    {
+      "skill_name": "Problem Solving & Algorithm Development",
+      "difficulty": "hard",
+      "question_text": "Given a binary search tree, how would you check if it's a valid BST (Binary Search Tree)?",
+      "options_json": "{\"A\": \"Perform an in-order traversal and verify that the values are sorted in ascending order.\", \"B\": \"Use a recursive function to traverse the tree and check each node's value against its children's values.\", \"C\": \"Iterate through the tree using a stack, checking each node's value against its parent's value.\", \"D\": \"Check if the tree is empty or has only one node.\"}",
+      "correct_option": "A",
+      "explanation": "An in-order traversal of a BST will yield values in ascending order. This makes it an efficient way to check if a given binary search tree is valid."
+    },
+    {
+      "skill_name": "Problem Solving & Algorithm Development",
+      "difficulty": "hard",
+      "question_text": "Given a binary search tree with n nodes, what is the time complexity of traversing all nodes in-order?",
+      "options_json": "{\"A\": \"O(n^2)\", \"B\": \"O(n log n)\", \"C\": \"O(n)\", \"D\": \"O(log n)\"}",
+      "correct_option": "C",
+      "explanation": "The time complexity of traversing a binary search tree in-order is O(n), where n is the number of nodes, because each node is visited once."
+    },
+    {
+      "skill_name": "Problem Solving & Algorithm Development",
+      "difficulty": "hard",
+      "question_text": "Given a binary tree with node values and each node having a left and right child, what is the time complexity of traversing this tree using pre-order traversal (root, left, right)?",
+      "options_json": "{\"A\": \"O(n^2)\", \"B\": \"O(n)\", \"C\": \"O(log n)\", \"D\": \"O(1)\"}",
+      "correct_option": "B",
+      "explanation": "Pre-order traversal visits the root node first, then recursively traverses the left and right subtrees. This results in a time complexity of O(n), where n is the number of nodes in the tree."
+    },
+    {
+      "skill_name": "Problem Solving & Algorithm Development",
+      "difficulty": "hard",
+      "question_text": "Given a binary search tree with n nodes, where each node has a key and two children (left and right), what is the time complexity of traversing the tree in-order?",
+      "options_json": "{\"A\": \"O(n^2)\", \"B\": \"O(n log n)\", \"C\": \"O(n)\", \"D\": \"O(log n)\"}",
+      "correct_option": "C",
+      "explanation": "In-order traversal of a binary search tree visits each node exactly once, resulting in a time complexity of O(n), where n is the number of nodes. This is because each node is visited once, and there are no redundant operations."
+    },
+    {
+      "skill_name": "Problem Solving & Algorithm Development",
+      "difficulty": "hard",
+      "question_text": "Given a binary search tree with nodes containing integers, what is the time complexity of finding the in-order successor of a given node?",
+      "options_json": "{\"A\": \"O(n) where n is the number of nodes in the tree\", \"B\": \"O(h) where h is the height of the tree\", \"C\": \"O(log n) where n is the number of nodes in the tree\", \"D\": \"O(1)\"}",
+      "correct_option": "C",
+      "explanation": "The time complexity of finding the in-order successor of a given node in a binary search tree is O(log n), as we can traverse from the given node to its rightmost child, which takes at most log(n) steps."
+    },
+    {
+      "skill_name": "Problem Solving & Algorithm Development",
+      "difficulty": "easy",
+      "question_text": "What is the time complexity of a Binary Search algorithm in an array?",
+      "options_json": "{\"A\": \"O(n)\", \"B\": \"O(log n)\", \"C\": \"O(1)\", \"D\": \"O(n log n)\"}",
+      "correct_option": "B",
+      "explanation": "Binary search has a time complexity of O(log n) because it divides the search space in half with each comparison."
+    },
+    {
+      "skill_name": "Problem Solving & Algorithm Development",
+      "difficulty": "easy",
+      "question_text": "What is the time complexity of a Binary Search algorithm?",
+      "options_json": "{\"A\": \"O(n)\", \"B\": \"O(log n)\", \"C\": \"O(1)\", \"D\": \"O(n log n)\"}",
+      "correct_option": "B",
+      "explanation": "Binary Search has a time complexity of O(log n) because it divides the search space in half with each comparison."
+    },
+    {
+      "skill_name": "Problem Solving & Algorithm Development",
+      "difficulty": "easy",
+      "question_text": "What is the time complexity of searching for an element in a Linked List?",
+      "options_json": "{\"A\": \"O(1)\", \"B\": \"O(n)\", \"C\": \"O(log n)\", \"D\": \"O(sqrt(n))\"}",
+      "correct_option": "B",
+      "explanation": "Searching for an element in a Linked List requires traversing the entire list, resulting in a time complexity of O(n)."
+    },
+    {
+      "skill_name": "Problem Solving & Algorithm Development",
+      "difficulty": "medium",
+      "question_text": "Given a binary search tree, what is the time complexity of finding an element in the tree using a recursive approach?",
+      "options_json": "{\"A\": \"O(n)\", \"B\": \"O(log n)\", \"C\": \"O(1)\", \"D\": \"O(n log n)\"}",
+      "correct_option": "B",
+      "explanation": "The time complexity of finding an element in a binary search tree using a recursive approach is O(log n), as the height of the tree is reduced by half with each recursive call. This is because the tree is self-balancing, ensuring that the height remains relatively constant."
+    },
+    {
+      "skill_name": "Problem Solving & Algorithm Development",
+      "difficulty": "medium",
+      "question_text": "Given a binary search tree with n nodes, what is the time complexity of finding an element in the tree using an in-order traversal?",
+      "options_json": "{\"A\": \"O(n) because we need to traverse all nodes\", \"B\": \"O(log n) because we can use a recursive approach\", \"C\": \"O(1) because we can directly access any node\", \"D\": \"O(n log n) because of the overhead of recursion\"}",
+      "correct_option": "A",
+      "explanation": "In-order traversal visits nodes in ascending order, so finding an element requires checking each node once. This results in a time complexity of O(n)."
+    },
+    {
+      "skill_name": "Problem Solving & Algorithm Development",
+      "difficulty": "medium",
+      "question_text": "Given a binary search tree, what is the time complexity of searching for an element in the tree using an in-order traversal?",
+      "options_json": "{\"A\": \"O(n)\", \"B\": \"O(log n)\", \"C\": \"O(1)\", \"D\": \"O(n^2)\"}",
+      "correct_option": "B",
+      "explanation": "In a binary search tree, an in-order traversal visits nodes in ascending order of their values. Therefore, searching for an element using this approach takes logarithmic time with respect to the number of nodes in the tree."
+    },
+    {
+      "skill_name": "Problem Solving & Algorithm Development",
+      "difficulty": "medium",
+      "question_text": "Given a binary search tree, what is the time complexity of finding an element using in-order traversal?",
+      "options_json": "{\"A\": \"O(n)\", \"B\": \"O(log n)\", \"C\": \"O(1)\", \"D\": \"O(n log n)\"}",
+      "correct_option": "B",
+      "explanation": "In-order traversal visits nodes in ascending order, allowing for efficient searching. The time complexity is O(log n) because the tree is balanced."
+    },
+    {
+      "skill_name": "Problem Solving & Algorithm Development",
+      "difficulty": "medium",
+      "question_text": "Given a binary search tree, what is the time complexity of finding an element in it?",
+      "options_json": "{\"A\": \"O(1)\", \"B\": \"O(n)\", \"C\": \"O(log n)\", \"D\": \"O(n log n)\"}",
+      "correct_option": "C",
+      "explanation": "The time complexity of finding an element in a binary search tree is O(log n) because the height of the tree can be at most log n, and we need to traverse down the tree from the root until we find the target node."
+    },
+    {
+      "skill_name": "Problem Solving & Algorithm Development",
+      "difficulty": "hard",
+      "question_text": "Given a binary search tree with n nodes, where each node has a value and a left child and/or right child, what is the time complexity of traversing this tree in-order (left-root-right)?",
+      "options_json": "{\"A\": \"O(n^2)\", \"B\": \"O(n log n)\", \"C\": \"O(n)\", \"D\": \"O(log n)\"}",
+      "correct_option": "C",
+      "explanation": "The time complexity of in-order traversal is O(n) because we visit each node once, and the number of operations performed is directly proportional to the number of nodes."
+    },
+    {
+      "skill_name": "Problem Solving & Algorithm Development",
+      "difficulty": "hard",
+      "question_text": "Given a binary search tree, how would you traverse it in-order without using recursion?",
+      "options_json": "{\"A\": \"Use a stack to store the nodes and pop them when needed\", \"B\": \"Use a queue to store the nodes and dequeue them when needed\", \"C\": \"Iterate through the left subtree, then the root node, then the right subtree\", \"D\": \"Use an iterative approach with a while loop\"}",
+      "correct_option": "A",
+      "explanation": "This is because an in-order traversal requires visiting nodes in ascending order, which can be achieved by using a stack to store the nodes and popping them when needed. This approach avoids the need for recursion."
+    },
+    {
+      "skill_name": "Problem Solving & Algorithm Development",
+      "difficulty": "hard",
+      "question_text": "Given a binary search tree, what is the time complexity of finding an element using in-order traversal?",
+      "options_json": "{\"A\": \"O(n)\", \"B\": \"O(log n)\", \"C\": \"O(1)\", \"D\": \"O(n log n)\"}",
+      "correct_option": "B",
+      "explanation": "In-order traversal of a binary search tree visits nodes in ascending order, allowing for efficient searching. The time complexity is O(log n) because the height of a balanced binary search tree is logarithmic to the number of nodes."
+    },
+    {
+      "skill_name": "Problem Solving & Algorithm Development",
+      "difficulty": "hard",
+      "question_text": "Given a binary search tree with nodes containing integers, what is the time complexity of traversing the tree in-order?",
+      "options_json": "{\"A\": \"O(n log n)\", \"B\": \"O(n)\", \"C\": \"O(log n)\", \"D\": \"O(1)\"}",
+      "correct_option": "B",
+      "explanation": "In-order traversal visits each node exactly once, resulting in a linear time complexity. The tree's height does not affect the number of nodes visited."
+    },
+    {
+      "skill_name": "Problem Solving & Algorithm Development",
+      "difficulty": "hard",
+      "question_text": "Given a binary search tree with n nodes, what is the time complexity of traversing the tree in-order?",
+      "options_json": "{\"A\": \"O(n log n)\", \"B\": \"O(n)\", \"C\": \"O(log n)\", \"D\": \"O(1)\"}",
+      "correct_option": "B",
+      "explanation": "In-order traversal visits each node exactly once, resulting in a linear time complexity of O(n)."
+    }
+  ],
+  "total_questions": 32
+}

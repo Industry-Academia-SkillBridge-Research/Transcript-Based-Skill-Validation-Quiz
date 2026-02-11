@@ -1,0 +1,46 @@
+{
+  "skill_name": "Encryption",
+  "questions": [
+    {
+      "skill_name": "Encryption",
+      "difficulty": "easy",
+      "question_text": "What does the term 'symmetric encryption' refer to?",
+      "options_json": "{\"A\": \"Using a single key for both encryption and decryption\", \"B\": \"Encrypting data with a public key and decrypting with a private key\", \"C\": \"Using a hash function to encrypt data\", \"D\": \"Storing encrypted data in a secure database\"}",
+      "correct_option": "A",
+      "explanation": "Symmetric encryption uses the same secret key for both encryption and decryption, making it faster but less secure than asymmetric encryption. This type of encryption is commonly used for encrypting large amounts of data."
+    },
+    {
+      "skill_name": "Encryption",
+      "difficulty": "easy",
+      "question_text": "What does PGP stand for?",
+      "options_json": "{\"A\": \"Pretty Good Privacy\", \"B\": \"Private Gateway Protocol\", \"C\": \"Public Gateway Protocol\", \"D\": \"Password Generation Protocol\"}",
+      "correct_option": "A",
+      "explanation": "PGP is a popular encryption software that allows users to securely send and receive encrypted messages. It uses public-key cryptography to ensure the confidentiality of data."
+    },
+    {
+      "skill_name": "Encryption",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of a digital signature in encryption?",
+      "options_json": "{\"A\": \"To verify the authenticity of a message or document\", \"B\": \"To encrypt sensitive data before transmission\", \"C\": \"To decrypt encrypted data after transmission\", \"D\": \"To compress large files for easier storage\"}",
+      "correct_option": "A",
+      "explanation": "A digital signature is used to verify the authenticity of a message or document, ensuring that it has not been tampered with during transmission. This is achieved through public-key cryptography."
+    },
+    {
+      "skill_name": "Encryption",
+      "difficulty": "hard",
+      "question_text": "What is the primary goal of a secure encryption algorithm?",
+      "options_json": "{\"A\": \"To make data transmission faster\", \"B\": \"To ensure data integrity and authenticity\", \"C\": \"To prevent unauthorized access to encrypted data\", \"D\": \"To reduce storage requirements\"}",
+      "correct_option": "C",
+      "explanation": "The primary goal of a secure encryption algorithm is to protect the confidentiality, integrity, and authenticity of data. This is achieved by transforming plaintext into unreadable ciphertext, making it difficult for unauthorized parties to access or modify the data."
+    },
+    {
+      "skill_name": "Encryption",
+      "difficulty": "hard",
+      "question_text": "What type of encryption uses a combination of substitution and transposition techniques, making it more secure than other forms of encryption?",
+      "options_json": "{\"A\": \"Vigenere Cipher\", \"B\": \"AES (Advanced Encryption Standard)\", \"C\": \"RSA (Rivest-Shamir-Adleman)\", \"D\": \"Blowfish\"}",
+      "correct_option": "A",
+      "explanation": "The Vigenere Cipher uses a keyword to determine the substitution and transposition patterns, making it more secure than other forms of encryption. This makes it difficult for attackers to decipher the encrypted message."
+    }
+  ],
+  "total_questions": 5
+}

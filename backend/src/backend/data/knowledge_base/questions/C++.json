@@ -1,0 +1,46 @@
+{
+  "skill_name": "C++",
+  "questions": [
+    {
+      "skill_name": "C++",
+      "difficulty": "easy",
+      "question_text": "What does the following code snippet do? std::cout << sizeof(int);",
+      "options_json": "{\"A\": \"Prints the size of an integer in bytes on most systems.\", \"B\": \"Prints the size of a pointer in bytes on most systems.\", \"C\": \"Throws a runtime error because sizeof is not allowed to be used with std::cout.\", \"D\": \"Does nothing and returns without printing anything.\"}",
+      "correct_option": "A",
+      "explanation": "The code snippet uses the sizeof operator to get the size of an int in bytes, which is then printed using std::cout. The result will be the same on most systems, but can vary depending on the architecture and compiler used."
+    },
+    {
+      "skill_name": "C++",
+      "difficulty": "easy",
+      "question_text": "What does the keyword 'auto' do in a C++ function declaration?",
+      "options_json": "{\"A\": \"It automatically determines the type of the variable based on its initializer.\", \"B\": \"It is used to declare a constant variable.\", \"C\": \"It is used to declare a pointer variable.\", \"D\": \"It is used to declare a function with no return value.\"}",
+      "correct_option": "A",
+      "explanation": "The 'auto' keyword in C++ automatically determines the type of the variable based on its initializer, making it easier to write concise and expressive code. This can improve readability and reduce errors."
+    },
+    {
+      "skill_name": "C++",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the 'new' keyword in C++?",
+      "options_json": "{\"A\": \"To allocate memory for a variable on the stack\", \"B\": \"To create an object of a class or struct\", \"C\": \"To call a constructor of a class or struct\", \"D\": \"To deallocate memory previously allocated with 'new'\"}",
+      "correct_option": "B",
+      "explanation": "The 'new' keyword in C++ is used to create an object of a class or struct by allocating memory for it. This allows the programmer to dynamically allocate memory and create objects at runtime."
+    },
+    {
+      "skill_name": "C++",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the `std::move` function in C++?",
+      "options_json": "{\"A\": \"To copy an object's contents\", \"B\": \"To move an object's contents, avoiding unnecessary copies\", \"C\": \"To create a new object with default values\", \"D\": \"To delete an object\"}",
+      "correct_option": "B",
+      "explanation": "The `std::move` function is used to transfer ownership of an object, allowing the source object to be safely destroyed and avoiding unnecessary copies. This is useful for optimizing performance in scenarios where objects are frequently passed around."
+    },
+    {
+      "skill_name": "C++",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the `std::move` function in C++?",
+      "options_json": "{\"A\": \"To create a copy of an object\", \"B\": \"To transfer ownership of an object to another variable\", \"C\": \"To swap the contents of two objects\", \"D\": \"To delete an object\"}",
+      "correct_option": "B",
+      "explanation": "The `std::move` function is used to transfer ownership of an object to another variable, allowing for efficient movement of resources without creating unnecessary copies. This is particularly useful in move constructors and assignment operators."
+    }
+  ],
+  "total_questions": 5
+}

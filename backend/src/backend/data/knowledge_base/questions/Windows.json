@@ -1,0 +1,46 @@
+{
+  "skill_name": "Windows",
+  "questions": [
+    {
+      "skill_name": "Windows",
+      "difficulty": "easy",
+      "question_text": "What is the primary function of the Task Manager in Windows?",
+      "options_json": "{\"A\": \"To manage user accounts and permissions\", \"B\": \"To monitor system performance and resource usage\", \"C\": \"To configure network settings and connections\", \"D\": \"To troubleshoot and debug Windows issues\"}",
+      "correct_option": "B",
+      "explanation": "The Task Manager is used to monitor system performance, including CPU, memory, and disk usage. This helps users identify resource-intensive processes and optimize their system for better performance."
+    },
+    {
+      "skill_name": "Windows",
+      "difficulty": "medium",
+      "question_text": "What is the primary function of the Windows Task Manager?",
+      "options_json": "{\"A\": \"To manage user accounts and permissions\", \"B\": \"To monitor system performance and resource usage\", \"C\": \"To configure network settings and connections\", \"D\": \"To troubleshoot and debug Windows issues\"}",
+      "correct_option": "B",
+      "explanation": "The Task Manager provides real-time information about CPU, memory, disk, and network usage, allowing users to identify performance bottlenecks and optimize system resources. It also offers tools for managing running processes and applications."
+    },
+    {
+      "skill_name": "Windows",
+      "difficulty": "medium",
+      "question_text": "What is the primary function of the Task Manager in Windows?",
+      "options_json": "{\"A\": \"To manage user accounts and permissions\", \"B\": \"To monitor system performance and resource usage\", \"C\": \"To configure network settings and connections\", \"D\": \"To troubleshoot and debug software issues\"}",
+      "correct_option": "B",
+      "explanation": "The Task Manager in Windows is used to monitor system performance, including CPU, memory, and disk usage. This allows users to identify potential bottlenecks and optimize their system for better performance."
+    },
+    {
+      "skill_name": "Windows",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the System File Checker (SFC) tool in Windows?",
+      "options_json": "{\"A\": \"To scan for malware and viruses\", \"B\": \"To repair corrupted system files\", \"C\": \"To optimize system performance\", \"D\": \"To update Windows to the latest version\"}",
+      "correct_option": "B",
+      "explanation": "The System File Checker (SFC) tool is used to scan and repair corrupted system files in Windows. This helps maintain system stability and ensures that critical system components function correctly."
+    },
+    {
+      "skill_name": "Windows",
+      "difficulty": "hard",
+      "question_text": "What is the primary function of the System File Checker (SFC) tool in Windows?",
+      "options_json": "{\"A\": \"To scan for malware and viruses\", \"B\": \"To repair corrupted system files\", \"C\": \"To optimize system performance\", \"D\": \"To update Windows operating system\"}",
+      "correct_option": "B",
+      "explanation": "The System File Checker (SFC) tool is used to scan for and replace corrupted system files with healthy ones. This helps maintain the integrity of the Windows operating system."
+    }
+  ],
+  "total_questions": 5
+}

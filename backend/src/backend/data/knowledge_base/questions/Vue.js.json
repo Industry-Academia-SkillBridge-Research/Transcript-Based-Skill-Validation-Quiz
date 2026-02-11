@@ -1,0 +1,46 @@
+{
+  "skill_name": "Vue.js",
+  "questions": [
+    {
+      "skill_name": "Vue.js",
+      "difficulty": "easy",
+      "question_text": "What is the primary purpose of the Vue lifecycle hooks?",
+      "options_json": "{\"A\": \"To handle user input and events\", \"B\": \"To manage component state and reactivity\", \"C\": \"To perform DOM manipulation and rendering\", \"D\": \"To implement business logic and API calls\"}",
+      "correct_option": "C",
+      "explanation": "Vue lifecycle hooks are used to manage the different stages of a component's life cycle, including mounting, updating, and destroying. They allow developers to perform tasks such as DOM manipulation and rendering at specific points in the component's life cycle."
+    },
+    {
+      "skill_name": "Vue.js",
+      "difficulty": "easy",
+      "question_text": "What is the main purpose of the Vue lifecycle hooks?",
+      "options_json": "{\"A\": \"To handle user interactions with the application\", \"B\": \"To manage the application's state and reactivity\", \"C\": \"To render the application's UI components\", \"D\": \"To handle API requests and data fetching\"}",
+      "correct_option": "B",
+      "explanation": "Vue lifecycle hooks are used to manage the application's state and reactivity, allowing developers to perform tasks such as data initialization and cleanup. This is essential for building dynamic and interactive user interfaces."
+    },
+    {
+      "skill_name": "Vue.js",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the $emit method in Vue.js?",
+      "options_json": "{\"A\": \"To update the component's data\", \"B\": \"To emit an event to other components or the parent\", \"C\": \"To call a lifecycle hook\", \"D\": \"To render the component\"}",
+      "correct_option": "B",
+      "explanation": "The $emit method is used to emit events to other components or the parent, allowing for communication between them. This is useful for triggering actions in response to user interactions."
+    },
+    {
+      "skill_name": "Vue.js",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the $nextTick() method in Vue.js?",
+      "options_json": "{\"A\": \"To update the DOM immediately after a data change\", \"B\": \"To schedule a task to run after the next DOM update cycle\", \"C\": \"To prevent the DOM from updating until a specific condition is met\", \"D\": \"To cancel any pending DOM updates\"}",
+      "correct_option": "B",
+      "explanation": "$nextTick() allows us to execute code after the next DOM update cycle, ensuring that we have access to updated data and DOM. This is particularly useful when dealing with asynchronous operations or complex computations."
+    },
+    {
+      "skill_name": "Vue.js",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the `provide` and `inject` APIs in Vue?",
+      "options_json": "{\"A\": \"To share data between components using a centralized store\", \"B\": \"To inject dependencies into child components\", \"C\": \"To provide services to child components\", \"D\": \"None of the above\"}",
+      "correct_option": "B",
+      "explanation": "The `provide` and `inject` APIs allow you to share data between components using a dependency injection mechanism. This enables you to decouple components from each other and make your code more modular."
+    }
+  ],
+  "total_questions": 5
+}

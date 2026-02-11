@@ -1,0 +1,30 @@
+{
+  "skill_name": "Hadoop",
+  "questions": [
+    {
+      "skill_name": "Hadoop",
+      "difficulty": "easy",
+      "question_text": "What is Hadoop's primary function?",
+      "options_json": "{\"A\": \"Data Warehousing\", \"B\": \"Big Data Processing\", \"C\": \"Data Storage\", \"D\": \"Data Mining\"}",
+      "correct_option": "B",
+      "explanation": "Hadoop is designed to process large amounts of data in a distributed manner, making it ideal for big data processing. It allows for the scalable and flexible handling of massive datasets."
+    },
+    {
+      "skill_name": "Hadoop",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of the MapReduce framework in Hadoop?",
+      "options_json": "{\"A\": \"To process large datasets in parallel across a cluster of nodes\", \"B\": \"To handle real-time data processing and analytics\", \"C\": \"To provide a distributed file system for storing data\", \"D\": \"To implement machine learning algorithms on Hadoop\"}",
+      "correct_option": "A",
+      "explanation": "MapReduce is designed to process large datasets in parallel across a cluster of nodes, making it an essential component of the Hadoop ecosystem. This allows users to scale their data processing tasks and handle massive amounts of data efficiently."
+    },
+    {
+      "skill_name": "Hadoop",
+      "difficulty": "hard",
+      "question_text": "What is the primary purpose of the MapReduce framework in Hadoop?",
+      "options_json": "{\"A\": \"To process and analyze large datasets\", \"B\": \"To manage and store data in a distributed environment\", \"C\": \"To perform real-time analytics on streaming data\", \"D\": \"To optimize database queries for performance\"}",
+      "correct_option": "A",
+      "explanation": "MapReduce is designed to process large datasets by breaking them down into smaller chunks, processing each chunk in parallel, and then combining the results. This allows Hadoop to scale horizontally and handle massive amounts of data."
+    }
+  ],
+  "total_questions": 3
+}

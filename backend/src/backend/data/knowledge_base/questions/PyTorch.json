@@ -1,0 +1,46 @@
+{
+  "skill_name": "PyTorch",
+  "questions": [
+    {
+      "skill_name": "PyTorch",
+      "difficulty": "easy",
+      "question_text": "What does PyTorch's nn.Module represent?",
+      "options_json": "{\"A\": \"A neural network model\", \"B\": \"A layer in a neural network\", \"C\": \"The main entry point for defining and training models\", \"D\": \"A type of activation function\"}",
+      "correct_option": "A",
+      "explanation": "nn.Module is the base class for all PyTorch modules, including neural networks. It represents a single model or a sub-network."
+    },
+    {
+      "skill_name": "PyTorch",
+      "difficulty": "easy",
+      "question_text": "What is PyTorch's primary use?",
+      "options_json": "{\"A\": \"Deep learning framework for computer vision tasks\", \"B\": \"Neural network library for natural language processing\", \"C\": \"General-purpose deep learning framework\", \"D\": \"Machine learning library for tabular data\"}",
+      "correct_option": "C",
+      "explanation": "PyTorch is a general-purpose deep learning framework that can be used for various tasks, including computer vision and natural language processing. It provides automatic differentiation and dynamic computation graphs."
+    },
+    {
+      "skill_name": "PyTorch",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the `nn.Module` class in PyTorch?",
+      "options_json": "{\"A\": \"To create a neural network model\", \"B\": \"To define a custom autograd function\", \"C\": \"To wrap a PyTorch module with additional functionality\", \"D\": \"To create a dataset\"}",
+      "correct_option": "A",
+      "explanation": "The `nn.Module` class is used to create and manage neural network models in PyTorch. It provides methods for defining model architecture, initializing weights, and computing gradients."
+    },
+    {
+      "skill_name": "PyTorch",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the `nn.DataParallel` module in PyTorch?",
+      "options_json": "{\"A\": \"To parallelize computations across multiple GPUs for faster training\", \"B\": \"To enable automatic differentiation and gradient computation\", \"C\": \"To implement a custom neural network architecture\", \"D\": \"To optimize model weights for better performance\"}",
+      "correct_option": "A",
+      "explanation": "The `nn.DataParallel` module is used to parallelize computations across multiple GPUs, which can significantly speed up training times. This is particularly useful when working with large models or datasets."
+    },
+    {
+      "skill_name": "PyTorch",
+      "difficulty": "hard",
+      "question_text": "What is the difference between nn.Linear and nn.Conv2d in PyTorch?",
+      "options_json": "{\"A\": \"nn.Linear is used for convolutional neural networks, while nn.Conv2d is used for fully connected layers.\", \"B\": \"nn.Linear is used for fully connected layers, while nn.Conv2d is used for convolutional neural networks.\", \"C\": \"Both are used for fully connected layers.\", \"D\": \"Both are used for convolutional neural networks.\"}",
+      "correct_option": "B",
+      "explanation": "nn.Linear is used for fully connected layers, while nn.Conv2d is used for convolutional neural networks. The main difference between them lies in their application and the type of data they operate on."
+    }
+  ],
+  "total_questions": 5
+}

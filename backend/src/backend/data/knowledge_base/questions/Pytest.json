@@ -1,0 +1,54 @@
+{
+  "skill_name": "Pytest",
+  "questions": [
+    {
+      "skill_name": "Pytest",
+      "difficulty": "easy",
+      "question_text": "What does the @pytest.fixture decorator do in Pytest?",
+      "options_json": "{\"A\": \"Marks a function as a test fixture that can be used multiple times in a test session.\", \"B\": \"Marks a function as a test that should be run only once, even if it's called multiple times in a test session.\", \"C\": \"Marks a class as a test fixture that can be used to create instances for testing.\", \"D\": \"Marks a function as a setup function that is run before each test.\"}",
+      "correct_option": "A",
+      "explanation": "The @pytest.fixture decorator marks a function as a test fixture, which can be used multiple times in a test session. This allows you to reuse the same fixture instance across different tests."
+    },
+    {
+      "skill_name": "Pytest",
+      "difficulty": "easy",
+      "question_text": "What does Pytest's @pytest.fixture decorator do?",
+      "options_json": "{\"A\": \"Marks a function as a test fixture\", \"B\": \"Marks a function as a setup method for tests\", \"C\": \"Marks a function as a teardown method for tests\", \"D\": \"Is used to mark a function as a test\"}",
+      "correct_option": "A",
+      "explanation": "The @pytest.fixture decorator is used to mark a function as a test fixture, which can be used in multiple tests. This allows you to write reusable setup code that can be easily managed by Pytest."
+    },
+    {
+      "skill_name": "Pytest",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the @pytest.fixture decorator in Pytest?",
+      "options_json": "{\"A\": \"To mark a function as a test case\", \"B\": \"To provide a fixture for a test case\", \"C\": \"To decorate a function to run only once per test session\", \"D\": \"To skip running a specific test\"}",
+      "correct_option": "B",
+      "explanation": "The @pytest.fixture decorator is used to define a fixture, which is a setup or cleanup action that can be reused by multiple test cases. This allows you to write more concise and maintainable tests."
+    },
+    {
+      "skill_name": "Pytest",
+      "difficulty": "medium",
+      "question_text": "What does the @pytest.fixture decorator do in Pytest?",
+      "options_json": "{\"A\": \"Marks a test function as a fixture that can be used by other tests.\", \"B\": \"Marks a test function to run only once, even if it's called multiple times.\", \"C\": \"Marks a test function to skip running it altogether.\", \"D\": \"Marks a test function to run in parallel with other tests.\"}",
+      "correct_option": "A",
+      "explanation": "The @pytest.fixture decorator is used to define fixtures, which are reusable pieces of code that can be used by multiple tests. This allows you to write more concise and maintainable tests."
+    },
+    {
+      "skill_name": "Pytest",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the @pytest.fixture decorator in Pytest?",
+      "options_json": "{\"A\": \"To mark a test function as a slow test\", \"B\": \"To provide a fixture for a test function to use\", \"C\": \"To skip a test function if a certain condition is met\", \"D\": \"To run a test function multiple times\"}",
+      "correct_option": "B",
+      "explanation": "The @pytest.fixture decorator provides a way to define fixtures, which are setup and teardown functions that can be used by test functions. This allows for more efficient and flexible testing."
+    },
+    {
+      "skill_name": "Pytest",
+      "difficulty": "hard",
+      "question_text": "What does the @pytest.fixture scope parameter 'session' do?",
+      "options_json": "{\"A\": \"It runs the fixture once per test session, but not between tests.\", \"B\": \"It runs the fixture before each test, regardless of the test session.\", \"C\": \"It runs the fixture only once for all tests in a session, and shares the result across tests.\", \"D\": \"It does nothing, fixtures are always run per-test.\"}",
+      "correct_option": "C",
+      "explanation": "The @pytest.fixture scope parameter 'session' allows you to share data between multiple tests within a test session. This is useful for setting up complex resources that can be reused across multiple tests."
+    }
+  ],
+  "total_questions": 6
+}

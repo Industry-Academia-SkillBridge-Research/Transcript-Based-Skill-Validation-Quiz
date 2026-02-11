@@ -1,0 +1,38 @@
+{
+  "skill_name": "VLAN",
+  "questions": [
+    {
+      "skill_name": "VLAN",
+      "difficulty": "easy",
+      "question_text": "What is the primary purpose of a VLAN?",
+      "options_json": "{\"A\": \"To increase network security by isolating devices from each other.\", \"B\": \"To improve network performance by reducing collision domains.\", \"C\": \"To simplify network management by grouping devices into logical networks.\", \"D\": \"To reduce the number of IP addresses required on a network.\"}",
+      "correct_option": "A",
+      "explanation": "VLANs are used to increase network security by isolating devices from each other, preventing unauthorized access and reducing the risk of malware spread. This is achieved by grouping devices into logical networks based on their function or department."
+    },
+    {
+      "skill_name": "VLAN",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of a VLAN (Virtual Local Area Network) trunk port?",
+      "options_json": "{\"A\": \"To connect multiple switches together in a network\", \"B\": \"To provide a secure separation between different departments or groups within an organization\", \"C\": \"To increase bandwidth and improve network performance\", \"D\": \"To enable IP routing between VLANs\"}",
+      "correct_option": "B",
+      "explanation": "A VLAN trunk port is used to connect multiple switches together, but its primary purpose is to provide a secure separation between different departments or groups within an organization. This is achieved by tagging traffic with the VLAN ID, allowing for easy identification and isolation of network traffic."
+    },
+    {
+      "skill_name": "VLAN",
+      "difficulty": "medium",
+      "question_text": "What is the primary function of a VLAN trunk port?",
+      "options_json": "{\"A\": \"To connect multiple switches together in a star topology\", \"B\": \"To allow traffic to flow between multiple VLANs\", \"C\": \"To provide network segmentation and security\", \"D\": \"To increase network bandwidth\"}",
+      "correct_option": "C",
+      "explanation": "A VLAN trunk port allows multiple VLANs to be carried over a single link, providing network segmentation and security. This is the primary function of a VLAN trunk port."
+    },
+    {
+      "skill_name": "VLAN",
+      "difficulty": "hard",
+      "question_text": "A network administrator has configured a VLAN on a switch, but wants to ensure that only traffic destined for the default gateway is routed out of the VLAN. What should be done to achieve this?",
+      "options_json": "{\"A\": \"Set the VLAN as the trunk port and allow all tagged traffic\", \"B\": \"Configure the VLAN as an access port and disable routing on the switch\", \"C\": \"Create a separate VLAN for the default gateway and configure inter-VLAN routing\", \"D\": \"Use a router-on-a-stick configuration to route traffic between VLANs\"}",
+      "correct_option": "B",
+      "explanation": "Configuring the VLAN as an access port and disabling routing on the switch ensures that only traffic destined for the default gateway is routed out of the VLAN. This prevents unnecessary routing and reduces network congestion."
+    }
+  ],
+  "total_questions": 4
+}

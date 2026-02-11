@@ -1,0 +1,70 @@
+{
+  "skill_name": "C Programming",
+  "questions": [
+    {
+      "skill_name": "C Programming",
+      "difficulty": "easy",
+      "question_text": "What does the following C code snippet do?",
+      "options_json": "{\"A\": \"Prints 'Hello, World!' on the screen\", \"B\": \"Asks for user input and stores it in a variable\", \"C\": \"Declares a pointer to an integer\", \"D\": \"Allocates memory for an array of integers\"}",
+      "correct_option": "A",
+      "explanation": "This code snippet is a simple 'Hello, World!' program that prints the string to the console. It uses the printf function from the stdio library."
+    },
+    {
+      "skill_name": "C Programming",
+      "difficulty": "easy",
+      "question_text": "What does the #include directive do in C?",
+      "options_json": "{\"A\": \"It includes a library of functions that can be used in the program.\", \"B\": \"It defines a new function with the given name.\", \"C\": \"It includes a header file to use its definitions and declarations.\", \"D\": \"It compiles the entire program into an executable.\"}",
+      "correct_option": "C",
+      "explanation": "The #include directive is used to include header files in C programs, which contain function prototypes and macro definitions. This allows the programmer to use these functions and macros without having to define them themselves."
+    },
+    {
+      "skill_name": "C Programming",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the `#include` directive in C?",
+      "options_json": "{\"A\": \"To include a library function\", \"B\": \"To include a header file\", \"C\": \"To include a source code file\", \"D\": \"To include a binary file\"}",
+      "correct_option": "B",
+      "explanation": "The `#include` directive is used to include header files, which contain function declarations and macro definitions. This allows the program to use functions and macros from the included library."
+    },
+    {
+      "skill_name": "C Programming",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the `#include <stdio.h>` directive in a C program?",
+      "options_json": "{\"A\": \"To include the standard input/output library\", \"B\": \"To include the standard math library\", \"C\": \"To include the standard string library\", \"D\": \"To include the standard time library\"}",
+      "correct_option": "A",
+      "explanation": "The `#include <stdio.h>` directive is used to include the standard input/output library, which provides functions for performing input and output operations. This library is essential for any C program that needs to interact with the user or perform file I/O."
+    },
+    {
+      "skill_name": "C Programming",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the `volatile` keyword in C?",
+      "options_json": "{\"A\": \"To indicate that a variable may be accessed by multiple threads.\", \"B\": \"To prevent the compiler from optimizing away a variable's value.\", \"C\": \"To specify the size and alignment of a variable at compile-time.\", \"D\": \"To enable or disable compiler optimizations for a specific function.\"}",
+      "correct_option": "B",
+      "explanation": "The `volatile` keyword in C prevents the compiler from optimizing away a variable's value, ensuring that it always reflects the current state of the program. This is particularly important when working with variables that may be modified by external factors, such as hardware interrupts or other threads."
+    },
+    {
+      "skill_name": "C Programming",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the `#include <stdio.h>` directive in a C program?",
+      "options_json": "{\"A\": \"To include the standard input/output library\", \"B\": \"To include the standard math library\", \"C\": \"To include the standard string library\", \"D\": \"To include the standard time library\"}",
+      "correct_option": "A",
+      "explanation": "The `#include <stdio.h>` directive is used to include the standard input/output library, which provides functions for performing input and output operations. This is a crucial step in any C program that requires user interaction or data output."
+    },
+    {
+      "skill_name": "C Programming",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the `malloc` function in C?",
+      "options_json": "{\"A\": \"To dynamically allocate memory for an array\", \"B\": \"To reserve space on the stack for a variable\", \"C\": \"To deallocate previously allocated memory\", \"D\": \"To initialize a static variable\"}",
+      "correct_option": "A",
+      "explanation": "The `malloc` function is used to dynamically allocate memory on the heap, allowing the program to store and manipulate data. This is particularly useful for arrays or other data structures whose size may not be known at compile time."
+    },
+    {
+      "skill_name": "C Programming",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the `struct` keyword in C?",
+      "options_json": "{\"A\": \"To declare a function\", \"B\": \"To define a variable\", \"C\": \"To create a new data type\", \"D\": \"To allocate memory on the stack\"}",
+      "correct_option": "C",
+      "explanation": "The `struct` keyword in C is used to create a new data type, allowing you to group multiple variables together. This can be useful for organizing complex data structures."
+    }
+  ],
+  "total_questions": 8
+}

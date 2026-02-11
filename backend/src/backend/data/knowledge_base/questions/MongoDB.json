@@ -1,0 +1,38 @@
+{
+  "skill_name": "MongoDB",
+  "questions": [
+    {
+      "skill_name": "MongoDB",
+      "difficulty": "easy",
+      "question_text": "What does MongoDB use for data storage?",
+      "options_json": "{\"A\": \"Relational databases\", \"B\": \"Key-value pairs\", \"C\": \"Document-oriented database\", \"D\": \"Graph database\"}",
+      "correct_option": "C",
+      "explanation": "MongoDB uses a document-oriented database to store data, which allows for flexible and efficient storage of semi-structured data."
+    },
+    {
+      "skill_name": "MongoDB",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the $push operator in MongoDB?",
+      "options_json": "{\"A\": \"To update a field with a new value\", \"B\": \"To add a new element to an array\", \"C\": \"To remove all occurrences of a value from an array\", \"D\": \"To sort an array\"}",
+      "correct_option": "B",
+      "explanation": "The $push operator is used to add one or more elements to the end of an array. This can be useful for incrementally adding new data to a collection."
+    },
+    {
+      "skill_name": "MongoDB",
+      "difficulty": "hard",
+      "question_text": "What happens when you run the command `db.collection.drop()` in MongoDB?",
+      "options_json": "{\"A\": \"It deletes all documents from the collection, but not the collection itself.\", \"B\": \"It drops the entire database, including all collections and data.\", \"C\": \"It removes the collection from the database, along with all its documents.\", \"D\": \"It creates a new collection with the same name as the original one.\"}",
+      "correct_option": "A",
+      "explanation": "The `drop()` command only deletes the documents in the specified collection, leaving the collection itself intact. This is useful for cleaning up data without affecting other collections or the database structure."
+    },
+    {
+      "skill_name": "MongoDB",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the $lookup aggregation operator in MongoDB?",
+      "options_json": "{\"A\": \"To perform a left outer join with another collection\", \"B\": \"To merge two arrays into one\", \"C\": \"To filter documents based on a condition\", \"D\": \"To update multiple documents at once\"}",
+      "correct_option": "A",
+      "explanation": "The $lookup operator is used to perform a left outer join with another collection, allowing you to retrieve data from related collections. This is useful for creating complex queries and aggregations."
+    }
+  ],
+  "total_questions": 4
+}

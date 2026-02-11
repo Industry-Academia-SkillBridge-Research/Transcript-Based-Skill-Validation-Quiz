@@ -1,0 +1,182 @@
+{
+  "skill_name": "Operating Systems & System Administration",
+  "questions": [
+    {
+      "skill_name": "Operating Systems & System Administration",
+      "difficulty": "easy",
+      "question_text": "What is the primary function of a Page Table in an operating system?",
+      "options_json": "{\"A\": \"To manage virtual memory and map it to physical memory\", \"B\": \"To schedule processes for execution\", \"C\": \"To handle I/O operations between devices\", \"D\": \"To authenticate user logins\"}",
+      "correct_option": "A",
+      "explanation": "The primary function of a Page Table is to manage virtual memory and map it to physical memory, allowing the operating system to efficiently use available memory."
+    },
+    {
+      "skill_name": "Operating Systems & System Administration",
+      "difficulty": "easy",
+      "question_text": "What is the primary function of a Process Scheduler in an Operating System?",
+      "options_json": "{\"A\": \"Managing memory allocation for running processes\", \"B\": \"Allocating CPU time to running processes\", \"C\": \"Handling I/O operations for running processes\", \"D\": \"Managing file system permissions\"}",
+      "correct_option": "B",
+      "explanation": "The Process Scheduler is responsible for allocating CPU time to running processes, ensuring that each process gets a fair share of the CPU resources. This helps in efficient multitasking and prevents any one process from dominating the CPU."
+    },
+    {
+      "skill_name": "Operating Systems & System Administration",
+      "difficulty": "easy",
+      "question_text": "What is the primary function of a process in an operating system?",
+      "options_json": "{\"A\": \"To manage memory and resources for itself and other processes\", \"B\": \"To execute a program and perform tasks independently\", \"C\": \"To provide security features such as access control and authentication\", \"D\": \"To handle I/O operations between devices\"}",
+      "correct_option": "B",
+      "explanation": "A process is an executing instance of a program, responsible for performing tasks and executing instructions. It has its own memory space and resources, allowing it to run independently."
+    },
+    {
+      "skill_name": "Operating Systems & System Administration",
+      "difficulty": "easy",
+      "question_text": "What is the primary function of a process scheduler in an operating system?",
+      "options_json": "{\"A\": \"To manage memory allocation for running processes\", \"B\": \"To prioritize and allocate CPU time to running processes\", \"C\": \"To handle input/output operations for running processes\", \"D\": \"To manage file access permissions for running processes\"}",
+      "correct_option": "B",
+      "explanation": "A process scheduler's primary function is to prioritize and allocate CPU time to running processes, ensuring efficient use of system resources."
+    },
+    {
+      "skill_name": "Operating Systems & System Administration",
+      "difficulty": "easy",
+      "question_text": "What is the primary function of a process scheduler?",
+      "options_json": "{\"A\": \"Managing memory allocation for running processes\", \"B\": \"Determining which process to execute next\", \"C\": \"Handling interrupts and exceptions\", \"D\": \"Implementing virtual memory\"}",
+      "correct_option": "B",
+      "explanation": "The primary function of a process scheduler is to determine which process should be executed next, allocating CPU time accordingly."
+    },
+    {
+      "skill_name": "Operating Systems & System Administration",
+      "difficulty": "easy",
+      "question_text": "What does the 'context switch' refer to in operating systems?",
+      "options_json": "{\"A\": \"The process of switching between user and kernel mode\", \"B\": \"The act of loading a new program into memory\", \"C\": \"The transfer of control from one process to another\", \"D\": \"The handling of interrupts by the CPU\"}",
+      "correct_option": "C",
+      "explanation": "A context switch is the transfer of control from one process to another, allowing multiple processes to share system resources efficiently. This process involves saving and restoring the state of each process."
+    },
+    {
+      "skill_name": "Operating Systems & System Administration",
+      "difficulty": "easy",
+      "question_text": "What is the primary function of the Page Table in a virtual memory system?",
+      "options_json": "{\"A\": \"To manage file I/O operations\", \"B\": \"To translate virtual addresses to physical addresses\", \"C\": \"To schedule processes for execution\", \"D\": \"To handle interrupts and exceptions\"}",
+      "correct_option": "B",
+      "explanation": "The Page Table is responsible for translating virtual memory addresses used by a process into physical addresses in main memory. This allows the operating system to manage virtual memory efficiently."
+    },
+    {
+      "skill_name": "Operating Systems & System Administration",
+      "difficulty": "medium",
+      "question_text": "What happens when a process in Linux requests more memory than is available?",
+      "options_json": "{\"A\": \"The kernel will allocate virtual memory and swap it to disk if necessary.\", \"B\": \"The process will be terminated due to insufficient memory.\", \"C\": \"The process will run in user space with limited resources.\", \"D\": \"The system will go into a deadlock state.\"}",
+      "correct_option": "A",
+      "explanation": "When a process requests more memory than is available, the kernel allocates virtual memory and swaps it to disk if necessary. This allows the process to continue running while the kernel handles the memory allocation."
+    },
+    {
+      "skill_name": "Operating Systems & System Administration",
+      "difficulty": "medium",
+      "question_text": "What happens when a process requests more memory than is available in physical RAM?",
+      "options_json": "{\"A\": \"The operating system will allocate virtual memory to the process, which may result in slower performance.\", \"B\": \"The operating system will terminate the process and return an error code.\", \"C\": \"The operating system will swap out other processes from physical RAM to make room for the requesting process.\", \"D\": \"The operating system will allocate more physical RAM to the system.\"}",
+      "correct_option": "A",
+      "explanation": "When a process requests more memory than is available in physical RAM, the operating system allocates virtual memory to the process. This may result in slower performance as the operating system has to access the hard drive instead of RAM for data retrieval."
+    },
+    {
+      "skill_name": "Operating Systems & System Administration",
+      "difficulty": "medium",
+      "question_text": "What happens when a process in Linux uses more memory than is available in physical RAM?",
+      "options_json": "{\"A\": \"The operating system terminates the process and logs an error message.\", \"B\": \"The process is swapped out to disk, freeing up physical RAM for other processes.\", \"C\": \"The operating system allocates virtual memory to the process, allowing it to continue running.\", \"D\": \"The process is moved to a different CPU core.\"}",
+      "correct_option": "C",
+      "explanation": "When a process uses more memory than available in physical RAM, the operating system allocates virtual memory to the process. This allows the process to continue running by using disk space as an extension of physical RAM."
+    },
+    {
+      "skill_name": "Operating Systems & System Administration",
+      "difficulty": "medium",
+      "question_text": "What happens when a process attempts to access memory that is not mapped in its virtual address space?",
+      "options_json": "{\"A\": \"The operating system will terminate the process.\", \"B\": \"The process will be given permission to access the memory, but it may result in a page fault.\", \"C\": \"The process will be paused until the memory is made available.\", \"D\": \"The process will continue running without any issues.\"}",
+      "correct_option": "A",
+      "explanation": "When a process attempts to access memory that is not mapped in its virtual address space, the operating system will terminate the process due to a segmentation fault. This is because the process has attempted to access memory that it does not have permission to access."
+    },
+    {
+      "skill_name": "Operating Systems & System Administration",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of the Page Table in a virtual memory system?",
+      "options_json": "{\"A\": \"To manage free space on disk\", \"B\": \"To translate virtual addresses to physical addresses\", \"C\": \"To handle interrupts and exceptions\", \"D\": \"To schedule processes\"}",
+      "correct_option": "B",
+      "explanation": "The Page Table is used to map virtual memory addresses to their corresponding physical memory locations, allowing the operating system to manage virtual memory efficiently."
+    },
+    {
+      "skill_name": "Operating Systems & System Administration",
+      "difficulty": "hard",
+      "question_text": "What happens when a process attempts to access a memory location that is not mapped in its virtual address space?",
+      "options_json": "{\"A\": \"The operating system will terminate the process and log an error message.\", \"B\": \"The process will be given a new virtual address space, and the access will be allowed.\", \"C\": \"The operating system will trigger a page fault exception, which can be handled by the process or the operating system.\", \"D\": \"The process will be forced to run in user mode instead of kernel mode.\"}",
+      "correct_option": "C",
+      "explanation": "A page fault exception is triggered when a process attempts to access an unmapped memory location. This allows the operating system to handle the situation and potentially allow the process to continue executing with the correct permissions."
+    },
+    {
+      "skill_name": "Operating Systems & System Administration",
+      "difficulty": "hard",
+      "question_text": "What happens when a process attempts to access memory that is not mapped in its virtual address space?",
+      "options_json": "{\"A\": \"The operating system will terminate the process and report an error.\", \"B\": \"The process will be given a new virtual address space with additional memory.\", \"C\": \"The operating system will page fault, bringing in the required pages from disk.\", \"D\": \"The process will continue executing without interruption.\"}",
+      "correct_option": "C",
+      "explanation": "When a process attempts to access memory that is not mapped in its virtual address space, the operating system will page fault, bringing in the required pages from disk. This ensures that the process has access to the necessary data while preventing it from accessing unauthorized areas of memory."
+    },
+    {
+      "skill_name": "Operating Systems & System Administration",
+      "difficulty": "hard",
+      "question_text": "What happens when a process attempts to access memory that is not allocated to it?",
+      "options_json": "{\"A\": \"The operating system will terminate the process and free its resources.\", \"B\": \"The operating system will allocate additional virtual memory to the process.\", \"C\": \"The operating system will page fault, causing the process to be swapped out of physical memory.\", \"D\": \"The operating system will ignore the request and continue executing other processes.\"}",
+      "correct_option": "C",
+      "explanation": "A page fault occurs when a process attempts to access memory that is not allocated to it. The operating system will then handle the page fault by either allocating additional physical memory or swapping the process out of physical memory."
+    },
+    {
+      "skill_name": "Operating Systems & System Administration",
+      "difficulty": "hard",
+      "question_text": "What happens when a process in a Unix-like system tries to access memory that is not mapped to any of its virtual address spaces?",
+      "options_json": "{\"A\": \"The process will be terminated and an error message will be displayed.\", \"B\": \"The operating system will automatically allocate more physical RAM to the process.\", \"C\": \"The process will receive a segmentation fault signal and can choose to handle it or terminate.\", \"D\": \"The process will be given priority over other processes in the system.\"}",
+      "correct_option": "C",
+      "explanation": "When a process tries to access unmapped memory, it receives a segmentation fault signal. The process can then choose to handle this signal and continue running or terminate itself."
+    },
+    {
+      "skill_name": "Operating Systems & System Administration",
+      "difficulty": "hard",
+      "question_text": "A process in a Unix-like system is blocked waiting for I/O completion. What happens to its state when the I/O operation completes?",
+      "options_json": "{\"A\": \"The process becomes unblocked and continues execution.\", \"B\": \"The process is moved to the running queue, but does not immediately resume execution.\", \"C\": \"The process is terminated due to the I/O completion.\", \"D\": \"The process's priority is increased.\"}",
+      "correct_option": "A",
+      "explanation": "When an I/O operation completes, the process that was blocked waiting for it becomes unblocked and continues execution. This is because the I/O completion signal allows the process to resume its execution."
+    },
+    {
+      "skill_name": "Operating Systems & System Administration",
+      "difficulty": "hard",
+      "question_text": "A process in a Unix-like system is scheduled for execution. The kernel assigns it a time slice of 10 milliseconds. After 5 milliseconds, the process voluntarily yields control back to the kernel using which system call?",
+      "options_json": "{\"A\": \"sched_yield()\", \"B\": \"pause()\", \"C\": \"sigpause()\", \"D\": \"nanosleep()\"}",
+      "correct_option": "A",
+      "explanation": "The sched_yield() system call allows a process to voluntarily yield control back to the kernel, allowing other processes to execute. This is useful for cooperative multitasking and preventing starvation of other processes."
+    },
+    {
+      "skill_name": "Operating Systems & System Administration",
+      "difficulty": "hard",
+      "question_text": "What happens when a process in a Unix-like system attempts to access memory that is not mapped to any physical page?",
+      "options_json": "{\"A\": \"The operating system will terminate the process and report an error.\", \"B\": \"The operating system will create a new page table entry for the unmapped memory region.\", \"C\": \"The operating system will trigger a page fault exception, which can be handled by the process or the kernel.\", \"D\": \"The operating system will simply ignore the access and continue executing the process.\"}",
+      "correct_option": "C",
+      "explanation": "A page fault exception is triggered when a process attempts to access memory that is not mapped. This allows the kernel to handle the situation, either by terminating the process or by allocating new physical pages for the requested memory region."
+    },
+    {
+      "skill_name": "Operating Systems & System Administration",
+      "difficulty": "hard",
+      "question_text": "When a process requests more memory than is available in physical RAM, what happens to the excess memory?",
+      "options_json": "{\"A\": \"The operating system immediately allocates the requested memory from disk storage.\", \"B\": \"The operating system uses a combination of disk storage and swap space to satisfy the request.\", \"C\": \"The process is terminated due to insufficient memory resources.\", \"D\": \"The excess memory is allocated from the free list in RAM.\"}",
+      "correct_option": "B",
+      "explanation": "When a process requests more memory than available in physical RAM, the operating system uses a combination of disk storage and swap space (also known as virtual memory) to satisfy the request. This allows the process to continue executing while the excess memory is allocated from disk storage."
+    },
+    {
+      "skill_name": "Operating Systems & System Administration",
+      "difficulty": "hard",
+      "question_text": "A process in a Unix-like system is scheduled for execution. Which of the following best describes what happens when the process is swapped out of physical memory?",
+      "options_json": "{\"A\": \"The process is terminated and its resources are released.\", \"B\": \"The process is moved to a different CPU core, but its state remains intact.\", \"C\": \"The process is written to disk and its virtual memory is reclaimed by the kernel.\", \"D\": \"The process is paused and its execution context is saved in its own memory space.\"}",
+      "correct_option": "C",
+      "explanation": "When a process is swapped out of physical memory, its virtual memory is reclaimed by the kernel, which writes the process's state to disk. This allows other processes to use the freed-up physical memory."
+    },
+    {
+      "skill_name": "Operating Systems & System Administration",
+      "difficulty": "hard",
+      "question_text": "What happens when a process in a Unix-like system attempts to access memory outside its allocated virtual address space?",
+      "options_json": "{\"A\": \"The operating system terminates the process and logs an error message.\", \"B\": \"The process is given additional virtual memory, but with reduced performance.\", \"C\": \"The process is swapped out to disk, allowing it to continue executing later.\", \"D\": \"The process receives a segmentation fault signal and can be handled by the program's exception handler.\"}",
+      "correct_option": "D",
+      "explanation": "A segmentation fault occurs when a process attempts to access memory outside its allocated virtual address space. This is typically handled by the operating system sending a signal to the process, which can then be caught and handled by the program's exception handler."
+    }
+  ],
+  "total_questions": 22
+}

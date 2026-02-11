@@ -1,0 +1,126 @@
+{
+  "skill_name": "Information Retrieval & Web Analytics",
+  "questions": [
+    {
+      "skill_name": "Information Retrieval & Web Analytics",
+      "difficulty": "easy",
+      "question_text": "What is the primary purpose of an inverted index in a search engine?",
+      "options_json": "{\"A\": \"To store and retrieve user query logs\", \"B\": \"To speed up the process of searching for relevant documents\", \"C\": \"To calculate the relevance score of each document\", \"D\": \"To analyze user behavior on a website\"}",
+      "correct_option": "B",
+      "explanation": "An inverted index is used to quickly locate words in a database or index, allowing search engines to efficiently retrieve relevant documents. This speeds up the process of searching for relevant documents."
+    },
+    {
+      "skill_name": "Information Retrieval & Web Analytics",
+      "difficulty": "easy",
+      "question_text": "What is the primary purpose of an inverted index in information retrieval?",
+      "options_json": "{\"A\": \"To store the frequency of each term in a document\", \"B\": \"To speed up the process of searching for specific terms within documents\", \"C\": \"To rank documents based on their relevance to a query\", \"D\": \"To remove stop words from the search query\"}",
+      "correct_option": "B",
+      "explanation": "An inverted index is used to quickly locate documents that contain specific terms, making it an essential component of efficient information retrieval systems."
+    },
+    {
+      "skill_name": "Information Retrieval & Web Analytics",
+      "difficulty": "medium",
+      "question_text": "In a Vector Space Model, what is the primary purpose of term weighting?",
+      "options_json": "{\"A\": \"To assign a score to each document based on its relevance to the query\", \"B\": \"To give more importance to frequently occurring terms in the collection\", \"C\": \"To reduce the dimensionality of the vector space and improve search efficiency\", \"D\": \"None of the above\"}",
+      "correct_option": "B",
+      "explanation": "Term weighting is used to assign a higher score to frequently occurring terms, which helps in improving the accuracy of the search results. This is because frequent terms are more likely to be relevant to the query."
+    },
+    {
+      "skill_name": "Information Retrieval & Web Analytics",
+      "difficulty": "medium",
+      "question_text": "Which of the following is a limitation of the Vector Space Model (VSM) in information retrieval?",
+      "options_json": "{\"A\": \"It does not handle query expansion well.\", \"B\": \"It assumes that all terms are equally important.\", \"C\": \"It requires a large amount of memory to store the inverted index.\", \"D\": \"It is not suitable for text classification tasks.\"}",
+      "correct_option": "B",
+      "explanation": "The Vector Space Model (VSM) assumes that all terms in a document are equally important, which can lead to inaccurate results. This limitation can be addressed by using techniques such as term weighting and relevance feedback."
+    },
+    {
+      "skill_name": "Information Retrieval & Web Analytics",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of an inverted index in a search engine?",
+      "options_json": "{\"A\": \"To store the frequency of each term in the document collection\", \"B\": \"To speed up query processing by allowing for fast lookup of relevant documents\", \"C\": \"To improve the ranking of documents based on their relevance to the query\", \"D\": \"To reduce the storage requirements of the search engine\"}",
+      "correct_option": "B",
+      "explanation": "An inverted index allows for fast lookup of relevant documents by storing a mapping between terms and the documents they appear in, making it an essential component of efficient search engine query processing."
+    },
+    {
+      "skill_name": "Information Retrieval & Web Analytics",
+      "difficulty": "hard",
+      "question_text": "Given a term-frequency-inverse-document-frequency (TF-IDF) weighted vector space model, which of the following is NOT a benefit of using relevance feedback?",
+      "options_json": "{\"A\": \"Improved query precision and recall by adjusting the query based on user feedback\", \"B\": \"Increased computational complexity due to re-ranking documents\", \"C\": \"Enhanced ability to capture nuances in user intent through iterative refinement\", \"D\": \"Reduced reliance on TF-IDF weights, instead using a simple term frequency approach\"}",
+      "correct_option": "D",
+      "explanation": "Relevance feedback does not reduce the reliance on TF-IDF weights; rather, it refines the query to better match user intent by adjusting the weights based on relevance."
+    },
+    {
+      "skill_name": "Information Retrieval & Web Analytics",
+      "difficulty": "hard",
+      "question_text": "In a Vector Space Model, what is the primary purpose of term weighting?",
+      "options_json": "{\"A\": \"To assign a score to each document based on its relevance to the query\", \"B\": \"To reduce the dimensionality of the search space and improve retrieval efficiency\", \"C\": \"To emphasize more important terms in the query and downplay less important ones\", \"D\": \"To normalize the query vector to ensure it has a unit length\"}",
+      "correct_option": "C",
+      "explanation": "Term weighting is used to assign different weights to each term in the query based on its importance, allowing for more accurate retrieval of relevant documents. This helps to emphasize more important terms and downplay less important ones."
+    },
+    {
+      "skill_name": "Information Retrieval & Web Analytics",
+      "difficulty": "hard",
+      "question_text": "Given a document collection with an inverted index, which of the following is a limitation of the Vector Space Model (VSM) in terms of term weighting?",
+      "options_json": "{\"A\": \"It assumes that all documents have the same importance.\", \"B\": \"It does not account for document length when calculating term weights.\", \"C\": \"It uses a simple cosine similarity metric to calculate relevance scores.\", \"D\": \"It is computationally expensive due to the need to compute term frequencies.\"}",
+      "correct_option": "B",
+      "explanation": "The Vector Space Model assumes that all documents have equal importance, which can lead to biased results. However, it does not account for document length when calculating term weights, making B the correct answer."
+    },
+    {
+      "skill_name": "Information Retrieval & Web Analytics",
+      "difficulty": "hard",
+      "question_text": "A search engine uses a vector space model with TF-IDF weighting to rank documents. Which of the following is a limitation of this approach?",
+      "options_json": "{\"A\": \"It does not account for document length, leading to biased rankings.\", \"B\": \"It assumes that all terms are equally important, ignoring their frequency in the collection.\", \"C\": \"It requires an enormous amount of computational resources and memory.\", \"D\": \"It is unable to handle out-of-vocabulary words.\"}",
+      "correct_option": "A",
+      "explanation": "The vector space model with TF-IDF weighting can be biased towards longer documents, leading to inaccurate rankings. This limitation arises from the fact that TF-IDF does not account for document length."
+    },
+    {
+      "skill_name": "Information Retrieval & Web Analytics",
+      "difficulty": "hard",
+      "question_text": "In a Vector Space Model, which term weighting scheme is known for being biased towards documents with high frequency terms?",
+      "options_json": "{\"A\": \"Term Frequency-Inverse Document Frequency (TF-IDF)\", \"B\": \"Okapi BM25\", \"C\": \"Log-Likelihood Ratio\", \"D\": \"Cosine Similarity\"}",
+      "correct_option": "C",
+      "explanation": "The Log-Likelihood Ratio is a term weighting scheme that can be biased towards documents with high frequency terms, as it assigns higher weights to terms that are more likely to occur in the document. This can lead to poor performance in certain scenarios."
+    },
+    {
+      "skill_name": "Information Retrieval & Web Analytics",
+      "difficulty": "hard",
+      "question_text": "In a Vector Space Model, what is the primary function of term weighting?",
+      "options_json": "{\"A\": \"To assign a score to each document based on its relevance to the query\", \"B\": \"To normalize the vector magnitude and prevent feature dominance\", \"C\": \"To calculate the similarity between two vectors using cosine similarity\", \"D\": \"To filter out irrelevant documents from the search results\"}",
+      "correct_option": "B",
+      "explanation": "Term weighting is used to normalize the vector magnitude and prevent any single feature from dominating the others, allowing for a more accurate comparison of document similarities."
+    },
+    {
+      "skill_name": "Information Retrieval & Web Analytics",
+      "difficulty": "hard",
+      "question_text": "A search engine uses a term weighting scheme that assigns higher weights to terms appearing in the title and description of a webpage. What is this term weighting scheme known as?",
+      "options_json": "{\"A\": \"Term Frequency-Inverse Document Frequency (TF-IDF)\", \"B\": \"Okapi BM25\", \"C\": \"Vector Space Model with Title and Description Boosting\", \"D\": \"Latent Semantic Analysis\"}",
+      "correct_option": "C",
+      "explanation": "This term weighting scheme assigns higher weights to terms appearing in the title and description of a webpage, making it more relevant for search engine results. This is known as Vector Space Model with Title and Description Boosting."
+    },
+    {
+      "skill_name": "Information Retrieval & Web Analytics",
+      "difficulty": "hard",
+      "question_text": "A search engine uses a vector space model to represent documents as vectors in a high-dimensional space. Which of the following is NOT a benefit of this approach?",
+      "options_json": "{\"A\": \"Improved document clustering and categorization\", \"B\": \"Enhanced query relevance and ranking\", \"C\": \"Increased computational complexity and memory requirements\", \"D\": \"Better handling of synonyms and polysemes\"}",
+      "correct_option": "C",
+      "explanation": "The vector space model can indeed improve document clustering and categorization, enhance query relevance and ranking, and better handle synonyms and polysemes. However, it also increases the computational complexity and memory requirements due to the high-dimensional representation of documents."
+    },
+    {
+      "skill_name": "Information Retrieval & Web Analytics",
+      "difficulty": "hard",
+      "question_text": "In a Vector Space Model, what is the primary purpose of Term Frequency-Inverse Document Frequency (TF-IDF) weighting?",
+      "options_json": "{\"A\": \"To increase the importance of rare terms in a document\", \"B\": \"To decrease the importance of common terms across all documents\", \"C\": \"To normalize term frequencies to account for document length\", \"D\": \"To eliminate stop words from the index\"}",
+      "correct_option": "B",
+      "explanation": "TF-IDF weighting decreases the importance of common terms, which can dominate the similarity metric and mask relevant but rare terms. This helps to focus on terms that are unique to a document or highly indicative of its content."
+    },
+    {
+      "skill_name": "Information Retrieval & Web Analytics",
+      "difficulty": "hard",
+      "question_text": "In a Vector Space Model, which term weighting scheme is known for its simplicity and effectiveness in retrieving relevant documents?",
+      "options_json": "{\"A\": \"Binary Term Weighting\", \"B\": \"Term Frequency-Inverse Document Frequency (TF-IDF)\", \"C\": \"Okapi BM25\", \"D\": \"Latent Semantic Analysis\"}",
+      "correct_option": "B",
+      "explanation": "TF-IDF is a widely used and effective term weighting scheme that takes into account the frequency of terms in each document and their rarity across the entire corpus. This helps to reduce the impact of common words and highlight more informative terms."
+    }
+  ],
+  "total_questions": 15
+}

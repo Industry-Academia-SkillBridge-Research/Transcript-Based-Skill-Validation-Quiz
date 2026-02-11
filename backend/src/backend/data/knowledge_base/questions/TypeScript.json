@@ -1,0 +1,38 @@
+{
+  "skill_name": "TypeScript",
+  "questions": [
+    {
+      "skill_name": "TypeScript",
+      "difficulty": "easy",
+      "question_text": "What does the 'as' keyword do in TypeScript?",
+      "options_json": "{\"A\": \"It is used for type casting.\", \"B\": \"It is used to import modules.\", \"C\": \"It is used to create interfaces.\", \"D\": \"It is used to extend classes.\"}",
+      "correct_option": "A",
+      "explanation": "The 'as' keyword in TypeScript is used for type casting, which allows you to explicitly convert a value from one type to another. This can be useful when working with different data types or APIs that return values of unknown types."
+    },
+    {
+      "skill_name": "TypeScript",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the 'readonly' keyword in TypeScript?",
+      "options_json": "{\"A\": \"To make a variable immutable\", \"B\": \"To make a function parameter mutable\", \"C\": \"To make an object property writable\", \"D\": \"None of the above\"}",
+      "correct_option": "A",
+      "explanation": "The 'readonly' keyword in TypeScript is used to declare variables, properties, or method parameters as immutable. This means that once a variable or property is declared as readonly, its value cannot be changed after it's initialized."
+    },
+    {
+      "skill_name": "TypeScript",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the 'never' type in TypeScript?",
+      "options_json": "{\"A\": \"To indicate that a function will always throw an error\", \"B\": \"To represent a value that should never occur\", \"C\": \"To denote a variable that can be reassigned\", \"D\": \"To specify the return type of a function\"}",
+      "correct_option": "B",
+      "explanation": "The 'never' type is used to indicate that a value should never occur. This is typically used in functions or methods where it's impossible for them to complete normally, such as in infinite loops."
+    },
+    {
+      "skill_name": "TypeScript",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the 'readonly' modifier in TypeScript?",
+      "options_json": "{\"A\": \"To indicate that a property cannot be reassigned once initialized.\", \"B\": \"To specify the type of a variable or property at compile-time.\", \"C\": \"To enable strict null checking for a property or variable.\", \"D\": \"To make a method or function immutable.\"}",
+      "correct_option": "A",
+      "explanation": "The 'readonly' modifier in TypeScript ensures that a property cannot be reassigned once it is initialized. This helps prevent unintended changes to the state of an object."
+    }
+  ],
+  "total_questions": 4
+}

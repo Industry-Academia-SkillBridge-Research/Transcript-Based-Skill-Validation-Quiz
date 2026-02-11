@@ -1,0 +1,126 @@
+{
+  "skill_name": "Object-Oriented Programming",
+  "questions": [
+    {
+      "skill_name": "Object-Oriented Programming",
+      "difficulty": "easy",
+      "question_text": "What is the primary benefit of using encapsulation in OOP?",
+      "options_json": "{\"A\": \"It allows for easier debugging and testing.\", \"B\": \"It hides the implementation details from the user, making it easier to modify or extend the code.\", \"C\": \"It reduces memory usage by storing data in a single location.\", \"D\": \"It increases the complexity of the code.\"}",
+      "correct_option": "B",
+      "explanation": "Encapsulation is used to hide the implementation details from the user, making it easier to modify or extend the code without affecting other parts of the program. This helps in reducing coupling and increasing modularity."
+    },
+    {
+      "skill_name": "Object-Oriented Programming",
+      "difficulty": "easy",
+      "question_text": "What is the main purpose of encapsulation in OOP?",
+      "options_json": "{\"A\": \"To increase code reusability\", \"B\": \"To hide data and behavior from external access\", \"C\": \"To improve program performance\", \"D\": \"To reduce code complexity\"}",
+      "correct_option": "B",
+      "explanation": "Encapsulation is a fundamental concept in OOP that binds data and methods together, making it harder for other parts of the program to access or modify them directly. This helps protect data integrity and promotes better modularity."
+    },
+    {
+      "skill_name": "Object-Oriented Programming",
+      "difficulty": "medium",
+      "question_text": "What is a key benefit of encapsulation in Object-Oriented Programming?",
+      "options_json": "{\"A\": \"It allows for easier debugging by exposing internal implementation details.\", \"B\": \"It helps to hide internal state and behavior, making the code more modular and reusable.\", \"C\": \"It reduces the need for comments in the code, as the purpose of each method is clear from its name.\", \"D\": \"It increases the complexity of the code, making it harder to maintain.\"}",
+      "correct_option": "B",
+      "explanation": "Encapsulation helps to hide internal state and behavior, making the code more modular and reusable. This allows developers to change the implementation details without affecting the rest of the program."
+    },
+    {
+      "skill_name": "Object-Oriented Programming",
+      "difficulty": "medium",
+      "question_text": "What is the primary purpose of encapsulation in Object-Oriented Programming?",
+      "options_json": "{\"A\": \"To hide internal implementation details from external classes\", \"B\": \"To increase code reusability across multiple projects\", \"C\": \"To improve performance by reducing memory usage\", \"D\": \"To simplify debugging by providing more information\"}",
+      "correct_option": "A",
+      "explanation": "Encapsulation is a fundamental concept in OOP that helps to hide internal implementation details from external classes, making it easier to modify or extend the code without affecting other parts of the program."
+    },
+    {
+      "skill_name": "Object-Oriented Programming",
+      "difficulty": "hard",
+      "question_text": "What is the primary advantage of using inheritance in object-oriented programming?",
+      "options_json": "{\"A\": \"It allows for code reuse and promotes modularity.\", \"B\": \"It enables polymorphism, allowing objects to take on multiple forms.\", \"C\": \"It simplifies debugging by reducing the number of classes needed.\", \"D\": \"It improves performance by reducing memory usage.\"}",
+      "correct_option": "A",
+      "explanation": "Inheritance allows for code reuse and promotes modularity, as child classes can inherit properties and methods from parent classes. This reduces code duplication and makes it easier to maintain and modify the codebase."
+    },
+    {
+      "skill_name": "Object-Oriented Programming",
+      "difficulty": "hard",
+      "question_text": "What is the primary benefit of using encapsulation in object-oriented programming?",
+      "options_json": "{\"A\": \"It allows for easier modification of code without affecting other parts of the program.\", \"B\": \"It improves code readability by hiding implementation details.\", \"C\": \"It increases memory usage by storing data in multiple locations.\", \"D\": \"It reduces code reusability by making it harder to share classes.\"}",
+      "correct_option": "B",
+      "explanation": "Encapsulation improves code readability by hiding implementation details, making it easier for developers to understand and maintain the program. This is achieved by bundling data and methods that manipulate that data into a single unit, reducing the complexity of the code."
+    },
+    {
+      "skill_name": "Object-Oriented Programming",
+      "difficulty": "easy",
+      "question_text": "What is a key benefit of using inheritance in OOP?",
+      "options_json": "{\"A\": \"It allows for code reuse.\", \"B\": \"It makes the code more modular.\", \"C\": \"It increases the complexity of the program.\", \"D\": \"It reduces the need for polymorphism.\"}",
+      "correct_option": "A",
+      "explanation": "Inheritance in OOP allows a child class to inherit properties and methods from its parent class, promoting code reuse. This makes it easier to maintain and modify the codebase."
+    },
+    {
+      "skill_name": "Object-Oriented Programming",
+      "difficulty": "easy",
+      "question_text": "What is a key benefit of using encapsulation in Object-Oriented Programming?",
+      "options_json": "{\"A\": \"It allows for easier debugging by exposing internal state.\", \"B\": \"It helps to hide the implementation details from the user and improve modularity.\", \"C\": \"It reduces code reuse by making it harder to create reusable components.\", \"D\": \"It increases coupling between classes, making them more tightly connected.\"}",
+      "correct_option": "B",
+      "explanation": "Encapsulation helps to hide the implementation details from the user and improve modularity. This makes it easier to modify or replace individual components without affecting other parts of the system."
+    },
+    {
+      "skill_name": "Object-Oriented Programming",
+      "difficulty": "easy",
+      "question_text": "What is a key benefit of using polymorphism in object-oriented programming?",
+      "options_json": "{\"A\": \"It allows for code reuse and modularity.\", \"B\": \"It enables objects to be treated as if they were of a different type.\", \"C\": \"It improves performance by reducing the number of method calls.\", \"D\": \"It simplifies debugging by providing more detailed error messages.\"}",
+      "correct_option": "A",
+      "explanation": "Polymorphism allows for code reuse and modularity, as objects can be treated as instances of a base class or interface. This enables developers to write more flexible and maintainable code."
+    },
+    {
+      "skill_name": "Object-Oriented Programming",
+      "difficulty": "easy",
+      "question_text": "What is the primary benefit of using Encapsulation in OOP?",
+      "options_json": "{\"A\": \"Improved code readability\", \"B\": \"Increased flexibility and maintainability\", \"C\": \"Reduced memory usage\", \"D\": \"Simplified debugging\"}",
+      "correct_option": "B",
+      "explanation": "Encapsulation helps to hide the internal details of an object from the outside world, making it easier to modify or extend without affecting other parts of the program. This leads to increased flexibility and maintainability."
+    },
+    {
+      "skill_name": "Object-Oriented Programming",
+      "difficulty": "medium",
+      "question_text": "What is a key benefit of using inheritance in object-oriented programming?",
+      "options_json": "{\"A\": \"It allows for code reuse and modularity.\", \"B\": \"It enables polymorphism, allowing objects to take on multiple forms.\", \"C\": \"It simplifies the process of debugging and testing code.\", \"D\": \"It reduces the need for abstraction.\"}",
+      "correct_option": "A",
+      "explanation": "Inheritance allows child classes to inherit properties and behavior from parent classes, promoting code reuse and modularity. This makes it easier to maintain and extend the codebase over time."
+    },
+    {
+      "skill_name": "Object-Oriented Programming",
+      "difficulty": "medium",
+      "question_text": "What is a key benefit of using encapsulation in object-oriented programming?",
+      "options_json": "{\"A\": \"It allows for easier debugging by exposing internal state.\", \"B\": \"It helps to hide sensitive data and improve security.\", \"C\": \"It enables multiple inheritance, which can lead to complexity.\", \"D\": \"It reduces code duplication by promoting reuse.\"}",
+      "correct_option": "B",
+      "explanation": "Encapsulation is a fundamental concept in object-oriented programming that helps to hide sensitive data and improve security. By encapsulating data, objects can control access to their internal state, reducing the risk of unauthorized modifications or exposure."
+    },
+    {
+      "skill_name": "Object-Oriented Programming",
+      "difficulty": "medium",
+      "question_text": "What is the primary benefit of using encapsulation in object-oriented programming?",
+      "options_json": "{\"A\": \"Improved code readability\", \"B\": \"Increased modularity and reusability\", \"C\": \"Faster execution speed\", \"D\": \"Simplified debugging\"}",
+      "correct_option": "B",
+      "explanation": "Encapsulation allows for the bundling of data and methods that operate on that data, making it easier to modify or extend the code without affecting other parts of the program. This leads to increased modularity and reusability."
+    },
+    {
+      "skill_name": "Object-Oriented Programming",
+      "difficulty": "hard",
+      "question_text": "What is the primary benefit of using inheritance in object-oriented programming?",
+      "options_json": "{\"A\": \"It allows for code reuse and modularity.\", \"B\": \"It enables polymorphism and dynamic method dispatch.\", \"C\": \"It simplifies debugging by reducing complexity.\", \"D\": \"It improves performance by reducing memory usage.\"}",
+      "correct_option": "A",
+      "explanation": "Inheritance allows for code reuse, as a subclass can inherit the properties and behavior of its parent class. This promotes modularity and reduces code duplication."
+    },
+    {
+      "skill_name": "Object-Oriented Programming",
+      "difficulty": "hard",
+      "question_text": "Which of the following is a key benefit of using encapsulation in object-oriented programming?",
+      "options_json": "{\"A\": \"Improved code readability\", \"B\": \"Increased flexibility and maintainability\", \"C\": \"Reduced memory usage\", \"D\": \"Faster execution speed\"}",
+      "correct_option": "B",
+      "explanation": "Encapsulation helps to increase flexibility and maintainability by hiding the implementation details of an object from the outside world, making it easier to modify or extend the code without affecting other parts of the program."
+    }
+  ],
+  "total_questions": 15
+}

@@ -1,0 +1,46 @@
+{
+  "skill_name": "NoSQL",
+  "questions": [
+    {
+      "skill_name": "NoSQL",
+      "difficulty": "easy",
+      "question_text": "What does NoSQL stand for?",
+      "options_json": "{\"A\": \"Not Only SQL\", \"B\": \"New Object Storage Layer\", \"C\": \"Non-Object Schema Language\", \"D\": \"None of the above\"}",
+      "correct_option": "A",
+      "explanation": "NoSQL stands for Not Only SQL, which emphasizes that it is not a replacement for traditional relational databases but rather an alternative database model."
+    },
+    {
+      "skill_name": "NoSQL",
+      "difficulty": "easy",
+      "question_text": "What is a key characteristic of NoSQL databases?",
+      "options_json": "{\"A\": \"They use SQL as their query language\", \"B\": \"They are designed to handle large amounts of unstructured data\", \"C\": \"They support transactions and ACID properties\", \"D\": \"They are only used for real-time analytics\"}",
+      "correct_option": "B",
+      "explanation": "NoSQL databases are often used to store large amounts of unstructured or semi-structured data, making them well-suited for big data applications. They can handle large volumes of data and provide high scalability."
+    },
+    {
+      "skill_name": "NoSQL",
+      "difficulty": "medium",
+      "question_text": "What is a key characteristic of document-oriented databases?",
+      "options_json": "{\"A\": \"They use a fixed schema for each document.\", \"B\": \"They store data in a collection of self-describing documents.\", \"C\": \"They are designed for high-performance transactions.\", \"D\": \"They require a separate schema definition.\"}",
+      "correct_option": "B",
+      "explanation": "Document-oriented databases store data in collections of self-describing documents, which can have varying structures. This allows for flexible and dynamic schema design."
+    },
+    {
+      "skill_name": "NoSQL",
+      "difficulty": "medium",
+      "question_text": "What is the primary advantage of using a document-oriented NoSQL database?",
+      "options_json": "{\"A\": \"It supports transactions and ACID compliance.\", \"B\": \"It allows for flexible schema design and easy scalability.\", \"C\": \"It provides high-performance querying capabilities.\", \"D\": \"It is suitable only for small-scale applications.\"}",
+      "correct_option": "B",
+      "explanation": "Document-oriented NoSQL databases are designed to handle large amounts of semi-structured data, making them ideal for applications with varying schema requirements. Their flexible schema design and scalability features make them a popular choice for big data and real-time web applications."
+    },
+    {
+      "skill_name": "NoSQL",
+      "difficulty": "hard",
+      "question_text": "What is the primary advantage of using a document-oriented NoSQL database over a relational database?",
+      "options_json": "{\"A\": \"It allows for easier scalability and horizontal partitioning.\", \"B\": \"It provides faster query performance due to its column-family storage model.\", \"C\": \"It supports transactions and atomicity, ensuring data consistency across multiple documents.\", \"D\": \"It eliminates the need for schema design and data modeling.\"}",
+      "correct_option": "D",
+      "explanation": "Document-oriented NoSQL databases like MongoDB eliminate the need for a predefined schema, allowing for flexible and dynamic data modeling. This flexibility is particularly useful in handling semi-structured or unstructured data."
+    }
+  ],
+  "total_questions": 5
+}

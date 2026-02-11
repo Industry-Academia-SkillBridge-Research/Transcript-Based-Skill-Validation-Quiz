@@ -1,0 +1,126 @@
+{
+  "skill_name": "CSS",
+  "questions": [
+    {
+      "skill_name": "CSS",
+      "difficulty": "easy",
+      "question_text": "What does the CSS selector :hover do?",
+      "options_json": "{\"A\": \"Changes the background color of an element\", \"B\": \"Displays a tooltip when hovering over an element\", \"C\": \"Highlights the text of an element on hover\", \"D\": \"Applies a specific style to an element only when it is hovered\"}",
+      "correct_option": "D",
+      "explanation": "The :hover pseudo-class applies styles to an element when it is being hovered over by the user's mouse. This can be used for visual effects or interactive elements."
+    },
+    {
+      "skill_name": "CSS",
+      "difficulty": "easy",
+      "question_text": "What does the CSS property 'display' do when set to 'flex'?",
+      "options_json": "{\"A\": \"It removes all padding and margin from an element.\", \"B\": \"It allows an element to be displayed as a flexible container.\", \"C\": \"It sets the width of an element to its parent's width.\", \"D\": \"It makes an element invisible.\"}",
+      "correct_option": "B",
+      "explanation": "When 'display' is set to 'flex', it allows the element to be displayed as a flexible container, which means it can adapt its size based on its content. This property is commonly used in layouts and responsive design."
+    },
+    {
+      "skill_name": "CSS",
+      "difficulty": "medium",
+      "question_text": "What does the CSS box-sizing property do?",
+      "options_json": "{\"A\": \"It changes the layout of the HTML structure.\", \"B\": \"It adds a padding and border to an element's width and height.\", \"C\": \"It sets the maximum width and height of an element.\", \"D\": \"It controls how an element's content, padding, and border are sized.\"}",
+      "correct_option": "D",
+      "explanation": "The box-sizing property allows you to easily control how an element's content, padding, and border are sized. This can be useful for creating responsive designs or layouts that require precise control over element sizing."
+    },
+    {
+      "skill_name": "CSS",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the :nth-child pseudo-class in CSS?",
+      "options_json": "{\"A\": \"To select every other element starting from the first one\", \"B\": \"To target a specific number of elements at a time\", \"C\": \"To create a responsive design layout\", \"D\": \"To apply styles to all child elements\"}",
+      "correct_option": "B",
+      "explanation": "The :nth-child pseudo-class allows you to select and style every nth element, regardless of its position in the DOM. For example, :nth-child(2n) would target every second element."
+    },
+    {
+      "skill_name": "CSS",
+      "difficulty": "hard",
+      "question_text": "What does the CSS property 'box-sizing' do when set to 'border-box'?",
+      "options_json": "{\"A\": \"It sets the width and height of an element to include its padding and border.\", \"B\": \"It sets the width and height of an element to exclude its padding and border.\", \"C\": \"It sets the background color of an element to match its parent's background color.\", \"D\": \"It sets the font size of an element to 16px.\"}",
+      "correct_option": "A",
+      "explanation": "When 'box-sizing' is set to 'border-box', the width and height of an element include its padding and border, making it easier to manage layouts. This can help simplify CSS code and reduce the need for extra calculations."
+    },
+    {
+      "skill_name": "CSS",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the :has pseudo-class in CSS?",
+      "options_json": "{\"A\": \"To select elements based on their contents\", \"B\": \"To apply styles to an element's parent or siblings\", \"C\": \"To create a new stacking context for an element\", \"D\": \"None of the above\"}",
+      "correct_option": "A",
+      "explanation": "The :has pseudo-class is used to select elements based on their contents, allowing for more complex and dynamic styling. This can be useful for creating responsive designs or layouts that adapt to changing content."
+    },
+    {
+      "skill_name": "CSS",
+      "difficulty": "easy",
+      "question_text": "What does the CSS selector `:hover` do?",
+      "options_json": "{\"A\": \"Changes the background color of an element\", \"B\": \"Displays a tooltip when hovering over an element\", \"C\": \"Increases the font size of an element on hover\", \"D\": \"Adds a drop shadow effect to an element\"}",
+      "correct_option": "A",
+      "explanation": "The `:hover` pseudo-class is used to apply styles to an element when it is being hovered over. In this case, the correct answer changes the background color of an element."
+    },
+    {
+      "skill_name": "CSS",
+      "difficulty": "easy",
+      "question_text": "What does the CSS property 'display: flex' do?",
+      "options_json": "{\"A\": \"It adds a background image to an element\", \"B\": \"It allows an element's content to be laid out in one dimension, either horizontally or vertically\", \"C\": \"It makes an element invisible\", \"D\": \"It changes the font size of an element\"}",
+      "correct_option": "B",
+      "explanation": "The 'display: flex' property allows an element's content to be laid out in one dimension, either horizontally or vertically. This is useful for creating responsive layouts."
+    },
+    {
+      "skill_name": "CSS",
+      "difficulty": "easy",
+      "question_text": "What does the CSS property 'display: inline-block' do?",
+      "options_json": "{\"A\": \"It removes all margins and paddings from an element.\", \"B\": \"It allows an element to be displayed on a new line, but still maintains its width.\", \"C\": \"It makes an element take up the full width of its parent container.\", \"D\": \"It prevents an element from being displayed at all.\"}",
+      "correct_option": "B",
+      "explanation": "The 'display: inline-block' property allows an element to be displayed on a new line, but still maintains its width. This is useful for creating elements that can be displayed in a row or column layout."
+    },
+    {
+      "skill_name": "CSS",
+      "difficulty": "easy",
+      "question_text": "What does the CSS property 'display' do when set to 'none'?",
+      "options_json": "{\"A\": \"Hides an element but keeps it in the document flow\", \"B\": \"Removes an element from the document and its space is collapsed\", \"C\": \"Changes the layout of other elements on the page\", \"D\": \"Makes an element invisible\"}",
+      "correct_option": "B",
+      "explanation": "When 'display' is set to 'none', the element is removed from the document and its space is collapsed, making it invisible. This means that the element will not take up any space on the page."
+    },
+    {
+      "skill_name": "CSS",
+      "difficulty": "medium",
+      "question_text": "What does the CSS property 'box-sizing' do?",
+      "options_json": "{\"A\": \"It changes the layout of an element by adding padding and border to its width and height.\", \"B\": \"It allows for easier calculation of an element's dimensions by including padding and border in its box model.\", \"C\": \"It is used for styling text within an element.\", \"D\": \"It is a deprecated property that should not be used.\"}",
+      "correct_option": "B",
+      "explanation": "The 'box-sizing' property allows developers to choose whether or not to include padding and border in an element's box model, making it easier to calculate its dimensions. This can simplify layout calculations and improve code readability."
+    },
+    {
+      "skill_name": "CSS",
+      "difficulty": "medium",
+      "question_text": "What does the CSS property 'display: flex' do?",
+      "options_json": "{\"A\": \"It sets the layout of an element to a block-level layout.\", \"B\": \"It sets the layout of an element to a flexible box layout.\", \"C\": \"It sets the width and height of an element to auto.\", \"D\": \"It sets the background color of an element to blue.\"}",
+      "correct_option": "B",
+      "explanation": "The 'display: flex' property sets the layout of an element to a flexible box layout, allowing for easy alignment and distribution of child elements. This is useful for creating responsive designs and layouts."
+    },
+    {
+      "skill_name": "CSS",
+      "difficulty": "hard",
+      "question_text": "What does the CSS property 'content' do when applied to a pseudo-element?",
+      "options_json": "{\"A\": \"It sets the font size of the element.\", \"B\": \"It adds a new line before or after an element.\", \"C\": \"It generates content for the element, such as text or an image.\", \"D\": \"It changes the background color of the element.\"}",
+      "correct_option": "C",
+      "explanation": "The 'content' property is used to generate content for an element, which can be useful for adding dynamic information to a page. In this case, it's applied to a pseudo-element, making it a more advanced use case."
+    },
+    {
+      "skill_name": "CSS",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the :nth-child pseudo-class in CSS?",
+      "options_json": "{\"A\": \"To select every other element in a list\", \"B\": \"To target elements based on their position in the DOM\", \"C\": \"To apply styles to specific elements within a container\", \"D\": \"To create a responsive design layout\"}",
+      "correct_option": "B",
+      "explanation": "The :nth-child pseudo-class is used to select elements based on their position in the DOM, allowing for more precise targeting of elements. This can be useful for creating complex layouts or animations."
+    },
+    {
+      "skill_name": "CSS",
+      "difficulty": "hard",
+      "question_text": "What does the CSS property 'box-sizing' do when set to 'border-box'? ",
+      "options_json": "{\"A\": \"It changes the default box model behavior, making padding and border included in the width and height properties.\", \"B\": \"It adds a new margin around the element.\", \"C\": \"It removes the ability to use CSS grid layout.\", \"D\": \"It sets the background color of the element to transparent.\"}",
+      "correct_option": "A",
+      "explanation": "When 'box-sizing' is set to 'border-box', it includes padding and border in an element's width and height, allowing for more flexibility in design. This can simplify layout calculations and improve code readability."
+    }
+  ],
+  "total_questions": 15
+}
