@@ -44,31 +44,22 @@ export const getTranscript = async (studentId) => {
   return response.data;
 };
 
-// Skills endpoints
+// Skills endpoints (flat skill structure)
 export const getClaimedSkills = async (studentId) => {
-  const response = await api.get(`/students/${studentId}/skills/parents/claimed`);
-  return response.data;
-};
-
-export const getChildSkills = async (studentId) => {
   const response = await api.get(`/students/${studentId}/skills/claimed`);
   return response.data;
 };
 
-export const getParentSkills = async (studentId) => {
-  const response = await api.get(`/students/${studentId}/skills/parent`);
+export const getSkillEvidence = async (studentId, skillName) => {
+  const response = await api.get(`/students/${studentId}/explain/skill/${encodeURIComponent(skillName)}`);
   return response.data;
 };
 
-export const getChildSkillEvidence = async (studentId, skillName) => {
-  const response = await api.get(`/students/${studentId}/skills/claimed/${encodeURIComponent(skillName)}/evidence`);
-  return response.data;
-};
-
-export const getParentSkillEvidence = async (studentId, parentSkill) => {
-  const response = await api.get(`/students/${studentId}/skills/parent/${encodeURIComponent(parentSkill)}/evidence`);
-  return response.data;
-};
+// Legacy aliases for backward compatibility
+export const getChildSkills = getClaimedSkills;
+export const getParentSkills = getClaimedSkills;
+export const getChildSkillEvidence = getSkillEvidence;
+export const getParentSkillEvidence = getSkillEvidence;
 
 // XAI endpoints
 export const getSkillsSummary = async (studentId) => {

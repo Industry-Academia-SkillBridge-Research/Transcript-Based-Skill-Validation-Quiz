@@ -4,6 +4,7 @@ from app.db import Base
 
 
 class SkillProfileClaimed(Base):
+    """Student skill profile from transcript analysis (claimed skills)"""
     __tablename__ = "skill_profile_claimed"
     
     id = Column(Integer, primary_key=True, index=True, autoincrement=True)
@@ -16,6 +17,7 @@ class SkillProfileClaimed(Base):
 
 
 class SkillEvidence(Base):
+    """Individual course contributions to skill scores"""
     __tablename__ = "skill_evidence"
     
     id = Column(Integer, primary_key=True, index=True, autoincrement=True)
@@ -31,30 +33,3 @@ class SkillEvidence(Base):
     evidence_weight = Column(Float, nullable=False)
     contribution = Column(Float, nullable=False)
 
-
-class SkillProfileParentClaimed(Base):
-    __tablename__ = "skill_profile_parent_claimed"
-    
-    id = Column(Integer, primary_key=True, index=True, autoincrement=True)
-    student_id = Column(String, nullable=False, index=True)
-    parent_skill = Column(String, nullable=False, index=True)
-    parent_score = Column(Float, nullable=False)
-    parent_level = Column(String, nullable=False)
-    confidence = Column(Float, nullable=False)
-    created_at = Column(DateTime, default=datetime.utcnow, nullable=False)
-
-
-class SkillEvidenceParent(Base):
-    __tablename__ = "skill_evidence_parent"
-    
-    id = Column(Integer, primary_key=True, index=True, autoincrement=True)
-    student_id = Column(String, nullable=False, index=True)
-    parent_skill = Column(String, nullable=False, index=True)
-    child_skill = Column(String, nullable=False)
-    course_code = Column(String, nullable=False)
-    contribution = Column(Float, nullable=False)
-    evidence_weight = Column(Float, nullable=False)
-    recency = Column(Float, nullable=False)
-    grade = Column(String, nullable=False)
-    credits = Column(Float, nullable=False)
-    map_weight = Column(Float, nullable=False)

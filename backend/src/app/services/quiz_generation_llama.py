@@ -1,43 +1,18 @@
 """
 Quiz generation service using Ollama LLM and quiz plans.
+Uses flat skill structure - no parent/child hierarchy.
 """
 
 import json
 import logging
 from datetime import datetime
-from typing import Dict, List
+from typing import List
 from sqlalchemy.orm import Session
 from fastapi import HTTPException
 from app.models.quiz import QuizPlan, QuizAttempt, QuizQuestion
-from app.models.skill_group_map import SkillGroupMap
 from app.services.ollama_client import generate_mcq, DEFAULT_MODEL
 
 logger = logging.getLogger(__name__)
-
-
-def load_skill_scope_mapping(db: Session) -> Dict[str, List[str]]:
-    """
-    Load parent skill -> child skills mapping from SkillGroupMap.
-    
-    Args:
-        db: Database session
-        
-    Returns:
-        Dictionary mapping parent_skill -> list of child_skills
-    """
-    mappings = db.query(SkillGroupMap).all()
-    
-    skill_scope = {}
-    for mapping in mappings:
-        parent = mapping.parent_skill
-        child = mapping.child_skill
-        
-        if parent not in skill_scope:
-            skill_scope[parent] = []
-        skill_scope[parent].append(child)
-    
-    logger.debug(f"Loaded skill scope for {len(skill_scope)} parent skills")
-    return skill_scope
 
 
 def generate_quiz_from_latest_plan(
@@ -85,9 +60,6 @@ def generate_quiz_from_latest_plan(
     
     logger.info(f"Quiz plan loaded: {len(skills_list)} skills, plan_id={quiz_plan.id}")
     
-    # Load skill scope mapping (parent -> children)
-    skill_scope_mapping = load_skill_scope_mapping(db)
-    
     # Create quiz attempt
     quiz_attempt = QuizAttempt(
         student_id=student_id,
@@ -109,26 +81,15 @@ def generate_quiz_from_latest_plan(
         # Get difficulty mix for this skill
         difficulty_mix = difficulty_mix_dict.get(skill_name, {"easy": 2, "medium": 1, "hard": 1})
         
-        # Get child skills (scope bullets) for this parent skill
-        scope_bullets = skill_scope_mapping.get(skill_name, [skill_name])
-        if not scope_bullets:
-            scope_bullets = [skill_name]
-        
         logger.info(
-            f"Generating questions for skill '{skill_name}': {difficulty_mix}, "
-            f"scope: {len(scope_bullets)} child skills"
+            f"Generating questions for skill '{skill_name}': {difficulty_mix}"
         )
         
         # Generate questions for each difficulty level
-        scope_index = 0
         for difficulty, count in difficulty_mix.items():
             for i in range(count):
-                # Rotate scope bullets to cover different child skills
-                rotated_scope = scope_bullets[scope_index:] + scope_bullets[:scope_index]
-                scope_index = (scope_index + 1) % len(scope_bullets)
-                
-                # Use first 3-6 child skills as scope
-                scope_for_question = rotated_scope[:min(6, len(rotated_scope))]
+                # For flat skills, use the skill name directly as scope
+                scope_for_question = [skill_name]
                 
                 logger.info(
                     f"Generating question {i+1}/{count} for skill={skill_name}, "

@@ -1,15 +1,17 @@
 """
 Job Recommendation Service
 
-Recommends jobs to students based on their parent skill scores
+Recommends jobs to students based on their skill scores
 and job skill requirements from the job feature matrix.
+
+Updated for flat skill structure.
 """
 
 import pandas as pd
 from pathlib import Path
 from typing import Dict, List, Optional
 from sqlalchemy.orm import Session
-from app.models.skill import SkillProfileParentClaimed
+from app.models.skill import SkillProfileClaimed
 import logging
 
 logger = logging.getLogger(__name__)
@@ -56,28 +58,28 @@ def load_jobs_feature_table() -> pd.DataFrame:
 
 def get_student_parent_skill_scores(db: Session, student_id: str) -> Dict[str, float]:
     """
-    Get student's parent skill scores from claimed parent skills table.
+    Get student's skill scores from claimed skills table (flat structure).
     
     Args:
         db: Database session
         student_id: Student identifier
         
     Returns:
-        Dictionary mapping parent_skill -> score (0-100)
+        Dictionary mapping skill_name -> score (0-100)
     """
-    # Get claimed parent skills
-    claimed_skills = db.query(SkillProfileParentClaimed).filter(
-        SkillProfileParentClaimed.student_id == student_id
+    # Get claimed skills
+    claimed_skills = db.query(SkillProfileClaimed).filter(
+        SkillProfileClaimed.student_id == student_id
     ).all()
     
     if claimed_skills:
-        logger.info(f"Using {len(claimed_skills)} claimed parent skills for {student_id}")
+        logger.info(f"Using {len(claimed_skills)} claimed skills for {student_id}")
         return {
-            skill.parent_skill: skill.parent_score
+            skill.skill_name: skill.claimed_score
             for skill in claimed_skills
         }
     
-    logger.warning(f"No parent skills found for student {student_id}")
+    logger.warning(f"No skills found for student {student_id}")
     return {}
 
 

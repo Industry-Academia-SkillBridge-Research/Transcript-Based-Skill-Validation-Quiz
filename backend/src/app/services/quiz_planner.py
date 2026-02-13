@@ -1,5 +1,6 @@
 """
 Quiz planning service for creating personalized quiz plans based on student skills.
+Uses flat skill structure.
 """
 
 import json
@@ -7,7 +8,7 @@ import logging
 from datetime import datetime
 from typing import Dict, List, Optional
 from sqlalchemy.orm import Session
-from app.models.skill import SkillProfileClaimed, SkillProfileParentClaimed
+from app.models.skill import SkillProfileClaimed
 from app.models.quiz import QuizPlan
 
 logger = logging.getLogger(__name__)
@@ -64,28 +65,16 @@ def create_quiz_plan(
     """
     logger.info(f"Creating quiz plan for student: {student_id}")
     
-    # Try new system first: SkillProfileClaimed (direct job skills)
+    # Get claimed skills (flat skill structure)
     all_claimed_skills = db.query(SkillProfileClaimed).filter(
         SkillProfileClaimed.student_id == student_id
     ).all()
     
-    if all_claimed_skills:
-        # New system: use claimed skills
-        skill_lookup = {skill.skill_name: skill for skill in all_claimed_skills}
-        skill_type = "claimed"
-        logger.info(f"Using claimed skills (new system): {len(all_claimed_skills)} skills found")
-    else:
-        # Fallback to old system: SkillProfileParentClaimed
-        all_parent_skills = db.query(SkillProfileParentClaimed).filter(
-            SkillProfileParentClaimed.student_id == student_id
-        ).all()
-        
-        if not all_parent_skills:
-            raise ValueError(f"No skills found for student {student_id}")
-        
-        skill_lookup = {skill.parent_skill: skill for skill in all_parent_skills}
-        skill_type = "parent"
-        logger.info(f"Using parent skills (old system): {len(all_parent_skills)} skills found")
+    if not all_claimed_skills:
+        raise ValueError(f"No skills found for student {student_id}")
+    
+    skill_lookup = {skill.skill_name: skill for skill in all_claimed_skills}
+    logger.info(f"Using claimed skills: {len(all_claimed_skills)} skills found")
     
     # Determine which skills to use
     if selected_skills is not None:

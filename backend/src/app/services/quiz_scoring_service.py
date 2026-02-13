@@ -2,20 +2,18 @@
 Quiz Scoring Service
 
 Handles quiz answer validation, scoring, and skill profile updates.
+Uses flat skill structure - directly updates StudentSkillPortfolio.
 """
 
 import logging
 from typing import List, Dict
 from datetime import datetime
 from sqlalchemy.orm import Session
-from sqlalchemy.exc import IntegrityError
 from collections import defaultdict
 
-from ..models.quiz import QuizQuestion, QuizAttempt
+from ..models.quiz import QuizQuestion
 from ..models.quiz_answer import QuizAnswer
-from ..models.skill_profile_verified_parent import SkillProfileVerifiedParent
-from ..models.skill_profile_final_parent import SkillProfileFinalParent
-from ..models.skill import SkillProfileParentClaimed
+from ..models.skill import SkillProfileClaimed
 from ..models.student_skill_portfolio import StudentSkillPortfolio
 
 logger = logging.getLogger(__name__)
@@ -126,7 +124,7 @@ def score_quiz_attempt(
         if is_correct:
             skill_stats[skill_name]["correct"] += 1
     
-    # 5) Aggregate per skill_name (parent skill)
+    # 5) Aggregate per skill_name (flat skill)
     verified_scores = {}
     verified_levels = {}
     for skill_name, stats in skill_stats.items():
@@ -138,39 +136,18 @@ def score_quiz_attempt(
             verified_scores[skill_name] = 0.0
             verified_levels[skill_name] = "Beginner"
     
-    # 6) Load claimed parent scores from SkillProfileParentClaimed for student_id
-    claimed_profiles = db.query(SkillProfileParentClaimed).filter(
-        SkillProfileParentClaimed.student_id == student_id
+    # 6) Load claimed scores from SkillProfileClaimed for student_id
+    claimed_profiles = db.query(SkillProfileClaimed).filter(
+        SkillProfileClaimed.student_id == student_id
     ).all()
     
-    claimed_scores = {p.parent_skill: p.parent_score for p in claimed_profiles}
+    claimed_scores = {p.skill_name: p.claimed_score for p in claimed_profiles}
     
-    # 7) Calculate final_score with dynamic weights based on questions answered
-    # 8) Upsert (delete then insert) rows into SkillProfileVerifiedParent and SkillProfileFinalParent
-    
-    # Delete old verified and final profiles for this student
-    db.query(SkillProfileVerifiedParent).filter(
-        SkillProfileVerifiedParent.student_id == student_id
-    ).delete()
-    
-    db.query(SkillProfileFinalParent).filter(
-        SkillProfileFinalParent.student_id == student_id
-    ).delete()
-    
-    # Create new verified and final profiles
+    # 7) Calculate final_score and update StudentSkillPortfolio directly
     per_skill_results = []
     
     for skill_name, verified_score in verified_scores.items():
         verified_level = verified_levels[skill_name]
-        
-        # Create SkillProfileVerifiedParent
-        verified_profile = SkillProfileVerifiedParent(
-            student_id=student_id,
-            parent_skill=skill_name,
-            verified_score=verified_score,
-            verified_level=verified_level
-        )
-        db.add(verified_profile)
         
         # Get claimed score (default to 0 if not found)
         claimed_score = claimed_scores.get(skill_name, 0.0)
@@ -187,27 +164,13 @@ def score_quiz_attempt(
         final_score = w_quiz * verified_score + w_claimed * claimed_score
         final_level = determine_level(final_score)
         
-        # Create SkillProfileFinalParent
-        final_profile = SkillProfileFinalParent(
-            student_id=student_id,
-            parent_skill=skill_name,
-            claimed_score=claimed_score,
-            verified_score=verified_score,
-            final_score=final_score,
-            final_level=final_level
-        )
-        db.add(final_profile)
-        
-        # Build XAI explanation text
+        # Build explanation
         explanation_text = (
-            f"Your final score is calculated as: "
-            f"{w_quiz:.0%} × Quiz Score ({verified_score:.1f}%) + "
-            f"{w_claimed:.0%} × Claimed Score ({claimed_score:.1f}%). "
-            f"You answered {correct_qs}/{total_qs} questions correctly. "
-            f"The quiz weight increases with more questions answered (max 80%)."
+            f"Final score is {round(w_quiz * 100, 1)}% from quiz "
+            f"({round(verified_score, 1)}) + {round(w_claimed * 100, 1)}% from "
+            f"transcript ({round(claimed_score, 1)}). Weight adapts with quiz size."
         )
         
-        # Build per-skill result with XAI fields
         per_skill_results.append({
             "skill_name": skill_name,
             "correct": correct_qs,
@@ -240,7 +203,6 @@ def score_quiz_attempt(
             portfolio_entry.final_level = final_level
             portfolio_entry.correct_count = correct_qs
             portfolio_entry.total_questions = total_qs
-            portfolio_entry.updated_at = datetime.utcnow()
         else:
             # Create new entry
             portfolio_entry = StudentSkillPortfolio(
