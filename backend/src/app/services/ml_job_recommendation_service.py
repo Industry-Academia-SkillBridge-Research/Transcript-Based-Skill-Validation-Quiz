@@ -120,6 +120,8 @@ def get_student_skill_profile(
     """
     Get student's skill scores and levels (flat skill structure).
     
+    Prioritizes portfolio (tested) skills over claimed skills.
+    
     Args:
         db: Database session
         student_id: Student identifier
@@ -130,8 +132,10 @@ def get_student_skill_profile(
     """
     skill_scores = {}
     skill_levels = {}
+    verified_count = 0
+    claimed_count = 0
     
-    # Get verified skills from portfolio (includes quiz results)
+    # Get verified skills from portfolio (tested via quiz)
     portfolio_skills = db.query(StudentSkillPortfolio).filter(
         StudentSkillPortfolio.student_id == student_id
     ).all()
@@ -141,15 +145,17 @@ def get_student_skill_profile(
         for skill in portfolio_skills:
             skill_scores[skill.skill_name] = skill.final_score
             skill_levels[skill.skill_name] = skill.final_level
+        verified_count = len(portfolio_skills)
     
-    # Get claimed skills (from transcript) if no portfolio skills
-    if not skill_scores:
-        claimed_skills = db.query(SkillProfileClaimed).filter(
-            SkillProfileClaimed.student_id == student_id
-        ).all()
-        
-        logger.info(f"Using {len(claimed_skills)} claimed skills for {student_id}")
-        for skill in claimed_skills:
+    # Get claimed skills (from transcript) if no portfolio skills OR to supplement
+    claimed_skills = db.query(SkillProfileClaimed).filter(
+        SkillProfileClaimed.student_id == student_id
+    ).all()
+    
+    # Add claimed skills only for skills NOT in portfolio (avoid duplicates)
+    portfolio_skill_names = set(skill_scores.keys())
+    for skill in claimed_skills:
+        if skill.skill_name not in portfolio_skill_names:
             skill_scores[skill.skill_name] = skill.claimed_score
             # Infer level from score if not in portfolio
             if skill.claimed_score >= 75:
@@ -158,12 +164,11 @@ def get_student_skill_profile(
                 skill_levels[skill.skill_name] = "Intermediate"
             else:
                 skill_levels[skill.skill_name] = "Beginner"
-            skill_scores[skill.parent_skill] = skill.parent_score
-            skill_levels[skill.parent_skill] = skill.parent_level
+            claimed_count += 1
     
     logger.info(
-        f"Student profile: {len(skill_scores)} skills "
-        f"({len(verified_skills)} verified, {len(claimed_skills)} claimed)"
+        f"Student profile: {len(skill_scores)} total skills "
+        f"({verified_count} verified from quizzes, {claimed_count} claimed from transcript)"
     )
     
     return skill_scores, skill_levels

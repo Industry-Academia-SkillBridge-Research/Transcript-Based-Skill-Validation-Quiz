@@ -59,10 +59,12 @@ export default function SkillsPage() {
   const handleSkillToggle = (skillName) => {
     setSelectedSkills((prev) => {
       if (prev.includes(skillName)) {
+        // Deselecting a skill - clear any error
+        setError(null);
         return prev.filter((s) => s !== skillName);
       } else {
         if (prev.length >= 5) {
-          setError({ message: "You can select up to 5 skills only" });
+          setError({ message: "Maximum 5 skills allowed. Please deselect a skill to choose another." });
           return prev;
         }
         setError(null);
@@ -131,13 +133,26 @@ export default function SkillsPage() {
           {error && <ErrorAlert error={error} />}
           
           <div className="flex items-center justify-between mb-4">
-            <div className="bg-gradient-to-r from-primary/10 to-primary/5 p-4 rounded-xl border border-primary/20 flex-1 mr-4">
+            <div className={`p-4 rounded-xl border flex-1 mr-4 transition-colors ${
+              selectedSkills.length >= 5 
+                ? 'bg-gradient-to-r from-green-50 to-green-100 border-green-300' 
+                : 'bg-gradient-to-r from-primary/10 to-primary/5 border-primary/20'
+            }`}>
               <p className="text-sm font-semibold text-foreground mb-2">
-                Selected: <span className="text-primary text-lg">{selectedSkills.length}</span> / 5 skills
+                Selected: <span className={`text-lg ${selectedSkills.length >= 5 ? 'text-green-600' : 'text-primary'}`}>
+                  {selectedSkills.length}
+                </span> / 5 skills
+                {selectedSkills.length >= 5 && (
+                  <span className="ml-2 text-xs font-normal text-green-700">✓ Maximum reached</span>
+                )}
               </p>
               <div className="w-full h-2 bg-secondary rounded-full overflow-hidden">
                 <div 
-                  className="h-full bg-gradient-to-r from-primary to-primary-dark transition-all duration-300"
+                  className={`h-full transition-all duration-300 ${
+                    selectedSkills.length >= 5 
+                      ? 'bg-gradient-to-r from-green-500 to-green-600' 
+                      : 'bg-gradient-to-r from-primary to-primary-dark'
+                  }`}
                   style={{ width: `${(selectedSkills.length / 5) * 100}%` }}
                 />
               </div>

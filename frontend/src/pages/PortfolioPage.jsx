@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { Award, TrendingUp, Calendar, ArrowLeft, Target, CheckCircle, Mail, User, Edit2, Camera, Download, Briefcase, AlertCircle, Sparkles } from "lucide-react";
-import { getStudentProfile, updateStudentProfile, uploadProfilePhoto, getJobRecommendations } from "@/api/api";
+import { Award, TrendingUp, Calendar, ArrowLeft, Target, CheckCircle, Mail, User, Edit2, Camera, Download, Briefcase, AlertCircle, Sparkles, Trash2 } from "lucide-react";
+import { getStudentProfile, updateStudentProfile, uploadProfilePhoto, getJobRecommendations, clearStudentPortfolio } from "@/api/api";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { ErrorAlert } from "@/components/ui/ErrorAlert";
@@ -74,6 +74,26 @@ export default function PortfolioPage() {
 
   const handleDownloadCV = () => {
     window.print();
+  };
+
+  const handleClearPortfolio = async () => {
+    const confirmed = window.confirm(
+      "Are you sure you want to clear all portfolio records? This will remove all validated skills from quiz results. This action cannot be undone."
+    );
+    
+    if (!confirmed) return;
+    
+    try {
+      setLoading(true);
+      const result = await clearStudentPortfolio(studentId);
+      alert(`Successfully cleared ${result.deleted_count} portfolio records.`);
+      // Refresh the profile to show empty portfolio
+      await fetchProfile();
+    } catch (err) {
+      alert("Failed to clear portfolio: " + (err.response?.data?.detail || err.message));
+    } finally {
+      setLoading(false);
+    }
   };
 
   const fetchJobRecommendations = async () => {
@@ -274,13 +294,28 @@ export default function PortfolioPage() {
       {/* Skills Portfolio Section */}
       <Card>
         <CardHeader>
-          <CardTitle className="flex items-center gap-2">
-            <Target className="h-6 w-6 text-primary" />
-            Validated Skills Portfolio
-          </CardTitle>
-          <CardDescription>
-            Comprehensive skill assessment results from quiz validations
-          </CardDescription>
+          <div className="flex items-center justify-between">
+            <div>
+              <CardTitle className="flex items-center gap-2">
+                <Target className="h-6 w-6 text-primary" />
+                Validated Skills Portfolio
+              </CardTitle>
+              <CardDescription>
+                Comprehensive skill assessment results from quiz validations
+              </CardDescription>
+            </div>
+            {profile.portfolio.length > 0 && (
+              <Button 
+                variant="outline" 
+                size="sm"
+                className="text-red-600 hover:text-red-700 hover:bg-red-50 border-red-200 print:hidden"
+                onClick={handleClearPortfolio}
+              >
+                <Trash2 className="w-4 h-4 mr-2" />
+                Clear Portfolio
+              </Button>
+            )}
+          </div>
         </CardHeader>
         <CardContent>
           {profile.portfolio.length === 0 ? (

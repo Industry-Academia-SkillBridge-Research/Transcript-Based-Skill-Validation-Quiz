@@ -138,4 +138,9 @@ export const uploadProfilePhoto = async (studentId, file) => {
   return response.data;
 };
 
+export const clearStudentPortfolio = async (studentId) => {
+  const response = await api.delete(`/students/${studentId}/profile/portfolio`);
+  return response.data;
+};
+
 export default api;

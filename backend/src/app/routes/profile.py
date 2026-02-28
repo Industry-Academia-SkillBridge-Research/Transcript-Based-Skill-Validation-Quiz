@@ -120,23 +120,24 @@ def get_student_profile(
         # If a skill is in portfolio, it's already verified, so skip it from claimed
         portfolio_skill_names = {p.skill_name for p in portfolio}
         
-        # Calculate stats
-        total_skills = len(portfolio) + len([s for s in claimed_skills if s.skill_name not in portfolio_skill_names])
-        all_scores = [p.final_score for p in portfolio] + [c.claimed_score for c in claimed_skills if c.skill_name not in portfolio_skill_names]
+        # Calculate stats (only for verified skills - tested via quiz)
+        total_skills = len(portfolio)
+        all_scores = [p.final_score for p in portfolio]
         
         stats = {
             "total_skills": total_skills,
             "average_score": round(sum(all_scores) / len(all_scores), 1) if all_scores else 0,
-            "advanced_count": sum(1 for p in portfolio if p.final_level == "Advanced") + sum(1 for c in claimed_skills if c.claimed_level == "Advanced" and c.skill_name not in portfolio_skill_names),
+            "advanced_count": sum(1 for p in portfolio if p.final_level == "Advanced"),
             "verified_count": len(portfolio),
-            "claimed_count": len([s for s in claimed_skills if s.skill_name not in portfolio_skill_names]),
+            "claimed_count": 0,  # Not showing claimed skills in portfolio
             "total_questions": sum(p.total_questions for p in portfolio)
         }
         
-        # Build portfolio with verified skills first, then claimed skills
+        # Build portfolio with ONLY verified skills (tested via quiz)
+        # Do NOT include claimed skills - portfolio should only show quiz-validated skills
         portfolio_data = []
         
-        # Add verified skills (from quizzes)
+        # Add only verified skills (from quizzes where student answered questions)
         for p in portfolio:
             portfolio_data.append({
                 "skill_name": p.skill_name,
@@ -149,21 +150,6 @@ def get_student_profile(
                 "status": "verified",
                 "updated_at": p.updated_at.isoformat()
             })
-        
-        # Add claimed skills that haven't been verified yet
-        for c in claimed_skills:
-            if c.skill_name not in portfolio_skill_names:
-                portfolio_data.append({
-                    "skill_name": c.skill_name,
-                    "verified_score": 0,
-                    "claimed_score": round(c.claimed_score, 2),
-                    "final_score": round(c.claimed_score, 2),
-                    "final_level": c.claimed_level,
-                    "correct_count": 0,
-                    "total_questions": 0,
-                    "status": "claimed",
-                    "updated_at": c.updated_at.isoformat() if hasattr(c, 'updated_at') else None
-                })
         
         return {
             "student_id": student.student_id,
@@ -258,3 +244,73 @@ async def upload_profile_photo(
     except Exception as e:
         logger.error(f"Error uploading photo: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
+
+
+@router.delete("/students/{student_id}/profile/portfolio")
+def clear_student_portfolio(
+    student_id: str,
+    db: Session = Depends(get_db)
+):
+    """
+    Clear only portfolio/verified skill data for a student.
+    
+    This removes ONLY verified quiz results, keeping the claimed skills
+    computed from the transcript. This allows students to retake quizzes
+    without losing their base skill profile.
+    
+    Clears:
+    - student_skill_portfolio (new portfolio system)
+    - skill_profile_verified_parent (legacy verified skills)
+    - skill_profile_final_parent (legacy final scores)
+    
+    Preserves:
+    - skill_profile_claimed (base skills from transcript)
+    - skill_evidence (course evidence)
+    
+    Args:
+        student_id: Student identifier
+        db: Database session
+        
+    Returns:
+        Success message with count of deleted records
+    """
+    try:
+        total_deleted = 0
+        
+        # Delete from student_skill_portfolio (new system)
+        deleted = db.execute(
+            "DELETE FROM student_skill_portfolio WHERE student_id = :sid",
+            {"sid": student_id}
+        )
+        total_deleted += deleted.rowcount
+        
+        # Delete from skill_profile_verified_parent (legacy)
+        deleted = db.execute(
+            "DELETE FROM skill_profile_verified_parent WHERE student_id = :sid",
+            {"sid": student_id}
+        )
+        total_deleted += deleted.rowcount
+        
+        # Delete from skill_profile_final_parent (legacy)
+        deleted = db.execute(
+            "DELETE FROM skill_profile_final_parent WHERE student_id = :sid",
+            {"sid": student_id}
+        )
+        total_deleted += deleted.rowcount
+        
+        db.commit()
+        
+        logger.info(f"Cleared {total_deleted} portfolio records for student {student_id} (preserved claimed skills)")
+        
+        return {
+            "message": f"Successfully cleared portfolio for student {student_id}. Claimed skills from transcript preserved.",
+            "deleted_count": total_deleted
+        }
+    
+    except Exception as e:
+        db.rollback()
+        logger.error(f"Error clearing portfolio for student {student_id}: {str(e)}")
+        raise HTTPException(
+            status_code=500,
+            detail=f"Failed to clear portfolio: {str(e)}"
+        )
