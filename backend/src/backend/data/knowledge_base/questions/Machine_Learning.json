@@ -4,51 +4,43 @@
     {
       "skill_name": "Machine Learning",
       "difficulty": "easy",
-      "question_text": "What does a neural network use to make predictions?",
-      "options_json": "{\"A\": \"Linear Regression\", \"B\": \"Decision Trees\", \"C\": \"Backpropagation and Forward Propagation\", \"D\": \"K-Means Clustering\"}",
-      "correct_option": "C",
-      "explanation": "Neural networks use backpropagation to adjust the model's weights during training, and forward propagation to make predictions. This process allows the network to learn from its mistakes and improve its accuracy."
+      "question_text": "What does the term 'Overfitting' refer to in Machine Learning?",
+      "options_json": "{\"A\": \"When a model is too complex and fits the training data too closely.\", \"B\": \"When a model fails to generalize well to new, unseen data.\", \"C\": \"When a model is not able to learn from the training data at all.\", \"D\": \"When a model is too simple and does not capture the underlying patterns in the data.\"}",
+      "correct_option": "A",
+      "explanation": "Overfitting occurs when a model is too complex and fits the training data too closely, resulting in poor performance on new, unseen data. This can be mitigated by regularization techniques or early stopping during training."
     },
     {
       "skill_name": "Machine Learning",
       "difficulty": "easy",
-      "question_text": "What does a decision tree in machine learning do?",
-      "options_json": "{\"A\": \"It's a type of neural network\", \"B\": \"It makes predictions based on features and their relationships\", \"C\": \"It's used for clustering data\", \"D\": \"It's a type of regression algorithm\"}",
-      "correct_option": "B",
-      "explanation": "A decision tree is a supervised learning algorithm that uses a tree-like model to make predictions based on the features and their relationships. It works by recursively partitioning the data into subsets based on the most informative feature."
+      "question_text": "What does a neural network use to make predictions?",
+      "options_json": "{\"A\": \"Linear Regression\", \"B\": \"Decision Trees\", \"C\": \"Backpropagation and Forward Propagation\", \"D\": \"Gradient Descent\"}",
+      "correct_option": "C",
+      "explanation": "Neural networks use backpropagation to update the weights of each layer, and forward propagation to make predictions. This process is repeated multiple times to converge on a solution."
     },
     {
       "skill_name": "Machine Learning",
       "difficulty": "medium",
-      "question_text": "What is the primary goal of feature scaling in machine learning?",
-      "options_json": "{\"A\": \"To reduce the dimensionality of the data\", \"B\": \"To prevent features with large ranges from dominating the model\", \"C\": \"To improve the convergence rate of gradient descent algorithms\", \"D\": \"To increase the number of local minima in the loss function\"}",
-      "correct_option": "B",
-      "explanation": "Feature scaling is used to prevent features with large ranges from dominating the model, which can lead to biased results. This is particularly important when using distance-based algorithms such as k-nearest neighbors or support vector machines."
+      "question_text": "What is the primary goal of a supervised learning algorithm?",
+      "options_json": "{\"A\": \"To minimize the loss function and maximize accuracy\", \"B\": \"To optimize the model's complexity and interpretability\", \"C\": \"To identify patterns in the data without any prior knowledge\", \"D\": \"To generate new, unseen data samples\"}",
+      "correct_option": "A",
+      "explanation": "The primary goal of a supervised learning algorithm is to minimize the loss function and maximize accuracy by adjusting model parameters. This is achieved through backpropagation and optimization techniques."
     },
     {
       "skill_name": "Machine Learning",
       "difficulty": "medium",
       "question_text": "What is the primary goal of regularization in machine learning?",
-      "options_json": "{\"A\": \"To prevent overfitting by adding a penalty term to the loss function\", \"B\": \"To improve model interpretability by reducing feature dimensionality\", \"C\": \"To increase model complexity by allowing non-linear relationships between features\", \"D\": \"To speed up training time by reducing the number of parameters\"}",
+      "options_json": "{\"A\": \"To reduce overfitting by adding a penalty term to the loss function\", \"B\": \"To increase the model's capacity to learn complex patterns\", \"C\": \"To improve the model's interpretability by reducing feature importance\", \"D\": \"To speed up training time by reducing the number of iterations\"}",
       "correct_option": "A",
-      "explanation": "Regularization is used to prevent overfitting by adding a penalty term to the loss function, which helps to reduce the model's capacity and improve its generalizability."
+      "explanation": "Regularization is a technique used to prevent overfitting by adding a penalty term to the loss function, which helps to reduce the model's complexity and improve its generalizability."
     },
     {
       "skill_name": "Machine Learning",
       "difficulty": "hard",
-      "question_text": "What is the primary difference between a Generative Adversarial Network (GAN) and a Variational Autoencoder (VAE)?",
-      "options_json": "{\"A\": \"GANs are used for unsupervised learning, while VAEs are used for supervised learning.\", \"B\": \"GANs generate new data samples, while VAEs reconstruct existing data.\", \"C\": \"GANs are more computationally expensive than VAEs.\", \"D\": \"VAEs are a type of neural network that can be used as a discriminator in GANs.\"}",
+      "question_text": "What is the primary goal of the k-means clustering algorithm?",
+      "options_json": "{\"A\": \"To find the optimal number of clusters in a dataset\", \"B\": \"To assign each data point to its closest cluster centroid\", \"C\": \"To identify patterns and relationships between variables\", \"D\": \"To classify new, unseen data points into predefined categories\"}",
       "correct_option": "B",
-      "explanation": "Generative Adversarial Networks (GANs) generate new data samples, whereas Variational Autoencoders (VAEs) reconstruct existing data. This is the primary difference between the two architectures."
-    },
-    {
-      "skill_name": "Machine Learning",
-      "difficulty": "hard",
-      "question_text": "What is the primary goal of regularization in neural networks?",
-      "options_json": "{\"A\": \"To reduce overfitting by adding a penalty term for large weights\", \"B\": \"To increase the capacity of the network to learn more complex patterns\", \"C\": \"To speed up training by reducing the number of iterations required\", \"D\": \"To improve the interpretability of the model's predictions\"}",
-      "correct_option": "A",
-      "explanation": "Regularization is used to prevent overfitting in neural networks by adding a penalty term for large weights, which encourages the network to find simpler solutions."
+      "explanation": "The k-means algorithm aims to partition the data into K clusters based on their similarity, with each cluster represented by a centroid. The primary goal is to assign each data point to its closest cluster centroid."
     }
   ],
-  "total_questions": 6
+  "total_questions": 5
 }

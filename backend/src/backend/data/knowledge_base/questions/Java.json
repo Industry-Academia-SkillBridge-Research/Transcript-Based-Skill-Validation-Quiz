@@ -4,50 +4,50 @@
     {
       "skill_name": "Java",
       "difficulty": "easy",
-      "question_text": "What does the 'final' keyword do in Java?",
-      "options_json": "{\"A\": \"It prevents a variable from being modified after it's declared.\", \"B\": \"It makes a method that can't be overridden by subclasses.\", \"C\": \"It's used to declare constants.\", \"D\": \"It's used for garbage collection.\"}",
+      "question_text": "What does the 'final' keyword in Java do?",
+      "options_json": "{\"A\": \"It prevents a variable from being reassigned.\", \"B\": \"It makes a method static.\", \"C\": \"It allows a class to be extended.\", \"D\": \"It enables autoboxing.\"}",
       "correct_option": "A",
-      "explanation": "The 'final' keyword in Java is used to prevent variables from being modified after they're declared. This can be useful for ensuring that certain values remain constant throughout the execution of a program."
+      "explanation": "The 'final' keyword in Java prevents a variable from being reassigned once it is initialized. This means that the value of a final variable cannot be changed after it is declared."
     },
     {
       "skill_name": "Java",
       "difficulty": "easy",
-      "question_text": "What does the 'static' keyword in Java do?",
-      "options_json": "{\"A\": \"It allows a method to be called without creating an instance of the class.\", \"B\": \"It makes a variable accessible only within its own class.\", \"C\": \"It prevents a class from being instantiated.\", \"D\": \"It enables polymorphism.\"}",
-      "correct_option": "A",
-      "explanation": "The 'static' keyword in Java allows methods and variables to be accessed without creating an instance of the class. This is useful for utility classes or helper methods that don't need an object context."
+      "question_text": "What does the 'this' keyword in Java refer to?",
+      "options_json": "{\"A\": \"The current method being executed\", \"B\": \"The current class being instantiated\", \"C\": \"The parent class of the current class\", \"D\": \"The current thread being executed\"}",
+      "correct_option": "B",
+      "explanation": "In Java, 'this' is a reference to the current object instance. It can be used to access members of the same class."
     },
     {
       "skill_name": "Java",
       "difficulty": "medium",
-      "question_text": "What is the purpose of the synchronized keyword in Java?",
-      "options_json": "{\"A\": \"To prevent multiple threads from accessing a shared resource simultaneously.\", \"B\": \"To ensure that only one thread can execute a block of code at a time.\", \"C\": \"To increase the performance of multithreaded programs by reducing context switching overhead.\", \"D\": \"To enable lazy loading of classes.\"}",
-      "correct_option": "A",
-      "explanation": "The synchronized keyword in Java is used to prevent multiple threads from accessing a shared resource simultaneously, thus preventing data corruption and ensuring thread safety. This is achieved through the use of locks, which allow only one thread to access the resource at a time."
-    },
-    {
-      "skill_name": "Java",
-      "difficulty": "hard",
-      "question_text": "What is the purpose of the synchronized keyword in Java?",
-      "options_json": "{\"A\": \"To prevent multiple threads from accessing a shared resource simultaneously.\", \"B\": \"To ensure that only one thread can execute a block of code at a time.\", \"C\": \"To notify other threads when a shared resource is modified.\", \"D\": \"To increase the performance of multi-threaded programs.\"}",
+      "question_text": "What does the 'synchronized' keyword in Java do?",
+      "options_json": "{\"A\": \"It allows multiple threads to access a shared resource simultaneously.\", \"B\": \"It ensures that only one thread can execute a block of code at a time.\", \"C\": \"It is used for multithreading and concurrency.\", \"D\": \"It is used for garbage collection.\"}",
       "correct_option": "B",
-      "explanation": "The synchronized keyword in Java is used to ensure that only one thread can execute a block of code at a time, preventing race conditions and ensuring data consistency. This is particularly useful when accessing shared resources or modifying shared state."
+      "explanation": "The 'synchronized' keyword in Java ensures that only one thread can execute a block of code at a time, preventing data inconsistencies and ensuring thread safety. This is particularly useful when working with shared resources or when multiple threads need to access the same data."
     },
     {
       "skill_name": "Java",
-      "difficulty": "easy",
-      "question_text": "What does the 'final' keyword in Java do?",
-      "options_json": "{\"A\": \"It prevents a variable from being changed after it's declared.\", \"B\": \"It makes a method static and non-overridable.\", \"C\": \"It creates a new thread that runs concurrently with the main program.\", \"D\": \"It is used to import classes from another package.\"}",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the 'synchronized' keyword in Java?",
+      "options_json": "{\"A\": \"To ensure thread safety for a block of code\", \"B\": \"To increase the execution speed of a method\", \"C\": \"To prevent other threads from accessing an object's methods\", \"D\": \"To create a new thread\"}",
       "correct_option": "A",
-      "explanation": "The 'final' keyword in Java prevents a variable or method from being modified after it's declared. This ensures data integrity and prevents unintended changes."
+      "explanation": "The 'synchronized' keyword is used to ensure that only one thread can execute a block of code at a time, preventing data inconsistencies and ensuring thread safety."
     },
     {
       "skill_name": "Java",
       "difficulty": "hard",
       "question_text": "What is the purpose of the `synchronized` keyword in Java?",
-      "options_json": "{\"A\": \"To ensure thread safety for a block of code\", \"B\": \"To create a new thread that runs concurrently with other threads\", \"C\": \"To lock a resource to prevent concurrent access\", \"D\": \"To increase the performance of a program\"}",
+      "options_json": "{\"A\": \"To prevent multiple threads from accessing a shared resource simultaneously.\", \"B\": \"To ensure that only one thread can execute a block of code at a time.\", \"C\": \"To enable multithreading and improve program performance.\", \"D\": \"To handle exceptions in a multi-threaded environment.\"}",
+      "correct_option": "B",
+      "explanation": "The `synchronized` keyword is used to ensure that only one thread can execute a block of code at a time, preventing concurrent access and ensuring data integrity. This is particularly useful when working with shared resources or critical sections of code."
+    },
+    {
+      "skill_name": "Java",
+      "difficulty": "hard",
+      "question_text": "What is the purpose of the synchronized keyword in Java?",
+      "options_json": "{\"A\": \"To ensure thread safety in a multi-threaded environment\", \"B\": \"To improve code readability\", \"C\": \"To reduce memory usage\", \"D\": \"To increase execution speed\"}",
       "correct_option": "A",
-      "explanation": "The `synchronized` keyword is used to ensure that only one thread can execute a block of code at a time, preventing data inconsistencies and thread-related bugs. This is essential in multi-threaded environments where multiple threads may be accessing shared resources."
+      "explanation": "The synchronized keyword is used to prevent multiple threads from accessing the same resource simultaneously, thus ensuring thread safety. This is particularly important in multi-threaded environments where concurrent access can lead to data inconsistencies."
     }
   ],
   "total_questions": 6

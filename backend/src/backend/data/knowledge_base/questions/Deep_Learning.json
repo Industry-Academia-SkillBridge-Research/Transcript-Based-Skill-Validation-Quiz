@@ -4,50 +4,50 @@
     {
       "skill_name": "Deep Learning",
       "difficulty": "easy",
-      "question_text": "What does the term 'Activation Function' refer to in a neural network?",
-      "options_json": "{\"A\": \"A type of neural network layer that applies non-linear transformations to inputs.\", \"B\": \"The process by which neurons transmit signals to each other.\", \"C\": \"A method for training deep learning models using large amounts of data.\", \"D\": \"A technique used to prevent overfitting in neural networks.\"}",
-      "correct_option": "A",
-      "explanation": "Activation functions are used to introduce non-linearity into the model, allowing it to learn complex relationships between inputs and outputs. Examples include ReLU and Sigmoid."
+      "question_text": "What is the primary function of a Convolutional Neural Network (CNN)?",
+      "options_json": "{\"A\": \"It is used for supervised learning only.\", \"B\": \"It is primarily used for image classification and object detection tasks.\", \"C\": \"It is a type of Recurrent Neural Network (RNN).\", \"D\": \"It is used for unsupervised learning only.\"}",
+      "correct_option": "B",
+      "explanation": "A CNN is designed to process data with grid-like topology, such as images. It is widely used in image classification and object detection tasks due to its ability to automatically and adaptively retain spatial hierarchies of visual elements."
     },
     {
       "skill_name": "Deep Learning",
       "difficulty": "easy",
       "question_text": "What is the primary function of a Convolutional Neural Network (CNN)?",
-      "options_json": "{\"A\": \"To perform natural language processing tasks\", \"B\": \"To classify images and detect objects within them\", \"C\": \"To generate new music compositions\", \"D\": \"To translate languages\"}",
-      "correct_option": "B",
-      "explanation": "CNNs are particularly useful for image classification and object detection due to their ability to extract spatial hierarchies of features from images."
-    },
-    {
-      "skill_name": "Deep Learning",
-      "difficulty": "medium",
-      "question_text": "What is the primary function of a Convolutional Neural Network (CNN) in image classification?",
-      "options_json": "{\"A\": \"To detect edges and lines in an image\", \"B\": \"To classify objects into predefined categories\", \"C\": \"To generate new images based on existing ones\", \"D\": \"To perform object detection\"}",
-      "correct_option": "B",
-      "explanation": "CNNs are designed to recognize patterns and features in images, making them ideal for image classification tasks. They learn to classify objects into predefined categories by analyzing the spatial hierarchies of features."
+      "options_json": "{\"A\": \"It is used for image classification and object detection.\", \"B\": \"It is used for natural language processing and text analysis.\", \"C\": \"It is used for time series forecasting and predictive modeling.\", \"D\": \"It is a type of Recurrent Neural Network (RNN).\"}",
+      "correct_option": "A",
+      "explanation": "CNNs are primarily used for image classification and object detection tasks due to their ability to extract features from images. They are particularly useful in applications such as self-driving cars, medical imaging, and surveillance systems."
     },
     {
       "skill_name": "Deep Learning",
       "difficulty": "medium",
       "question_text": "What is the primary function of a Convolutional Neural Network (CNN) in image classification tasks?",
-      "options_json": "{\"A\": \"To perform feature extraction and dimensionality reduction\", \"B\": \"To classify images into predefined categories\", \"C\": \"To generate new images from scratch\", \"D\": \"To detect objects within an image\"}",
+      "options_json": "{\"A\": \"To detect edges and lines in an image\", \"B\": \"To classify images into predefined categories\", \"C\": \"To generate new images from scratch\", \"D\": \"To segment objects within an image\"}",
       "correct_option": "B",
-      "explanation": "CNNs are designed to learn spatial hierarchies of features, allowing them to effectively classify images. This is achieved through the use of convolutional and pooling layers."
+      "explanation": "CNNs are designed to efficiently process data with grid-like topology, such as images. They learn to classify images by identifying features and patterns in the input data."
+    },
+    {
+      "skill_name": "Deep Learning",
+      "difficulty": "medium",
+      "question_text": "What is the primary function of a ReLU (Rectified Linear Unit) activation function in a neural network?",
+      "options_json": "{\"A\": \"To introduce non-linearity into the model\", \"B\": \"To speed up computation by reducing the number of operations\", \"C\": \"To improve the generalization ability of the model\", \"D\": \"To reduce overfitting\"}",
+      "correct_option": "A",
+      "explanation": "ReLU introduces non-linearity into the model, allowing it to learn more complex relationships between inputs and outputs. This is essential for deep learning models to capture subtle patterns in data."
     },
     {
       "skill_name": "Deep Learning",
       "difficulty": "hard",
       "question_text": "What is the primary advantage of using a Residual Network (ResNet) over other deep neural network architectures?",
-      "options_json": "{\"A\": \"It allows for faster training times due to its simplicity.\", \"B\": \"It enables the use of pre-trained models as feature extractors, reducing the need for extensive fine-tuning.\", \"C\": \"It is more computationally expensive than other architectures.\", \"D\": \"It only works well with image classification tasks.\"}",
-      "correct_option": "B",
-      "explanation": "Residual Networks (ResNets) enable the use of pre-trained models as feature extractors, reducing the need for extensive fine-tuning. This is a significant advantage over other deep neural network architectures, as it allows for more efficient and effective transfer learning."
+      "options_json": "{\"A\": \"Improved training speed due to reduced number of parameters\", \"B\": \"Enhanced ability to learn long-range dependencies in data\", \"C\": \"Increased robustness against overfitting through residual connections\", \"D\": \"Simplified implementation and easier to train\"}",
+      "correct_option": "C",
+      "explanation": "Residual networks are designed to alleviate the vanishing gradient problem by adding skip connections, which allows them to learn long-range dependencies in data more effectively. This leads to improved robustness against overfitting."
     },
     {
       "skill_name": "Deep Learning",
       "difficulty": "hard",
-      "question_text": "What is the primary function of a batch normalization layer in a deep neural network?",
-      "options_json": "{\"A\": \"To reduce overfitting by normalizing the input data to have zero mean and unit variance.\", \"B\": \"To speed up training by reducing the number of parameters in the model.\", \"C\": \"To improve the interpretability of the model by providing feature importance scores.\", \"D\": \"To increase the capacity of the model by allowing it to learn more complex patterns.\"}",
-      "correct_option": "A",
-      "explanation": "Batch normalization helps reduce internal covariate shift, which can lead to overfitting. By normalizing the input data, batch normalization allows the model to focus on learning the underlying patterns rather than being distracted by large input values."
+      "question_text": "What is the primary advantage of using a Residual Network (ResNet) over other deep neural network architectures?",
+      "options_json": "{\"A\": \"It requires less computational power due to its smaller number of parameters.\", \"B\": \"It can handle larger input sizes and complex datasets more efficiently.\", \"C\": \"It is capable of learning long-term dependencies in data through the use of residual connections.\", \"D\": \"It is a type of recurrent neural network (RNN) specifically designed for sequential data.\"}",
+      "correct_option": "C",
+      "explanation": "Residual networks are able to learn long-term dependencies in data by passing information directly from one layer to the next, allowing them to handle complex and high-dimensional datasets more efficiently. This is particularly useful in image classification tasks where large input sizes are common."
     }
   ],
   "total_questions": 6

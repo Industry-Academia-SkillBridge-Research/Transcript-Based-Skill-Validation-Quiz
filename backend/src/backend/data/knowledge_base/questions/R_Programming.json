@@ -4,50 +4,50 @@
     {
       "skill_name": "R Programming",
       "difficulty": "easy",
-      "question_text": "What does the dplyr package in R do?",
-      "options_json": "{\"A\": \"It's a database management system\", \"B\": \"It's used for data manipulation and analysis\", \"C\": \"It's a machine learning library\", \"D\": \"It's a statistics package\"}",
-      "correct_option": "B",
-      "explanation": "The dplyr package is used to manipulate and analyze data in R, making it easier to perform common data manipulation tasks such as filtering, sorting, and grouping."
+      "question_text": "What does the R function 'mean()' do?",
+      "options_json": "{\"A\": \"Calculates the mean of a vector\", \"B\": \"Calculates the median of a vector\", \"C\": \"Creates a bar plot\", \"D\": \"Performs linear regression\"}",
+      "correct_option": "A",
+      "explanation": "The 'mean()' function in R calculates the arithmetic mean of a numeric vector. It is commonly used for data summarization."
     },
     {
       "skill_name": "R Programming",
       "difficulty": "easy",
-      "question_text": "What does the %in% operator do in R?",
-      "options_json": "{\"A\": \"It checks if two vectors are equal\", \"B\": \"It checks if a value is present in a vector\", \"C\": \"It concatenates two vectors\", \"D\": \"It sorts a vector\"}",
-      "correct_option": "B",
-      "explanation": "The %in% operator in R is used to check if a value is present in a vector. It returns a logical vector indicating whether each element of the first argument is found in the second argument."
+      "question_text": "What does the R function 'mean()' do?",
+      "options_json": "{\"A\": \"It calculates the mean of a vector.\", \"B\": \"It calculates the median of a vector.\", \"C\": \"It calculates the standard deviation of a vector.\", \"D\": \"It plots a histogram of a vector.\"}",
+      "correct_option": "A",
+      "explanation": "The 'mean()' function in R calculates the arithmetic mean (average) of a numeric vector. This is one of the most commonly used functions in data analysis and statistics."
     },
     {
       "skill_name": "R Programming",
       "difficulty": "medium",
       "question_text": "What does the dplyr library in R provide?",
-      "options_json": "{\"A\": \"Data visualization tools\", \"B\": \"Data manipulation and transformation capabilities\", \"C\": \"Machine learning algorithms\", \"D\": \"Statistical modeling techniques\"}",
+      "options_json": "{\"A\": \"Data visualization tools\", \"B\": \"Tools for data manipulation and transformation\", \"C\": \"Machine learning algorithms\", \"D\": \"Statistical modeling techniques\"}",
       "correct_option": "B",
-      "explanation": "The dplyr library in R provides a grammar of data manipulation, allowing users to easily filter, arrange, group, and summarize their data. It is particularly useful for transforming and reshaping datasets."
+      "explanation": "The dplyr library in R provides a grammar of data manipulation, allowing users to easily filter, arrange, group, and summarize their data. This makes it an essential tool for data analysis and visualization."
     },
     {
       "skill_name": "R Programming",
       "difficulty": "medium",
-      "question_text": "What does the dplyr function 'mutate()' do in R?",
-      "options_json": "{\"A\": \"It is used for data visualization.\", \"B\": \"It is used to add new variables to a dataframe.\", \"C\": \"It is used for data filtering.\", \"D\": \"It is used for data sorting.\"}",
+      "question_text": "What does the dplyr package in R provide?",
+      "options_json": "{\"A\": \"Data visualization tools\", \"B\": \"Data manipulation and transformation capabilities\", \"C\": \"Machine learning algorithms\", \"D\": \"Statistical modeling functions\"}",
       "correct_option": "B",
-      "explanation": "The 'mutate()' function in dplyr is used to add new variables to an existing dataframe. This can be useful for creating new columns based on calculations or transformations of existing columns."
+      "explanation": "The dplyr package is used for data manipulation and transformation, making it easier to work with datasets in R. It provides a grammar of data manipulation that allows users to perform common tasks such as filtering, sorting, and grouping data."
     },
     {
       "skill_name": "R Programming",
       "difficulty": "hard",
       "question_text": "What is the purpose of the `dplyr` package in R?",
-      "options_json": "{\"A\": \"Data visualization\", \"B\": \"Data manipulation and transformation\", \"C\": \"Machine learning\", \"D\": \"Statistical modeling\"}",
+      "options_json": "{\"A\": \"Data visualization\", \"B\": \"Data manipulation and transformation\", \"C\": \"Machine learning model training\", \"D\": \"Statistical hypothesis testing\"}",
       "correct_option": "B",
-      "explanation": "The `dplyr` package is used for data manipulation and transformation, providing a grammar-based syntax for common data analysis tasks. It allows users to easily filter, arrange, group, and summarize their data."
+      "explanation": "The `dplyr` package is used for data manipulation and transformation, providing a grammar-based approach to data analysis. It allows users to filter, arrange, group, and summarize data in a more efficient and readable way."
     },
     {
       "skill_name": "R Programming",
       "difficulty": "hard",
-      "question_text": "What is the purpose of the `dplyr::mutate()` function in R?",
-      "options_json": "{\"A\": \"To filter rows based on a condition\", \"B\": \"To add new columns to a data frame\", \"C\": \"To remove duplicate rows from a data frame\", \"D\": \"To perform a group by operation\"}",
+      "question_text": "What is the purpose of the `dplyr` package in R?",
+      "options_json": "{\"A\": \"To perform data visualization tasks\", \"B\": \"To manipulate and clean large datasets efficiently\", \"C\": \"To create interactive web applications\", \"D\": \"To build machine learning models\"}",
       "correct_option": "B",
-      "explanation": "The `mutate()` function is used to create new variables within an existing data frame. This can be useful for adding new columns or modifying existing ones."
+      "explanation": "The `dplyr` package is designed to make data manipulation and cleaning tasks more efficient, especially for large datasets. It provides a grammar-based syntax for data transformation."
     }
   ],
   "total_questions": 6
