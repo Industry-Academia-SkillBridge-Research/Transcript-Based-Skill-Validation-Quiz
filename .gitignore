@@ -36,12 +36,22 @@ Thumbs.db
 # ===== Env files / secrets =====
 .env
 .env.*
+!.env.example
 *.key
 *.pem
+
+# ===== MySQL / Database =====
+*.sql.generated
+.env.generated
+setup_mysql_user_generated.sql
 
 # ===== Project runtime folders =====
 backend/uploads/
 backend/data/index/
+.run/
+
+# ===== Archive (optional - uncomment to exclude from git) =====
+# archive/
 backend/data/chroma/
 backend/data/faiss/
 backend/output/

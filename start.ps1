@@ -1,67 +1,130 @@
-#!/usr/bin/env pwsh
-<#
-.SYNOPSIS
-    Start both backend and frontend servers together
-.DESCRIPTION
-    This script starts the FastAPI backend and Vite frontend development servers
-    in separate PowerShell windows. Press Ctrl+C in this window to stop monitoring.
-#>
+# Start both backend and frontend servers with one command
+# Starts FastAPI backend and Vite frontend as background processes
+# Saves process IDs to .run/ folder for clean shutdown with stop.ps1
 
-Write-Host "Starting Full Stack Application..." -ForegroundColor Green
+Write-Host "================================================================" -ForegroundColor Cyan
+Write-Host "       Starting SkillBridge Application                        " -ForegroundColor Cyan
+Write-Host "================================================================" -ForegroundColor Cyan
 Write-Host ""
 
 # Get the project root directory
 $projectRoot = $PSScriptRoot
+$runDir = Join-Path $projectRoot ".run"
+$backendPidFile = Join-Path $runDir "backend.pid"
+$frontendPidFile = Join-Path $runDir "frontend.pid"
 
-# Start Backend Server
-Write-Host "Starting Backend Server on Port 8000..." -ForegroundColor Cyan
-$backendPath = Join-Path $projectRoot "backend\src"
-$venvPath = Join-Path $projectRoot ".venv\Scripts\Activate.ps1"
+# Create .run directory if it doesn't exist
+if (-not (Test-Path $runDir)) {
+    New-Item -ItemType Directory -Path $runDir -Force | Out-Null
+}
 
-$backendCommand = "cd '$backendPath'; & '$venvPath'; python -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000"
-
-$backendJob = Start-Process powershell -ArgumentList "-NoExit", "-Command", $backendCommand -PassThru -WindowStyle Normal
-
-Start-Sleep -Seconds 2
-
-# Start Frontend Server
-Write-Host "Starting Frontend Server on Port 5173..." -ForegroundColor Cyan
-$frontendPath = Join-Path $projectRoot "frontend"
-$frontendCommand = "cd '$frontendPath'; npm run dev"
-
-$frontendJob = Start-Process powershell -ArgumentList "-NoExit", "-Command", $frontendCommand -PassThru -WindowStyle Normal
-
-Write-Host ""
-Write-Host "Servers Started Successfully!" -ForegroundColor Green
-Write-Host ""
-Write-Host "Access Points:" -ForegroundColor Yellow
-Write-Host "   Frontend: http://localhost:5173" -ForegroundColor White
-Write-Host "   Backend:  http://localhost:8000" -ForegroundColor White
-Write-Host "   API Docs: http://localhost:8000/docs" -ForegroundColor White
-Write-Host ""
-Write-Host "To stop servers, close both PowerShell windows" -ForegroundColor Yellow
-Write-Host "or press Ctrl+C in this window and run:" -ForegroundColor Yellow
-Write-Host "   Stop-Process -Id $($backendJob.Id),$($frontendJob.Id)" -ForegroundColor Gray
-Write-Host ""
-Write-Host "Monitoring servers... (Press Ctrl+C to exit monitoring)" -ForegroundColor Gray
-Write-Host ""
-
-# Monitor processes
-try {
-    while ($true) {
-        if ($backendJob.HasExited) {
-            Write-Host "Backend server stopped unexpectedly" -ForegroundColor Red
-            break
+# Function to stop existing processes
+function Stop-ExistingProcess {
+    param([string]$pidFile, [string]$processName)
+    
+    if (Test-Path $pidFile) {
+        $pid = Get-Content $pidFile -ErrorAction SilentlyContinue
+        if ($pid) {
+            $process = Get-Process -Id $pid -ErrorAction SilentlyContinue
+            if ($process) {
+                Write-Host "Warning: Stopping existing $processName (PID: $pid)..." -ForegroundColor Yellow
+                Stop-Process -Id $pid -Force -ErrorAction SilentlyContinue
+                Start-Sleep -Seconds 1
+            }
         }
-        if ($frontendJob.HasExited) {
-            Write-Host "Frontend server stopped unexpectedly" -ForegroundColor Red
-            break
-        }
-        Start-Sleep -Seconds 2
+        Remove-Item $pidFile -Force -ErrorAction SilentlyContinue
     }
 }
-catch {
-    Write-Host ""
-    Write-Host "Monitoring stopped" -ForegroundColor Yellow
-    Write-Host "Servers are still running in separate windows" -ForegroundColor Gray
+
+# Stop any existing servers
+Stop-ExistingProcess -pidFile $backendPidFile -processName "backend"
+Stop-ExistingProcess -pidFile $frontendPidFile -processName "frontend"
+
+# ==================== START BACKEND ====================
+Write-Host "Starting Backend Server..." -ForegroundColor Cyan
+
+$backendSrc = Join-Path $projectRoot "backend\src"
+$venvActivate = Join-Path $projectRoot "backend\.venv\Scripts\Activate.ps1"
+
+# Check if virtual environment exists
+if (-not (Test-Path $venvActivate)) {
+    Write-Host "ERROR: Virtual environment not found at:" -ForegroundColor Red
+    Write-Host "   $venvActivate" -ForegroundColor Red
+    Write-Host "" 
+    Write-Host "Please create the virtual environment first:" -ForegroundColor Yellow
+    Write-Host "   cd backend" -ForegroundColor Gray
+    Write-Host "   python -m venv .venv" -ForegroundColor Gray
+    Write-Host "   .venv\Scripts\Activate.ps1" -ForegroundColor Gray
+    Write-Host "   pip install -r requirements.txt" -ForegroundColor Gray
+    exit 1
 }
+
+# Create temp script for backend
+$backendScriptFile = Join-Path $runDir "start_backend.ps1"
+$uvicornPath = Join-Path $projectRoot "backend\.venv\Scripts\uvicorn.exe"
+@"
+Set-Location '$backendSrc'
+& '$venvActivate'
+`$env:PYTHONPATH='$backendSrc'
+& '$uvicornPath' app.main:app --reload --host 0.0.0.0 --port 8000
+"@ | Out-File -FilePath $backendScriptFile -Encoding UTF8
+
+# Start backend in background
+$backendProcess = Start-Process powershell -ArgumentList "-NoProfile","-ExecutionPolicy","Bypass","-File",$backendScriptFile -PassThru -WindowStyle Hidden
+
+# Save backend PID
+$backendProcess.Id | Out-File -FilePath $backendPidFile -Encoding ASCII
+
+Write-Host "   Backend started (PID: $($backendProcess.Id))" -ForegroundColor Green
+Write-Host "   ->  http://localhost:8000" -ForegroundColor White
+Write-Host "   ->  http://localhost:8000/docs (API docs)" -ForegroundColor Gray
+Write-Host ""
+
+# Wait for backend to initialize
+Start-Sleep -Seconds 3
+
+# ==================== START FRONTEND ====================
+Write-Host "Starting Frontend Server..." -ForegroundColor Cyan
+
+$frontendPath = Join-Path $projectRoot "frontend"
+
+# Check if node_modules exists
+$nodeModules = Join-Path $frontendPath "node_modules"
+if (-not (Test-Path $nodeModules)) {
+    Write-Host "Warning: node_modules not found. Run 'npm install' in frontend folder first." -ForegroundColor Yellow
+}
+
+# Create temp script for frontend
+$frontendScriptFile = Join-Path $runDir "start_frontend.ps1"
+@"
+Set-Location '$frontendPath'
+npm run dev
+"@ | Out-File -FilePath $frontendScriptFile -Encoding UTF8
+
+# Start frontend in background
+$frontendProcess = Start-Process powershell -ArgumentList "-NoProfile","-ExecutionPolicy","Bypass","-File",$frontendScriptFile -PassThru -WindowStyle Hidden
+
+# Save frontend PID
+$frontendProcess.Id | Out-File -FilePath $frontendPidFile -Encoding ASCII
+
+Write-Host "   Frontend started (PID: $($frontendProcess.Id))" -ForegroundColor Green
+Write-Host "   ->  http://localhost:5173 (or check terminal)" -ForegroundColor White
+Write-Host ""
+
+# ==================== SUMMARY ====================
+Write-Host "================================================================" -ForegroundColor Green
+Write-Host "           All Servers Running Successfully                    " -ForegroundColor Green
+Write-Host "================================================================" -ForegroundColor Green
+Write-Host ""
+Write-Host "Access Points:" -ForegroundColor Yellow
+Write-Host "   Frontend:  http://localhost:5173" -ForegroundColor White
+Write-Host "   Backend:   http://localhost:8000" -ForegroundColor White
+Write-Host "   API Docs:  http://localhost:8000/docs" -ForegroundColor White
+Write-Host ""
+Write-Host "To stop servers, run:" -ForegroundColor Yellow
+Write-Host "   .\stop.ps1" -ForegroundColor Cyan
+Write-Host ""
+Write-Host "Process IDs saved to:" -ForegroundColor Gray
+Write-Host "   $backendPidFile" -ForegroundColor DarkGray
+Write-Host "   $frontendPidFile" -ForegroundColor DarkGray
+Write-Host ""

@@ -13,8 +13,8 @@ class CourseSkillMap(Base):
     __tablename__ = "course_skill_map"
     
     id = Column(Integer, primary_key=True, index=True, autoincrement=True)
-    course_code = Column(String, nullable=False, index=True)
-    skill_name = Column(String, nullable=False, index=True)
+    course_code = Column(String(50), nullable=False, index=True)
+    skill_name = Column(String(255), nullable=False, index=True)
     map_weight = Column(Float, nullable=False)  # 0.0 to 1.0
     
     __table_args__ = (

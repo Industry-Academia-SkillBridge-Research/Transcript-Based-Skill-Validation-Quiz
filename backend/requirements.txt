@@ -4,6 +4,9 @@ python-multipart
 
 SQLAlchemy
 pydantic-settings
+pymysql
+cryptography
+alembic
 
 pandas
 numpy
