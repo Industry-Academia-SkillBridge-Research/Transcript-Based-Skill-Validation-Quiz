@@ -1,12 +1,12 @@
 """
 Service for seeding course catalog and skill mapping data from CSV files.
+Uses flat skill structure.
 """
 
 import pandas as pd
 from pathlib import Path
 from sqlalchemy.orm import Session
 from app.models.course import CourseCatalog, CourseSkillMap
-from app.models.skill_group_map import SkillGroupMap
 import logging
 
 logger = logging.getLogger(__name__)
@@ -16,7 +16,6 @@ BACKEND_DIR = Path(__file__).resolve().parents[3]  # points to backend/
 DATA_DIR = BACKEND_DIR / "data"
 CATALOG_PATH = DATA_DIR / "course_catalog.csv"
 SKILL_MAP_PATH = DATA_DIR / "course_skill_map.csv"
-SKILL_GROUP_MAP_PATH = DATA_DIR / "skill_group_map.csv"
 
 
 def seed_course_catalog(db: Session, path: Path = CATALOG_PATH) -> dict:
@@ -183,67 +182,5 @@ def seed_course_skill_map(db: Session, path: Path = SKILL_MAP_PATH) -> dict:
     
     db.commit()
     logger.info(f"Course skill map seeding complete: {inserted_count} inserted, {updated_count} updated")
-    
-    return {"inserted": inserted_count, "updated": updated_count}
-
-
-def seed_skill_group_map(db: Session, path: Path = SKILL_GROUP_MAP_PATH) -> dict:
-    """
-    Seed skill group mapping (parent-child skill relationships) from CSV file.
-    
-    Args:
-        db: Database session
-        path: Path to skill_group_map.csv
-        
-    Returns:
-        Dictionary with inserted and updated counts
-    """
-    file_path = Path(path)
-    if not file_path.exists():
-        raise FileNotFoundError(f"Skill group map file not found: {path}")
-    
-    logger.info(f"Reading skill group map from: {path}")
-    df = pd.read_csv(file_path, dtype=str, keep_default_na=False)
-    
-    # Validate required columns
-    required_cols = ["child_skill", "parent_skill"]
-    missing_cols = [col for col in required_cols if col not in df.columns]
-    if missing_cols:
-        raise ValueError(f"Missing required columns in skill group map: {missing_cols}")
-    
-    inserted_count = 0
-    updated_count = 0
-    
-    for idx, row in df.iterrows():
-        child_skill = str(row["child_skill"]).strip()
-        parent_skill = str(row["parent_skill"]).strip()
-        
-        if not child_skill or not parent_skill:
-            logger.warning(f"Skipping row {idx + 2}: missing child_skill or parent_skill")
-            continue
-        
-        # Upsert: check if exists by (child_skill, parent_skill)
-        # Flush to ensure pending inserts are visible
-        db.flush()
-        existing = db.query(SkillGroupMap).filter_by(
-            child_skill=child_skill,
-            parent_skill=parent_skill
-        ).first()
-        
-        if existing:
-            # No fields to update, just count
-            updated_count += 1
-            logger.debug(f"Mapping already exists: {child_skill} -> {parent_skill}")
-        else:
-            new_mapping = SkillGroupMap(
-                child_skill=child_skill,
-                parent_skill=parent_skill
-            )
-            db.add(new_mapping)
-            inserted_count += 1
-            logger.debug(f"Inserted mapping: {child_skill} -> {parent_skill}")
-    
-    db.commit()
-    logger.info(f"Skill group map seeding complete: {inserted_count} inserted, {updated_count} updated")
     
     return {"inserted": inserted_count, "updated": updated_count}

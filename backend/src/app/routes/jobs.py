@@ -10,6 +10,7 @@ from pathlib import Path
 import pandas as pd
 from app.db import get_db
 from app.services.job_recommendation_service import recommend_jobs_for_student
+from app.services.ml_job_recommendation_service import recommend_jobs_ml
 import logging
 
 logger = logging.getLogger(__name__)
@@ -116,6 +117,89 @@ def get_job_recommendations(
         raise HTTPException(
             status_code=500,
             detail=f"Failed to generate job recommendations: {str(e)}"
+        )
+
+
+@router.get("/{student_id}/jobs/recommend/ml")
+def get_ml_job_recommendations(
+    student_id: str,
+    top_k: int = Query(default=10, ge=1, le=100, description="Number of jobs to return"),
+    threshold: float = Query(default=70.0, ge=0.0, le=100.0, description="Minimum score for skill proficiency"),
+    use_verified: bool = Query(default=True, description="Prefer verified skills over claimed"),
+    role_key: Optional[str] = Query(default=None, description="Filter by role category"),
+    db: Session = Depends(get_db)
+):
+    """
+    Get ML-enhanced job recommendations with skill gap analysis.
+    
+    **NEW ENHANCED ENDPOINT** with Machine Learning:
+    - Uses ML model for intelligent job matching
+    - Prioritizes verified skills from quiz results
+    - Shows skill levels (Beginner/Intermediate/Advanced)
+    - Provides detailed skill gap analysis
+    - Suggests specific skills to improve
+    - Offers actionable next steps
+    
+    Args:
+        student_id: Student identifier
+        top_k: Number of recommendations to return (1-100)
+        threshold: Minimum score (0-100) for skill proficiency
+        use_verified: Use verified skills from quizzes (recommended: True)
+        role_key: Optional role filter (AIML, FULLSTACK, DO, etc.)
+        
+    Returns:
+        Enhanced job recommendations with:
+        - ML-based match scores
+        - Skill proficiency levels
+        - Proficient skills (with levels)
+        - Skills needing improvement (with recommendations)
+        - Missing skills (with learning suggestions)
+        - Job readiness assessment
+        - Actionable next steps
+        
+    Example:
+        GET /students/IT21013928/jobs/recommend/ml?use_verified=true&threshold=70
+    """
+    try:
+        recommendations = recommend_jobs_ml(
+            db=db,
+            student_id=student_id,
+            top_k=top_k,
+            threshold=threshold,
+            use_verified=use_verified,
+            role_key=role_key
+        )
+        
+        if not recommendations:
+            logger.warning(
+                f"No ML job recommendations found for student {student_id} "
+                f"(role_key={role_key})"
+            )
+        
+        return {
+            "student_id": student_id,
+            "total_recommendations": len(recommendations),
+            "threshold_used": threshold,
+            "using_verified_skills": use_verified,
+            "ml_enabled": recommendations[0]["ml_prediction"] if recommendations else False,
+            "recommendations": recommendations
+        }
+        
+    except FileNotFoundError as e:
+        raise HTTPException(
+            status_code=503,
+            detail=str(e)
+        )
+    except ValueError as e:
+        raise HTTPException(
+            status_code=404,
+            detail=str(e)
+        )
+    except Exception as e:
+        logger.error(f"ML job recommendation failed: {e}", exc_info=True)
+        raise HTTPException(
+            status_code=500,
+            detail=f"Failed to generate ML job recommendations: {str(e)}"
         )
 
 

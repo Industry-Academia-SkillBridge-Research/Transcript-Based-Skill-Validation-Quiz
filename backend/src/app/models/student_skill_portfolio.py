@@ -2,6 +2,7 @@
 Student Skill Portfolio Model
 
 Stores persistent skill portfolio data for each student across all quiz attempts.
+Uses flat skill structure - no parent/child hierarchy.
 """
 
 from sqlalchemy import Column, Integer, String, Float, DateTime, UniqueConstraint
@@ -14,7 +15,7 @@ class StudentSkillPortfolio(Base):
     
     id = Column(Integer, primary_key=True, index=True, autoincrement=True)
     student_id = Column(String, nullable=False, index=True)
-    skill_name = Column(String, nullable=False, index=True)  # parent skill
+    skill_name = Column(String, nullable=False, index=True)  # flat skill (e.g., "SQL", "Python")
     claimed_score = Column(Float, nullable=False, default=0.0)
     verified_score = Column(Float, nullable=False, default=0.0)
     quiz_weight = Column(Float, nullable=False, default=0.7)
@@ -28,3 +29,4 @@ class StudentSkillPortfolio(Base):
     __table_args__ = (
         UniqueConstraint('student_id', 'skill_name', name='uix_student_skill'),
     )
+

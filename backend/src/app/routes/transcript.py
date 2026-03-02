@@ -1,13 +1,13 @@
 """
 Transcript upload and processing routes.
+Uses flat skill structure.
 """
 
 from fastapi import APIRouter, Depends, UploadFile, File, Form, HTTPException
 from sqlalchemy.orm import Session
 from app.db import get_db
 from app.services.transcript_service import process_transcript_upload
-from app.services.skill_scoring import compute_claimed_skills
-from app.services.parent_skill_scoring import compute_parent_claimed_skills
+from app.services.transcript_processor_flat import compute_skill_scores, save_skill_profile
 from app.models.student import Student
 from app.models.course import CourseTaken
 import logging
@@ -52,21 +52,21 @@ async def upload_transcript(
         
         # Auto-compute skills if courses were successfully parsed
         if result.get("parsed_courses") and len(result["parsed_courses"]) > 0:
-            logger.info(f"Auto-computing skills for student: {student_id}")
+            logger.info(f"Auto-computing flat skills for student: {student_id}")
             
             try:
-                # Compute child skills
-                child_result = compute_claimed_skills(student_id, db)
-                logger.info(f"Computed {child_result['skills_computed']} child skills")
+                # Compute flat skills from courses
+                skill_result = compute_skill_scores(db, student_id)
+                logger.info(f"Computed {skill_result['total_skills']} flat skills")
                 
-                # Compute parent skills
-                parent_result = compute_parent_claimed_skills(student_id, db)
-                logger.info(f"Computed {parent_result['parent_skills_computed']} parent skills")
+                # Save to database
+                save_skill_profile(db, student_id, skill_result)
+                logger.info(f"Saved skill profile with {skill_result['total_evidence']} evidence entries")
                 
                 # Add skill computation info to result
                 result["skills_auto_computed"] = {
-                    "child_skills": child_result["skills_computed"],
-                    "parent_skills": parent_result["parent_skills_computed"]
+                    "skills": skill_result["total_skills"],
+                    "evidence": skill_result["total_evidence"]
                 }
             except Exception as e:
                 logger.error(f"Skill computation failed: {e}", exc_info=True)

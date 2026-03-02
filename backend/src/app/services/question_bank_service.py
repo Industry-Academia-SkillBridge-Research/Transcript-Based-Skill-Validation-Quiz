@@ -15,7 +15,6 @@ from sqlalchemy.exc import IntegrityError
 
 from ..models.question_bank import QuestionBank
 from ..services.question_persistence import export_questions_to_json
-from ..models.skill_group_map import SkillGroupMap
 from .ollama_client import generate_mcq
 
 logger = logging.getLogger(__name__)
@@ -23,12 +22,11 @@ logger = logging.getLogger(__name__)
 
 def _get_skill_context(db: Session, skill_name: str) -> Optional[Tuple[str, List[str], Optional[str]]]:
     """
-    Get skill context for question generation.
+    Get skill context for question generation (flat skill structure).
     
-    Supports three modes:
-    1. Parent skills (from SkillGroupMap) - old system
-    2. Job skills (from job_skills.csv) - intermediate system
-    3. Direct skill names - new simplified system
+    Supports two modes:
+    1. Job skills (from job_skills.csv) - if available
+    2. Direct skill names - primary method
     
     Args:
         db: Database session
@@ -36,20 +34,11 @@ def _get_skill_context(db: Session, skill_name: str) -> Optional[Tuple[str, List
     
     Returns:
         Tuple of (skill_type, context_list, category) or None if not found
-        - skill_type: "parent_skill", "job_skill", or "direct_skill"
-        - context_list: List of child skills or [skill_name] for direct skills
-        - category: Category from job_skills.csv or None
+        - skill_type: "job_skill" or "direct_skill"
+        - context_list: [skill_name]
+        - category: Category from job_skills.csv or "General"
     """
-    # Try 1: SkillGroupMap lookup (old system - parent skills)
-    skill_maps = db.query(SkillGroupMap).filter(
-        SkillGroupMap.parent_skill == skill_name
-    ).all()
-    
-    if skill_maps:
-        child_skills = [sm.child_skill for sm in skill_maps]
-        return ("parent_skill", child_skills, None)
-    
-    # Try 2: job_skills.csv lookup (intermediate system)
+    # Try 1: job_skills.csv lookup (if available)
     try:
         import pandas as pd
         job_skills_path = Path(__file__).parent.parent.parent.parent / "data" / "job_skills.csv"
@@ -67,7 +56,7 @@ def _get_skill_context(db: Session, skill_name: str) -> Optional[Tuple[str, List
     except Exception as e:
         logger.warning(f"Error reading job_skills.csv: {e}")
     
-    # Try 3: Direct skill name (new simplified system)
+    # Try 2: Direct skill name (flat skill structure)
     # If skill exists in SkillProfileClaimed, it's valid
     from app.models.skill import SkillProfileClaimed
     skill_exists = db.query(SkillProfileClaimed).filter(
@@ -105,6 +94,14 @@ def generate_bank_for_skills(
         questions_per_difficulty: How many questions per difficulty level (easy, medium, hard)
         model_name: Ollama model to use
     
+    Returns:flat skill names directly.
+    
+    Args:
+        db: Database session
+        skill_names: List of skill names (flat structure)
+        questions_per_difficulty: How many questions per difficulty level (easy, medium, hard)
+        model_name: Ollama model to use
+    
     Returns:
         Dict with generation statistics and any errors
     """
@@ -119,13 +116,13 @@ def generate_bank_for_skills(
     difficulties = ["easy", "medium", "hard"]
     
     for skill_name in skill_names:
-        # Get skill context (child skills or job skill)
+        # Get skill context
         skill_context = _get_skill_context(db, skill_name)
         
         if not skill_context:
             logger.warning(f"Skill not found: {skill_name}")
             stats["per_skill"][skill_name] = {
-                "error": f"Skill '{skill_name}' not found in SkillGroupMap or job_skills.csv"
+                "error": f"Skill '{skill_name}' not found"
             }
             continue
         

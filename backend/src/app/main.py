@@ -6,7 +6,6 @@ from .routes import (
     admin_router, 
     transcript_router, 
     skills_router, 
-    parent_skills_router, 
     quiz_router,
     admin_question_bank_router,
     admin_question_persistence_router,
@@ -33,7 +32,6 @@ app.add_middleware(
 app.include_router(admin_router)
 app.include_router(transcript_router)
 app.include_router(skills_router)
-app.include_router(parent_skills_router)
 app.include_router(quiz_router)
 app.include_router(admin_question_bank_router)
 app.include_router(admin_question_persistence_router)

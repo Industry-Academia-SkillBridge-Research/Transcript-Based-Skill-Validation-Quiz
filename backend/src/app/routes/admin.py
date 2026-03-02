@@ -1,11 +1,12 @@
 """
 Admin routes for database management and seeding.
+Uses flat skill structure.
 """
 
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from app.db import get_db
-from app.services.seed_service import seed_course_catalog, seed_course_skill_map, seed_skill_group_map
+from app.services.seed_service import seed_course_catalog, seed_course_skill_map
 import logging
 
 logger = logging.getLogger(__name__)
@@ -16,25 +17,21 @@ router = APIRouter(prefix="/admin", tags=["Admin"])
 @router.post("/seed-mapping")
 def seed_mapping(db: Session = Depends(get_db)):
     """
-    Seed course catalog, course-skill mapping, and skill group mapping data from CSV files.
+    Seed course catalog and course-skill mapping data from CSV files (flat skills).
     
     Returns:
         Dictionary with seeding status and detailed row counts
     """
     try:
-        logger.info("Starting mapping data seeding")
+        logger.info("Starting mapping data seeding (flat skills)")
         
         # Seed course catalog
         catalog_result = seed_course_catalog(db)
         logger.info(f"Course catalog seeded: {catalog_result['inserted']} inserted, {catalog_result['updated']} updated")
         
-        # Seed course skill map
+        # Seed course skill map (flat skills)
         skill_map_result = seed_course_skill_map(db)
         logger.info(f"Course skill map seeded: {skill_map_result['inserted']} inserted, {skill_map_result['updated']} updated")
-        
-        # Seed skill group map
-        skill_group_result = seed_skill_group_map(db)
-        logger.info(f"Skill group map seeded: {skill_group_result['inserted']} inserted, {skill_group_result['updated']} updated")
         
         return {
             "status": "ok",
@@ -45,10 +42,6 @@ def seed_mapping(db: Session = Depends(get_db)):
             "course_skill_map": {
                 "inserted": skill_map_result["inserted"],
                 "updated": skill_map_result["updated"]
-            },
-            "skill_group_map": {
-                "inserted": skill_group_result["inserted"],
-                "updated": skill_group_result["updated"]
             }
         }
     

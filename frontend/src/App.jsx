@@ -6,6 +6,7 @@ import { SkillExplainPage } from './pages/SkillExplainPage';
 import { ExplainChildSkillPage } from './pages/ExplainChildSkillPage';
 import { ExplainParentSkillPage } from './pages/ExplainParentSkillPage';
 import JobRecommendationsPage from './pages/JobRecommendationsPage';
+import MLJobRecommendationsPage from './pages/MLJobRecommendationsPage';
 import JobDetailPage from './pages/JobDetailPage';
 import PortfolioPage from './pages/PortfolioPage';
 import QuizPage from './pages/QuizPage';
@@ -40,6 +41,7 @@ function App() {
             <Route path="/students/:studentId/explain/child/:skillName" element={<ExplainChildSkillPage />} />
             <Route path="/students/:studentId/explain/parent/:parentSkill" element={<ExplainParentSkillPage />} />
             <Route path="/students/:studentId/jobs" element={<JobRecommendationsPage />} />
+            <Route path="/students/:studentId/jobs/ml" element={<MLJobRecommendationsPage />} />
             <Route path="/jobs/:jobId" element={<JobDetailPage />} />
             <Route path="/students/:studentId/portfolio" element={<PortfolioPage />} />
             <Route path="/students/:studentId/quiz" element={<QuizPage />} />

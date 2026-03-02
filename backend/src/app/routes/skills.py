@@ -1,15 +1,13 @@
 """
 Skills API routes for claimed skills and explainability.
+Uses flat skill structure.
 """
 
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from typing import List
 from app.db import get_db
 from app.models.skill import SkillProfileClaimed, SkillEvidence
-from app.schemas.skill import ClaimedSkillOut, SkillEvidenceOut
-from app.services.skill_scoring import compute_claimed_skills
-from app.services.job_skill_scoring import compute_job_skill_scores_for_student
+from app.services.transcript_processor_flat import compute_skill_scores, save_skill_profile
 import logging
 
 logger = logging.getLogger(__name__)
@@ -20,71 +18,46 @@ router = APIRouter(prefix="/students", tags=["Skills"])
 @router.get("/{student_id}/skills/claimed")
 def get_claimed_skills(student_id: str, db: Session = Depends(get_db)):
     """
-    Get all claimed skills for a student.
+    Get all claimed skills for a student (flat skill structure).
     
-    Computes skills on-the-fly from transcript data.
-    Supports both:
-    - New system: Direct job skills (from course_skill_mapping_new.csv)
-    - Old system: Child skills + Job skills aggregation
+    Computes skills on-the-fly from transcript data using course-skill mappings.
     
     Args:
         student_id: Student identifier
         db: Database session
         
     Returns:
-        Dictionary with:
-        - claimed_skills: List of skills with scores
-        - job_skill_scores: List for frontend display (compatible format)
+        Dictionary with claimed skills and scores
     """
-    # Compute child skills (existing logic)
-    result = compute_claimed_skills(student_id, db)
+    # Compute skills using flat structure
+    result = compute_skill_scores(db, student_id)
     
-    if result["skills_computed"] == 0:
+    if result["total_skills"] == 0:
         raise HTTPException(
             status_code=404,
             detail=f"No courses or skill mappings found for student {student_id}"
         )
     
-    # Try job skills computation (old system)
-    child_skill_scores = {
-        skill['skill_name']: skill['claimed_score']
-        for skill in result["claimed_skills"]
+    # Format for frontend
+    claimed_skills = [
+        {
+            "skill_name": skill_name,
+            "claimed_score": data["score"],
+            "claimed_level": data["level"],
+            "confidence": data["confidence"],
+            "evidence_count": data["evidence_count"],
+            "category": data.get("category", "General"),
+            "courses": data.get("courses", [])
+        }
+        for skill_name, data in result["skills"].items()
+    ]
+    
+    return {
+        "student_id": student_id,
+        "claimed_skills": claimed_skills,
+        "skills_computed": result["total_skills"],
+        "evidence_count": result["total_evidence"]
     }
-    
-    try:
-        job_skills_result = compute_job_skill_scores_for_student(student_id, db)
-        # Old system: has job_skill_details from aggregation
-        if job_skills_result.get("job_skill_details"):
-            result["job_skill_scores"] = job_skills_result["job_skill_details"]
-            result["job_skill_details"] = job_skills_result["job_skill_details"]
-            result["mapping_stats"] = job_skills_result["mapping_stats"]
-        else:
-            # New system: claimed_skills ARE job skills (no aggregation needed)
-            result["job_skill_scores"] = [
-                {
-                    "job_skill_name": skill["skill_name"],
-                    "job_skill_id": skill["skill_name"].upper().replace(" ", "_"),
-                    "score": skill["claimed_score"],
-                    "category": "General",  # Could be enhanced with category lookup
-                    "level": "Advanced" if skill["claimed_score"] >= 80 else "Intermediate" if skill["claimed_score"] >= 60 else "Beginner"
-                }
-                for skill in result["claimed_skills"]
-            ]
-    except Exception as e:
-        logger.warning(f"Job skills computation failed, using claimed skills directly: {e}")
-        # Fallback: treat claimed_skills as job skills
-        result["job_skill_scores"] = [
-            {
-                "job_skill_name": skill["skill_name"],
-                "job_skill_id": skill["skill_name"].upper().replace(" ", "_"),
-                "score": skill["claimed_score"],
-                "category": "General",
-                "level": "Advanced" if skill["claimed_score"] >= 80 else "Intermediate" if skill["claimed_score"] >= 60 else "Beginner"
-            }
-            for skill in result["claimed_skills"]
-        ]
-    
-    return result
 
 
 @router.get("/{student_id}/explain/skill/{skill_name}")
@@ -150,7 +123,7 @@ def explain_skill(
 @router.post("/{student_id}/skills/recompute")
 def recompute_skills(student_id: str, db: Session = Depends(get_db)):
     """
-    Force recomputation of claimed skills for a student.
+    Force recomputation of flat skills for a student.
     
     Useful after transcript updates.
     
@@ -161,16 +134,20 @@ def recompute_skills(student_id: str, db: Session = Depends(get_db)):
     Returns:
         Computation summary
     """
-    result = compute_claimed_skills(student_id, db)
+    result = compute_skill_scores(db, student_id)
     
-    if result["skills_computed"] == 0:
+    if result["total_skills"] == 0:
         raise HTTPException(
             status_code=404,
             detail=f"No courses or skill mappings found for student {student_id}"
         )
     
+    # Save the computed skills
+    save_skill_profile(db, student_id, result)
+    
     return {
         "status": "ok",
-        "message": f"Recomputed skills for student {student_id}",
-        **result
+        "message": f"Recomputed flat skills for student {student_id}",
+        "skills_computed": result["total_skills"],
+        "evidence_count": result["total_evidence"]
     }

@@ -1,5 +1,6 @@
 """
 Quiz planning service for creating personalized quiz plans based on student skills.
+Uses flat skill structure.
 """
 
 import json
@@ -7,7 +8,7 @@ import logging
 from datetime import datetime
 from typing import Dict, List, Optional
 from sqlalchemy.orm import Session
-from app.models.skill import SkillProfileClaimed, SkillProfileParentClaimed
+from app.models.skill import SkillProfileClaimed
 from app.models.quiz import QuizPlan
 
 logger = logging.getLogger(__name__)
@@ -44,11 +45,7 @@ def create_quiz_plan(
     max_skills: int = 5
 ) -> QuizPlan:
     """
-    Create a quiz plan for a student based on claimed skills.
-    
-    Supports both:
-    - New system: Direct job skills (from course_skill_mapping_new.csv)
-    - Old system: Parent skills (for backward compatibility)
+    Create a quiz plan for a student based on claimed skills (flat skill structure).
     
     Args:
         student_id: Student identifier
@@ -64,28 +61,16 @@ def create_quiz_plan(
     """
     logger.info(f"Creating quiz plan for student: {student_id}")
     
-    # Try new system first: SkillProfileClaimed (direct job skills)
+    # Get claimed skills (flat skill structure)
     all_claimed_skills = db.query(SkillProfileClaimed).filter(
         SkillProfileClaimed.student_id == student_id
     ).all()
     
-    if all_claimed_skills:
-        # New system: use claimed skills
-        skill_lookup = {skill.skill_name: skill for skill in all_claimed_skills}
-        skill_type = "claimed"
-        logger.info(f"Using claimed skills (new system): {len(all_claimed_skills)} skills found")
-    else:
-        # Fallback to old system: SkillProfileParentClaimed
-        all_parent_skills = db.query(SkillProfileParentClaimed).filter(
-            SkillProfileParentClaimed.student_id == student_id
-        ).all()
-        
-        if not all_parent_skills:
-            raise ValueError(f"No skills found for student {student_id}")
-        
-        skill_lookup = {skill.parent_skill: skill for skill in all_parent_skills}
-        skill_type = "parent"
-        logger.info(f"Using parent skills (old system): {len(all_parent_skills)} skills found")
+    if not all_claimed_skills:
+        raise ValueError(f"No skills found for student {student_id}")
+    
+    skill_lookup = {skill.skill_name: skill for skill in all_claimed_skills}
+    logger.info(f"Using claimed skills: {len(all_claimed_skills)} skills found")
     
     # Determine which skills to use
     if selected_skills is not None:
@@ -110,29 +95,18 @@ def create_quiz_plan(
         # Priority: low confidence first, then closest to 70, then highest score
         all_skills_list = list(skill_lookup.values())
         
-        # Get score attribute based on skill type
-        def get_score(skill):
-            if skill_type == "claimed":
-                return skill.claimed_score
-            else:
-                return skill.parent_score
-        
         sorted_skills = sorted(
             all_skills_list,
             key=lambda s: (
                 s.confidence,  # ASC - low confidence = needs practice
-                abs(get_score(s) - 70),  # ASC - closest to intermediate level
-                -get_score(s)  # DESC - higher score as tiebreaker
+                abs(s.claimed_score - 70),  # ASC - closest to intermediate level
+                -s.claimed_score  # DESC - higher score as tiebreaker
             )
         )
         
         # Pick top skills up to max_skills
         top_skills = sorted_skills[:max_skills]
-        
-        if skill_type == "claimed":
-            selected_skill_names = [skill.skill_name for skill in top_skills]
-        else:
-            selected_skill_names = [skill.parent_skill for skill in top_skills]
+        selected_skill_names = [skill.skill_name for skill in top_skills]
         
         logger.info(
             f"Auto-selected {len(selected_skill_names)} skills based on confidence "
@@ -143,12 +117,7 @@ def create_quiz_plan(
     difficulty_mix_per_skill = {}
     for skill_name in selected_skill_names:
         skill_obj = skill_lookup[skill_name]
-        
-        # Get score based on skill type
-        if skill_type == "claimed":
-            score = skill_obj.claimed_score
-        else:
-            score = skill_obj.parent_score
+        score = skill_obj.claimed_score
         
         difficulty_mix = determine_difficulty_mix(score)
         difficulty_mix_per_skill[skill_name] = difficulty_mix
@@ -165,7 +134,7 @@ def create_quiz_plan(
     # Create new quiz plan
     quiz_plan = QuizPlan(
         student_id=student_id,
-        skill_type=skill_type,  # "claimed" or "parent"
+        skill_type="claimed",  # Using flat skill structure
         skills_json=json.dumps(selected_skill_names),
         questions_per_skill=QUESTIONS_PER_SKILL,
         difficulty_mix_json=json.dumps(difficulty_mix_per_skill),
