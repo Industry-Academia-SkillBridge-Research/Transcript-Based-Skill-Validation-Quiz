@@ -117,6 +117,14 @@ def recommend_jobs_for_student(
             logger.warning(f"No jobs found for role_key: {role_key}")
             return []
     
+    # Filter for entry-level and internship positions only
+    if 'seniority_level' in jobs_df.columns:
+        jobs_df = jobs_df[jobs_df['seniority_level'].isin(['Entry level', 'Internship'])].copy()
+        logger.info(f"Filtered to {len(jobs_df)} entry-level and internship positions")
+        if len(jobs_df) == 0:
+            logger.warning("No entry-level or internship jobs found")
+            return []
+    
     # Get student scores
     student_scores = get_student_parent_skill_scores(db, student_id)
     
@@ -124,7 +132,7 @@ def recommend_jobs_for_student(
         raise ValueError(f"No parent skills found for student {student_id}")
     
     # Identify parent skill columns (exclude metadata columns)
-    metadata_cols = ['job_id', 'title', 'company', 'role_key']
+    metadata_cols = ['job_id', 'title', 'company', 'role_key', 'seniority_level']
     parent_skill_cols = [col for col in jobs_df.columns if col not in metadata_cols]
     
     logger.info(f"Analyzing {len(jobs_df)} jobs against {len(student_scores)} student skills")

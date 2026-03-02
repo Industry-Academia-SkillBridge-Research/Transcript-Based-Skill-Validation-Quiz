@@ -5,7 +5,7 @@ import SkillsPage from './pages/SkillsPage';
 import { SkillExplainPage } from './pages/SkillExplainPage';
 import { ExplainChildSkillPage } from './pages/ExplainChildSkillPage';
 import { ExplainParentSkillPage } from './pages/ExplainParentSkillPage';
-import JobRecommendationsPage from './pages/JobRecommendationsPage';
+// import JobRecommendationsPage from './pages/JobRecommendationsPage'; // DEPRECATED: Legacy rule-based recommendations
 import MLJobRecommendationsPage from './pages/MLJobRecommendationsPage';
 import JobDetailPage from './pages/JobDetailPage';
 import PortfolioPage from './pages/PortfolioPage';
@@ -40,7 +40,9 @@ function App() {
             {/* Alternative routes for direct access */}
             <Route path="/students/:studentId/explain/child/:skillName" element={<ExplainChildSkillPage />} />
             <Route path="/students/:studentId/explain/parent/:parentSkill" element={<ExplainParentSkillPage />} />
-            <Route path="/students/:studentId/jobs" element={<JobRecommendationsPage />} />
+            {/* Default job recommendations route - now uses ML-powered system */}
+            <Route path="/students/:studentId/jobs" element={<MLJobRecommendationsPage />} />
+            {/* Alias route for backward compatibility */}
             <Route path="/students/:studentId/jobs/ml" element={<MLJobRecommendationsPage />} />
             <Route path="/jobs/:jobId" element={<JobDetailPage />} />
             <Route path="/students/:studentId/portfolio" element={<PortfolioPage />} />

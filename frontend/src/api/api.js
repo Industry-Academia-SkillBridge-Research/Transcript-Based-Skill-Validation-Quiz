@@ -95,11 +95,25 @@ export const submitQuiz = async (studentId, attemptId, answers) => {
 };
 
 // Job Recommendation endpoints
+// Legacy endpoint (uses transcript-only skills)
 export const getJobRecommendations = async (studentId, params = {}) => {
   const response = await api.get(`/students/${studentId}/jobs/recommend`, {
     params: {
       top_k: params.topK || 10,
       threshold: params.threshold || 70,
+      role_key: params.roleKey || undefined
+    }
+  });
+  return response.data;
+};
+
+// ML-Enhanced Job Recommendations (RECOMMENDED - uses validated quiz results)
+export const getMLJobRecommendations = async (studentId, params = {}) => {
+  const response = await api.get(`/students/${studentId}/jobs/recommend/ml`, {
+    params: {
+      top_k: params.topK || 10,
+      threshold: params.threshold || 70,
+      use_verified: params.useVerified !== undefined ? params.useVerified : true,
       role_key: params.roleKey || undefined
     }
   });

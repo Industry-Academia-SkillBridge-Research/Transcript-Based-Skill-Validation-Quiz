@@ -52,8 +52,8 @@ class JobRecommendation(BaseModel):
     top_contributors: List[SkillMatch]
 
 
-@router.get("/{student_id}/jobs/recommend", response_model=List[JobRecommendation])
-def get_job_recommendations(
+@router.get("/{student_id}/jobs/recommend", response_model=List[JobRecommendation], deprecated=True)
+def get_job_recommendations_legacy(
     student_id: str,
     top_k: int = Query(default=10, ge=1, le=100, description="Number of jobs to return"),
     threshold: float = Query(default=70.0, ge=0.0, le=100.0, description="Minimum score to consider skill matched"),
@@ -61,7 +61,15 @@ def get_job_recommendations(
     db: Session = Depends(get_db)
 ):
     """
+    ⚠️ DEPRECATED: Use `/students/{student_id}/jobs/recommend/ml` instead.
+    
     Get personalized job recommendations for a student.
+    
+    **LEGACY ENDPOINT** - Uses only transcript-claimed skills.
+    This endpoint does NOT use validated quiz results from StudentSkillPortfolio.
+    
+    For ML-enhanced recommendations with verified skills and levels, use:
+    GET /students/{student_id}/jobs/recommend/ml
     
     Analyzes student's parent skill scores against job requirements
     and returns ranked recommendations with detailed match analysis.

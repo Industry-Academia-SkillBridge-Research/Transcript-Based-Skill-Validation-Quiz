@@ -239,9 +239,7 @@ export default function SkillsPage() {
                       <TableRow>
                         <TableHead className="w-12">Select</TableHead>
                         <TableHead>Skill</TableHead>
-                        <TableHead>Score</TableHead>
                         <TableHead>Level</TableHead>
-                        <TableHead>Confidence</TableHead>
                         <TableHead>Evidence</TableHead>
                       </TableRow>
                     </TableHeader>
@@ -265,11 +263,6 @@ export default function SkillsPage() {
                             </TableCell>
                             <TableCell className="font-medium">{skillName}</TableCell>
                             <TableCell>
-                              <span className="font-semibold text-primary">
-                                {skill.claimed_score.toFixed(1)}
-                              </span>
-                            </TableCell>
-                            <TableCell>
                               <span className={`inline-flex items-center rounded-full px-2 py-1 text-xs font-medium ${
                                 level === 'Advanced' ? 'bg-green-100 text-green-700' :
                                 level === 'Intermediate' ? 'bg-blue-100 text-blue-700' :
@@ -277,19 +270,6 @@ export default function SkillsPage() {
                               }`}>
                                 {level}
                               </span>
-                            </TableCell>
-                            <TableCell>
-                              <div className="flex items-center gap-2">
-                                <div className="w-16 h-2 bg-gray-200 rounded-full overflow-hidden">
-                                  <div 
-                                    className="h-full bg-gradient-to-r from-blue-500 to-primary"
-                                    style={{ width: `${skill.confidence * 100}%` }}
-                                  />
-                                </div>
-                                <span className="text-xs text-muted-foreground">
-                                  {(skill.confidence * 100).toFixed(0)}%
-                                </span>
-                              </div>
                             </TableCell>
                             <TableCell>
                               <div className="group relative">
@@ -351,11 +331,8 @@ export default function SkillsPage() {
                           {/* Skill Name */}
                           <h4 className="font-semibold text-lg mb-3 pr-8">{skillName}</h4>
 
-                          {/* Score & Level */}
+                          {/* Level */}
                           <div className="flex items-center gap-3 mb-3">
-                            <div className="text-2xl font-bold text-primary">
-                              {skill.claimed_score.toFixed(1)}
-                            </div>
                             <span className={`inline-flex items-center rounded-full px-2 py-1 text-xs font-medium ${
                               level === 'Advanced' ? 'bg-green-100 text-green-700' :
                               level === 'Intermediate' ? 'bg-blue-100 text-blue-700' :
@@ -363,20 +340,6 @@ export default function SkillsPage() {
                             }`}>
                               {level}
                             </span>
-                          </div>
-
-                          {/* Confidence Bar */}
-                          <div className="mb-3">
-                            <div className="flex items-center justify-between text-xs text-muted-foreground mb-1">
-                              <span>Confidence</span>
-                              <span>{(skill.confidence * 100).toFixed(0)}%</span>
-                            </div>
-                            <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
-                              <div 
-                                className="h-full bg-gradient-to-r from-blue-500 to-primary transition-all"
-                                style={{ width: `${skill.confidence * 100}%` }}
-                              />
-                            </div>
                           </div>
 
                           {/* Evidence - Courses */}

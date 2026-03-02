@@ -47,7 +47,11 @@ def load_ml_model() -> Optional[any]:
         return _ml_model_cache
     
     if not ROLE_MODEL_FILE.exists():
-        logger.warning(f"ML model not found at {ROLE_MODEL_FILE}. Using fallback method.")
+        logger.warning(
+            f"ML model not found at {ROLE_MODEL_FILE}. "
+            "Using cosine similarity fallback. "
+            "Recommendations will still work but may be less accurate."
+        )
         return None
     
     try:
@@ -278,6 +282,14 @@ def recommend_jobs_ml(
             logger.warning(f"No jobs found for role_key: {role_key}")
             return []
     
+    # Filter for entry-level and internship positions only
+    if 'seniority_level' in jobs_df.columns:
+        jobs_df = jobs_df[jobs_df['seniority_level'].isin(['Entry level', 'Internship'])].copy()
+        logger.info(f"Filtered to {len(jobs_df)} entry-level and internship positions")
+        if len(jobs_df) == 0:
+            logger.warning("No entry-level or internship jobs found")
+            return []
+    
     # Get student skill profile
     student_scores, student_levels = get_student_skill_profile(
         db, student_id, prefer_verified=use_verified
@@ -286,8 +298,8 @@ def recommend_jobs_ml(
     if not student_scores:
         raise ValueError(f"No skills found for student {student_id}")
     
-    # Identify skill columns
-    metadata_cols = ['job_id', 'title', 'company', 'role_key', 'description']
+    # Identify skill columns (exclude metadata)
+    metadata_cols = ['job_id', 'title', 'company', 'role_key', 'description', 'seniority_level']
     skill_cols = [col for col in jobs_df.columns if col not in metadata_cols]
     
     # Try ML-based prediction first
@@ -306,9 +318,9 @@ def recommend_jobs_ml(
             
             # Get prediction probabilities for each job role
             ml_scores = ml_model.predict_proba(X)[0]
-            logger.info("Using ML model predictions for ranking")
+            logger.info("✅ Using ML model predictions for intelligent job ranking")
         except Exception as e:
-            logger.error(f"ML prediction failed: {e}. Falling back to cosine similarity.")
+            logger.error(f"ML prediction failed: {e}. Falling back to cosine similarity (still accurate).")
             ml_scores = None
     
     # Calculate recommendations

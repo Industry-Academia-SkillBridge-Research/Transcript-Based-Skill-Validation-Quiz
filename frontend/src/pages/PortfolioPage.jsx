@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { Award, TrendingUp, Calendar, ArrowLeft, Target, CheckCircle, Mail, User, Edit2, Camera, Download, Briefcase, AlertCircle, Sparkles, Trash2 } from "lucide-react";
-import { getStudentProfile, updateStudentProfile, uploadProfilePhoto, getJobRecommendations, clearStudentPortfolio } from "@/api/api";
+import { getStudentProfile, updateStudentProfile, uploadProfilePhoto, getMLJobRecommendations, clearStudentPortfolio } from "@/api/api";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { ErrorAlert } from "@/components/ui/ErrorAlert";
@@ -99,10 +99,11 @@ export default function PortfolioPage() {
   const fetchJobRecommendations = async () => {
     try {
       setLoadingJobs(true);
-      const data = await getJobRecommendations(studentId, { topK: 5, threshold: 0 });
-      setJobs(data);
+      const data = await getMLJobRecommendations(studentId, { topK: 5, threshold: 70, useVerified: true });
+      // Backend returns { recommendations: [...] }, extract the array
+      setJobs(data.recommendations || []);
     } catch (err) {
-      console.error('Failed to fetch job recommendations:', err);
+      console.error('Failed to fetch ML job recommendations:', err);
       setJobs([]);
     } finally {
       setLoadingJobs(false);
@@ -373,10 +374,10 @@ export default function PortfolioPage() {
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
             <Briefcase className="h-6 w-6 text-primary" />
-            Recommended Jobs Based on Your Skills
+            AI-Powered Job Recommendations
           </CardTitle>
           <CardDescription>
-            Jobs matched to your validated skill portfolio
+            Jobs matched to your <strong>validated skills</strong> from quiz results (ML-powered)
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -449,7 +450,7 @@ export default function PortfolioPage() {
                           <div className="text-xs text-muted-foreground">Required Skills</div>
                         </div>
                         <div className="text-center">
-                          <div className="text-lg font-bold text-green-600">{job.matched_skills_count}</div>
+                          <div className="text-lg font-bold text-green-600">{job.proficient_skills_count}</div>
                           <div className="text-xs text-muted-foreground">You Have</div>
                         </div>
                         <div className="text-center">
@@ -459,14 +460,14 @@ export default function PortfolioPage() {
                       </div>
 
                       {/* Matched Skills */}
-                      {job.matched_skills.length > 0 && (
+                      {job.proficient_skills?.length > 0 && (
                         <div className="mb-3">
                           <h4 className="text-sm font-semibold mb-2 flex items-center gap-2">
                             <CheckCircle className="w-4 h-4 text-green-600" />
-                            Your Validated Skills for This Role ({job.matched_skills_count})
+                            Your Validated Skills for This Role ({job.proficient_skills_count})
                           </h4>
                           <div className="flex flex-wrap gap-2">
-                            {job.matched_skills.map((skill, idx) => (
+                            {job.proficient_skills.map((skill, idx) => (
                               <span 
                                 key={idx}
                                 className="px-3 py-1.5 bg-green-50 text-green-700 rounded-full text-sm font-medium border border-green-200"
@@ -479,7 +480,7 @@ export default function PortfolioPage() {
                       )}
 
                       {/* Missing Skills */}
-                      {job.missing_skills.length > 0 && (
+                      {job.missing_skills?.length > 0 && (
                         <div>
                           <h4 className="text-sm font-semibold mb-2 flex items-center gap-2">
                             <AlertCircle className="w-4 h-4 text-orange-600" />
@@ -513,7 +514,7 @@ export default function PortfolioPage() {
                 variant="outline"
               >
                 <Sparkles className="h-4 w-4" />
-                View All Job Recommendations
+                View All AI-Powered Recommendations
               </Button>
             </div>
           )}
